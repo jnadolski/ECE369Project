@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
-//Jennifer Nadolski / Joseph Emnett
+//jumps 4.4 zybooks
 module controller(Instruction, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselect, Jump,storesignal,JALSignal,jumpreg);
 input [31:0] Instruction;
-
+//regdst 0 for immidiates;//CHECK MULT REGDST //ADDIUMEMREAD
 reg [5:0] opcode;
 reg [5:0] func;
-reg [10:6]sebseh;
+reg [4:0]sebseh;
 reg [4:0] rt;
 reg r,t;
 output reg [1:0] storesignal;
@@ -22,6 +22,7 @@ opcode <= Instruction[31:26];
 func <=Instruction [5:0];
 rt<=Instruction[20:16];
 t<=Instruction[6];
+sebseh<=Instruction[10:6];
 r<=Instruction[21];
 
 //(opcode,func)
@@ -781,7 +782,7 @@ end
 
 else if(opcode == 6'b000000 && func == 6'b000110 && t==1'b1) begin//rotrv
 //rd<=((rt>>rs)|(rt<<(6-rs)));
-ALUSrc<=1;
+ALUSrc<=0;
 RegDst<=1;
 RegWrite<=1;
 ALUOp<=6'b101010;

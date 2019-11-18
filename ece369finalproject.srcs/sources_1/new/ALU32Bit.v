@@ -2,7 +2,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 // ECE369 - Computer Architecture
-// //Jennifer Nadolski / Joseph Emnett
+// 
 // Module - ALU32Bit.v
 // Description - 32-Bit wide arithmetic logic unit (ALU).
 //
@@ -296,14 +296,14 @@ ALUResult <= $signed(B)>>>A[4:0];
 Zero<=0;
 end
 if(ALUControl==6'b101110)begin//seb
- if (B[7]==0)begin
-            ALUResult <= {24'h000000,B[7:0]};
-  
-        end
-        else if(B[7]==1)begin
-            ALUResult <= {24'hFFFFFF,B[7:0]};
-        end
-        Zero<=0;
+    if (B[7]==1'b0)begin
+        ALUResult <= {24'h000000,B[7:0]};
+
+    end
+    else if(B[7]==1'b1)begin
+        ALUResult <= {24'hffffff,B[7:0]};
+    end
+    Zero<=0;
 end
 if(ALUControl==6'b101111)begin//sltiu
 if(A<B) begin
