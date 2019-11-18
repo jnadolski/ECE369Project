@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jen/ece369finalproject/ece369finalproject.sim/sim_1/impl/func/xsim/datapath_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32Bit
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-311] analyzing module EXMEMReg
+INFO: [VRFC 10-311] analyzing module IDEXReg
+INFO: [VRFC 10-311] analyzing module IFIDReg
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-311] analyzing module MEMWBReg
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_0
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_1
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1_2
+INFO: [VRFC 10-311] analyzing module Mux32Bit2To1__9
+INFO: [VRFC 10-311] analyzing module PCAdder
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-311] analyzing module StoreMux
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module hitolowregister
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sim_1/new/Datapath_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath_tb
