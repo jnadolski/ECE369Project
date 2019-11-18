@@ -1,26 +1,23 @@
+/////////////////////////////////////////////////////////////////
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/18/2019 04:12:55 PM
-// Design Name: 
-// Module Name: Datapath_tb
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+//Joseph Emnett 50% Jennifer Nadolski 50%
+module datapath_tb( );
+reg Clk,Rst;
+wire [31:0]   debug_hi, debug_lo, debug_PCResult, debug_WriteData;
 
 
-module Datapath_tb(
+datapath a1(.Clk(Clk), .Rst(Rst),   .debug_hi(debug_hi), .debug_lo(debug_lo), .debug_PCResult(debug_PCResult), .debug_WriteData(debug_WriteData));
 
-    );
+initial begin
+Clk<=1'b0;
+forever #100 Clk<=~Clk;
+end
+
+initial begin
+Rst<=1;
+@(posedge Clk);
+#10
+Rst<=0;
+end
+
 endmodule
