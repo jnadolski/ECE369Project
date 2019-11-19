@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Nov 18 16:37:04 2019
+| Date             : Tue Nov 19 11:33:46 2019
 | Host             : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 | Command          : report_power -file datapath_power_routed.rpt -pb datapath_power_summary_routed.pb -rpx datapath_power_routed.rpx
 | Design           : datapath
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 78.085 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 79.880 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 77.294                           |
+| Dynamic (W)              | 79.089                           |
 | Device Static (W)        | 0.791                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Slice Logic              |     3.636 |     4788 |       --- |             --- |
-|   LUT as Logic           |     3.040 |     2318 |     63400 |            3.66 |
-|   CARRY4                 |     0.338 |      119 |     15850 |            0.75 |
-|   Register               |     0.238 |      911 |    126800 |            0.72 |
-|   BUFG                   |     0.013 |        6 |        32 |           18.75 |
-|   LUT as Shift Register  |     0.006 |        4 |     19000 |            0.02 |
-|   F7/F8 Muxes            |     0.001 |      422 |     63400 |            0.67 |
+| Slice Logic              |     3.782 |     4836 |       --- |             --- |
+|   LUT as Logic           |     3.172 |     2383 |     63400 |            3.76 |
+|   CARRY4                 |     0.336 |      119 |     15850 |            0.75 |
+|   Register               |     0.245 |      877 |    126800 |            0.69 |
+|   F7/F8 Muxes            |     0.012 |      440 |     63400 |            0.69 |
+|   BUFG                   |     0.011 |        4 |        32 |           12.50 |
+|   LUT as Shift Register  |     0.007 |        4 |     19000 |            0.02 |
 |   LUT as Distributed RAM |    <0.001 |      560 |     19000 |            2.95 |
-|   Others                 |     0.000 |       72 |       --- |             --- |
-| Signals                  |     7.040 |     3982 |       --- |             --- |
+|   Others                 |     0.000 |       73 |       --- |             --- |
+| Signals                  |     7.409 |     3974 |       --- |             --- |
 | DSPs                     |    <0.001 |        8 |       240 |            3.33 |
-| I/O                      |    66.618 |      130 |       210 |           61.90 |
+| I/O                      |    67.897 |      130 |       210 |           61.90 |
 | Static Power             |     0.791 |          |           |                 |
-| Total                    |    78.085 |          |           |                 |
+| Total                    |    79.880 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,11 +75,11 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |    11.243 |      10.680 |      0.563 |
-| Vccaux    |       1.800 |     5.546 |       5.453 |      0.093 |
+| Vccint    |       1.000 |    11.759 |      11.196 |      0.563 |
+| Vccaux    |       1.800 |     5.651 |       5.558 |      0.093 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |    31.559 |      31.555 |      0.004 |
+| Vcco18    |       1.800 |    32.165 |      32.161 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
@@ -142,11 +142,11 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| datapath                           |    77.294 |
-|   InstrMem                         |     0.217 |
-|   PC                               |     0.398 |
-|   PCAdd                            |     0.070 |
-|   RegFile                          |     0.046 |
+| datapath                           |    79.089 |
+|   InstrMem                         |     0.715 |
+|   PC                               |     0.768 |
+|   PCAdd                            |     0.075 |
+|   RegFile                          |     0.030 |
 |     registerFile_reg_r1_0_31_0_5   |    <0.001 |
 |     registerFile_reg_r1_0_31_12_17 |    <0.001 |
 |     registerFile_reg_r1_0_31_18_23 |    <0.001 |
@@ -159,172 +159,172 @@ Table of Contents
 |     registerFile_reg_r2_0_31_24_29 |    <0.001 |
 |     registerFile_reg_r2_0_31_30_31 |    <0.001 |
 |     registerFile_reg_r2_0_31_6_11  |    <0.001 |
-|   alu                              |     5.391 |
-|   contr                            |     0.017 |
-|   dataMem                          |     0.009 |
-|     ReadData_reg[10]               |     0.000 |
-|     ReadData_reg[11]               |     0.000 |
-|     ReadData_reg[12]               |     0.000 |
-|     ReadData_reg[13]               |     0.000 |
-|     ReadData_reg[14]               |     0.000 |
-|     ReadData_reg[15]               |     0.000 |
-|     ReadData_reg[16]               |     0.000 |
-|     ReadData_reg[17]               |     0.000 |
-|     ReadData_reg[18]               |     0.000 |
-|     ReadData_reg[19]               |     0.000 |
-|     ReadData_reg[20]               |     0.000 |
-|     ReadData_reg[21]               |     0.000 |
-|     ReadData_reg[22]               |     0.000 |
-|     ReadData_reg[23]               |     0.000 |
-|     ReadData_reg[24]               |     0.000 |
-|     ReadData_reg[25]               |     0.000 |
-|     ReadData_reg[26]               |     0.000 |
-|     ReadData_reg[27]               |     0.000 |
-|     ReadData_reg[28]               |     0.000 |
-|     ReadData_reg[29]               |     0.000 |
-|     ReadData_reg[30]               |     0.000 |
-|     ReadData_reg[31]               |     0.000 |
-|     ReadData_reg[8]                |     0.000 |
-|     ReadData_reg[9]                |     0.000 |
-|     memory_reg_0_255_0_0           |     0.000 |
-|     memory_reg_0_255_10_10         |     0.000 |
-|     memory_reg_0_255_11_11         |     0.000 |
-|     memory_reg_0_255_12_12         |     0.000 |
-|     memory_reg_0_255_13_13         |     0.000 |
-|     memory_reg_0_255_14_14         |     0.000 |
-|     memory_reg_0_255_15_15         |     0.000 |
-|     memory_reg_0_255_16_16         |     0.000 |
-|     memory_reg_0_255_17_17         |     0.000 |
-|     memory_reg_0_255_18_18         |     0.000 |
-|     memory_reg_0_255_19_19         |     0.000 |
-|     memory_reg_0_255_1_1           |     0.000 |
-|     memory_reg_0_255_20_20         |     0.000 |
-|     memory_reg_0_255_21_21         |     0.000 |
-|     memory_reg_0_255_22_22         |     0.000 |
-|     memory_reg_0_255_23_23         |     0.000 |
-|     memory_reg_0_255_24_24         |     0.000 |
-|     memory_reg_0_255_25_25         |     0.000 |
-|     memory_reg_0_255_26_26         |     0.000 |
-|     memory_reg_0_255_27_27         |     0.000 |
-|     memory_reg_0_255_28_28         |     0.000 |
-|     memory_reg_0_255_29_29         |     0.000 |
-|     memory_reg_0_255_2_2           |     0.000 |
-|     memory_reg_0_255_30_30         |     0.000 |
-|     memory_reg_0_255_31_31         |     0.000 |
-|     memory_reg_0_255_3_3           |     0.000 |
-|     memory_reg_0_255_4_4           |     0.000 |
-|     memory_reg_0_255_5_5           |     0.000 |
-|     memory_reg_0_255_6_6           |     0.000 |
-|     memory_reg_0_255_7_7           |     0.000 |
-|     memory_reg_0_255_8_8           |     0.000 |
-|     memory_reg_0_255_9_9           |     0.000 |
-|     memory_reg_256_511_0_0         |     0.000 |
-|     memory_reg_256_511_10_10       |     0.000 |
-|     memory_reg_256_511_11_11       |     0.000 |
-|     memory_reg_256_511_12_12       |     0.000 |
-|     memory_reg_256_511_13_13       |     0.000 |
-|     memory_reg_256_511_14_14       |     0.000 |
-|     memory_reg_256_511_15_15       |     0.000 |
-|     memory_reg_256_511_16_16       |     0.000 |
-|     memory_reg_256_511_17_17       |     0.000 |
-|     memory_reg_256_511_18_18       |     0.000 |
-|     memory_reg_256_511_19_19       |     0.000 |
-|     memory_reg_256_511_1_1         |     0.000 |
-|     memory_reg_256_511_20_20       |     0.000 |
-|     memory_reg_256_511_21_21       |     0.000 |
-|     memory_reg_256_511_22_22       |     0.000 |
-|     memory_reg_256_511_23_23       |     0.000 |
-|     memory_reg_256_511_24_24       |     0.000 |
-|     memory_reg_256_511_25_25       |     0.000 |
-|     memory_reg_256_511_26_26       |     0.000 |
-|     memory_reg_256_511_27_27       |     0.000 |
-|     memory_reg_256_511_28_28       |     0.000 |
-|     memory_reg_256_511_29_29       |     0.000 |
-|     memory_reg_256_511_2_2         |     0.000 |
-|     memory_reg_256_511_30_30       |     0.000 |
-|     memory_reg_256_511_31_31       |     0.000 |
-|     memory_reg_256_511_3_3         |     0.000 |
-|     memory_reg_256_511_4_4         |     0.000 |
-|     memory_reg_256_511_5_5         |     0.000 |
-|     memory_reg_256_511_6_6         |     0.000 |
-|     memory_reg_256_511_7_7         |     0.000 |
-|     memory_reg_256_511_8_8         |     0.000 |
-|     memory_reg_256_511_9_9         |     0.000 |
-|     memory_reg_512_767_0_0         |     0.000 |
-|     memory_reg_512_767_10_10       |     0.000 |
-|     memory_reg_512_767_11_11       |     0.000 |
-|     memory_reg_512_767_12_12       |     0.000 |
-|     memory_reg_512_767_13_13       |     0.000 |
-|     memory_reg_512_767_14_14       |     0.000 |
-|     memory_reg_512_767_15_15       |     0.000 |
-|     memory_reg_512_767_16_16       |     0.000 |
-|     memory_reg_512_767_17_17       |     0.000 |
-|     memory_reg_512_767_18_18       |     0.000 |
-|     memory_reg_512_767_19_19       |     0.000 |
-|     memory_reg_512_767_1_1         |     0.000 |
-|     memory_reg_512_767_20_20       |     0.000 |
-|     memory_reg_512_767_21_21       |     0.000 |
-|     memory_reg_512_767_22_22       |     0.000 |
-|     memory_reg_512_767_23_23       |     0.000 |
-|     memory_reg_512_767_24_24       |     0.000 |
-|     memory_reg_512_767_25_25       |     0.000 |
-|     memory_reg_512_767_26_26       |     0.000 |
-|     memory_reg_512_767_27_27       |     0.000 |
-|     memory_reg_512_767_28_28       |     0.000 |
-|     memory_reg_512_767_29_29       |     0.000 |
-|     memory_reg_512_767_2_2         |     0.000 |
-|     memory_reg_512_767_30_30       |     0.000 |
-|     memory_reg_512_767_31_31       |     0.000 |
-|     memory_reg_512_767_3_3         |     0.000 |
-|     memory_reg_512_767_4_4         |     0.000 |
-|     memory_reg_512_767_5_5         |     0.000 |
-|     memory_reg_512_767_6_6         |     0.000 |
-|     memory_reg_512_767_7_7         |     0.000 |
-|     memory_reg_512_767_8_8         |     0.000 |
-|     memory_reg_512_767_9_9         |     0.000 |
-|     memory_reg_768_1023_0_0        |     0.000 |
-|     memory_reg_768_1023_10_10      |     0.000 |
-|     memory_reg_768_1023_11_11      |     0.000 |
-|     memory_reg_768_1023_12_12      |     0.000 |
-|     memory_reg_768_1023_13_13      |     0.000 |
-|     memory_reg_768_1023_14_14      |     0.000 |
-|     memory_reg_768_1023_15_15      |     0.000 |
-|     memory_reg_768_1023_16_16      |     0.000 |
-|     memory_reg_768_1023_17_17      |     0.000 |
-|     memory_reg_768_1023_18_18      |     0.000 |
-|     memory_reg_768_1023_19_19      |     0.000 |
-|     memory_reg_768_1023_1_1        |     0.000 |
-|     memory_reg_768_1023_20_20      |     0.000 |
-|     memory_reg_768_1023_21_21      |     0.000 |
-|     memory_reg_768_1023_22_22      |     0.000 |
-|     memory_reg_768_1023_23_23      |     0.000 |
-|     memory_reg_768_1023_24_24      |     0.000 |
-|     memory_reg_768_1023_25_25      |     0.000 |
-|     memory_reg_768_1023_26_26      |     0.000 |
-|     memory_reg_768_1023_27_27      |     0.000 |
-|     memory_reg_768_1023_28_28      |     0.000 |
-|     memory_reg_768_1023_29_29      |     0.000 |
-|     memory_reg_768_1023_2_2        |     0.000 |
-|     memory_reg_768_1023_30_30      |     0.000 |
-|     memory_reg_768_1023_31_31      |     0.000 |
-|     memory_reg_768_1023_3_3        |     0.000 |
-|     memory_reg_768_1023_4_4        |     0.000 |
-|     memory_reg_768_1023_5_5        |     0.000 |
-|     memory_reg_768_1023_6_6        |     0.000 |
-|     memory_reg_768_1023_7_7        |     0.000 |
-|     memory_reg_768_1023_8_8        |     0.000 |
-|     memory_reg_768_1023_9_9        |     0.000 |
-|   exmemReg                         |     0.548 |
-|   hi2loReg                         |     1.627 |
-|   idexReg                          |     0.593 |
-|   ifidReg                          |     1.418 |
-|   m4                               |     0.006 |
+|   alu                              |     5.300 |
+|   contr                            |     0.013 |
+|   dataMem                          |    <0.001 |
+|     ReadData_reg[10]               |    <0.001 |
+|     ReadData_reg[11]               |    <0.001 |
+|     ReadData_reg[12]               |    <0.001 |
+|     ReadData_reg[13]               |    <0.001 |
+|     ReadData_reg[14]               |    <0.001 |
+|     ReadData_reg[15]               |    <0.001 |
+|     ReadData_reg[16]               |    <0.001 |
+|     ReadData_reg[17]               |    <0.001 |
+|     ReadData_reg[18]               |    <0.001 |
+|     ReadData_reg[19]               |    <0.001 |
+|     ReadData_reg[20]               |    <0.001 |
+|     ReadData_reg[21]               |    <0.001 |
+|     ReadData_reg[22]               |    <0.001 |
+|     ReadData_reg[23]               |    <0.001 |
+|     ReadData_reg[24]               |    <0.001 |
+|     ReadData_reg[25]               |    <0.001 |
+|     ReadData_reg[26]               |    <0.001 |
+|     ReadData_reg[27]               |    <0.001 |
+|     ReadData_reg[28]               |    <0.001 |
+|     ReadData_reg[29]               |    <0.001 |
+|     ReadData_reg[30]               |    <0.001 |
+|     ReadData_reg[31]               |    <0.001 |
+|     ReadData_reg[8]                |    <0.001 |
+|     ReadData_reg[9]                |    <0.001 |
+|     memory_reg_0_255_0_0           |    <0.001 |
+|     memory_reg_0_255_10_10         |    <0.001 |
+|     memory_reg_0_255_11_11         |    <0.001 |
+|     memory_reg_0_255_12_12         |    <0.001 |
+|     memory_reg_0_255_13_13         |    <0.001 |
+|     memory_reg_0_255_14_14         |    <0.001 |
+|     memory_reg_0_255_15_15         |    <0.001 |
+|     memory_reg_0_255_16_16         |    <0.001 |
+|     memory_reg_0_255_17_17         |    <0.001 |
+|     memory_reg_0_255_18_18         |    <0.001 |
+|     memory_reg_0_255_19_19         |    <0.001 |
+|     memory_reg_0_255_1_1           |    <0.001 |
+|     memory_reg_0_255_20_20         |    <0.001 |
+|     memory_reg_0_255_21_21         |    <0.001 |
+|     memory_reg_0_255_22_22         |    <0.001 |
+|     memory_reg_0_255_23_23         |    <0.001 |
+|     memory_reg_0_255_24_24         |    <0.001 |
+|     memory_reg_0_255_25_25         |    <0.001 |
+|     memory_reg_0_255_26_26         |    <0.001 |
+|     memory_reg_0_255_27_27         |    <0.001 |
+|     memory_reg_0_255_28_28         |    <0.001 |
+|     memory_reg_0_255_29_29         |    <0.001 |
+|     memory_reg_0_255_2_2           |    <0.001 |
+|     memory_reg_0_255_30_30         |    <0.001 |
+|     memory_reg_0_255_31_31         |    <0.001 |
+|     memory_reg_0_255_3_3           |    <0.001 |
+|     memory_reg_0_255_4_4           |    <0.001 |
+|     memory_reg_0_255_5_5           |    <0.001 |
+|     memory_reg_0_255_6_6           |    <0.001 |
+|     memory_reg_0_255_7_7           |    <0.001 |
+|     memory_reg_0_255_8_8           |    <0.001 |
+|     memory_reg_0_255_9_9           |    <0.001 |
+|     memory_reg_256_511_0_0         |    <0.001 |
+|     memory_reg_256_511_10_10       |    <0.001 |
+|     memory_reg_256_511_11_11       |    <0.001 |
+|     memory_reg_256_511_12_12       |    <0.001 |
+|     memory_reg_256_511_13_13       |    <0.001 |
+|     memory_reg_256_511_14_14       |    <0.001 |
+|     memory_reg_256_511_15_15       |    <0.001 |
+|     memory_reg_256_511_16_16       |    <0.001 |
+|     memory_reg_256_511_17_17       |    <0.001 |
+|     memory_reg_256_511_18_18       |    <0.001 |
+|     memory_reg_256_511_19_19       |    <0.001 |
+|     memory_reg_256_511_1_1         |    <0.001 |
+|     memory_reg_256_511_20_20       |    <0.001 |
+|     memory_reg_256_511_21_21       |    <0.001 |
+|     memory_reg_256_511_22_22       |    <0.001 |
+|     memory_reg_256_511_23_23       |    <0.001 |
+|     memory_reg_256_511_24_24       |    <0.001 |
+|     memory_reg_256_511_25_25       |    <0.001 |
+|     memory_reg_256_511_26_26       |    <0.001 |
+|     memory_reg_256_511_27_27       |    <0.001 |
+|     memory_reg_256_511_28_28       |    <0.001 |
+|     memory_reg_256_511_29_29       |    <0.001 |
+|     memory_reg_256_511_2_2         |    <0.001 |
+|     memory_reg_256_511_30_30       |    <0.001 |
+|     memory_reg_256_511_31_31       |    <0.001 |
+|     memory_reg_256_511_3_3         |    <0.001 |
+|     memory_reg_256_511_4_4         |    <0.001 |
+|     memory_reg_256_511_5_5         |    <0.001 |
+|     memory_reg_256_511_6_6         |    <0.001 |
+|     memory_reg_256_511_7_7         |    <0.001 |
+|     memory_reg_256_511_8_8         |    <0.001 |
+|     memory_reg_256_511_9_9         |    <0.001 |
+|     memory_reg_512_767_0_0         |    <0.001 |
+|     memory_reg_512_767_10_10       |    <0.001 |
+|     memory_reg_512_767_11_11       |    <0.001 |
+|     memory_reg_512_767_12_12       |    <0.001 |
+|     memory_reg_512_767_13_13       |    <0.001 |
+|     memory_reg_512_767_14_14       |    <0.001 |
+|     memory_reg_512_767_15_15       |    <0.001 |
+|     memory_reg_512_767_16_16       |    <0.001 |
+|     memory_reg_512_767_17_17       |    <0.001 |
+|     memory_reg_512_767_18_18       |    <0.001 |
+|     memory_reg_512_767_19_19       |    <0.001 |
+|     memory_reg_512_767_1_1         |    <0.001 |
+|     memory_reg_512_767_20_20       |    <0.001 |
+|     memory_reg_512_767_21_21       |    <0.001 |
+|     memory_reg_512_767_22_22       |    <0.001 |
+|     memory_reg_512_767_23_23       |    <0.001 |
+|     memory_reg_512_767_24_24       |    <0.001 |
+|     memory_reg_512_767_25_25       |    <0.001 |
+|     memory_reg_512_767_26_26       |    <0.001 |
+|     memory_reg_512_767_27_27       |    <0.001 |
+|     memory_reg_512_767_28_28       |    <0.001 |
+|     memory_reg_512_767_29_29       |    <0.001 |
+|     memory_reg_512_767_2_2         |    <0.001 |
+|     memory_reg_512_767_30_30       |    <0.001 |
+|     memory_reg_512_767_31_31       |    <0.001 |
+|     memory_reg_512_767_3_3         |    <0.001 |
+|     memory_reg_512_767_4_4         |    <0.001 |
+|     memory_reg_512_767_5_5         |    <0.001 |
+|     memory_reg_512_767_6_6         |    <0.001 |
+|     memory_reg_512_767_7_7         |    <0.001 |
+|     memory_reg_512_767_8_8         |    <0.001 |
+|     memory_reg_512_767_9_9         |    <0.001 |
+|     memory_reg_768_1023_0_0        |    <0.001 |
+|     memory_reg_768_1023_10_10      |    <0.001 |
+|     memory_reg_768_1023_11_11      |    <0.001 |
+|     memory_reg_768_1023_12_12      |    <0.001 |
+|     memory_reg_768_1023_13_13      |    <0.001 |
+|     memory_reg_768_1023_14_14      |    <0.001 |
+|     memory_reg_768_1023_15_15      |    <0.001 |
+|     memory_reg_768_1023_16_16      |    <0.001 |
+|     memory_reg_768_1023_17_17      |    <0.001 |
+|     memory_reg_768_1023_18_18      |    <0.001 |
+|     memory_reg_768_1023_19_19      |    <0.001 |
+|     memory_reg_768_1023_1_1        |    <0.001 |
+|     memory_reg_768_1023_20_20      |    <0.001 |
+|     memory_reg_768_1023_21_21      |    <0.001 |
+|     memory_reg_768_1023_22_22      |    <0.001 |
+|     memory_reg_768_1023_23_23      |    <0.001 |
+|     memory_reg_768_1023_24_24      |    <0.001 |
+|     memory_reg_768_1023_25_25      |    <0.001 |
+|     memory_reg_768_1023_26_26      |    <0.001 |
+|     memory_reg_768_1023_27_27      |    <0.001 |
+|     memory_reg_768_1023_28_28      |    <0.001 |
+|     memory_reg_768_1023_29_29      |    <0.001 |
+|     memory_reg_768_1023_2_2        |    <0.001 |
+|     memory_reg_768_1023_30_30      |    <0.001 |
+|     memory_reg_768_1023_31_31      |    <0.001 |
+|     memory_reg_768_1023_3_3        |    <0.001 |
+|     memory_reg_768_1023_4_4        |    <0.001 |
+|     memory_reg_768_1023_5_5        |    <0.001 |
+|     memory_reg_768_1023_6_6        |    <0.001 |
+|     memory_reg_768_1023_7_7        |    <0.001 |
+|     memory_reg_768_1023_8_8        |    <0.001 |
+|     memory_reg_768_1023_9_9        |    <0.001 |
+|   exmemReg                         |     0.467 |
+|   hi2loReg                         |     1.626 |
+|   idexReg                          |     0.606 |
+|   ifidReg                          |     1.256 |
+|   m4                               |     0.008 |
 |   m5                               |    <0.001 |
-|   m6                               |     0.043 |
-|   m7                               |     0.040 |
-|   m8                               |     0.028 |
-|   memewbReg                        |     0.154 |
-|   stMux                            |     0.010 |
+|   m6                               |     0.026 |
+|   m7                               |     0.055 |
+|   m8                               |     0.037 |
+|   memewbReg                        |     0.145 |
+|   stMux                            |    <0.001 |
 +------------------------------------+-----------+
 
 

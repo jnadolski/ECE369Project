@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Nov 18 16:33:50 2019
-# Process ID: 14052
+# Start of session at: Tue Nov 19 11:30:03 2019
+# Process ID: 16560
 # Current directory: C:/Users/jen/ece369finalproject/ece369finalproject.runs/synth_1
 # Command line: vivado.exe -log datapath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source datapath.tcl
 # Log file: C:/Users/jen/ece369finalproject/ece369finalproject.runs/synth_1/datapath.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12032 
+INFO: Helper process launched with PID 5256 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 356.695 ; gain = 99.754
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 357.453 ; gain = 101.168
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'datapath' [C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/Datapath.v:3]
 INFO: [Synth 8-5534] Detected attribute (* mark_debug = " true" *) [C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/Datapath.v:8]
@@ -179,19 +179,19 @@ WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[12
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[1]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 429.652 ; gain = 172.711
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 430.215 ; gain = 173.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 429.652 ; gain = 172.711
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 430.215 ; gain = 173.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 430.215 ; gain = 173.930
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 429.652 ; gain = 172.711
----------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ReadData1" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ReadData2" won't be mapped to RAM because it is too sparse
@@ -238,7 +238,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'LoOutFromALU_reg' [C:/Users
 WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/StoreMux.v:18]
 WARNING: [Synth 8-327] inferring latch for variable 'ReadData_reg' [C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/DataMemory.v:94]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 471.297 ; gain = 214.355
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 476.918 ; gain = 220.633
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,7 +272,7 @@ Detailed RTL Component Info :
 	             1024 Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 29    
-	 104 Input     32 Bit        Muxes := 1     
+	 397 Input     32 Bit        Muxes := 1     
 	   3 Input     32 Bit        Muxes := 9     
 	  45 Input     32 Bit        Muxes := 4     
 	   5 Input     32 Bit        Muxes := 8     
@@ -326,7 +326,7 @@ Detailed RTL Component Info :
 Module InstructionMemory 
 Detailed RTL Component Info : 
 +---Muxes : 
-	 104 Input     32 Bit        Muxes := 1     
+	 397 Input     32 Bit        Muxes := 1     
 Module IFIDReg 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -600,8 +600,6 @@ WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[14
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[13]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[12]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[11]
-WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[10]
-WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[9]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[1]
 WARNING: [Synth 8-3331] design InstructionMemory has unconnected port Address[0]
 INFO: [Synth 8-3886] merging instance 'idexReg/InstructionO1511_reg[0]' (FD) to 'idexReg/Instructionout_reg[11]'
@@ -790,7 +788,7 @@ WARNING: [Synth 8-3332] Sequential element (ALUResult_reg[31]) is unused and wil
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'exmemReg/exmemPCAddResultP4_reg[0]' (FD) to 'exmemReg/adderaddresultout_reg[0]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -862,7 +860,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -889,7 +887,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -913,7 +911,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -926,7 +924,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -938,25 +936,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -992,12 +990,12 @@ Report Cell Usage:
 |2     |CARRY4    |   119|
 |3     |DSP48E1   |     8|
 |4     |LUT1      |     4|
-|5     |LUT2      |   536|
-|6     |LUT3      |   384|
-|7     |LUT4      |   242|
-|8     |LUT5      |   369|
-|9     |LUT6      |  1085|
-|10    |MUXF7     |    30|
+|5     |LUT2      |   531|
+|6     |LUT3      |   389|
+|7     |LUT4      |   245|
+|8     |LUT5      |   381|
+|9     |LUT6      |  1163|
+|10    |MUXF7     |    48|
 |11    |MUXF8     |     8|
 |12    |RAM256X1S |   128|
 |13    |RAM32M    |    12|
@@ -1016,10 +1014,10 @@ Report Instance Areas:
 +------+------------+------------------+------+
 |      |Instance    |Module            |Cells |
 +------+------------+------------------+------+
-|1     |top         |                  |  3992|
+|1     |top         |                  |  4103|
 |2     |  PC        |ProgramCounter    |    32|
 |3     |  PCAdd     |PCAdder           |     9|
-|4     |  InstrMem  |InstructionMemory |    29|
+|4     |  InstrMem  |InstructionMemory |   140|
 |5     |  RegFile   |RegisterFile      |    78|
 |6     |  alu       |ALU32Bit          |  2262|
 |7     |  hi2loReg  |hitolowregister   |   128|
@@ -1037,11 +1035,11 @@ Report Instance Areas:
 |19    |  stMux     |StoreMux          |    48|
 +------+------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 700.703 ; gain = 443.762
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 463 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 700.703 ; gain = 443.762
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 700.703 ; gain = 443.762
+Synthesis finished with 0 errors, 0 critical warnings and 461 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 692.250 ; gain = 435.965
 INFO: [Project 1-571] Translating synthesized netlist
 CRITICAL WARNING: [Netlist 29-72] Incorrect value ' true' specified for property 'mark_debug'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
@@ -1244,7 +1242,7 @@ Resolution: Please check the value of the property and set to a correct value.
 CRITICAL WARNING: [Netlist 29-72] Incorrect value ' true' specified for property 'mark_debug'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
 INFO: [Common 17-14] Message 'Netlist 29-72' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Netlist 29-17] Analyzing 489 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 507 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1258,11 +1256,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-176 Infos, 269 Warnings, 100 Critical Warnings and 0 Errors encountered.
+176 Infos, 267 Warnings, 100 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 700.703 ; gain = 456.773
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 692.250 ; gain = 448.793
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jen/ece369finalproject/ece369finalproject.runs/synth_1/datapath.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file datapath_utilization_synth.rpt -pb datapath_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 700.703 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 18 16:34:48 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.193 . Memory (MB): peak = 692.250 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 11:31:13 2019...

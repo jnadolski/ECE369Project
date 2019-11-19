@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Nov 18 16:37:00 2019
+| Date         : Tue Nov 19 11:33:42 2019
 | Host         : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 | Command      : report_methodology -file datapath_methodology_drc_routed.rpt -pb datapath_methodology_drc_routed.pb -rpx datapath_methodology_drc_routed.rpx
 | Design       : datapath
@@ -23,15 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 1331
+             Violations found: 1258
 +-----------+----------+-----------------------------------------------------------+------------+
 | Rule      | Severity | Description                                               | Violations |
 +-----------+----------+-----------------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                              | 13         |
+| LUTAR-1   | Warning  | LUT drives async reset alert                              | 9          |
 | SYNTH-5   | Warning  | Mapped onto distributed RAM because of timing constraints | 128        |
 | SYNTH-10  | Warning  | Wide multiplier                                           | 8          |
 | TIMING-17 | Warning  | Non-clocked sequential cell                               | 1000       |
-| TIMING-20 | Warning  | Non-clocked latch                                         | 182        |
+| TIMING-20 | Warning  | Non-clocked latch                                         | 113        |
 +-----------+----------+-----------------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -63,42 +63,22 @@ Related violations: <none>
 
 LUTAR-1#6 Warning
 LUT drives async reset alert  
-LUT cell ifidReg/MemWrite_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/MemWrite_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ifidReg/OutputOFRSRT_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/OutputOFRSRT_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#7 Warning
 LUT drives async reset alert  
-LUT cell ifidReg/OutputOFRSRT_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/OutputOFRSRT_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ifidReg/RegDst_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/ALUSrc_reg/CLR, contr/RegDst_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#8 Warning
 LUT drives async reset alert  
-LUT cell ifidReg/RegDst_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/ALUSrc_reg/CLR, contr/RegDst_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+LUT cell ifidReg/RegWrite_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/MemtoReg_reg/PRE, contr/RegWrite_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#9 Warning
 LUT drives async reset alert  
-LUT cell ifidReg/RegWrite_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/MemtoReg_reg/PRE, contr/RegWrite_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#10 Warning
-LUT drives async reset alert  
 LUT cell ifidReg/jumpreg_reg_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/jumpreg_reg/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#11 Warning
-LUT drives async reset alert  
-LUT cell ifidReg/storesignal_reg[0]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/storesignal_reg[0]/CLR. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#12 Warning
-LUT drives async reset alert  
-LUT cell ifidReg/storesignal_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/storesignal_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-LUTAR-1#13 Warning
-LUT drives async reset alert  
-LUT cell ifidReg/threeselect_reg[1]_i_3, with 2 or more inputs, drives asynchronous preset/clear pin(s) contr/threeselect_reg[0]/CLR, contr/threeselect_reg[1]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 SYNTH-5#1 Warning
@@ -4553,812 +4533,812 @@ Related violations: <none>
 
 TIMING-17#755 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MemWriteO2_reg/C is not reached by a timing clock
+The clock pin exmemReg/MemtoRegO2_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#756 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MemtoRegO2_reg_srl2/CLK is not reached by a timing clock
+The clock pin exmemReg/MuxO2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#757 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MuxO2_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/MuxO2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#758 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MuxO2_reg[1]/C is not reached by a timing clock
+The clock pin exmemReg/MuxO2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#759 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MuxO2_reg[2]/C is not reached by a timing clock
+The clock pin exmemReg/MuxO2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#760 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MuxO2_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/MuxO2_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#761 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/MuxO2_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#762 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#763 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[10]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#764 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[11]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#765 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[12]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#766 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[13]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#767 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[14]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#768 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[15]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#769 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[16]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#770 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[17]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#771 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[18]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#772 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[19]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#773 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[1]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#774 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[20]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#775 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[21]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#776 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[22]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#777 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[23]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#778 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[24]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#779 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[25]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#780 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[26]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#781 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[27]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#782 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[28]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#783 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[29]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#784 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[2]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#785 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[30]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#786 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[31]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#787 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#788 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#789 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[5]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#790 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[6]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#791 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[7]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#792 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[8]/C is not reached by a timing clock
+The clock pin exmemReg/R12_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#793 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/R12_reg[9]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#794 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#795 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[10]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#796 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[11]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#797 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[12]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#798 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[13]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#799 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[14]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#800 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[15]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#801 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[16]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#802 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[17]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#803 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[18]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#804 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[19]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#805 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[1]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#806 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[20]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#807 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[21]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#808 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[22]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#809 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[23]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#810 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[24]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#811 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[25]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#812 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[26]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#813 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[27]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#814 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[28]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#815 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[29]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#816 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[2]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#817 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[30]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#818 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[31]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#819 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#820 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#821 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[5]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#822 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[6]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#823 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[7]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#824 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[8]/C is not reached by a timing clock
+The clock pin exmemReg/ReadDataO2_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#825 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ReadDataO2_reg[9]/C is not reached by a timing clock
+The clock pin exmemReg/RegWriteO2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#826 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/RegWriteO2_reg/C is not reached by a timing clock
+The clock pin exmemReg/ZeroO2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#827 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/ZeroO2_reg/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#828 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#829 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[10]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#830 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[11]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#831 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[12]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#832 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[13]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#833 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[14]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#834 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[15]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#835 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[16]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#836 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[17]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#837 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[18]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#838 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[19]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#839 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[1]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#840 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[20]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#841 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[21]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#842 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[22]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#843 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[23]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#844 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[24]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#845 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[25]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#846 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[26]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#847 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[27]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#848 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[28]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#849 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[29]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#850 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[2]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#851 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[30]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#852 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[31]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#853 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#854 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#855 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[5]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#856 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[6]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#857 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[7]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#858 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[8]/C is not reached by a timing clock
+The clock pin exmemReg/adderaddresultout_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#859 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/adderaddresultout_reg[9]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#860 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[10]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#861 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[11]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#862 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[12]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#863 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[13]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#864 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[14]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#865 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[15]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#866 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[16]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#867 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[17]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#868 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[18]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#869 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[19]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#870 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[20]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#871 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[21]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#872 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[23]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#873 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[26]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#874 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[28]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#875 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[29]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#876 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[30]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#877 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[31]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#878 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[30]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#879 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[31]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#880 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[5]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#881 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[6]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#882 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[7]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#883 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[8]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#884 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/addout_reg[9]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#885 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[10]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#886 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[11]/C is not reached by a timing clock
+The clock pin exmemReg/addout_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#887 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[12]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#888 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[13]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#889 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[14]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#890 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[15]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#891 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[16]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#892 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[17]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#893 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[18]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#894 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[19]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#895 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[20]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#896 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[21]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#897 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[22]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#898 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[23]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#899 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[24]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#900 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[25]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#901 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[26]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#902 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[27]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#903 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[2]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#904 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[3]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#905 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[4]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#906 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[5]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#907 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[6]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#908 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[7]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#909 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[8]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#910 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/exmemPCAddResultP4_reg[9]/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#911 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/jalout_reg_srl2/CLK is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#912 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/jumpout_reg/C is not reached by a timing clock
+The clock pin exmemReg/exmemPCAddResultP4_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#913 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/jumpregout_reg/C is not reached by a timing clock
+The clock pin exmemReg/jalout_reg_srl2/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#914 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/storeout_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/jumpout_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#915 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/storeout_reg[1]/C is not reached by a timing clock
+The clock pin exmemReg/jumpregout_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#916 Warning
 Non-clocked sequential cell  
-The clock pin exmemReg/threeselectout_reg[0]/C is not reached by a timing clock
+The clock pin exmemReg/storeout_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#917 Warning
@@ -6323,372 +6303,27 @@ Related violations: <none>
 
 TIMING-20#109 Warning
 Non-clocked latch  
-The latch contr/MemWrite_reg cannot be properly analyzed as its control pin contr/MemWrite_reg/G is not reached by a timing clock
+The latch contr/MemtoReg_reg cannot be properly analyzed as its control pin contr/MemtoReg_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#110 Warning
 Non-clocked latch  
-The latch contr/MemtoReg_reg cannot be properly analyzed as its control pin contr/MemtoReg_reg/G is not reached by a timing clock
+The latch contr/OutputOFRSRT_reg cannot be properly analyzed as its control pin contr/OutputOFRSRT_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#111 Warning
 Non-clocked latch  
-The latch contr/OutputOFRSRT_reg cannot be properly analyzed as its control pin contr/OutputOFRSRT_reg/G is not reached by a timing clock
+The latch contr/RegDst_reg cannot be properly analyzed as its control pin contr/RegDst_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#112 Warning
 Non-clocked latch  
-The latch contr/RegDst_reg cannot be properly analyzed as its control pin contr/RegDst_reg/G is not reached by a timing clock
+The latch contr/RegWrite_reg cannot be properly analyzed as its control pin contr/RegWrite_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#113 Warning
 Non-clocked latch  
-The latch contr/RegWrite_reg cannot be properly analyzed as its control pin contr/RegWrite_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#114 Warning
-Non-clocked latch  
 The latch contr/jumpreg_reg cannot be properly analyzed as its control pin contr/jumpreg_reg/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#115 Warning
-Non-clocked latch  
-The latch contr/storesignal_reg[0] cannot be properly analyzed as its control pin contr/storesignal_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#116 Warning
-Non-clocked latch  
-The latch contr/storesignal_reg[1] cannot be properly analyzed as its control pin contr/storesignal_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#117 Warning
-Non-clocked latch  
-The latch contr/threeselect_reg[0] cannot be properly analyzed as its control pin contr/threeselect_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#118 Warning
-Non-clocked latch  
-The latch contr/threeselect_reg[1] cannot be properly analyzed as its control pin contr/threeselect_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#119 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[0] cannot be properly analyzed as its control pin dataMem/ReadData_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#120 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[10]/L7 (in dataMem/ReadData_reg[10] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[10]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#121 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[11]/L7 (in dataMem/ReadData_reg[11] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[11]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#122 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[12]/L7 (in dataMem/ReadData_reg[12] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[12]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#123 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[13]/L7 (in dataMem/ReadData_reg[13] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[13]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#124 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[14]/L7 (in dataMem/ReadData_reg[14] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[14]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#125 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[15]/L7 (in dataMem/ReadData_reg[15] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[15]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#126 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[16]/L7 (in dataMem/ReadData_reg[16] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[16]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#127 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[17]/L7 (in dataMem/ReadData_reg[17] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[17]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#128 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[18]/L7 (in dataMem/ReadData_reg[18] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[18]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#129 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[19]/L7 (in dataMem/ReadData_reg[19] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[19]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#130 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[1] cannot be properly analyzed as its control pin dataMem/ReadData_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#131 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[20]/L7 (in dataMem/ReadData_reg[20] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[20]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#132 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[21]/L7 (in dataMem/ReadData_reg[21] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[21]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#133 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[22]/L7 (in dataMem/ReadData_reg[22] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[22]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#134 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[23]/L7 (in dataMem/ReadData_reg[23] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[23]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#135 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[24]/L7 (in dataMem/ReadData_reg[24] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[24]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#136 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[25]/L7 (in dataMem/ReadData_reg[25] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[25]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#137 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[26]/L7 (in dataMem/ReadData_reg[26] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[26]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#138 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[27]/L7 (in dataMem/ReadData_reg[27] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[27]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#139 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[28]/L7 (in dataMem/ReadData_reg[28] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[28]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#140 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[29]/L7 (in dataMem/ReadData_reg[29] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[29]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#141 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[2] cannot be properly analyzed as its control pin dataMem/ReadData_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#142 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[30]/L7 (in dataMem/ReadData_reg[30] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[30]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#143 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[31]/L7 (in dataMem/ReadData_reg[31] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[31]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#144 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[3] cannot be properly analyzed as its control pin dataMem/ReadData_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#145 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[4] cannot be properly analyzed as its control pin dataMem/ReadData_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#146 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[5] cannot be properly analyzed as its control pin dataMem/ReadData_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#147 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[6] cannot be properly analyzed as its control pin dataMem/ReadData_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#148 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[7] cannot be properly analyzed as its control pin dataMem/ReadData_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#149 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[8]/L7 (in dataMem/ReadData_reg[8] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[8]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#150 Warning
-Non-clocked latch  
-The latch dataMem/ReadData_reg[9]/L7 (in dataMem/ReadData_reg[9] macro) cannot be properly analyzed as its control pin dataMem/ReadData_reg[9]/L7/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#151 Warning
-Non-clocked latch  
-The latch stMux/out_reg[0] cannot be properly analyzed as its control pin stMux/out_reg[0]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#152 Warning
-Non-clocked latch  
-The latch stMux/out_reg[10] cannot be properly analyzed as its control pin stMux/out_reg[10]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#153 Warning
-Non-clocked latch  
-The latch stMux/out_reg[11] cannot be properly analyzed as its control pin stMux/out_reg[11]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#154 Warning
-Non-clocked latch  
-The latch stMux/out_reg[12] cannot be properly analyzed as its control pin stMux/out_reg[12]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#155 Warning
-Non-clocked latch  
-The latch stMux/out_reg[13] cannot be properly analyzed as its control pin stMux/out_reg[13]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#156 Warning
-Non-clocked latch  
-The latch stMux/out_reg[14] cannot be properly analyzed as its control pin stMux/out_reg[14]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#157 Warning
-Non-clocked latch  
-The latch stMux/out_reg[15] cannot be properly analyzed as its control pin stMux/out_reg[15]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#158 Warning
-Non-clocked latch  
-The latch stMux/out_reg[16] cannot be properly analyzed as its control pin stMux/out_reg[16]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#159 Warning
-Non-clocked latch  
-The latch stMux/out_reg[17] cannot be properly analyzed as its control pin stMux/out_reg[17]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#160 Warning
-Non-clocked latch  
-The latch stMux/out_reg[18] cannot be properly analyzed as its control pin stMux/out_reg[18]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#161 Warning
-Non-clocked latch  
-The latch stMux/out_reg[19] cannot be properly analyzed as its control pin stMux/out_reg[19]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#162 Warning
-Non-clocked latch  
-The latch stMux/out_reg[1] cannot be properly analyzed as its control pin stMux/out_reg[1]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#163 Warning
-Non-clocked latch  
-The latch stMux/out_reg[20] cannot be properly analyzed as its control pin stMux/out_reg[20]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#164 Warning
-Non-clocked latch  
-The latch stMux/out_reg[21] cannot be properly analyzed as its control pin stMux/out_reg[21]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#165 Warning
-Non-clocked latch  
-The latch stMux/out_reg[22] cannot be properly analyzed as its control pin stMux/out_reg[22]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#166 Warning
-Non-clocked latch  
-The latch stMux/out_reg[23] cannot be properly analyzed as its control pin stMux/out_reg[23]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#167 Warning
-Non-clocked latch  
-The latch stMux/out_reg[24] cannot be properly analyzed as its control pin stMux/out_reg[24]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#168 Warning
-Non-clocked latch  
-The latch stMux/out_reg[25] cannot be properly analyzed as its control pin stMux/out_reg[25]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#169 Warning
-Non-clocked latch  
-The latch stMux/out_reg[26] cannot be properly analyzed as its control pin stMux/out_reg[26]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#170 Warning
-Non-clocked latch  
-The latch stMux/out_reg[27] cannot be properly analyzed as its control pin stMux/out_reg[27]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#171 Warning
-Non-clocked latch  
-The latch stMux/out_reg[28] cannot be properly analyzed as its control pin stMux/out_reg[28]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#172 Warning
-Non-clocked latch  
-The latch stMux/out_reg[29] cannot be properly analyzed as its control pin stMux/out_reg[29]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#173 Warning
-Non-clocked latch  
-The latch stMux/out_reg[2] cannot be properly analyzed as its control pin stMux/out_reg[2]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#174 Warning
-Non-clocked latch  
-The latch stMux/out_reg[30] cannot be properly analyzed as its control pin stMux/out_reg[30]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#175 Warning
-Non-clocked latch  
-The latch stMux/out_reg[31] cannot be properly analyzed as its control pin stMux/out_reg[31]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#176 Warning
-Non-clocked latch  
-The latch stMux/out_reg[3] cannot be properly analyzed as its control pin stMux/out_reg[3]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#177 Warning
-Non-clocked latch  
-The latch stMux/out_reg[4] cannot be properly analyzed as its control pin stMux/out_reg[4]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#178 Warning
-Non-clocked latch  
-The latch stMux/out_reg[5] cannot be properly analyzed as its control pin stMux/out_reg[5]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#179 Warning
-Non-clocked latch  
-The latch stMux/out_reg[6] cannot be properly analyzed as its control pin stMux/out_reg[6]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#180 Warning
-Non-clocked latch  
-The latch stMux/out_reg[7] cannot be properly analyzed as its control pin stMux/out_reg[7]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#181 Warning
-Non-clocked latch  
-The latch stMux/out_reg[8] cannot be properly analyzed as its control pin stMux/out_reg[8]/G is not reached by a timing clock
-Related violations: <none>
-
-TIMING-20#182 Warning
-Non-clocked latch  
-The latch stMux/out_reg[9] cannot be properly analyzed as its control pin stMux/out_reg[9]/G is not reached by a timing clock
 Related violations: <none>
 
 

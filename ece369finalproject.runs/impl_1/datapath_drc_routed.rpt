@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Nov 18 16:36:56 2019
+| Date         : Tue Nov 19 11:33:38 2019
 | Host         : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 | Command      : report_drc -file datapath_drc_routed.rpt -pb datapath_drc_routed.pb -rpx datapath_drc_routed.rpx
 | Design       : datapath
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 75
+             Violations found: 71
 +----------+------------------+-----------------------------------------------------+------------+
 | Rule     | Severity         | Description                                         | Violations |
 +----------+------------------+-----------------------------------------------------+------------+
@@ -34,7 +34,7 @@ Table of Contents
 | DPIP-1   | Warning          | Input pipelining                                    | 18         |
 | DPOP-1   | Warning          | PREG Output pipelining                              | 8          |
 | DPOP-2   | Warning          | MREG Output pipelining                              | 8          |
-| PDRC-153 | Warning          | Gated clock check                                   | 38         |
+| PDRC-153 | Warning          | Gated clock check                                   | 34         |
 +----------+------------------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -374,52 +374,32 @@ Related violations: <none>
 
 PDRC-153#29 Warning
 Gated clock check  
-Net ifidReg/MemWriteO_reg is a gated clock net sourced by a combinational pin ifidReg/MemWrite_reg_i_2/O, cell ifidReg/MemWrite_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ifidReg/OutputOFRSRTO_reg_0 is a gated clock net sourced by a combinational pin ifidReg/OutputOFRSRT_reg_i_2/O, cell ifidReg/OutputOFRSRT_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#30 Warning
 Gated clock check  
-Net ifidReg/OutputOFRSRT_reg_i_5_n_5 is a gated clock net sourced by a combinational pin ifidReg/OutputOFRSRT_reg_i_5/O, cell ifidReg/OutputOFRSRT_reg_i_5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ifidReg/RegDstO_reg is a gated clock net sourced by a combinational pin ifidReg/RegDst_reg_i_2/O, cell ifidReg/RegDst_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#31 Warning
 Gated clock check  
-Net ifidReg/RegDstO_reg is a gated clock net sourced by a combinational pin ifidReg/RegDst_reg_i_2/O, cell ifidReg/RegDst_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ifidReg/RegWriteO_reg is a gated clock net sourced by a combinational pin ifidReg/RegWrite_reg_i_2/O, cell ifidReg/RegWrite_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#32 Warning
 Gated clock check  
-Net ifidReg/RegWriteO_reg is a gated clock net sourced by a combinational pin ifidReg/RegWrite_reg_i_2/O, cell ifidReg/RegWrite_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ifidReg/jalout_reg_0 is a gated clock net sourced by a combinational pin ifidReg/JALSignal_reg_i_2/O, cell ifidReg/JALSignal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#33 Warning
 Gated clock check  
-Net ifidReg/jalout_reg_0 is a gated clock net sourced by a combinational pin ifidReg/JALSignal_reg_i_2/O, cell ifidReg/JALSignal_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ifidReg/jumpout_reg_0 is a gated clock net sourced by a combinational pin ifidReg/Jump_reg_i_2/O, cell ifidReg/Jump_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#34 Warning
 Gated clock check  
-Net ifidReg/jumpout_reg_0 is a gated clock net sourced by a combinational pin ifidReg/Jump_reg_i_2/O, cell ifidReg/Jump_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#35 Warning
-Gated clock check  
 Net ifidReg/jumpregout_reg is a gated clock net sourced by a combinational pin ifidReg/jumpreg_reg_i_2/O, cell ifidReg/jumpreg_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#36 Warning
-Gated clock check  
-Net ifidReg/storeout_reg[1][0] is a gated clock net sourced by a combinational pin ifidReg/storesignal_reg[0]_i_2/O, cell ifidReg/storesignal_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#37 Warning
-Gated clock check  
-Net ifidReg/storeout_reg[1][1] is a gated clock net sourced by a combinational pin ifidReg/storesignal_reg[1]_i_2/O, cell ifidReg/storesignal_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-Related violations: <none>
-
-PDRC-153#38 Warning
-Gated clock check  
-Net ifidReg/threeselectout_reg[0][0] is a gated clock net sourced by a combinational pin ifidReg/threeselect_reg[1]_i_2/O, cell ifidReg/threeselect_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

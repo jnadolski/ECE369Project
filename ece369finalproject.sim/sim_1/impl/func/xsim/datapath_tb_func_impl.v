@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Mon Nov 18 16:37:37 2019
+// Date        : Tue Nov 19 11:34:08 2019
 // Host        : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               C:/Users/jen/ece369finalproject/ece369finalproject.sim/sim_1/impl/func/xsim/datapath_tb_func_impl.v
@@ -2986,7 +2986,7 @@ module ALU32Bit
         .I2(\ALUResult_reg[1]_i_13_n_5 ),
         .I3(B[6]),
         .O(\ALUResult_reg[0]_i_21_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair111" *) 
+  (* SOFT_HLUTNM = "soft_lutpair115" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[0]_i_22 
@@ -3004,7 +3004,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_58_n_5 ),
         .I5(B[30]),
         .O(\ALUResult_reg[0]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair171" *) 
+  (* SOFT_HLUTNM = "soft_lutpair175" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[0]_i_24 
@@ -3600,7 +3600,7 @@ module ALU32Bit
         .I4(data21[0]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[0]_i_9_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[0]_i_90 
@@ -3729,7 +3729,7 @@ module ALU32Bit
         .I4(data23[10]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[10]_i_12_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT5 #(
     .INIT(32'h8F8F8F80)) 
     \ALUResult_reg[10]_i_13 
@@ -3739,7 +3739,7 @@ module ALU32Bit
         .I3(ALUResult10_in[10]),
         .I4(\ALUResult_reg[10]_i_22_n_5 ),
         .O(\ALUResult_reg[10]_i_13_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair46" *) 
+  (* SOFT_HLUTNM = "soft_lutpair50" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[10]_i_14 
@@ -3766,7 +3766,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[10]),
         .O(\ALUResult_reg[10]_i_16_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair146" *) 
+  (* SOFT_HLUTNM = "soft_lutpair150" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[10]_i_17 
@@ -3832,7 +3832,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[10]_i_31_n_5 ),
         .I5(\ALUResult_reg[31]_i_35_n_5 ),
         .O(\ALUResult_reg[10]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[10]_i_23 
@@ -3919,7 +3919,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[10]_i_39_n_5 ),
         .O(\ALUResult_reg[10]_i_30_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[10]_i_31 
@@ -3986,7 +3986,7 @@ module ALU32Bit
         .I3(B[7]),
         .I4(A[3]),
         .O(\ALUResult_reg[10]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[10]_i_38 
@@ -3994,7 +3994,7 @@ module ALU32Bit
         .I1(A[4]),
         .I2(B[14]),
         .O(\ALUResult_reg[10]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[10]_i_39 
@@ -4022,7 +4022,7 @@ module ALU32Bit
         .I3(B[7]),
         .I4(\ALUResult_reg[31]_i_94_n_5 ),
         .O(\ALUResult_reg[10]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[10]_i_41 
@@ -4030,7 +4030,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[14]),
         .O(\ALUResult_reg[10]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[10]_i_42 
@@ -4050,7 +4050,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[10]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[10]_i_44 
@@ -4059,7 +4059,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[10]_i_44_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair142" *) 
+  (* SOFT_HLUTNM = "soft_lutpair146" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[10]_i_5 
@@ -4169,7 +4169,7 @@ module ALU32Bit
         .DI(A[11:8]),
         .O(data23[11:8]),
         .S({\ALUResult_reg[11]_i_29_n_5 ,\ALUResult_reg[11]_i_30_n_5 ,\ALUResult_reg[11]_i_31_n_5 ,\ALUResult_reg[11]_i_32_n_5 }));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT5 #(
     .INIT(32'h8F8F8F80)) 
     \ALUResult_reg[11]_i_15 
@@ -4179,7 +4179,7 @@ module ALU32Bit
         .I3(ALUResult10_in[11]),
         .I4(\ALUResult_reg[11]_i_34_n_5 ),
         .O(\ALUResult_reg[11]_i_15_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair44" *) 
+  (* SOFT_HLUTNM = "soft_lutpair48" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[11]_i_16 
@@ -4206,7 +4206,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[11]),
         .O(\ALUResult_reg[11]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair117" *) 
+  (* SOFT_HLUTNM = "soft_lutpair121" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[11]_i_19 
@@ -4342,7 +4342,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[12]_i_23_n_5 ),
         .I5(\ALUResult_reg[31]_i_35_n_5 ),
         .O(\ALUResult_reg[11]_i_34_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[11]_i_35 
@@ -4473,7 +4473,7 @@ module ALU32Bit
        (.I0(A[10]),
         .I1(B[10]),
         .O(\ALUResult_reg[11]_i_49_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair141" *) 
+  (* SOFT_HLUTNM = "soft_lutpair145" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[11]_i_5 
@@ -4582,7 +4582,7 @@ module ALU32Bit
         .I4(ALUControl[4]),
         .I5(\ALUResult_reg[11]_i_16_n_5 ),
         .O(\ALUResult_reg[11]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[11]_i_60 
@@ -4602,7 +4602,7 @@ module ALU32Bit
         .I4(B[10]),
         .I5(A[12]),
         .O(\ALUResult_reg[11]_i_61_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[11]_i_62 
@@ -4622,7 +4622,7 @@ module ALU32Bit
         .I4(B[10]),
         .I5(A[13]),
         .O(\ALUResult_reg[11]_i_63_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[11]_i_64 
@@ -4693,7 +4693,7 @@ module ALU32Bit
         .I1(A[4]),
         .I2(B[15]),
         .O(\ALUResult_reg[11]_i_71_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[11]_i_72 
@@ -4703,7 +4703,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[11]),
         .O(\ALUResult_reg[11]_i_72_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair127" *) 
+  (* SOFT_HLUTNM = "soft_lutpair131" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[11]_i_73 
@@ -4711,7 +4711,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[15]),
         .O(\ALUResult_reg[11]_i_73_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[11]_i_74 
@@ -4731,7 +4731,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[11]_i_75_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair76" *) 
+  (* SOFT_HLUTNM = "soft_lutpair80" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[11]_i_76 
@@ -4818,14 +4818,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[12]_i_23_n_5 ),
         .I5(\ALUResult_reg[13]_i_23_n_5 ),
         .O(ALUResult0__0[12]));
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[12]_i_14 
        (.I0(A[12]),
         .I1(B[12]),
         .O(ALUResult01_out[12]));
-  (* SOFT_HLUTNM = "soft_lutpair84" *) 
+  (* SOFT_HLUTNM = "soft_lutpair88" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[12]_i_15 
@@ -4854,7 +4854,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[12]),
         .O(\ALUResult_reg[12]_i_17_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair147" *) 
+  (* SOFT_HLUTNM = "soft_lutpair151" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[12]_i_18 
@@ -4901,7 +4901,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[13]_i_30_n_5 ),
         .O(\ALUResult_reg[12]_i_21_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair151" *) 
+  (* SOFT_HLUTNM = "soft_lutpair155" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[12]_i_22 
@@ -4909,7 +4909,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[12]_i_31_n_5 ),
         .O(\ALUResult_reg[12]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[12]_i_23 
@@ -4918,7 +4918,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[14]_i_32_n_5 ),
         .O(\ALUResult_reg[12]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[12]_i_24 
@@ -4967,7 +4967,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_22_n_5),
         .I5(\ALUResult_reg[31]_i_84_n_5 ),
         .O(\ALUResult_reg[12]_i_28_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair178" *) 
+  (* SOFT_HLUTNM = "soft_lutpair182" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[12]_i_29 
@@ -4984,7 +4984,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(data21[12]),
         .O(\ALUResult_reg[12]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair112" *) 
+  (* SOFT_HLUTNM = "soft_lutpair116" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[12]_i_30 
@@ -5062,7 +5062,7 @@ module ALU32Bit
         .I4(B[9]),
         .I5(A[4]),
         .O(\ALUResult_reg[12]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[12]_i_38 
@@ -5072,7 +5072,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[12]),
         .O(\ALUResult_reg[12]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[12]_i_39 
@@ -5101,7 +5101,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[12]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[12]_i_41 
@@ -5110,7 +5110,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[12]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair141" *) 
+  (* SOFT_HLUTNM = "soft_lutpair145" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[12]_i_5 
@@ -5216,14 +5216,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[13]_i_23_n_5 ),
         .I5(\ALUResult_reg[14]_i_23_n_5 ),
         .O(ALUResult0__0[13]));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[13]_i_14 
        (.I0(A[13]),
         .I1(B[13]),
         .O(ALUResult01_out[13]));
-  (* SOFT_HLUTNM = "soft_lutpair86" *) 
+  (* SOFT_HLUTNM = "soft_lutpair90" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[13]_i_15 
@@ -5252,7 +5252,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[13]),
         .O(\ALUResult_reg[13]_i_17_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair123" *) 
+  (* SOFT_HLUTNM = "soft_lutpair127" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[13]_i_18 
@@ -5299,7 +5299,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[14]_i_30_n_5 ),
         .O(\ALUResult_reg[13]_i_21_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair148" *) 
+  (* SOFT_HLUTNM = "soft_lutpair152" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[13]_i_22 
@@ -5307,7 +5307,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[13]_i_31_n_5 ),
         .O(\ALUResult_reg[13]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[13]_i_23 
@@ -5316,7 +5316,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[15]_i_49_n_5 ),
         .O(\ALUResult_reg[13]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair79" *) 
+  (* SOFT_HLUTNM = "soft_lutpair83" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[13]_i_24 
@@ -5365,7 +5365,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_22_n_5),
         .I5(\ALUResult_reg[31]_i_84_n_5 ),
         .O(\ALUResult_reg[13]_i_28_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair178" *) 
+  (* SOFT_HLUTNM = "soft_lutpair182" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[13]_i_29 
@@ -5382,7 +5382,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(data21[13]),
         .O(\ALUResult_reg[13]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair114" *) 
+  (* SOFT_HLUTNM = "soft_lutpair118" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[13]_i_30 
@@ -5470,7 +5470,7 @@ module ALU32Bit
         .I4(B[10]),
         .I5(A[4]),
         .O(\ALUResult_reg[13]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[13]_i_39 
@@ -5489,7 +5489,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[13]_i_12_n_5 ),
         .O(\ALUResult_reg[13]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[13]_i_40 
@@ -5509,7 +5509,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[13]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[13]_i_42 
@@ -5518,7 +5518,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[13]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair140" *) 
+  (* SOFT_HLUTNM = "soft_lutpair144" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[13]_i_5 
@@ -5624,14 +5624,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[14]_i_23_n_5 ),
         .I5(\ALUResult_reg[15]_i_34_n_5 ),
         .O(ALUResult0__0[14]));
-  (* SOFT_HLUTNM = "soft_lutpair87" *) 
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[14]_i_14 
        (.I0(A[14]),
         .I1(B[14]),
         .O(ALUResult01_out[14]));
-  (* SOFT_HLUTNM = "soft_lutpair87" *) 
+  (* SOFT_HLUTNM = "soft_lutpair91" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[14]_i_15 
@@ -5660,7 +5660,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[14]),
         .O(\ALUResult_reg[14]_i_17_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair144" *) 
+  (* SOFT_HLUTNM = "soft_lutpair148" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[14]_i_18 
@@ -5707,7 +5707,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[15]_i_42_n_5 ),
         .O(\ALUResult_reg[14]_i_21_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair107" *) 
+  (* SOFT_HLUTNM = "soft_lutpair111" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[14]_i_22 
@@ -5715,7 +5715,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[14]_i_31_n_5 ),
         .O(\ALUResult_reg[14]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair66" *) 
+  (* SOFT_HLUTNM = "soft_lutpair70" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[14]_i_23 
@@ -5724,7 +5724,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[16]_i_33_n_5 ),
         .O(\ALUResult_reg[14]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair78" *) 
+  (* SOFT_HLUTNM = "soft_lutpair82" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[14]_i_24 
@@ -5789,7 +5789,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(data21[14]),
         .O(\ALUResult_reg[14]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair112" *) 
+  (* SOFT_HLUTNM = "soft_lutpair116" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[14]_i_30 
@@ -5877,7 +5877,7 @@ module ALU32Bit
         .I4(B[11]),
         .I5(A[4]),
         .O(\ALUResult_reg[14]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair23" *) 
+  (* SOFT_HLUTNM = "soft_lutpair27" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[14]_i_39 
@@ -5896,7 +5896,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[14]_i_12_n_5 ),
         .O(\ALUResult_reg[14]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair25" *) 
+  (* SOFT_HLUTNM = "soft_lutpair29" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[14]_i_40 
@@ -5916,7 +5916,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[14]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair70" *) 
+  (* SOFT_HLUTNM = "soft_lutpair74" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[14]_i_42 
@@ -5925,7 +5925,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[14]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair140" *) 
+  (* SOFT_HLUTNM = "soft_lutpair144" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[14]_i_5 
@@ -6045,7 +6045,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[15]_i_34_n_5 ),
         .I5(\ALUResult_reg[16]_i_25_n_5 ),
         .O(ALUResult0__0[15]));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[15]_i_16 
@@ -6090,7 +6090,7 @@ module ALU32Bit
         .I4(ALUControl[3]),
         .I5(\ALUResult_reg[15]_i_8_n_5 ),
         .O(\ALUResult_reg[15]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair123" *) 
+  (* SOFT_HLUTNM = "soft_lutpair127" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[15]_i_20 
@@ -6191,7 +6191,7 @@ module ALU32Bit
        (.I0(A[12]),
         .I1(B[12]),
         .O(\ALUResult_reg[15]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair129" *) 
+  (* SOFT_HLUTNM = "soft_lutpair133" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[15]_i_33 
@@ -6199,7 +6199,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[15]_i_48_n_5 ),
         .O(\ALUResult_reg[15]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair68" *) 
+  (* SOFT_HLUTNM = "soft_lutpair72" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[15]_i_34 
@@ -6208,7 +6208,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[17]_i_34_n_5 ),
         .O(\ALUResult_reg[15]_i_34_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[15]_i_35 
@@ -6276,7 +6276,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_22_n_5),
         .I5(\ALUResult_reg[31]_i_84_n_5 ),
         .O(\ALUResult_reg[15]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair131" *) 
+  (* SOFT_HLUTNM = "soft_lutpair135" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[15]_i_41 
@@ -6284,7 +6284,7 @@ module ALU32Bit
         .I1(B[6]),
         .I2(\ALUResult_reg[15]_i_62_n_5 ),
         .O(data5[15]));
-  (* SOFT_HLUTNM = "soft_lutpair114" *) 
+  (* SOFT_HLUTNM = "soft_lutpair118" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[15]_i_42 
@@ -6292,7 +6292,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[15]_i_64_n_5 ),
         .O(\ALUResult_reg[15]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair129" *) 
+  (* SOFT_HLUTNM = "soft_lutpair133" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[15]_i_43 
@@ -6344,7 +6344,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[22]_i_43_n_5 ),
         .I5(\ALUResult_reg[15]_i_68_n_5 ),
         .O(\ALUResult_reg[15]_i_49_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair139" *) 
+  (* SOFT_HLUTNM = "soft_lutpair143" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[15]_i_5 
@@ -6372,7 +6372,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[15]_i_70_n_5 ),
         .O(\ALUResult_reg[15]_i_51_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_52 
@@ -6381,7 +6381,7 @@ module ALU32Bit
         .I2(A[12]),
         .I3(B[10]),
         .O(\ALUResult_reg[15]_i_52_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[15]_i_53 
@@ -6409,7 +6409,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[20]),
         .O(\ALUResult_reg[15]_i_55_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[15]_i_56 
@@ -6456,7 +6456,7 @@ module ALU32Bit
         .I4(ALUControl[2]),
         .I5(\ALUResult_reg[15]_i_17_n_5 ),
         .O(\ALUResult_reg[15]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT5 #(
     .INIT(32'hF0BBF088)) 
     \ALUResult_reg[15]_i_60 
@@ -6526,7 +6526,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[15]_i_76_n_5 ),
         .O(\ALUResult_reg[15]_i_66_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair40" *) 
+  (* SOFT_HLUTNM = "soft_lutpair44" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[15]_i_67 
@@ -6536,7 +6536,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[15]),
         .O(\ALUResult_reg[15]_i_67_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_68 
@@ -6545,7 +6545,7 @@ module ALU32Bit
         .I2(B[12]),
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .O(\ALUResult_reg[15]_i_68_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_69 
@@ -6564,7 +6564,7 @@ module ALU32Bit
         .I4(ALUControl[4]),
         .I5(\ALUResult_reg[15]_i_18_n_5 ),
         .O(\ALUResult_reg[15]_i_7_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair31" *) 
+  (* SOFT_HLUTNM = "soft_lutpair35" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[15]_i_70 
@@ -6593,7 +6593,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[19]),
         .O(\ALUResult_reg[15]_i_72_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_73 
@@ -6602,7 +6602,7 @@ module ALU32Bit
         .I2(B[12]),
         .I3(A[4]),
         .O(\ALUResult_reg[15]_i_73_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_74 
@@ -6611,7 +6611,7 @@ module ALU32Bit
         .I2(B[14]),
         .I3(A[4]),
         .O(\ALUResult_reg[15]_i_74_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_75 
@@ -6620,7 +6620,7 @@ module ALU32Bit
         .I2(B[13]),
         .I3(A[4]),
         .O(\ALUResult_reg[15]_i_75_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[15]_i_76 
@@ -6629,7 +6629,7 @@ module ALU32Bit
         .I2(B[15]),
         .I3(A[4]),
         .O(\ALUResult_reg[15]_i_76_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[15]_i_77 
@@ -6728,7 +6728,7 @@ module ALU32Bit
        (.I0(A[16]),
         .I1(B[16]),
         .O(ALUResult01_out[16]));
-  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[16]_i_16 
@@ -6757,7 +6757,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[16]),
         .O(\ALUResult_reg[16]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair144" *) 
+  (* SOFT_HLUTNM = "soft_lutpair148" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[16]_i_19 
@@ -6774,7 +6774,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[16]_i_6_n_5 ),
         .O(\ALUResult_reg[16]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair88" *) 
+  (* SOFT_HLUTNM = "soft_lutpair92" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[16]_i_20 
@@ -6810,7 +6810,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_58_n_5 ),
         .I5(B[30]),
         .O(\ALUResult_reg[16]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair107" *) 
+  (* SOFT_HLUTNM = "soft_lutpair111" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[16]_i_24 
@@ -6818,7 +6818,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[16]_i_32_n_5 ),
         .O(\ALUResult_reg[16]_i_24_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[16]_i_25 
@@ -6934,7 +6934,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[16]_i_42_n_5 ),
         .O(\ALUResult_reg[16]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[16]_i_36 
@@ -6962,7 +6962,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_104_n_5 ),
         .I5(\ALUResult_reg[31]_i_105_n_5 ),
         .O(\ALUResult_reg[16]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair32" *) 
+  (* SOFT_HLUTNM = "soft_lutpair36" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[16]_i_39 
@@ -6981,7 +6981,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(\ALUResult_reg[16]_i_11_n_5 ),
         .O(\ALUResult_reg[16]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[16]_i_40 
@@ -6990,7 +6990,7 @@ module ALU32Bit
         .I2(B[13]),
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .O(\ALUResult_reg[16]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[16]_i_41 
@@ -6999,7 +6999,7 @@ module ALU32Bit
         .I2(A[13]),
         .I3(\ALUResult_reg[31]_i_99_n_5 ),
         .O(\ALUResult_reg[16]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair35" *) 
+  (* SOFT_HLUTNM = "soft_lutpair39" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[16]_i_42 
@@ -7018,7 +7018,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[16]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[16]_i_44 
@@ -7042,7 +7042,7 @@ module ALU32Bit
         .I4(data23[16]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[16]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair139" *) 
+  (* SOFT_HLUTNM = "soft_lutpair143" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[16]_i_7 
@@ -7140,7 +7140,7 @@ module ALU32Bit
        (.I0(A[17]),
         .I1(B[17]),
         .O(ALUResult01_out[17]));
-  (* SOFT_HLUTNM = "soft_lutpair89" *) 
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[17]_i_16 
@@ -7169,7 +7169,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[17]),
         .O(\ALUResult_reg[17]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair124" *) 
+  (* SOFT_HLUTNM = "soft_lutpair128" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[17]_i_19 
@@ -7186,7 +7186,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[17]_i_6_n_5 ),
         .O(\ALUResult_reg[17]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair89" *) 
+  (* SOFT_HLUTNM = "soft_lutpair93" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[17]_i_20 
@@ -7222,7 +7222,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_58_n_5 ),
         .I5(B[30]),
         .O(\ALUResult_reg[17]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair143" *) 
+  (* SOFT_HLUTNM = "soft_lutpair147" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[17]_i_24 
@@ -7230,7 +7230,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[17]_i_33_n_5 ),
         .O(\ALUResult_reg[17]_i_24_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[17]_i_25 
@@ -7239,7 +7239,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[19]_i_45_n_5 ),
         .O(\ALUResult_reg[17]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair80" *) 
+  (* SOFT_HLUTNM = "soft_lutpair84" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[17]_i_26 
@@ -7356,7 +7356,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[17]_i_43_n_5 ),
         .O(\ALUResult_reg[17]_i_36_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[17]_i_37 
@@ -7394,7 +7394,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(\ALUResult_reg[17]_i_11_n_5 ),
         .O(\ALUResult_reg[17]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[17]_i_40 
@@ -7403,7 +7403,7 @@ module ALU32Bit
         .I2(B[17]),
         .I3(A[4]),
         .O(\ALUResult_reg[17]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[17]_i_41 
@@ -7412,7 +7412,7 @@ module ALU32Bit
         .I2(B[14]),
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .O(\ALUResult_reg[17]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[17]_i_42 
@@ -7421,7 +7421,7 @@ module ALU32Bit
         .I2(A[14]),
         .I3(\ALUResult_reg[31]_i_99_n_5 ),
         .O(\ALUResult_reg[17]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair36" *) 
+  (* SOFT_HLUTNM = "soft_lutpair40" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[17]_i_43 
@@ -7440,7 +7440,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[17]_i_44_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[17]_i_45 
@@ -7464,7 +7464,7 @@ module ALU32Bit
         .I4(data23[17]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[17]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair138" *) 
+  (* SOFT_HLUTNM = "soft_lutpair142" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[17]_i_7 
@@ -7562,7 +7562,7 @@ module ALU32Bit
        (.I0(A[18]),
         .I1(B[18]),
         .O(ALUResult01_out[18]));
-  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[18]_i_16 
@@ -7591,7 +7591,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[18]),
         .O(\ALUResult_reg[18]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair118" *) 
+  (* SOFT_HLUTNM = "soft_lutpair122" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[18]_i_19 
@@ -7608,7 +7608,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[18]_i_6_n_5 ),
         .O(\ALUResult_reg[18]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair90" *) 
+  (* SOFT_HLUTNM = "soft_lutpair94" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[18]_i_20 
@@ -7644,7 +7644,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_58_n_5 ),
         .I5(B[30]),
         .O(\ALUResult_reg[18]_i_23_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair105" *) 
+  (* SOFT_HLUTNM = "soft_lutpair109" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[18]_i_24 
@@ -7652,7 +7652,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[18]_i_33_n_5 ),
         .O(\ALUResult_reg[18]_i_24_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair67" *) 
+  (* SOFT_HLUTNM = "soft_lutpair71" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[18]_i_25 
@@ -7661,7 +7661,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[20]_i_34_n_5 ),
         .O(\ALUResult_reg[18]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[18]_i_26 
@@ -7778,7 +7778,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[18]_i_43_n_5 ),
         .O(\ALUResult_reg[18]_i_36_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[18]_i_37 
@@ -7816,7 +7816,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(\ALUResult_reg[18]_i_11_n_5 ),
         .O(\ALUResult_reg[18]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair16" *) 
+  (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[18]_i_40 
@@ -7825,7 +7825,7 @@ module ALU32Bit
         .I2(B[18]),
         .I3(A[4]),
         .O(\ALUResult_reg[18]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[18]_i_41 
@@ -7834,7 +7834,7 @@ module ALU32Bit
         .I2(B[15]),
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .O(\ALUResult_reg[18]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[18]_i_42 
@@ -7843,7 +7843,7 @@ module ALU32Bit
         .I2(A[15]),
         .I3(\ALUResult_reg[31]_i_99_n_5 ),
         .O(\ALUResult_reg[18]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair17" *) 
+  (* SOFT_HLUTNM = "soft_lutpair21" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[18]_i_43 
@@ -7862,7 +7862,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[18]_i_44_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[18]_i_45 
@@ -7886,7 +7886,7 @@ module ALU32Bit
         .I4(data23[18]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[18]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair138" *) 
+  (* SOFT_HLUTNM = "soft_lutpair142" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[18]_i_7 
@@ -7992,14 +7992,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[19]_i_36_n_5 ),
         .I5(\ALUResult_reg[20]_i_25_n_5 ),
         .O(ALUResult0__0[19]));
-  (* SOFT_HLUTNM = "soft_lutpair188" *) 
+  (* SOFT_HLUTNM = "soft_lutpair192" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[19]_i_17 
        (.I0(A[19]),
         .I1(B[19]),
         .O(ALUResult01_out[19]));
-  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[19]_i_18 
@@ -8037,7 +8037,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[19]),
         .O(\ALUResult_reg[19]_i_20_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair124" *) 
+  (* SOFT_HLUTNM = "soft_lutpair128" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[19]_i_21 
@@ -8045,7 +8045,7 @@ module ALU32Bit
         .I1(B[7]),
         .I2(\ALUResult_reg[21]_i_28_n_5 ),
         .O(\ALUResult_reg[19]_i_21_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair91" *) 
+  (* SOFT_HLUTNM = "soft_lutpair95" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[19]_i_22 
@@ -8139,7 +8139,7 @@ module ALU32Bit
        (.I0(A[16]),
         .I1(B[16]),
         .O(\ALUResult_reg[19]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair105" *) 
+  (* SOFT_HLUTNM = "soft_lutpair109" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[19]_i_34 
@@ -8147,7 +8147,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[20]_i_33_n_5 ),
         .O(\ALUResult_reg[19]_i_34_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair143" *) 
+  (* SOFT_HLUTNM = "soft_lutpair147" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[19]_i_35 
@@ -8155,7 +8155,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(\ALUResult_reg[19]_i_44_n_5 ),
         .O(\ALUResult_reg[19]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair69" *) 
+  (* SOFT_HLUTNM = "soft_lutpair73" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[19]_i_36 
@@ -8202,7 +8202,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(\ALUResult_reg[19]_i_11_n_5 ),
         .O(\ALUResult_reg[19]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair106" *) 
+  (* SOFT_HLUTNM = "soft_lutpair110" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[19]_i_40 
@@ -8220,7 +8220,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[21]_i_38_n_5 ),
         .I5(A[0]),
         .O(data12[19]));
-  (* SOFT_HLUTNM = "soft_lutpair150" *) 
+  (* SOFT_HLUTNM = "soft_lutpair154" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[19]_i_42 
@@ -8323,7 +8323,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_104_n_5 ),
         .I5(\ALUResult_reg[31]_i_105_n_5 ),
         .O(\ALUResult_reg[19]_i_51_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair21" *) 
+  (* SOFT_HLUTNM = "soft_lutpair25" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[19]_i_52 
@@ -8332,7 +8332,7 @@ module ALU32Bit
         .I2(B[19]),
         .I3(A[4]),
         .O(\ALUResult_reg[19]_i_52_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair22" *) 
+  (* SOFT_HLUTNM = "soft_lutpair26" *) 
   LUT4 #(
     .INIT(16'h00B8)) 
     \ALUResult_reg[19]_i_53 
@@ -8351,7 +8351,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[19]_i_54_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[19]_i_55 
@@ -8370,7 +8370,7 @@ module ALU32Bit
         .I4(data23[19]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[19]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair137" *) 
+  (* SOFT_HLUTNM = "soft_lutpair141" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[19]_i_7 
@@ -8471,7 +8471,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(ALUResult03_out[1]),
         .O(\ALUResult_reg[1]_i_15_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT5 #(
     .INIT(32'hB8FFB800)) 
     \ALUResult_reg[1]_i_16 
@@ -8500,7 +8500,7 @@ module ALU32Bit
         .I3(ALUControl[3]),
         .I4(data12[1]),
         .O(\ALUResult_reg[1]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair171" *) 
+  (* SOFT_HLUTNM = "soft_lutpair175" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[1]_i_19 
@@ -8513,7 +8513,7 @@ module ALU32Bit
         .I1(\ALUResult_reg[1]_i_5_n_5 ),
         .O(\ALUResult_reg[1]_i_2_n_5 ),
         .S(ALUControl[4]));
-  (* SOFT_HLUTNM = "soft_lutpair20" *) 
+  (* SOFT_HLUTNM = "soft_lutpair24" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[1]_i_20 
@@ -8521,7 +8521,7 @@ module ALU32Bit
         .I1(A[0]),
         .I2(\ALUResult_reg[1]_i_23_n_5 ),
         .O(ALUResult10_in[1]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \ALUResult_reg[1]_i_21 
@@ -8569,7 +8569,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[5]_i_33_n_5 ),
         .I5(\ALUResult_reg[1]_i_31_n_5 ),
         .O(\ALUResult_reg[1]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair110" *) 
+  (* SOFT_HLUTNM = "soft_lutpair114" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[1]_i_26 
@@ -8642,7 +8642,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[1]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[1]_i_33 
@@ -8778,7 +8778,7 @@ module ALU32Bit
        (.I0(A[20]),
         .I1(B[20]),
         .O(ALUResult01_out[20]));
-  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[20]_i_16 
@@ -8807,7 +8807,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[20]),
         .O(\ALUResult_reg[20]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair118" *) 
+  (* SOFT_HLUTNM = "soft_lutpair122" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[20]_i_19 
@@ -8824,7 +8824,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[20]_i_6_n_5 ),
         .O(\ALUResult_reg[20]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair92" *) 
+  (* SOFT_HLUTNM = "soft_lutpair96" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[20]_i_20 
@@ -8877,7 +8877,7 @@ module ALU32Bit
         .I2(A[1]),
         .I3(\ALUResult_reg[22]_i_35_n_5 ),
         .O(\ALUResult_reg[20]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair54" *) 
+  (* SOFT_HLUTNM = "soft_lutpair58" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[20]_i_26 
@@ -8906,7 +8906,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[24]_i_27_n_5 ),
         .O(\ALUResult_reg[20]_i_28_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair121" *) 
+  (* SOFT_HLUTNM = "soft_lutpair125" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[20]_i_29 
@@ -8934,7 +8934,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[21]_i_39_n_5 ),
         .I5(A[0]),
         .O(data12[20]));
-  (* SOFT_HLUTNM = "soft_lutpair151" *) 
+  (* SOFT_HLUTNM = "soft_lutpair155" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[20]_i_31 
@@ -9052,7 +9052,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[20]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[20]_i_42 
@@ -9076,7 +9076,7 @@ module ALU32Bit
         .I4(data23[20]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[20]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair137" *) 
+  (* SOFT_HLUTNM = "soft_lutpair141" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[20]_i_7 
@@ -9173,7 +9173,7 @@ module ALU32Bit
        (.I0(A[21]),
         .I1(B[21]),
         .O(ALUResult01_out[21]));
-  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  (* SOFT_HLUTNM = "soft_lutpair97" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[21]_i_16 
@@ -9220,7 +9220,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[21]_i_6_n_5 ),
         .O(\ALUResult_reg[21]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair93" *) 
+  (* SOFT_HLUTNM = "soft_lutpair97" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[21]_i_20 
@@ -9305,7 +9305,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[25]_i_27_n_5 ),
         .O(\ALUResult_reg[21]_i_28_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair106" *) 
+  (* SOFT_HLUTNM = "soft_lutpair110" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[21]_i_29 
@@ -9333,7 +9333,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[21]_i_39_n_5 ),
         .I5(A[0]),
         .O(data12[21]));
-  (* SOFT_HLUTNM = "soft_lutpair150" *) 
+  (* SOFT_HLUTNM = "soft_lutpair154" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[21]_i_31 
@@ -9411,7 +9411,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[25]_i_40_n_5 ),
         .O(\ALUResult_reg[21]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair116" *) 
+  (* SOFT_HLUTNM = "soft_lutpair120" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[21]_i_39 
@@ -9459,7 +9459,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[21]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[21]_i_43 
@@ -9483,7 +9483,7 @@ module ALU32Bit
         .I4(data23[21]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[21]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair136" *) 
+  (* SOFT_HLUTNM = "soft_lutpair140" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[21]_i_7 
@@ -9580,7 +9580,7 @@ module ALU32Bit
        (.I0(A[22]),
         .I1(B[22]),
         .O(ALUResult01_out[22]));
-  (* SOFT_HLUTNM = "soft_lutpair98" *) 
+  (* SOFT_HLUTNM = "soft_lutpair102" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[22]_i_16 
@@ -9627,7 +9627,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[22]_i_6_n_5 ),
         .O(\ALUResult_reg[22]_i_2_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair98" *) 
+  (* SOFT_HLUTNM = "soft_lutpair102" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[22]_i_20 
@@ -9712,7 +9712,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[26]_i_27_n_5 ),
         .O(\ALUResult_reg[22]_i_28_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair120" *) 
+  (* SOFT_HLUTNM = "soft_lutpair124" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[22]_i_29 
@@ -9730,7 +9730,7 @@ module ALU32Bit
         .I4(ALUControl[3]),
         .I5(\ALUResult_reg[22]_i_10_n_5 ),
         .O(\ALUResult_reg[22]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair121" *) 
+  (* SOFT_HLUTNM = "soft_lutpair125" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[22]_i_30 
@@ -9747,7 +9747,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[23]_i_44_n_5 ),
         .O(data12[22]));
-  (* SOFT_HLUTNM = "soft_lutpair145" *) 
+  (* SOFT_HLUTNM = "soft_lutpair149" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[22]_i_32 
@@ -9862,7 +9862,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_104_n_5 ),
         .I5(\ALUResult_reg[31]_i_105_n_5 ),
         .O(\ALUResult_reg[22]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h1E)) 
     \ALUResult_reg[22]_i_43 
@@ -9870,7 +9870,7 @@ module ALU32Bit
         .I1(A[1]),
         .I2(A[2]),
         .O(\ALUResult_reg[22]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT3 #(
     .INIT(8'h1E)) 
     \ALUResult_reg[22]_i_44 
@@ -9888,7 +9888,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[22]_i_45_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[22]_i_46 
@@ -9912,7 +9912,7 @@ module ALU32Bit
         .I4(data23[22]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[22]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair136" *) 
+  (* SOFT_HLUTNM = "soft_lutpair140" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[22]_i_7 
@@ -10010,7 +10010,7 @@ module ALU32Bit
        (.I0(A[23]),
         .I1(B[23]),
         .O(ALUResult01_out[23]));
-  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  (* SOFT_HLUTNM = "soft_lutpair98" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[23]_i_16 
@@ -10066,7 +10066,7 @@ module ALU32Bit
         .DI(A[23:20]),
         .O(data21[23:20]),
         .S({\ALUResult_reg[23]_i_37_n_5 ,\ALUResult_reg[23]_i_38_n_5 ,\ALUResult_reg[23]_i_39_n_5 ,\ALUResult_reg[23]_i_40_n_5 }));
-  (* SOFT_HLUTNM = "soft_lutpair94" *) 
+  (* SOFT_HLUTNM = "soft_lutpair98" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[23]_i_21 
@@ -10305,7 +10305,7 @@ module ALU32Bit
        (.I0(A[23]),
         .I1(B[23]),
         .O(\ALUResult_reg[23]_i_49_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair135" *) 
+  (* SOFT_HLUTNM = "soft_lutpair139" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[23]_i_5 
@@ -10452,7 +10452,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[23]_i_65_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[23]_i_66 
@@ -10554,7 +10554,7 @@ module ALU32Bit
        (.I0(A[24]),
         .I1(B[24]),
         .O(ALUResult01_out[24]));
-  (* SOFT_HLUTNM = "soft_lutpair95" *) 
+  (* SOFT_HLUTNM = "soft_lutpair99" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[24]_i_15 
@@ -10593,7 +10593,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[30]_i_28_n_5 ),
         .O(\ALUResult_reg[24]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair95" *) 
+  (* SOFT_HLUTNM = "soft_lutpair99" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[24]_i_19 
@@ -10687,7 +10687,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[17]),
         .O(\ALUResult_reg[24]_i_27_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair145" *) 
+  (* SOFT_HLUTNM = "soft_lutpair149" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[24]_i_28 
@@ -10838,7 +10838,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[24]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair63" *) 
+  (* SOFT_HLUTNM = "soft_lutpair67" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[24]_i_42 
@@ -10847,7 +10847,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[24]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair135" *) 
+  (* SOFT_HLUTNM = "soft_lutpair139" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[24]_i_5 
@@ -10953,14 +10953,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[25]_i_24_n_5 ),
         .I5(\ALUResult_reg[26]_i_24_n_5 ),
         .O(ALUResult0__0[25]));
-  (* SOFT_HLUTNM = "soft_lutpair125" *) 
+  (* SOFT_HLUTNM = "soft_lutpair129" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[25]_i_14 
        (.I0(A[25]),
         .I1(B[25]),
         .O(ALUResult01_out[25]));
-  (* SOFT_HLUTNM = "soft_lutpair96" *) 
+  (* SOFT_HLUTNM = "soft_lutpair100" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[25]_i_15 
@@ -10999,7 +10999,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[31]_i_46_n_5 ),
         .O(\ALUResult_reg[25]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair96" *) 
+  (* SOFT_HLUTNM = "soft_lutpair100" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[25]_i_19 
@@ -11045,7 +11045,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[26]_i_31_n_5 ),
         .O(\ALUResult_reg[25]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair148" *) 
+  (* SOFT_HLUTNM = "soft_lutpair152" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[25]_i_23 
@@ -11091,7 +11091,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[18]),
         .O(\ALUResult_reg[25]_i_27_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair122" *) 
+  (* SOFT_HLUTNM = "soft_lutpair126" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[25]_i_28 
@@ -11148,7 +11148,7 @@ module ALU32Bit
         .I3(B[25]),
         .I4(A[3]),
         .O(\ALUResult_reg[25]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT5 #(
     .INIT(32'hFEAB02A8)) 
     \ALUResult_reg[25]_i_33 
@@ -11158,7 +11158,7 @@ module ALU32Bit
         .I3(A[2]),
         .I4(\ALUResult_reg[29]_i_38_n_5 ),
         .O(\ALUResult_reg[25]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT5 #(
     .INIT(32'hFEAB02A8)) 
     \ALUResult_reg[25]_i_34 
@@ -11168,7 +11168,7 @@ module ALU32Bit
         .I3(B[8]),
         .I4(\ALUResult_reg[29]_i_39_n_5 ),
         .O(\ALUResult_reg[25]_i_34_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT5 #(
     .INIT(32'h00000B08)) 
     \ALUResult_reg[25]_i_35 
@@ -11178,7 +11178,7 @@ module ALU32Bit
         .I3(A[27]),
         .I4(B[9]),
         .O(\ALUResult_reg[25]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT5 #(
     .INIT(32'h00000B08)) 
     \ALUResult_reg[25]_i_36 
@@ -11264,7 +11264,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[25]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair62" *) 
+  (* SOFT_HLUTNM = "soft_lutpair66" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[25]_i_44 
@@ -11273,7 +11273,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[25]_i_44_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair134" *) 
+  (* SOFT_HLUTNM = "soft_lutpair138" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[25]_i_5 
@@ -11379,14 +11379,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[26]_i_24_n_5 ),
         .I5(\ALUResult_reg[27]_i_32_n_5 ),
         .O(ALUResult0__0[26]));
-  (* SOFT_HLUTNM = "soft_lutpair126" *) 
+  (* SOFT_HLUTNM = "soft_lutpair130" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[26]_i_14 
        (.I0(A[26]),
         .I1(B[26]),
         .O(ALUResult01_out[26]));
-  (* SOFT_HLUTNM = "soft_lutpair97" *) 
+  (* SOFT_HLUTNM = "soft_lutpair101" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[26]_i_15 
@@ -11425,7 +11425,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[31]_i_42_n_5 ),
         .O(\ALUResult_reg[26]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair97" *) 
+  (* SOFT_HLUTNM = "soft_lutpair101" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[26]_i_19 
@@ -11501,7 +11501,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[28]_i_35_n_5 ),
         .I5(\ALUResult_reg[26]_i_34_n_5 ),
         .O(\ALUResult_reg[26]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair130" *) 
+  (* SOFT_HLUTNM = "soft_lutpair134" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[26]_i_26 
@@ -11518,7 +11518,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[19]),
         .O(\ALUResult_reg[26]_i_27_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair115" *) 
+  (* SOFT_HLUTNM = "soft_lutpair119" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[26]_i_28 
@@ -11679,7 +11679,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[26]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair61" *) 
+  (* SOFT_HLUTNM = "soft_lutpair65" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[26]_i_43 
@@ -11688,7 +11688,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[26]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair134" *) 
+  (* SOFT_HLUTNM = "soft_lutpair138" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[26]_i_5 
@@ -11801,14 +11801,14 @@ module ALU32Bit
         .I4(\ALUResult_reg[27]_i_32_n_5 ),
         .I5(\ALUResult_reg[28]_i_24_n_5 ),
         .O(ALUResult0__0[27]));
-  (* SOFT_HLUTNM = "soft_lutpair128" *) 
+  (* SOFT_HLUTNM = "soft_lutpair132" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[27]_i_15 
        (.I0(A[27]),
         .I1(B[27]),
         .O(ALUResult01_out[27]));
-  (* SOFT_HLUTNM = "soft_lutpair99" *) 
+  (* SOFT_HLUTNM = "soft_lutpair103" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[27]_i_16 
@@ -11864,7 +11864,7 @@ module ALU32Bit
         .DI(A[27:24]),
         .O(data21[27:24]),
         .S({\ALUResult_reg[27]_i_36_n_5 ,\ALUResult_reg[27]_i_37_n_5 ,\ALUResult_reg[27]_i_38_n_5 ,\ALUResult_reg[27]_i_39_n_5 }));
-  (* SOFT_HLUTNM = "soft_lutpair99" *) 
+  (* SOFT_HLUTNM = "soft_lutpair103" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[27]_i_21 
@@ -11978,7 +11978,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[27]_i_56_n_5 ),
         .I5(\ALUResult_reg[29]_i_33_n_5 ),
         .O(\ALUResult_reg[27]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair130" *) 
+  (* SOFT_HLUTNM = "soft_lutpair134" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[27]_i_34 
@@ -11986,7 +11986,7 @@ module ALU32Bit
         .I1(B[6]),
         .I2(\ALUResult_reg[27]_i_57_n_5 ),
         .O(ALUResult12_in[27]));
-  (* SOFT_HLUTNM = "soft_lutpair52" *) 
+  (* SOFT_HLUTNM = "soft_lutpair56" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[27]_i_35 
@@ -12029,7 +12029,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[27]_i_12_n_5 ),
         .O(\ALUResult_reg[27]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair122" *) 
+  (* SOFT_HLUTNM = "soft_lutpair126" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[27]_i_40 
@@ -12103,7 +12103,7 @@ module ALU32Bit
        (.I0(A[26]),
         .I1(B[26]),
         .O(\ALUResult_reg[27]_i_49_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair133" *) 
+  (* SOFT_HLUTNM = "soft_lutpair137" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[27]_i_5 
@@ -12123,7 +12123,7 @@ module ALU32Bit
        (.I0(A[24]),
         .I1(B[24]),
         .O(\ALUResult_reg[27]_i_51_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT5 #(
     .INIT(32'h00000B08)) 
     \ALUResult_reg[27]_i_52 
@@ -12133,7 +12133,7 @@ module ALU32Bit
         .I3(B[27]),
         .I4(A[3]),
         .O(\ALUResult_reg[27]_i_52_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+  (* SOFT_HLUTNM = "soft_lutpair18" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[27]_i_53 
@@ -12153,7 +12153,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_95_n_5 ),
         .I5(B[24]),
         .O(\ALUResult_reg[27]_i_54_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair41" *) 
+  (* SOFT_HLUTNM = "soft_lutpair45" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[27]_i_55 
@@ -12192,7 +12192,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[29]),
         .O(\ALUResult_reg[27]_i_58_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair30" *) 
+  (* SOFT_HLUTNM = "soft_lutpair34" *) 
   LUT5 #(
     .INIT(32'hF0F1F0E0)) 
     \ALUResult_reg[27]_i_59 
@@ -12231,7 +12231,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[29]),
         .O(\ALUResult_reg[27]_i_61_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair33" *) 
+  (* SOFT_HLUTNM = "soft_lutpair37" *) 
   LUT5 #(
     .INIT(32'hF0F1F0E0)) 
     \ALUResult_reg[27]_i_62 
@@ -12241,7 +12241,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[27]),
         .O(\ALUResult_reg[27]_i_62_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair42" *) 
+  (* SOFT_HLUTNM = "soft_lutpair46" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[27]_i_63 
@@ -12261,7 +12261,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[27]_i_64_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair60" *) 
+  (* SOFT_HLUTNM = "soft_lutpair64" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[27]_i_65 
@@ -12364,7 +12364,7 @@ module ALU32Bit
        (.I0(A[28]),
         .I1(B[28]),
         .O(ALUResult01_out[28]));
-  (* SOFT_HLUTNM = "soft_lutpair100" *) 
+  (* SOFT_HLUTNM = "soft_lutpair104" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[28]_i_15 
@@ -12403,7 +12403,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[31]_i_44_n_5 ),
         .O(\ALUResult_reg[28]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair100" *) 
+  (* SOFT_HLUTNM = "soft_lutpair104" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[28]_i_19 
@@ -12479,7 +12479,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[28]_i_35_n_5 ),
         .I5(\ALUResult_reg[30]_i_34_n_5 ),
         .O(\ALUResult_reg[28]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair131" *) 
+  (* SOFT_HLUTNM = "soft_lutpair135" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[28]_i_26 
@@ -12487,7 +12487,7 @@ module ALU32Bit
         .I1(B[6]),
         .I2(\ALUResult_reg[28]_i_36_n_5 ),
         .O(ALUResult12_in[28]));
-  (* SOFT_HLUTNM = "soft_lutpair53" *) 
+  (* SOFT_HLUTNM = "soft_lutpair57" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[28]_i_27 
@@ -12497,7 +12497,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[21]),
         .O(\ALUResult_reg[28]_i_27_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair115" *) 
+  (* SOFT_HLUTNM = "soft_lutpair119" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[28]_i_28 
@@ -12544,7 +12544,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[31]_i_91_n_5 ),
         .O(\ALUResult_reg[28]_i_31_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[28]_i_32 
@@ -12564,7 +12564,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_95_n_5 ),
         .I5(B[25]),
         .O(\ALUResult_reg[28]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair26" *) 
+  (* SOFT_HLUTNM = "soft_lutpair30" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[28]_i_34 
@@ -12649,7 +12649,7 @@ module ALU32Bit
         .I3(B[10]),
         .I4(A[28]),
         .O(\ALUResult_reg[28]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair43" *) 
+  (* SOFT_HLUTNM = "soft_lutpair47" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[28]_i_42 
@@ -12669,7 +12669,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[28]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair59" *) 
+  (* SOFT_HLUTNM = "soft_lutpair63" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[28]_i_44 
@@ -12678,7 +12678,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[28]_i_44_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair133" *) 
+  (* SOFT_HLUTNM = "soft_lutpair137" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[28]_i_5 
@@ -12790,7 +12790,7 @@ module ALU32Bit
        (.I0(A[29]),
         .I1(B[29]),
         .O(ALUResult01_out[29]));
-  (* SOFT_HLUTNM = "soft_lutpair101" *) 
+  (* SOFT_HLUTNM = "soft_lutpair105" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[29]_i_15 
@@ -12829,7 +12829,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_47_n_5 ),
         .I5(B[7]),
         .O(\ALUResult_reg[29]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair101" *) 
+  (* SOFT_HLUTNM = "soft_lutpair105" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[29]_i_19 
@@ -12901,7 +12901,7 @@ module ALU32Bit
         .I2(B[7]),
         .I3(\ALUResult_reg[31]_i_78_n_5 ),
         .O(\ALUResult_reg[29]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair108" *) 
+  (* SOFT_HLUTNM = "soft_lutpair112" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[29]_i_26 
@@ -12909,7 +12909,7 @@ module ALU32Bit
         .I1(B[6]),
         .I2(\ALUResult_reg[29]_i_34_n_5 ),
         .O(ALUResult12_in[29]));
-  (* SOFT_HLUTNM = "soft_lutpair50" *) 
+  (* SOFT_HLUTNM = "soft_lutpair54" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[29]_i_27 
@@ -12949,7 +12949,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(\ALUResult_reg[29]_i_9_n_5 ),
         .O(\ALUResult_reg[29]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair119" *) 
+  (* SOFT_HLUTNM = "soft_lutpair123" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[29]_i_30 
@@ -12976,7 +12976,7 @@ module ALU32Bit
         .I3(A[2]),
         .I4(\ALUResult_reg[31]_i_70_n_5 ),
         .O(\ALUResult_reg[29]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair27" *) 
+  (* SOFT_HLUTNM = "soft_lutpair31" *) 
   LUT5 #(
     .INIT(32'hFEAB02A8)) 
     \ALUResult_reg[29]_i_33 
@@ -13016,7 +13016,7 @@ module ALU32Bit
         .I4(B[10]),
         .I5(A[29]),
         .O(\ALUResult_reg[29]_i_36_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair45" *) 
+  (* SOFT_HLUTNM = "soft_lutpair49" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[29]_i_37 
@@ -13026,7 +13026,7 @@ module ALU32Bit
         .I3(A[4]),
         .I4(B[22]),
         .O(\ALUResult_reg[29]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[29]_i_38 
@@ -13036,7 +13036,7 @@ module ALU32Bit
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .I4(B[22]),
         .O(\ALUResult_reg[29]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair24" *) 
+  (* SOFT_HLUTNM = "soft_lutpair28" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[29]_i_39 
@@ -13065,7 +13065,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[29]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair58" *) 
+  (* SOFT_HLUTNM = "soft_lutpair62" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[29]_i_41 
@@ -13074,7 +13074,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[29]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair132" *) 
+  (* SOFT_HLUTNM = "soft_lutpair136" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[29]_i_5 
@@ -13223,7 +13223,7 @@ module ALU32Bit
         .I3(ALUControl[3]),
         .I4(data12[2]),
         .O(\ALUResult_reg[2]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair172" *) 
+  (* SOFT_HLUTNM = "soft_lutpair176" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[2]_i_19 
@@ -13245,7 +13245,7 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[2]_i_28_n_5 ),
         .O(ALUResult10_in[2]));
-  (* SOFT_HLUTNM = "soft_lutpair64" *) 
+  (* SOFT_HLUTNM = "soft_lutpair68" *) 
   LUT4 #(
     .INIT(16'h00E2)) 
     \ALUResult_reg[2]_i_21 
@@ -13294,7 +13294,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[4]_i_32_n_5 ),
         .I5(B[7]),
         .O(\ALUResult_reg[2]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair110" *) 
+  (* SOFT_HLUTNM = "soft_lutpair114" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[2]_i_26 
@@ -13414,7 +13414,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[2]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[2]_i_38 
@@ -13422,7 +13422,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[8]),
         .O(\ALUResult_reg[2]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[2]_i_39 
@@ -13439,7 +13439,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[2]_i_10_n_5 ),
         .O(\ALUResult_reg[2]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair71" *) 
+  (* SOFT_HLUTNM = "soft_lutpair75" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[2]_i_40 
@@ -13561,7 +13561,7 @@ module ALU32Bit
        (.I0(A[30]),
         .I1(B[30]),
         .O(ALUResult01_out[30]));
-  (* SOFT_HLUTNM = "soft_lutpair102" *) 
+  (* SOFT_HLUTNM = "soft_lutpair106" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[30]_i_15 
@@ -13600,7 +13600,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_43_n_5 ),
         .I5(B[7]),
         .O(\ALUResult_reg[30]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair102" *) 
+  (* SOFT_HLUTNM = "soft_lutpair106" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[30]_i_19 
@@ -13680,7 +13680,7 @@ module ALU32Bit
         .I2(B[7]),
         .I3(\ALUResult_reg[31]_i_75_n_5 ),
         .O(\ALUResult_reg[30]_i_26_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair108" *) 
+  (* SOFT_HLUTNM = "soft_lutpair112" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[30]_i_27 
@@ -13688,7 +13688,7 @@ module ALU32Bit
         .I1(B[6]),
         .I2(\ALUResult_reg[30]_i_36_n_5 ),
         .O(ALUResult12_in[30]));
-  (* SOFT_HLUTNM = "soft_lutpair51" *) 
+  (* SOFT_HLUTNM = "soft_lutpair55" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[30]_i_28 
@@ -13728,7 +13728,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_22_n_5),
         .I5(\ALUResult_reg[31]_i_84_n_5 ),
         .O(\ALUResult_reg[30]_i_30_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair119" *) 
+  (* SOFT_HLUTNM = "soft_lutpair123" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[30]_i_31 
@@ -13746,7 +13746,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_90_n_5 ),
         .I5(A[1]),
         .O(\ALUResult_reg[30]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT5 #(
     .INIT(32'hFEAB02A8)) 
     \ALUResult_reg[30]_i_33 
@@ -13803,7 +13803,7 @@ module ALU32Bit
         .I4(B[10]),
         .I5(A[30]),
         .O(\ALUResult_reg[30]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair47" *) 
+  (* SOFT_HLUTNM = "soft_lutpair51" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[30]_i_39 
@@ -13822,7 +13822,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[30]_i_12_n_5 ),
         .O(\ALUResult_reg[30]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+  (* SOFT_HLUTNM = "soft_lutpair15" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[30]_i_40 
@@ -13832,7 +13832,7 @@ module ALU32Bit
         .I3(\ALUResult_reg[31]_i_95_n_5 ),
         .I4(B[23]),
         .O(\ALUResult_reg[30]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair19" *) 
+  (* SOFT_HLUTNM = "soft_lutpair23" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[30]_i_41 
@@ -13852,7 +13852,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[30]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair57" *) 
+  (* SOFT_HLUTNM = "soft_lutpair61" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[30]_i_43 
@@ -13861,7 +13861,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[30]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair132" *) 
+  (* SOFT_HLUTNM = "soft_lutpair136" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[30]_i_5 
@@ -13991,7 +13991,7 @@ module ALU32Bit
         .I1(B[4]),
         .I2(B[3]),
         .O(\ALUResult_reg[31]_i_106_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair56" *) 
+  (* SOFT_HLUTNM = "soft_lutpair60" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[31]_i_107 
@@ -14046,14 +14046,14 @@ module ALU32Bit
         .I3(A[0]),
         .I4(\ALUResult_reg[31]_i_37_n_5 ),
         .O(ALUResult0__0[31]));
-  (* SOFT_HLUTNM = "soft_lutpair103" *) 
+  (* SOFT_HLUTNM = "soft_lutpair107" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \ALUResult_reg[31]_i_16 
        (.I0(A[31]),
         .I1(B[31]),
         .O(ALUResult01_out[31]));
-  (* SOFT_HLUTNM = "soft_lutpair103" *) 
+  (* SOFT_HLUTNM = "soft_lutpair107" *) 
   LUT4 #(
     .INIT(16'h6F60)) 
     \ALUResult_reg[31]_i_17 
@@ -14132,7 +14132,7 @@ module ALU32Bit
         .DI({1'b0,A[30:28]}),
         .O(data21[31:28]),
         .S({\ALUResult_reg[31]_i_50_n_5 ,\ALUResult_reg[31]_i_51_n_5 ,\ALUResult_reg[31]_i_52_n_5 ,\ALUResult_reg[31]_i_53_n_5 }));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT2 #(
     .INIT(4'hE)) 
     \ALUResult_reg[31]_i_25 
@@ -14452,7 +14452,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_87_n_5 ),
         .I5(\ALUResult_reg[31]_i_88_n_5 ),
         .O(\ALUResult_reg[31]_i_59_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[31]_i_6 
@@ -14586,7 +14586,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[31]_i_95_n_5 ),
         .I5(B[31]),
         .O(\ALUResult_reg[31]_i_74_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT5 #(
     .INIT(32'hFEAB02A8)) 
     \ALUResult_reg[31]_i_75 
@@ -14984,7 +14984,7 @@ module ALU32Bit
        (.I0(A[0]),
         .I1(B[0]),
         .O(\ALUResult_reg[3]_i_24_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair172" *) 
+  (* SOFT_HLUTNM = "soft_lutpair176" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[3]_i_25 
@@ -15077,7 +15077,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[5]_i_33_n_5 ),
         .I5(B[7]),
         .O(\ALUResult_reg[3]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair109" *) 
+  (* SOFT_HLUTNM = "soft_lutpair113" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[3]_i_36 
@@ -15104,7 +15104,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[5]_i_31_n_5 ),
         .O(\ALUResult_reg[3]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair116" *) 
+  (* SOFT_HLUTNM = "soft_lutpair120" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[3]_i_39 
@@ -15181,7 +15181,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[5]_i_33_n_5 ),
         .O(\ALUResult_reg[3]_i_45_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair125" *) 
+  (* SOFT_HLUTNM = "soft_lutpair129" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[3]_i_46 
@@ -15209,7 +15209,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[3]_i_48_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[3]_i_49 
@@ -15226,7 +15226,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(data21[3]),
         .O(\ALUResult_reg[3]_i_5_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair72" *) 
+  (* SOFT_HLUTNM = "soft_lutpair76" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[3]_i_50 
@@ -15378,7 +15378,7 @@ module ALU32Bit
         .I3(ALUControl[3]),
         .I4(data12[4]),
         .O(\ALUResult_reg[4]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair174" *) 
+  (* SOFT_HLUTNM = "soft_lutpair178" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[4]_i_19 
@@ -15451,7 +15451,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[4]_i_32_n_5 ),
         .O(\ALUResult_reg[4]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair109" *) 
+  (* SOFT_HLUTNM = "soft_lutpair113" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[4]_i_26 
@@ -15534,7 +15534,7 @@ module ALU32Bit
         .I4(A[4]),
         .I5(A[2]),
         .O(\ALUResult_reg[4]_i_33_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair38" *) 
+  (* SOFT_HLUTNM = "soft_lutpair42" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[4]_i_34 
@@ -15722,7 +15722,7 @@ module ALU32Bit
         .I3(ALUControl[3]),
         .I4(data12[5]),
         .O(\ALUResult_reg[5]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair174" *) 
+  (* SOFT_HLUTNM = "soft_lutpair178" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[5]_i_19 
@@ -15792,7 +15792,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[5]_i_33_n_5 ),
         .O(\ALUResult_reg[5]_i_25_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair111" *) 
+  (* SOFT_HLUTNM = "soft_lutpair115" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[5]_i_26 
@@ -15895,7 +15895,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[5]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair104" *) 
+  (* SOFT_HLUTNM = "soft_lutpair108" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[5]_i_36 
@@ -16064,7 +16064,7 @@ module ALU32Bit
         .I3(ALUControl[3]),
         .I4(data12[6]),
         .O(\ALUResult_reg[6]_i_18_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair177" *) 
+  (* SOFT_HLUTNM = "soft_lutpair181" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[6]_i_19 
@@ -16146,7 +16146,7 @@ module ALU32Bit
         .I3(\ALUResult_reg[6]_i_34_n_5 ),
         .I4(A[0]),
         .O(data12[6]));
-  (* SOFT_HLUTNM = "soft_lutpair149" *) 
+  (* SOFT_HLUTNM = "soft_lutpair153" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[6]_i_27 
@@ -16239,7 +16239,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[6]_i_33_n_5 ),
         .O(\ALUResult_reg[6]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair126" *) 
+  (* SOFT_HLUTNM = "soft_lutpair130" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[6]_i_36 
@@ -16247,14 +16247,14 @@ module ALU32Bit
         .I1(A[4]),
         .I2(B[10]),
         .O(\ALUResult_reg[6]_i_36_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[6]_i_37 
        (.I0(A[0]),
         .I1(A[1]),
         .O(\ALUResult_reg[6]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair29" *) 
+  (* SOFT_HLUTNM = "soft_lutpair33" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[6]_i_38 
@@ -16280,7 +16280,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[6]_i_10_n_5 ),
         .O(\ALUResult_reg[6]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair127" *) 
+  (* SOFT_HLUTNM = "soft_lutpair131" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[6]_i_40 
@@ -16288,7 +16288,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[10]),
         .O(\ALUResult_reg[6]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair104" *) 
+  (* SOFT_HLUTNM = "soft_lutpair108" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[6]_i_41 
@@ -16390,7 +16390,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[7]),
         .O(\ALUResult_reg[7]_i_12_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair149" *) 
+  (* SOFT_HLUTNM = "soft_lutpair153" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[7]_i_13 
@@ -16458,7 +16458,7 @@ module ALU32Bit
         .I1(\ALUResult_reg[7]_i_5_n_5 ),
         .O(\ALUResult_reg[7]_i_2_n_5 ),
         .S(ALUControl[4]));
-  (* SOFT_HLUTNM = "soft_lutpair177" *) 
+  (* SOFT_HLUTNM = "soft_lutpair181" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[7]_i_20 
@@ -16574,7 +16574,7 @@ module ALU32Bit
         .I4(A[1]),
         .I5(\ALUResult_reg[10]_i_37_n_5 ),
         .O(data12[7]));
-  (* SOFT_HLUTNM = "soft_lutpair120" *) 
+  (* SOFT_HLUTNM = "soft_lutpair124" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[7]_i_33 
@@ -16601,7 +16601,7 @@ module ALU32Bit
         .I3(B[4]),
         .I4(\ALUResult_reg[31]_i_94_n_5 ),
         .O(\ALUResult_reg[7]_i_35_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[7]_i_36 
@@ -16668,7 +16668,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(\ALUResult_reg[7]_i_39_n_5 ),
         .O(\ALUResult_reg[7]_i_41_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair128" *) 
+  (* SOFT_HLUTNM = "soft_lutpair132" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[7]_i_42 
@@ -16702,7 +16702,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[11]),
         .O(\ALUResult_reg[7]_i_45_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair85" *) 
+  (* SOFT_HLUTNM = "soft_lutpair89" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[7]_i_46 
@@ -16808,7 +16808,7 @@ module ALU32Bit
         .I4(data23[8]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[8]_i_12_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT5 #(
     .INIT(32'h8F8F8F80)) 
     \ALUResult_reg[8]_i_13 
@@ -16818,7 +16818,7 @@ module ALU32Bit
         .I3(ALUResult10_in[8]),
         .I4(\ALUResult_reg[8]_i_22_n_5 ),
         .O(\ALUResult_reg[8]_i_13_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair39" *) 
+  (* SOFT_HLUTNM = "soft_lutpair43" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[8]_i_14 
@@ -16845,7 +16845,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[8]),
         .O(\ALUResult_reg[8]_i_16_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair146" *) 
+  (* SOFT_HLUTNM = "soft_lutpair150" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[8]_i_17 
@@ -16911,7 +16911,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[8]_i_31_n_5 ),
         .I5(\ALUResult_reg[31]_i_35_n_5 ),
         .O(\ALUResult_reg[8]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair74" *) 
+  (* SOFT_HLUTNM = "soft_lutpair78" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[8]_i_23 
@@ -16997,7 +16997,7 @@ module ALU32Bit
         .I4(A[2]),
         .I5(\ALUResult_reg[8]_i_39_n_5 ),
         .O(\ALUResult_reg[8]_i_30_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair65" *) 
+  (* SOFT_HLUTNM = "soft_lutpair69" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[8]_i_31 
@@ -17015,7 +17015,7 @@ module ALU32Bit
         .I3(A[5]),
         .I4(\ALUResult_reg[31]_i_98_n_5 ),
         .O(\ALUResult_reg[8]_i_32_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair147" *) 
+  (* SOFT_HLUTNM = "soft_lutpair151" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[8]_i_33 
@@ -17062,7 +17062,7 @@ module ALU32Bit
         .I3(B[5]),
         .I4(A[3]),
         .O(\ALUResult_reg[8]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[8]_i_38 
@@ -17070,7 +17070,7 @@ module ALU32Bit
         .I1(A[4]),
         .I2(B[12]),
         .O(\ALUResult_reg[8]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair49" *) 
+  (* SOFT_HLUTNM = "soft_lutpair53" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[8]_i_39 
@@ -17118,7 +17118,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[8]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[8]_i_43 
@@ -17126,7 +17126,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[12]),
         .O(\ALUResult_reg[8]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[8]_i_44 
@@ -17230,7 +17230,7 @@ module ALU32Bit
         .I4(data23[9]),
         .I5(ALUControl[3]),
         .O(\ALUResult_reg[9]_i_12_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT5 #(
     .INIT(32'h8F8F8F80)) 
     \ALUResult_reg[9]_i_13 
@@ -17240,7 +17240,7 @@ module ALU32Bit
         .I3(ALUResult10_in[9]),
         .I4(\ALUResult_reg[9]_i_22_n_5 ),
         .O(\ALUResult_reg[9]_i_13_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair48" *) 
+  (* SOFT_HLUTNM = "soft_lutpair52" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \ALUResult_reg[9]_i_14 
@@ -17267,7 +17267,7 @@ module ALU32Bit
         .I4(ALUControl[5]),
         .I5(data21[9]),
         .O(\ALUResult_reg[9]_i_16_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair117" *) 
+  (* SOFT_HLUTNM = "soft_lutpair121" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[9]_i_17 
@@ -17333,7 +17333,7 @@ module ALU32Bit
         .I4(\ALUResult_reg[10]_i_31_n_5 ),
         .I5(\ALUResult_reg[31]_i_35_n_5 ),
         .O(\ALUResult_reg[9]_i_22_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair75" *) 
+  (* SOFT_HLUTNM = "soft_lutpair79" *) 
   LUT4 #(
     .INIT(16'hEB28)) 
     \ALUResult_reg[9]_i_23 
@@ -17487,7 +17487,7 @@ module ALU32Bit
         .I3(B[6]),
         .I4(A[3]),
         .O(\ALUResult_reg[9]_i_37_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair16" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[9]_i_38 
@@ -17495,7 +17495,7 @@ module ALU32Bit
         .I1(A[4]),
         .I2(B[13]),
         .O(\ALUResult_reg[9]_i_38_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair15" *) 
+  (* SOFT_HLUTNM = "soft_lutpair19" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[9]_i_39 
@@ -17514,7 +17514,7 @@ module ALU32Bit
         .I3(ALUControl[5]),
         .I4(\ALUResult_reg[9]_i_12_n_5 ),
         .O(\ALUResult_reg[9]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair18" *) 
+  (* SOFT_HLUTNM = "soft_lutpair22" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \ALUResult_reg[9]_i_40 
@@ -17522,7 +17522,7 @@ module ALU32Bit
         .I1(B[10]),
         .I2(A[13]),
         .O(\ALUResult_reg[9]_i_40_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair37" *) 
+  (* SOFT_HLUTNM = "soft_lutpair41" *) 
   LUT5 #(
     .INIT(32'h30BB3088)) 
     \ALUResult_reg[9]_i_41 
@@ -17542,7 +17542,7 @@ module ALU32Bit
         .I4(B[8]),
         .I5(B[7]),
         .O(\ALUResult_reg[9]_i_42_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair83" *) 
+  (* SOFT_HLUTNM = "soft_lutpair87" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUResult_reg[9]_i_43 
@@ -17551,7 +17551,7 @@ module ALU32Bit
         .I2(B[2]),
         .I3(B[1]),
         .O(\ALUResult_reg[9]_i_43_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair142" *) 
+  (* SOFT_HLUTNM = "soft_lutpair146" *) 
   LUT3 #(
     .INIT(8'h02)) 
     \ALUResult_reg[9]_i_5 
@@ -18147,7 +18147,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[0]));
-  (* SOFT_HLUTNM = "soft_lutpair161" *) 
+  (* SOFT_HLUTNM = "soft_lutpair165" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[0]_i_1 
@@ -18174,7 +18174,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[10]));
-  (* SOFT_HLUTNM = "soft_lutpair173" *) 
+  (* SOFT_HLUTNM = "soft_lutpair177" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[10]_i_1 
@@ -18201,7 +18201,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[11]));
-  (* SOFT_HLUTNM = "soft_lutpair186" *) 
+  (* SOFT_HLUTNM = "soft_lutpair190" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[11]_i_1 
@@ -18352,7 +18352,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[12]));
-  (* SOFT_HLUTNM = "soft_lutpair187" *) 
+  (* SOFT_HLUTNM = "soft_lutpair191" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[12]_i_1 
@@ -18379,7 +18379,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[13]));
-  (* SOFT_HLUTNM = "soft_lutpair187" *) 
+  (* SOFT_HLUTNM = "soft_lutpair191" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[13]_i_1 
@@ -18406,7 +18406,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[14]));
-  (* SOFT_HLUTNM = "soft_lutpair175" *) 
+  (* SOFT_HLUTNM = "soft_lutpair179" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[14]_i_1 
@@ -18433,7 +18433,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[15]));
-  (* SOFT_HLUTNM = "soft_lutpair186" *) 
+  (* SOFT_HLUTNM = "soft_lutpair190" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[15]_i_1 
@@ -18584,7 +18584,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[16]));
-  (* SOFT_HLUTNM = "soft_lutpair176" *) 
+  (* SOFT_HLUTNM = "soft_lutpair180" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[16]_i_1 
@@ -18611,7 +18611,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[17]));
-  (* SOFT_HLUTNM = "soft_lutpair179" *) 
+  (* SOFT_HLUTNM = "soft_lutpair183" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[17]_i_1 
@@ -18638,7 +18638,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[18]));
-  (* SOFT_HLUTNM = "soft_lutpair179" *) 
+  (* SOFT_HLUTNM = "soft_lutpair183" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[18]_i_1 
@@ -18665,7 +18665,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[19]));
-  (* SOFT_HLUTNM = "soft_lutpair176" *) 
+  (* SOFT_HLUTNM = "soft_lutpair180" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[19]_i_1 
@@ -18816,7 +18816,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[1]));
-  (* SOFT_HLUTNM = "soft_lutpair162" *) 
+  (* SOFT_HLUTNM = "soft_lutpair166" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[1]_i_1 
@@ -18843,7 +18843,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[20]));
-  (* SOFT_HLUTNM = "soft_lutpair175" *) 
+  (* SOFT_HLUTNM = "soft_lutpair179" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[20]_i_1 
@@ -18870,7 +18870,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[21]));
-  (* SOFT_HLUTNM = "soft_lutpair173" *) 
+  (* SOFT_HLUTNM = "soft_lutpair177" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[21]_i_1 
@@ -18897,7 +18897,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[22]));
-  (* SOFT_HLUTNM = "soft_lutpair170" *) 
+  (* SOFT_HLUTNM = "soft_lutpair174" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[22]_i_1 
@@ -18924,7 +18924,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[23]));
-  (* SOFT_HLUTNM = "soft_lutpair167" *) 
+  (* SOFT_HLUTNM = "soft_lutpair171" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[23]_i_1 
@@ -19075,7 +19075,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[24]));
-  (* SOFT_HLUTNM = "soft_lutpair166" *) 
+  (* SOFT_HLUTNM = "soft_lutpair170" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[24]_i_1 
@@ -19102,7 +19102,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[25]));
-  (* SOFT_HLUTNM = "soft_lutpair165" *) 
+  (* SOFT_HLUTNM = "soft_lutpair169" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[25]_i_1 
@@ -19129,7 +19129,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[26]));
-  (* SOFT_HLUTNM = "soft_lutpair163" *) 
+  (* SOFT_HLUTNM = "soft_lutpair167" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[26]_i_1 
@@ -19156,7 +19156,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[27]));
-  (* SOFT_HLUTNM = "soft_lutpair162" *) 
+  (* SOFT_HLUTNM = "soft_lutpair166" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[27]_i_1 
@@ -19307,7 +19307,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[28]));
-  (* SOFT_HLUTNM = "soft_lutpair161" *) 
+  (* SOFT_HLUTNM = "soft_lutpair165" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[28]_i_1 
@@ -19334,7 +19334,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[29]));
-  (* SOFT_HLUTNM = "soft_lutpair155" *) 
+  (* SOFT_HLUTNM = "soft_lutpair159" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[29]_i_1 
@@ -19361,7 +19361,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[2]));
-  (* SOFT_HLUTNM = "soft_lutpair163" *) 
+  (* SOFT_HLUTNM = "soft_lutpair167" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[2]_i_1 
@@ -19388,7 +19388,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[30]));
-  (* SOFT_HLUTNM = "soft_lutpair153" *) 
+  (* SOFT_HLUTNM = "soft_lutpair157" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[30]_i_1 
@@ -19415,7 +19415,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[31]));
-  (* SOFT_HLUTNM = "soft_lutpair152" *) 
+  (* SOFT_HLUTNM = "soft_lutpair156" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[31]_i_1 
@@ -19596,7 +19596,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[3]));
-  (* SOFT_HLUTNM = "soft_lutpair155" *) 
+  (* SOFT_HLUTNM = "soft_lutpair159" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[3]_i_1 
@@ -19747,7 +19747,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[4]));
-  (* SOFT_HLUTNM = "soft_lutpair152" *) 
+  (* SOFT_HLUTNM = "soft_lutpair156" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[4]_i_1 
@@ -19774,7 +19774,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[5]));
-  (* SOFT_HLUTNM = "soft_lutpair153" *) 
+  (* SOFT_HLUTNM = "soft_lutpair157" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[5]_i_1 
@@ -19801,7 +19801,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[6]));
-  (* SOFT_HLUTNM = "soft_lutpair165" *) 
+  (* SOFT_HLUTNM = "soft_lutpair169" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[6]_i_1 
@@ -19828,7 +19828,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[7]));
-  (* SOFT_HLUTNM = "soft_lutpair166" *) 
+  (* SOFT_HLUTNM = "soft_lutpair170" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[7]_i_1 
@@ -19979,7 +19979,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[8]));
-  (* SOFT_HLUTNM = "soft_lutpair167" *) 
+  (* SOFT_HLUTNM = "soft_lutpair171" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[8]_i_1 
@@ -20006,7 +20006,7 @@ module ALU32Bit
         .G(n_1_35_BUFG),
         .GE(1'b1),
         .Q(HiOutFromALU[9]));
-  (* SOFT_HLUTNM = "soft_lutpair170" *) 
+  (* SOFT_HLUTNM = "soft_lutpair174" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \HiOutFromALU_reg[9]_i_1 
@@ -20033,7 +20033,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[0]));
-  (* SOFT_HLUTNM = "soft_lutpair113" *) 
+  (* SOFT_HLUTNM = "soft_lutpair117" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[0]_i_1 
@@ -20059,7 +20059,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[10]));
-  (* SOFT_HLUTNM = "soft_lutpair159" *) 
+  (* SOFT_HLUTNM = "soft_lutpair163" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[10]_i_1 
@@ -20085,7 +20085,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[11]));
-  (* SOFT_HLUTNM = "soft_lutpair159" *) 
+  (* SOFT_HLUTNM = "soft_lutpair163" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[11]_i_1 
@@ -20173,7 +20173,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[12]));
-  (* SOFT_HLUTNM = "soft_lutpair160" *) 
+  (* SOFT_HLUTNM = "soft_lutpair164" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[12]_i_1 
@@ -20199,7 +20199,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[13]));
-  (* SOFT_HLUTNM = "soft_lutpair160" *) 
+  (* SOFT_HLUTNM = "soft_lutpair164" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[13]_i_1 
@@ -20225,7 +20225,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[14]));
-  (* SOFT_HLUTNM = "soft_lutpair164" *) 
+  (* SOFT_HLUTNM = "soft_lutpair168" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[14]_i_1 
@@ -20251,7 +20251,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[15]));
-  (* SOFT_HLUTNM = "soft_lutpair164" *) 
+  (* SOFT_HLUTNM = "soft_lutpair168" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[15]_i_1 
@@ -20339,7 +20339,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[16]));
-  (* SOFT_HLUTNM = "soft_lutpair168" *) 
+  (* SOFT_HLUTNM = "soft_lutpair172" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[16]_i_1 
@@ -20391,7 +20391,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[17]));
-  (* SOFT_HLUTNM = "soft_lutpair168" *) 
+  (* SOFT_HLUTNM = "soft_lutpair172" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[17]_i_1 
@@ -20418,7 +20418,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[18]));
-  (* SOFT_HLUTNM = "soft_lutpair169" *) 
+  (* SOFT_HLUTNM = "soft_lutpair173" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[18]_i_1 
@@ -20445,7 +20445,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[19]));
-  (* SOFT_HLUTNM = "soft_lutpair169" *) 
+  (* SOFT_HLUTNM = "soft_lutpair173" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[19]_i_1 
@@ -20584,7 +20584,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[1]));
-  (* SOFT_HLUTNM = "soft_lutpair113" *) 
+  (* SOFT_HLUTNM = "soft_lutpair117" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[1]_i_1 
@@ -20610,7 +20610,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[20]));
-  (* SOFT_HLUTNM = "soft_lutpair180" *) 
+  (* SOFT_HLUTNM = "soft_lutpair184" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[20]_i_1 
@@ -20637,7 +20637,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[21]));
-  (* SOFT_HLUTNM = "soft_lutpair180" *) 
+  (* SOFT_HLUTNM = "soft_lutpair184" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[21]_i_1 
@@ -20664,7 +20664,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[22]));
-  (* SOFT_HLUTNM = "soft_lutpair181" *) 
+  (* SOFT_HLUTNM = "soft_lutpair185" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[22]_i_1 
@@ -20691,7 +20691,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[23]));
-  (* SOFT_HLUTNM = "soft_lutpair181" *) 
+  (* SOFT_HLUTNM = "soft_lutpair185" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[23]_i_1 
@@ -20842,7 +20842,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[24]));
-  (* SOFT_HLUTNM = "soft_lutpair182" *) 
+  (* SOFT_HLUTNM = "soft_lutpair186" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[24]_i_1 
@@ -20869,7 +20869,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[25]));
-  (* SOFT_HLUTNM = "soft_lutpair182" *) 
+  (* SOFT_HLUTNM = "soft_lutpair186" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[25]_i_1 
@@ -20896,7 +20896,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[26]));
-  (* SOFT_HLUTNM = "soft_lutpair183" *) 
+  (* SOFT_HLUTNM = "soft_lutpair187" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[26]_i_1 
@@ -20923,7 +20923,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[27]));
-  (* SOFT_HLUTNM = "soft_lutpair183" *) 
+  (* SOFT_HLUTNM = "soft_lutpair187" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[27]_i_1 
@@ -21074,7 +21074,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[28]));
-  (* SOFT_HLUTNM = "soft_lutpair184" *) 
+  (* SOFT_HLUTNM = "soft_lutpair188" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[28]_i_1 
@@ -21101,7 +21101,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[29]));
-  (* SOFT_HLUTNM = "soft_lutpair184" *) 
+  (* SOFT_HLUTNM = "soft_lutpair188" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[29]_i_1 
@@ -21128,7 +21128,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[2]));
-  (* SOFT_HLUTNM = "soft_lutpair154" *) 
+  (* SOFT_HLUTNM = "soft_lutpair158" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[2]_i_1 
@@ -21154,7 +21154,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[30]));
-  (* SOFT_HLUTNM = "soft_lutpair185" *) 
+  (* SOFT_HLUTNM = "soft_lutpair189" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[30]_i_1 
@@ -21181,7 +21181,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[31]));
-  (* SOFT_HLUTNM = "soft_lutpair185" *) 
+  (* SOFT_HLUTNM = "soft_lutpair189" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[31]_i_1 
@@ -21342,7 +21342,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[3]));
-  (* SOFT_HLUTNM = "soft_lutpair154" *) 
+  (* SOFT_HLUTNM = "soft_lutpair158" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[3]_i_1 
@@ -21430,7 +21430,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[4]));
-  (* SOFT_HLUTNM = "soft_lutpair156" *) 
+  (* SOFT_HLUTNM = "soft_lutpair160" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[4]_i_1 
@@ -21456,7 +21456,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[5]));
-  (* SOFT_HLUTNM = "soft_lutpair156" *) 
+  (* SOFT_HLUTNM = "soft_lutpair160" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[5]_i_1 
@@ -21482,7 +21482,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[6]));
-  (* SOFT_HLUTNM = "soft_lutpair157" *) 
+  (* SOFT_HLUTNM = "soft_lutpair161" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[6]_i_1 
@@ -21508,7 +21508,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[7]));
-  (* SOFT_HLUTNM = "soft_lutpair157" *) 
+  (* SOFT_HLUTNM = "soft_lutpair161" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[7]_i_1 
@@ -21596,7 +21596,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[8]));
-  (* SOFT_HLUTNM = "soft_lutpair158" *) 
+  (* SOFT_HLUTNM = "soft_lutpair162" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[8]_i_1 
@@ -21622,7 +21622,7 @@ module ALU32Bit
         .G(n_2_36_BUFG),
         .GE(1'b1),
         .Q(LoOutFromALU[9]));
-  (* SOFT_HLUTNM = "soft_lutpair158" *) 
+  (* SOFT_HLUTNM = "soft_lutpair162" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \LoOutFromALU_reg[9]_i_1 
@@ -21974,7 +21974,7 @@ module ALU32Bit
        (.I0(A[22]),
         .I1(A[23]),
         .O(Zero_reg_i_49_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair77" *) 
+  (* SOFT_HLUTNM = "soft_lutpair81" *) 
   LUT4 #(
     .INIT(16'h0B38)) 
     Zero_reg_i_5
@@ -22356,7 +22356,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_7_n_5),
         .I5(movn_INST_0_i_8_n_5),
         .O(data0));
-  (* SOFT_HLUTNM = "soft_lutpair82" *) 
+  (* SOFT_HLUTNM = "soft_lutpair86" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     movn_INST_0_i_10
@@ -22387,7 +22387,7 @@ module ALU32Bit
        (.I0(B[22]),
         .I1(B[23]),
         .O(movn_INST_0_i_13_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair188" *) 
+  (* SOFT_HLUTNM = "soft_lutpair192" *) 
   LUT2 #(
     .INIT(4'h1)) 
     movn_INST_0_i_14
@@ -22404,7 +22404,7 @@ module ALU32Bit
         .I4(movn_INST_0_i_21_n_5),
         .I5(movn_INST_0_i_11_n_5),
         .O(movn_INST_0_i_15_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair55" *) 
+  (* SOFT_HLUTNM = "soft_lutpair59" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     movn_INST_0_i_16
@@ -22419,14 +22419,14 @@ module ALU32Bit
        (.I0(B[4]),
         .I1(B[5]),
         .O(movn_INST_0_i_17_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair28" *) 
+  (* SOFT_HLUTNM = "soft_lutpair32" *) 
   LUT2 #(
     .INIT(4'h1)) 
     movn_INST_0_i_18
        (.I0(B[6]),
         .I1(B[7]),
         .O(movn_INST_0_i_18_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     movn_INST_0_i_19
@@ -22455,7 +22455,7 @@ module ALU32Bit
         .I4(B[21]),
         .I5(movn_INST_0_i_13_n_5),
         .O(movn_INST_0_i_20_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair17" *) 
   LUT2 #(
     .INIT(4'h1)) 
     movn_INST_0_i_21
@@ -22478,7 +22478,7 @@ module ALU32Bit
         .I4(B[9]),
         .I5(movn_INST_0_i_12_n_5),
         .O(movn_INST_0_i_3_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair81" *) 
+  (* SOFT_HLUTNM = "soft_lutpair85" *) 
   LUT4 #(
     .INIT(16'hEFFF)) 
     movn_INST_0_i_4
@@ -22497,14 +22497,14 @@ module ALU32Bit
         .I4(B[17]),
         .I5(B[16]),
         .O(movn_INST_0_i_5_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair34" *) 
+  (* SOFT_HLUTNM = "soft_lutpair38" *) 
   LUT2 #(
     .INIT(4'h1)) 
     movn_INST_0_i_6
        (.I0(B[31]),
         .I1(B[30]),
         .O(movn_INST_0_i_6_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair73" *) 
+  (* SOFT_HLUTNM = "soft_lutpair77" *) 
   LUT4 #(
     .INIT(16'hFFFE)) 
     movn_INST_0_i_7
@@ -22736,7 +22736,6 @@ module DataMemory
   wire \ReadDataMemO3_reg[13] ;
   wire \ReadDataMemO3_reg[14] ;
   wire \ReadDataMemO3_reg[15] ;
-  wire \ReadDataMemO3_reg[16] ;
   wire \ReadDataMemO3_reg[1] ;
   wire \ReadDataMemO3_reg[2] ;
   wire [31:0]\ReadDataMemO3_reg[31] ;
@@ -22912,15 +22911,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [0]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[0]_i_1 
-       (.I0(\ReadDataMemO3_reg[0] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[0]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[0]_i_3_n_5 ),
+       (.I0(\ReadData_reg[0]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[0]_i_3_n_5 ),
         .O(\ReadData_reg[0]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23141,15 +23137,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [1]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[1]_i_1 
-       (.I0(\ReadDataMemO3_reg[1] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[1]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[1]_i_3_n_5 ),
+       (.I0(\ReadData_reg[1]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[1]_i_3_n_5 ),
         .O(\ReadData_reg[1]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23370,15 +23363,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [2]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[2]_i_1 
-       (.I0(\ReadDataMemO3_reg[2] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[2]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[2]_i_3_n_5 ),
+       (.I0(\ReadData_reg[2]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[2]_i_3_n_5 ),
         .O(\ReadData_reg[2]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23448,14 +23438,6 @@ module DataMemory
         .I4(\ALUResultO2_reg[11] [1]),
         .I5(\ReadData_reg[7]_i_3_n_5 ),
         .O(\ReadDataMemO3_reg[7]_0 ));
-  LUT4 #(
-    .INIT(16'h00E2)) 
-    \ReadData_reg[31]_i_6 
-       (.I0(\ReadDataMemO3_reg[15] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(p_0_in[7]),
-        .I3(\threeselectout_reg[1] [1]),
-        .O(\ReadDataMemO3_reg[16] ));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
   LDCE #(
     .INIT(1'b0)) 
@@ -23465,15 +23447,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [3]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[3]_i_1 
-       (.I0(\ReadDataMemO3_reg[3] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[3]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[3]_i_3_n_5 ),
+       (.I0(\ReadData_reg[3]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[3]_i_3_n_5 ),
         .O(\ReadData_reg[3]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23504,15 +23483,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [4]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[4]_i_1 
-       (.I0(\ReadDataMemO3_reg[4] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[4]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[4]_i_3_n_5 ),
+       (.I0(\ReadData_reg[4]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[4]_i_3_n_5 ),
         .O(\ReadData_reg[4]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23543,15 +23519,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [5]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[5]_i_1 
-       (.I0(\ReadDataMemO3_reg[5] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[5]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[5]_i_3_n_5 ),
+       (.I0(\ReadData_reg[5]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[5]_i_3_n_5 ),
         .O(\ReadData_reg[5]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23582,15 +23555,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [6]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[6]_i_1 
-       (.I0(\ReadDataMemO3_reg[6] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[6]_i_2_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadData_reg[6]_i_3_n_5 ),
+       (.I0(\ReadData_reg[6]_i_2_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadData_reg[6]_i_3_n_5 ),
         .O(\ReadData_reg[6]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -23621,15 +23591,12 @@ module DataMemory
         .G(E),
         .GE(1'b1),
         .Q(\ReadDataMemO3_reg[31] [7]));
-  LUT6 #(
-    .INIT(64'hFFF0BF8F0F00B080)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \ReadData_reg[7]_i_1 
-       (.I0(\ReadDataMemO3_reg[7] ),
-        .I1(\ALUResultO2_reg[11] [1]),
-        .I2(\threeselectout_reg[1] [0]),
-        .I3(\ReadData_reg[7]_i_3_n_5 ),
-        .I4(\threeselectout_reg[1] [1]),
-        .I5(\ReadDataMemO3_reg[7]_0 ),
+       (.I0(\ReadData_reg[7]_i_3_n_5 ),
+        .I1(\threeselectout_reg[1] [1]),
+        .I2(\ReadDataMemO3_reg[7]_0 ),
         .O(\ReadData_reg[7]_i_1_n_5 ));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
@@ -25010,7 +24977,6 @@ module EXMEMReg
   wire \ALUResultO2_reg[11]_7 ;
   wire \ALUResultO2_reg[11]_8 ;
   wire \ALUResultO2_reg[11]_9 ;
-  wire \ALUResultO2_reg[1]_0 ;
   wire [31:0]\ALUResultO3_reg[31] ;
   wire [0:0]AR;
   wire [1:0]AS;
@@ -25023,8 +24989,6 @@ module EXMEMReg
   wire JALSignal;
   wire MemReadO;
   wire MemReadO2_reg_n_5;
-  wire MemWriteO;
-  wire MemWriteO2_reg_n_5;
   wire MemtoReg;
   wire MemtoRegO3_reg;
   wire OutFromAnd;
@@ -25037,27 +25001,11 @@ module EXMEMReg
   wire [31:0]R12;
   wire [31:0]\ReadData1O_reg[31] ;
   wire [31:0]\ReadData2O_reg[31] ;
-  wire \ReadDataMemO3_reg[14] ;
-  wire \ReadDataMemO3_reg[14]_0 ;
-  wire \ReadDataMemO3_reg[14]_1 ;
-  wire \ReadDataMemO3_reg[14]_2 ;
-  wire \ReadDataMemO3_reg[14]_3 ;
-  wire \ReadDataMemO3_reg[14]_4 ;
-  wire \ReadDataMemO3_reg[14]_5 ;
-  wire \ReadDataMemO3_reg[14]_6 ;
   wire [7:0]\ReadDataMemO3_reg[14]_7 ;
   wire [1:0]\ReadDataMemO3_reg[15] ;
   wire [31:0]\ReadDataMemO3_reg[15]_0 ;
   wire [23:0]\ReadDataMemO3_reg[31] ;
-  wire \ReadDataMemO3_reg[6] ;
-  wire \ReadDataMemO3_reg[6]_0 ;
-  wire \ReadDataMemO3_reg[6]_1 ;
-  wire \ReadDataMemO3_reg[6]_2 ;
-  wire \ReadDataMemO3_reg[6]_3 ;
-  wire \ReadDataMemO3_reg[6]_4 ;
-  wire \ReadDataMemO3_reg[6]_5 ;
-  wire \ReadDataMemO3_reg[6]_6 ;
-  wire [1:0]\ReadDataMemO3_reg[8] ;
+  wire [1:0]\^ReadDataMemO3_reg[8] ;
   wire [31:8]ReadDataO2;
   wire RegWriteO2;
   wire RegWriteO_reg;
@@ -25072,17 +25020,31 @@ module EXMEMReg
   wire jumpout_reg_n_5;
   wire jumpregout;
   wire jumpregout_reg_n_5;
-  wire n_3_547_BUFG_inst_n_4;
-  wire n_4_548_BUFG_inst_n_5;
   wire [7:0]p_0_in;
-  wire [24:0]p_0_in0_out;
   wire [7:0]p_0_in1_in;
   wire [15:0]\storeout_reg[1]_0 ;
   wire [1:0]\storeout_reg[1]_1 ;
   wire [1:0]\threeselectout_reg[1]_0 ;
 
+  assign \ReadDataMemO3_reg[14]  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_0  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_1  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_2  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_3  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_4  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_5  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[14]_6  = \^ReadDataMemO3_reg[8] [0];
   assign \ReadDataMemO3_reg[15]_1  = MemReadO2_reg_n_5;
   assign \ReadDataMemO3_reg[31]_0  = MemReadO2_reg_n_5;
+  assign \ReadDataMemO3_reg[6]  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_0  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_1  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_2  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_3  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_4  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_5  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[6]_6  = \^ReadDataMemO3_reg[8] [0];
+  assign \ReadDataMemO3_reg[8] [1] = \^ReadDataMemO3_reg[8] [1];
   FDRE #(
     .INIT(1'b0)) 
     \ALUResultO2_reg[0] 
@@ -25499,6 +25461,8 @@ module EXMEMReg
         .D(BranchO),
         .Q(EXMEMBranch),
         .R(1'b0));
+  GND GND_1
+       (.G(\^ReadDataMemO3_reg[8] [0]));
   FDRE #(
     .INIT(1'b0)) 
     MemReadO2_reg
@@ -25506,14 +25470,6 @@ module EXMEMReg
         .CE(1'b1),
         .D(MemReadO),
         .Q(MemReadO2_reg_n_5),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    MemWriteO2_reg
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(MemWriteO),
-        .Q(MemWriteO2_reg_n_5),
         .R(1'b0));
   (* srl_name = "\exmemReg/MemtoRegO2_reg_srl2 " *) 
   SRL16E #(
@@ -25576,22 +25532,22 @@ module EXMEMReg
         .I3(jumpout_reg_n_5),
         .I4(inA[31]),
         .O(PCAddResult[31]));
-  LUT4 #(
-    .INIT(16'h8F80)) 
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     PC_i_10
        (.I0(R12[22]),
         .I1(jumpregout_reg_n_5),
-        .I2(jumpout_reg_n_5),
-        .I3(inA[22]),
+        .I2(addout[22]),
+        .I3(jumpout_reg_n_5),
+        .I4(inA[22]),
         .O(PCAddResult[22]));
-  LUT5 #(
-    .INIT(32'hB8FFB800)) 
+  LUT4 #(
+    .INIT(16'h8F80)) 
     PC_i_11
        (.I0(R12[21]),
         .I1(jumpregout_reg_n_5),
-        .I2(addout[21]),
-        .I3(jumpout_reg_n_5),
-        .I4(inA[21]),
+        .I2(jumpout_reg_n_5),
+        .I3(inA[21]),
         .O(PCAddResult[21]));
   LUT5 #(
     .INIT(32'hB8FFB800)) 
@@ -25773,13 +25729,14 @@ module EXMEMReg
         .I3(jumpout_reg_n_5),
         .I4(inA[29]),
         .O(PCAddResult[29]));
-  LUT4 #(
-    .INIT(16'h8F80)) 
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     PC_i_30
        (.I0(R12[2]),
         .I1(jumpregout_reg_n_5),
-        .I2(jumpout_reg_n_5),
-        .I3(inA[2]),
+        .I2(addout[2]),
+        .I3(jumpout_reg_n_5),
+        .I4(inA[2]),
         .O(PCAddResult[2]));
   LUT6 #(
     .INIT(64'h8F808F8F8F808080)) 
@@ -25825,7 +25782,7 @@ module EXMEMReg
         .I2(EXMEMZero),
         .I3(\PCResult_reg[31] [29]),
         .O(inA[29]));
-  (* SOFT_HLUTNM = "soft_lutpair202" *) 
+  (* SOFT_HLUTNM = "soft_lutpair206" *) 
   LUT4 #(
     .INIT(16'hBF80)) 
     PC_i_36
@@ -25947,13 +25904,14 @@ module EXMEMReg
         .I2(EXMEMZero),
         .I3(\PCResult_reg[31] [15]),
         .O(inA[15]));
-  LUT4 #(
-    .INIT(16'h8F80)) 
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     PC_i_5
        (.I0(R12[27]),
         .I1(jumpregout_reg_n_5),
-        .I2(jumpout_reg_n_5),
-        .I3(inA[27]),
+        .I2(addout[27]),
+        .I3(jumpout_reg_n_5),
+        .I4(inA[27]),
         .O(PCAddResult[27]));
   LUT4 #(
     .INIT(16'hBF80)) 
@@ -26035,14 +25993,13 @@ module EXMEMReg
         .I2(EXMEMZero),
         .I3(\PCResult_reg[31] [5]),
         .O(inA[5]));
-  LUT5 #(
-    .INIT(32'hB8FFB800)) 
+  LUT4 #(
+    .INIT(16'h8F80)) 
     PC_i_6
        (.I0(R12[26]),
         .I1(jumpregout_reg_n_5),
-        .I2(addout[26]),
-        .I3(jumpout_reg_n_5),
-        .I4(inA[26]),
+        .I2(jumpout_reg_n_5),
+        .I3(inA[26]),
         .O(PCAddResult[26]));
   LUT4 #(
     .INIT(16'hBF80)) 
@@ -26068,28 +26025,30 @@ module EXMEMReg
         .I2(EXMEMZero),
         .I3(\PCResult_reg[31] [2]),
         .O(inA[2]));
-  (* SOFT_HLUTNM = "soft_lutpair202" *) 
+  (* SOFT_HLUTNM = "soft_lutpair206" *) 
   LUT2 #(
     .INIT(4'h8)) 
     PC_i_63
        (.I0(EXMEMBranch),
         .I1(EXMEMZero),
         .O(OutFromAnd));
-  LUT4 #(
-    .INIT(16'h8F80)) 
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     PC_i_7
        (.I0(R12[25]),
         .I1(jumpregout_reg_n_5),
-        .I2(jumpout_reg_n_5),
-        .I3(inA[25]),
+        .I2(addout[25]),
+        .I3(jumpout_reg_n_5),
+        .I4(inA[25]),
         .O(PCAddResult[25]));
-  LUT4 #(
-    .INIT(16'h8F80)) 
+  LUT5 #(
+    .INIT(32'hB8FFB800)) 
     PC_i_8
        (.I0(R12[24]),
         .I1(jumpregout_reg_n_5),
-        .I2(jumpout_reg_n_5),
-        .I3(inA[24]),
+        .I2(addout[24]),
+        .I3(jumpout_reg_n_5),
+        .I4(inA[24]),
         .O(PCAddResult[24]));
   LUT5 #(
     .INIT(32'hB8FFB800)) 
@@ -26612,238 +26571,195 @@ module EXMEMReg
         .D(\ReadData2O_reg[31] [9]),
         .Q(ReadDataO2[9]),
         .R(1'b0));
-  (* SOFT_HLUTNM = "soft_lutpair196" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair200" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[10]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[2]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_2 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_2 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [2]));
-  (* SOFT_HLUTNM = "soft_lutpair197" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair201" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[11]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[3]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_3 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_3 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [3]));
-  (* SOFT_HLUTNM = "soft_lutpair198" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair202" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[12]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[4]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_4 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_4 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [4]));
-  (* SOFT_HLUTNM = "soft_lutpair199" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair203" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[13]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[5]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_5 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_5 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [5]));
-  (* SOFT_HLUTNM = "soft_lutpair200" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair204" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[14]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[6]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_6 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_6 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [6]));
-  (* SOFT_HLUTNM = "soft_lutpair201" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair205" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[15]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[7]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_7 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_7 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [7]));
-  (* SOFT_HLUTNM = "soft_lutpair193" *) 
-  LUT4 #(
-    .INIT(16'h0400)) 
-    \ReadData_reg[15]_i_3 
-       (.I0(\ReadDataMemO3_reg[8] [0]),
-        .I1(\ALUResultO2_reg[0]_0 ),
-        .I2(\ReadDataMemO3_reg[8] [1]),
-        .I3(MemReadO2_reg_n_5),
-        .O(AS[0]));
-  (* SOFT_HLUTNM = "soft_lutpair206" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[16]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_8 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [8]));
-  (* SOFT_HLUTNM = "soft_lutpair207" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[17]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_9 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [9]));
-  (* SOFT_HLUTNM = "soft_lutpair207" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[18]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_10 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [10]));
-  (* SOFT_HLUTNM = "soft_lutpair206" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[19]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_11 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [11]));
-  (* SOFT_HLUTNM = "soft_lutpair208" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[20]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_12 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [12]));
-  (* SOFT_HLUTNM = "soft_lutpair210" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[21]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_13 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [13]));
-  (* SOFT_HLUTNM = "soft_lutpair210" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[22]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_14 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [14]));
-  (* SOFT_HLUTNM = "soft_lutpair208" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[23]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ALUResultO2_reg[11]_15 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [15]));
-  (* SOFT_HLUTNM = "soft_lutpair194" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[24]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[0]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [16]));
-  (* SOFT_HLUTNM = "soft_lutpair195" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[25]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[1]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [17]));
-  (* SOFT_HLUTNM = "soft_lutpair196" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[26]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[2]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [18]));
   (* SOFT_HLUTNM = "soft_lutpair197" *) 
   LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[27]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[3]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [19]));
+    .INIT(8'h20)) 
+    \ReadData_reg[15]_i_3 
+       (.I0(\ALUResultO2_reg[0]_0 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
+        .I2(MemReadO2_reg_n_5),
+        .O(AS[0]));
+  (* SOFT_HLUTNM = "soft_lutpair210" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[16]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_8 ),
+        .O(\ReadDataMemO3_reg[31] [8]));
+  (* SOFT_HLUTNM = "soft_lutpair211" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[17]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_9 ),
+        .O(\ReadDataMemO3_reg[31] [9]));
+  (* SOFT_HLUTNM = "soft_lutpair211" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[18]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_10 ),
+        .O(\ReadDataMemO3_reg[31] [10]));
+  (* SOFT_HLUTNM = "soft_lutpair210" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[19]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_11 ),
+        .O(\ReadDataMemO3_reg[31] [11]));
+  (* SOFT_HLUTNM = "soft_lutpair212" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[20]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_12 ),
+        .O(\ReadDataMemO3_reg[31] [12]));
+  (* SOFT_HLUTNM = "soft_lutpair214" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[21]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_13 ),
+        .O(\ReadDataMemO3_reg[31] [13]));
+  (* SOFT_HLUTNM = "soft_lutpair214" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[22]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_14 ),
+        .O(\ReadDataMemO3_reg[31] [14]));
+  (* SOFT_HLUTNM = "soft_lutpair212" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[23]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(\ALUResultO2_reg[11]_15 ),
+        .O(\ReadDataMemO3_reg[31] [15]));
   (* SOFT_HLUTNM = "soft_lutpair198" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[28]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[4]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [20]));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[24]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[0]),
+        .O(\ReadDataMemO3_reg[31] [16]));
   (* SOFT_HLUTNM = "soft_lutpair199" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[29]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[5]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [21]));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[25]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[1]),
+        .O(\ReadDataMemO3_reg[31] [17]));
   (* SOFT_HLUTNM = "soft_lutpair200" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
-    \ReadData_reg[30]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(p_0_in[6]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .O(\ReadDataMemO3_reg[31] [22]));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[26]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[2]),
+        .O(\ReadDataMemO3_reg[31] [18]));
   (* SOFT_HLUTNM = "soft_lutpair201" *) 
-  LUT3 #(
-    .INIT(8'h08)) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[27]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[3]),
+        .O(\ReadDataMemO3_reg[31] [19]));
+  (* SOFT_HLUTNM = "soft_lutpair202" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[28]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[4]),
+        .O(\ReadDataMemO3_reg[31] [20]));
+  (* SOFT_HLUTNM = "soft_lutpair203" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[29]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[5]),
+        .O(\ReadDataMemO3_reg[31] [21]));
+  (* SOFT_HLUTNM = "soft_lutpair204" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    \ReadData_reg[30]_i_1 
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
+        .I1(p_0_in[6]),
+        .O(\ReadDataMemO3_reg[31] [22]));
+  (* SOFT_HLUTNM = "soft_lutpair205" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[31]_i_1 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
         .I1(p_0_in[7]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
         .O(\ReadDataMemO3_reg[31] [23]));
-  (* SOFT_HLUTNM = "soft_lutpair193" *) 
-  LUT5 #(
-    .INIT(32'hF4040000)) 
+  (* SOFT_HLUTNM = "soft_lutpair197" *) 
+  LUT3 #(
+    .INIT(8'h40)) 
     \ReadData_reg[31]_i_3 
-       (.I0(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\^ReadDataMemO3_reg[8] [1]),
         .I1(\ALUResultO2_reg[0]_0 ),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[1]_0 ),
-        .I4(MemReadO2_reg_n_5),
+        .I2(MemReadO2_reg_n_5),
         .O(AS[1]));
-  (* SOFT_HLUTNM = "soft_lutpair219" *) 
+  (* SOFT_HLUTNM = "soft_lutpair223" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \ReadData_reg[7]_i_2 
        (.I0(MemReadO2_reg_n_5),
         .O(AR));
-  (* SOFT_HLUTNM = "soft_lutpair194" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair198" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[8]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[0]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_0 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_0 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair195" *) 
-  LUT5 #(
-    .INIT(32'h0F00D080)) 
+  (* SOFT_HLUTNM = "soft_lutpair199" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \ReadData_reg[9]_i_1 
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(p_0_in[1]),
-        .I2(\ReadDataMemO3_reg[8] [0]),
-        .I3(\ALUResultO2_reg[11]_1 ),
-        .I4(\ReadDataMemO3_reg[8] [1]),
+       (.I0(\ALUResultO2_reg[11]_1 ),
+        .I1(\^ReadDataMemO3_reg[8] [1]),
         .O(\ReadDataMemO3_reg[31] [1]));
   FDRE #(
     .INIT(1'b0)) 
@@ -27207,11 +27123,11 @@ module EXMEMReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \addout_reg[21] 
+    \addout_reg[22] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\Instructionout_reg[25] [19]),
-        .Q(addout[21]),
+        .D(\Instructionout_reg[25] [20]),
+        .Q(addout[22]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -27223,11 +27139,27 @@ module EXMEMReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \addout_reg[26] 
+    \addout_reg[24] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\Instructionout_reg[25] [24]),
-        .Q(addout[26]),
+        .D(\Instructionout_reg[25] [22]),
+        .Q(addout[24]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \addout_reg[25] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(\Instructionout_reg[25] [23]),
+        .Q(addout[25]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \addout_reg[27] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(\Instructionout_reg[25] [25]),
+        .Q(addout[27]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -27244,6 +27176,14 @@ module EXMEMReg
         .CE(1'b1),
         .D(Q[27]),
         .Q(D[29]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \addout_reg[2] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(\Instructionout_reg[25] [0]),
+        .Q(addout[2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -27554,318 +27494,139 @@ module EXMEMReg
         .Q(jumpregout_reg_n_5),
         .R(1'b0));
   LUT3 #(
-    .INIT(8'h02)) 
-    memory_reg_0_255_0_0_i_1
-       (.I0(p_0_in0_out[0]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[6] ));
-  (* SOFT_HLUTNM = "soft_lutpair191" *) 
-  LUT5 #(
-    .INIT(32'h0F310000)) 
-    memory_reg_0_255_0_0_i_2
-       (.I0(\ALUResultO3_reg[31] [0]),
-        .I1(\ALUResultO3_reg[31] [1]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\ReadDataMemO3_reg[15] [1]),
-        .I4(MemWriteO2_reg_n_5),
-        .O(p_0_in0_out[0]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+    .INIT(8'hD8)) 
     memory_reg_0_255_10_10_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [10]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [2]),
+        .I2(\storeout_reg[1]_0 [2]),
         .O(p_0_in1_in[2]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+  LUT3 #(
+    .INIT(8'hD8)) 
     memory_reg_0_255_11_11_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [11]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [3]),
+        .I2(\storeout_reg[1]_0 [3]),
         .O(p_0_in1_in[3]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+  LUT3 #(
+    .INIT(8'hD8)) 
     memory_reg_0_255_12_12_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [12]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [4]),
+        .I2(\storeout_reg[1]_0 [4]),
         .O(p_0_in1_in[4]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+  LUT3 #(
+    .INIT(8'hD8)) 
     memory_reg_0_255_13_13_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [13]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [5]),
+        .I2(\storeout_reg[1]_0 [5]),
         .O(p_0_in1_in[5]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+  LUT3 #(
+    .INIT(8'hD8)) 
     memory_reg_0_255_14_14_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [14]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [6]),
+        .I2(\storeout_reg[1]_0 [6]),
         .O(p_0_in1_in[6]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+  LUT3 #(
+    .INIT(8'hD8)) 
     memory_reg_0_255_15_15_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [15]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [7]),
+        .I2(\storeout_reg[1]_0 [7]),
         .O(p_0_in1_in[7]));
   LUT3 #(
-    .INIT(8'h02)) 
-    memory_reg_0_255_16_16_i_2
-       (.I0(p_0_in0_out[16]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[6]_3 ));
-  (* SOFT_HLUTNM = "soft_lutpair192" *) 
-  LUT5 #(
-    .INIT(32'h0FC40000)) 
-    memory_reg_0_255_16_16_i_3
-       (.I0(\ALUResultO3_reg[31] [0]),
-        .I1(\ALUResultO3_reg[31] [1]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\ReadDataMemO3_reg[15] [1]),
-        .I4(MemWriteO2_reg_n_5),
-        .O(p_0_in0_out[16]));
-  LUT3 #(
-    .INIT(8'h02)) 
-    memory_reg_0_255_24_24_i_2
-       (.I0(p_0_in0_out[24]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[14]_3 ));
-  (* SOFT_HLUTNM = "soft_lutpair192" *) 
-  LUT5 #(
-    .INIT(32'h0FC80000)) 
-    memory_reg_0_255_24_24_i_3
-       (.I0(\ALUResultO3_reg[31] [0]),
-        .I1(\ALUResultO3_reg[31] [1]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\ReadDataMemO3_reg[15] [1]),
-        .I4(MemWriteO2_reg_n_5),
-        .O(p_0_in0_out[24]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+    .INIT(8'hD8)) 
     memory_reg_0_255_8_8_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [8]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [0]),
+        .I2(\storeout_reg[1]_0 [0]),
         .O(p_0_in1_in[0]));
   LUT3 #(
-    .INIT(8'h02)) 
-    memory_reg_0_255_8_8_i_2
-       (.I0(p_0_in0_out[8]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[14] ));
-  (* SOFT_HLUTNM = "soft_lutpair191" *) 
-  LUT5 #(
-    .INIT(32'h0F540000)) 
-    memory_reg_0_255_8_8_i_3
-       (.I0(\ALUResultO3_reg[31] [1]),
-        .I1(\ALUResultO3_reg[31] [0]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\ReadDataMemO3_reg[15] [1]),
-        .I4(MemWriteO2_reg_n_5),
-        .O(p_0_in0_out[8]));
-  LUT4 #(
-    .INIT(16'hCDC8)) 
+    .INIT(8'hD8)) 
     memory_reg_0_255_9_9_i_1
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(\storeout_reg[1]_0 [9]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
-        .I3(\storeout_reg[1]_0 [1]),
+        .I2(\storeout_reg[1]_0 [1]),
         .O(p_0_in1_in[1]));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_256_511_0_0_i_1
-       (.I0(\ALUResultO3_reg[31] [11]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(p_0_in0_out[0]),
-        .O(\ReadDataMemO3_reg[6]_0 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_256_511_16_16_i_1
-       (.I0(\ALUResultO3_reg[31] [11]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(p_0_in0_out[16]),
-        .O(\ReadDataMemO3_reg[6]_4 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_256_511_24_24_i_1
-       (.I0(\ALUResultO3_reg[31] [11]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(p_0_in0_out[24]),
-        .O(\ReadDataMemO3_reg[14]_4 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_256_511_8_8_i_1
-       (.I0(\ALUResultO3_reg[31] [11]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(p_0_in0_out[8]),
-        .O(\ReadDataMemO3_reg[14]_0 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_512_767_0_0_i_1
-       (.I0(\ALUResultO3_reg[31] [10]),
-        .I1(\ALUResultO3_reg[31] [11]),
-        .I2(p_0_in0_out[0]),
-        .O(\ReadDataMemO3_reg[6]_1 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_512_767_16_16_i_1
-       (.I0(\ALUResultO3_reg[31] [10]),
-        .I1(\ALUResultO3_reg[31] [11]),
-        .I2(p_0_in0_out[16]),
-        .O(\ReadDataMemO3_reg[6]_5 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_512_767_24_24_i_1
-       (.I0(\ALUResultO3_reg[31] [10]),
-        .I1(\ALUResultO3_reg[31] [11]),
-        .I2(p_0_in0_out[24]),
-        .O(\ReadDataMemO3_reg[14]_5 ));
-  LUT3 #(
-    .INIT(8'h40)) 
-    memory_reg_512_767_8_8_i_1
-       (.I0(\ALUResultO3_reg[31] [10]),
-        .I1(\ALUResultO3_reg[31] [11]),
-        .I2(p_0_in0_out[8]),
-        .O(\ReadDataMemO3_reg[14]_1 ));
-  LUT3 #(
-    .INIT(8'h80)) 
-    memory_reg_768_1023_0_0_i_1
-       (.I0(p_0_in0_out[0]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[6]_2 ));
-  LUT3 #(
-    .INIT(8'h80)) 
-    memory_reg_768_1023_16_16_i_1
-       (.I0(p_0_in0_out[16]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[6]_6 ));
-  LUT3 #(
-    .INIT(8'h80)) 
-    memory_reg_768_1023_24_24_i_1
-       (.I0(p_0_in0_out[24]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[14]_6 ));
-  LUT3 #(
-    .INIT(8'h80)) 
-    memory_reg_768_1023_8_8_i_1
-       (.I0(p_0_in0_out[8]),
-        .I1(\ALUResultO3_reg[31] [10]),
-        .I2(\ALUResultO3_reg[31] [11]),
-        .O(\ReadDataMemO3_reg[14]_2 ));
-  (* SOFT_HLUTNM = "soft_lutpair212" *) 
+  (* SOFT_HLUTNM = "soft_lutpair209" *) 
   LUT2 #(
-    .INIT(4'h7)) 
-    n_3_547_BUFG_inst_i_1
-       (.I0(\ReadDataMemO3_reg[15] [0]),
-        .I1(\ReadDataMemO3_reg[15] [1]),
-        .O(n_3_547_BUFG_inst_n_4));
-  LUT2 #(
-    .INIT(4'h7)) 
-    n_4_548_BUFG_inst_i_1
-       (.I0(\ReadDataMemO3_reg[8] [1]),
-        .I1(\ReadDataMemO3_reg[8] [0]),
-        .O(n_4_548_BUFG_inst_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair205" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+    .INIT(4'h8)) 
     \out_reg[10]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[10]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [10]));
-  (* SOFT_HLUTNM = "soft_lutpair203" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair207" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[11]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[11]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [11]));
-  (* SOFT_HLUTNM = "soft_lutpair204" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair208" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[12]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[12]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [12]));
-  (* SOFT_HLUTNM = "soft_lutpair205" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair209" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[13]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[13]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [13]));
-  (* SOFT_HLUTNM = "soft_lutpair204" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair208" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[14]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[14]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [14]));
-  (* SOFT_HLUTNM = "soft_lutpair203" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair207" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[15]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[15]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [15]));
-  (* SOFT_HLUTNM = "soft_lutpair213" *) 
+  (* SOFT_HLUTNM = "soft_lutpair217" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[16]_i_1 
        (.I0(ReadDataO2[16]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [16]));
-  (* SOFT_HLUTNM = "soft_lutpair214" *) 
+  (* SOFT_HLUTNM = "soft_lutpair218" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[17]_i_1 
        (.I0(ReadDataO2[17]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [17]));
-  (* SOFT_HLUTNM = "soft_lutpair215" *) 
+  (* SOFT_HLUTNM = "soft_lutpair219" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[18]_i_1 
        (.I0(ReadDataO2[18]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [18]));
-  (* SOFT_HLUTNM = "soft_lutpair216" *) 
+  (* SOFT_HLUTNM = "soft_lutpair220" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[19]_i_1 
        (.I0(ReadDataO2[19]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [19]));
-  (* SOFT_HLUTNM = "soft_lutpair217" *) 
+  (* SOFT_HLUTNM = "soft_lutpair221" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[20]_i_1 
        (.I0(ReadDataO2[20]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [20]));
-  (* SOFT_HLUTNM = "soft_lutpair218" *) 
+  (* SOFT_HLUTNM = "soft_lutpair222" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[21]_i_1 
@@ -27878,93 +27639,83 @@ module EXMEMReg
        (.I0(ReadDataO2[22]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [22]));
-  (* SOFT_HLUTNM = "soft_lutpair211" *) 
+  (* SOFT_HLUTNM = "soft_lutpair215" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[23]_i_1 
        (.I0(ReadDataO2[23]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [23]));
-  (* SOFT_HLUTNM = "soft_lutpair218" *) 
+  (* SOFT_HLUTNM = "soft_lutpair222" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[24]_i_1 
        (.I0(ReadDataO2[24]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [24]));
-  (* SOFT_HLUTNM = "soft_lutpair217" *) 
+  (* SOFT_HLUTNM = "soft_lutpair221" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[25]_i_1 
        (.I0(ReadDataO2[25]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [25]));
-  (* SOFT_HLUTNM = "soft_lutpair216" *) 
+  (* SOFT_HLUTNM = "soft_lutpair220" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[26]_i_1 
        (.I0(ReadDataO2[26]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [26]));
-  (* SOFT_HLUTNM = "soft_lutpair215" *) 
+  (* SOFT_HLUTNM = "soft_lutpair219" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[27]_i_1 
        (.I0(ReadDataO2[27]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [27]));
-  (* SOFT_HLUTNM = "soft_lutpair214" *) 
+  (* SOFT_HLUTNM = "soft_lutpair218" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[28]_i_1 
        (.I0(ReadDataO2[28]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [28]));
-  (* SOFT_HLUTNM = "soft_lutpair213" *) 
+  (* SOFT_HLUTNM = "soft_lutpair217" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[29]_i_1 
        (.I0(ReadDataO2[29]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [29]));
-  (* SOFT_HLUTNM = "soft_lutpair212" *) 
+  (* SOFT_HLUTNM = "soft_lutpair216" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[30]_i_1 
        (.I0(ReadDataO2[30]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [30]));
-  (* SOFT_HLUTNM = "soft_lutpair211" *) 
+  (* SOFT_HLUTNM = "soft_lutpair215" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \out_reg[31]_i_1 
        (.I0(ReadDataO2[31]),
         .I1(\ReadDataMemO3_reg[15] [1]),
         .O(\ReadDataMemO3_reg[15]_0 [31]));
-  (* SOFT_HLUTNM = "soft_lutpair209" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair213" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[8]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[8]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [8]));
-  (* SOFT_HLUTNM = "soft_lutpair209" *) 
-  LUT3 #(
-    .INIT(8'hC8)) 
+  (* SOFT_HLUTNM = "soft_lutpair213" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \out_reg[9]_i_1 
        (.I0(\ReadDataMemO3_reg[15] [1]),
         .I1(ReadDataO2[9]),
-        .I2(\ReadDataMemO3_reg[15] [0]),
         .O(\ReadDataMemO3_reg[15]_0 [9]));
-  FDRE #(
-    .INIT(1'b0)) 
-    \storeout_reg[0] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(\storeout_reg[1]_1 [0]),
-        .Q(\ReadDataMemO3_reg[15] [0]),
-        .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \storeout_reg[1] 
@@ -27975,19 +27726,11 @@ module EXMEMReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \threeselectout_reg[0] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(\threeselectout_reg[1]_0 [0]),
-        .Q(\ReadDataMemO3_reg[8] [0]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
     \threeselectout_reg[1] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
         .D(\threeselectout_reg[1]_0 [1]),
-        .Q(\ReadDataMemO3_reg[8] [1]),
+        .Q(\^ReadDataMemO3_reg[8] [1]),
         .R(1'b0));
 endmodule
 
@@ -28077,8 +27820,6 @@ module IDEXReg
   wire [31:0]D;
   wire MemRead;
   wire MemReadO;
-  wire MemWrite;
-  wire MemWriteO;
   wire OutputOFRSRT;
   wire OutputOFRSRTO;
   wire [1:0]PCAddResult;
@@ -28121,6 +27862,7 @@ module IDEXReg
   wire \adderaddresultout[5]_i_2_n_5 ;
   wire \adderaddresultout[5]_i_3_n_5 ;
   wire \adderaddresultout[5]_i_4_n_5 ;
+  wire \adderaddresultout[5]_i_5_n_5 ;
   wire \adderaddresultout[9]_i_2_n_5 ;
   wire \adderaddresultout[9]_i_3_n_5 ;
   wire \adderaddresultout[9]_i_4_n_5 ;
@@ -28132,7 +27874,7 @@ module IDEXReg
   wire \adderaddresultout_reg[21]_i_1_n_5 ;
   wire \adderaddresultout_reg[25]_i_1_n_5 ;
   wire \adderaddresultout_reg[29]_i_1_n_5 ;
-  wire [29:0]\^adderaddresultout_reg[31] ;
+  wire [29:0]\adderaddresultout_reg[31] ;
   wire \adderaddresultout_reg[5]_i_1_n_5 ;
   wire \adderaddresultout_reg[9]_i_1_n_5 ;
   wire [25:0]\addout_reg[27] ;
@@ -28155,8 +27897,6 @@ module IDEXReg
   wire [0:0]\NLW_adderaddresultout_reg[5]_i_1_O_UNCONNECTED ;
   wire [2:0]\NLW_adderaddresultout_reg[9]_i_1_CO_UNCONNECTED ;
 
-  assign \adderaddresultout_reg[31] [29:1] = \^adderaddresultout_reg[31] [29:1];
-  assign \adderaddresultout_reg[31] [0] = \addout_reg[31] [0];
   FDRE #(
     .INIT(1'b0)) 
     \ALUOpO_reg[0] 
@@ -28220,6 +27960,14 @@ module IDEXReg
         .CE(1'b1),
         .D(Branch),
         .Q(BranchO),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \Instructionout_reg[0] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(Q[0]),
+        .Q(\addout_reg[27] [0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -28295,19 +28043,19 @@ module IDEXReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \Instructionout_reg[19] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(Q[19]),
-        .Q(\addout_reg[27] [19]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
     \Instructionout_reg[1] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
         .D(Q[1]),
         .Q(\addout_reg[27] [1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \Instructionout_reg[20] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(Q[20]),
+        .Q(\addout_reg[27] [20]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -28319,11 +28067,27 @@ module IDEXReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \Instructionout_reg[24] 
+    \Instructionout_reg[22] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(Q[24]),
-        .Q(\addout_reg[27] [24]),
+        .D(Q[22]),
+        .Q(\addout_reg[27] [22]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \Instructionout_reg[23] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(Q[23]),
+        .Q(\addout_reg[27] [23]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \Instructionout_reg[25] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(Q[25]),
+        .Q(\addout_reg[27] [25]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -28396,14 +28160,6 @@ module IDEXReg
         .CE(1'b1),
         .D(MemRead),
         .Q(MemReadO),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    MemWriteO_reg
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(MemWrite),
-        .Q(MemWriteO),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -29335,6 +29091,12 @@ module IDEXReg
         .O(\adderaddresultout[29]_i_5_n_5 ));
   LUT2 #(
     .INIT(4'h6)) 
+    \adderaddresultout[2]_i_1 
+       (.I0(\addout_reg[31] [0]),
+        .I1(\addout_reg[27] [0]),
+        .O(\adderaddresultout_reg[31] [0]));
+  LUT2 #(
+    .INIT(4'h6)) 
     \adderaddresultout[31]_i_2 
        (.I0(\addout_reg[31] [29]),
         .I1(\addout_reg[27] [15]),
@@ -29365,6 +29127,12 @@ module IDEXReg
         .O(\adderaddresultout[5]_i_4_n_5 ));
   LUT2 #(
     .INIT(4'h6)) 
+    \adderaddresultout[5]_i_5 
+       (.I0(\addout_reg[31] [0]),
+        .I1(\addout_reg[27] [0]),
+        .O(\adderaddresultout[5]_i_5_n_5 ));
+  LUT2 #(
+    .INIT(4'h6)) 
     \adderaddresultout[9]_i_2 
        (.I0(\addout_reg[31] [7]),
         .I1(\addout_reg[27] [7]),
@@ -29392,56 +29160,56 @@ module IDEXReg
         .CO({\adderaddresultout_reg[13]_i_1_n_5 ,\NLW_adderaddresultout_reg[13]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [11:8]),
-        .O(\^adderaddresultout_reg[31] [11:8]),
+        .O(\adderaddresultout_reg[31] [11:8]),
         .S({\adderaddresultout[13]_i_2_n_5 ,\adderaddresultout[13]_i_3_n_5 ,\adderaddresultout[13]_i_4_n_5 ,\adderaddresultout[13]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[17]_i_1 
        (.CI(\adderaddresultout_reg[13]_i_1_n_5 ),
         .CO({\adderaddresultout_reg[17]_i_1_n_5 ,\NLW_adderaddresultout_reg[17]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [15:12]),
-        .O(\^adderaddresultout_reg[31] [15:12]),
+        .O(\adderaddresultout_reg[31] [15:12]),
         .S({\adderaddresultout[17]_i_2_n_5 ,\adderaddresultout[17]_i_3_n_5 ,\adderaddresultout[17]_i_4_n_5 ,\adderaddresultout[17]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[21]_i_1 
        (.CI(\adderaddresultout_reg[17]_i_1_n_5 ),
         .CO({\adderaddresultout_reg[21]_i_1_n_5 ,\NLW_adderaddresultout_reg[21]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [19:16]),
-        .O(\^adderaddresultout_reg[31] [19:16]),
+        .O(\adderaddresultout_reg[31] [19:16]),
         .S({\adderaddresultout[21]_i_2_n_5 ,\adderaddresultout[21]_i_3_n_5 ,\adderaddresultout[21]_i_4_n_5 ,\adderaddresultout[21]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[25]_i_1 
        (.CI(\adderaddresultout_reg[21]_i_1_n_5 ),
         .CO({\adderaddresultout_reg[25]_i_1_n_5 ,\NLW_adderaddresultout_reg[25]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [23:20]),
-        .O(\^adderaddresultout_reg[31] [23:20]),
+        .O(\adderaddresultout_reg[31] [23:20]),
         .S({\adderaddresultout[25]_i_2_n_5 ,\adderaddresultout[25]_i_3_n_5 ,\adderaddresultout[25]_i_4_n_5 ,\adderaddresultout[25]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[29]_i_1 
        (.CI(\adderaddresultout_reg[25]_i_1_n_5 ),
         .CO({\adderaddresultout_reg[29]_i_1_n_5 ,\NLW_adderaddresultout_reg[29]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [27:24]),
-        .O(\^adderaddresultout_reg[31] [27:24]),
+        .O(\adderaddresultout_reg[31] [27:24]),
         .S({\adderaddresultout[29]_i_2_n_5 ,\adderaddresultout[29]_i_3_n_5 ,\adderaddresultout[29]_i_4_n_5 ,\adderaddresultout[29]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[31]_i_1 
        (.CI(\adderaddresultout_reg[29]_i_1_n_5 ),
         .CO(\NLW_adderaddresultout_reg[31]_i_1_CO_UNCONNECTED [3:0]),
         .CYINIT(1'b0),
         .DI({1'b0,1'b0,1'b0,\addout_reg[31] [28]}),
-        .O({\NLW_adderaddresultout_reg[31]_i_1_O_UNCONNECTED [3:2],\^adderaddresultout_reg[31] [29:28]}),
+        .O({\NLW_adderaddresultout_reg[31]_i_1_O_UNCONNECTED [3:2],\adderaddresultout_reg[31] [29:28]}),
         .S({1'b0,1'b0,\adderaddresultout[31]_i_2_n_5 ,\adderaddresultout[31]_i_3_n_5 }));
   CARRY4 \adderaddresultout_reg[5]_i_1 
        (.CI(1'b0),
         .CO({\adderaddresultout_reg[5]_i_1_n_5 ,\NLW_adderaddresultout_reg[5]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [3:0]),
-        .O({\^adderaddresultout_reg[31] [3:1],\NLW_adderaddresultout_reg[5]_i_1_O_UNCONNECTED [0]}),
-        .S({\adderaddresultout[5]_i_2_n_5 ,\adderaddresultout[5]_i_3_n_5 ,\adderaddresultout[5]_i_4_n_5 ,\addout_reg[31] [0]}));
+        .O({\adderaddresultout_reg[31] [3:1],\NLW_adderaddresultout_reg[5]_i_1_O_UNCONNECTED [0]}),
+        .S({\adderaddresultout[5]_i_2_n_5 ,\adderaddresultout[5]_i_3_n_5 ,\adderaddresultout[5]_i_4_n_5 ,\adderaddresultout[5]_i_5_n_5 }));
   CARRY4 \adderaddresultout_reg[9]_i_1 
        (.CI(\adderaddresultout_reg[5]_i_1_n_5 ),
         .CO({\adderaddresultout_reg[9]_i_1_n_5 ,\NLW_adderaddresultout_reg[9]_i_1_CO_UNCONNECTED [2:0]}),
         .CYINIT(1'b0),
         .DI(\addout_reg[31] [7:4]),
-        .O(\^adderaddresultout_reg[31] [7:4]),
+        .O(\adderaddresultout_reg[31] [7:4]),
         .S({\adderaddresultout[9]_i_2_n_5 ,\adderaddresultout[9]_i_3_n_5 ,\adderaddresultout[9]_i_4_n_5 ,\adderaddresultout[9]_i_5_n_5 }));
   FDRE #(
     .INIT(1'b0)) 
@@ -29461,27 +29229,11 @@ module IDEXReg
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \storeout_reg[0] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(\ReadDataInstructionRead_reg[28] [0]),
-        .Q(\storeout_reg[1]_0 [0]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
     \storeout_reg[1] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
         .D(\ReadDataInstructionRead_reg[28] [1]),
         .Q(\storeout_reg[1]_0 [1]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \threeselectout_reg[0] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(\ReadDataInstructionRead_reg[26] [0]),
-        .Q(\threeselectout_reg[1]_0 [0]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
@@ -29536,7 +29288,7 @@ module IFIDReg
     BranchO_reg_1,
     D,
     Clk_IBUF_BUFG,
-    \PCResult_reg[2] );
+    UNCONN_IN);
   output [25:0]Q;
   output [29:0]\PCValueO_reg[31] ;
   output [5:0]\ALUOpO_reg[5] ;
@@ -29579,7 +29331,7 @@ module IFIDReg
   output BranchO_reg_1;
   input [29:0]D;
   input Clk_IBUF_BUFG;
-  input [31:0]\PCResult_reg[2] ;
+  input [31:0]UNCONN_IN;
 
   wire [5:0]\ALUOpO_reg[5] ;
   wire \ALUOp_reg[0]_i_10_n_5 ;
@@ -29598,11 +29350,11 @@ module IFIDReg
   wire \ALUOp_reg[1]_i_6_n_5 ;
   wire \ALUOp_reg[1]_i_7_n_5 ;
   wire \ALUOp_reg[1]_i_8_n_5 ;
-  wire \ALUOp_reg[1]_i_9_n_5 ;
   wire \ALUOp_reg[2]_i_10_n_5 ;
   wire \ALUOp_reg[2]_i_11_n_5 ;
   wire \ALUOp_reg[2]_i_12_n_5 ;
   wire \ALUOp_reg[2]_i_13_n_5 ;
+  wire \ALUOp_reg[2]_i_14_n_5 ;
   wire \ALUOp_reg[2]_i_15_n_5 ;
   wire \ALUOp_reg[2]_i_2_n_5 ;
   wire \ALUOp_reg[2]_i_3_n_5 ;
@@ -29610,6 +29362,7 @@ module IFIDReg
   wire \ALUOp_reg[2]_i_5_n_5 ;
   wire \ALUOp_reg[2]_i_6_n_5 ;
   wire \ALUOp_reg[2]_i_7_n_5 ;
+  wire \ALUOp_reg[2]_i_8_n_5 ;
   wire \ALUOp_reg[2]_i_9_n_5 ;
   wire \ALUOp_reg[3]_i_2_n_5 ;
   wire \ALUOp_reg[3]_i_3_n_5 ;
@@ -29618,6 +29371,7 @@ module IFIDReg
   wire \ALUOp_reg[4]_i_2_n_5 ;
   wire \ALUOp_reg[4]_i_3_n_5 ;
   wire \ALUOp_reg[4]_i_4_n_5 ;
+  wire \ALUOp_reg[4]_i_5_n_5 ;
   wire \ALUOp_reg[5]_i_3_n_5 ;
   wire \ALUOp_reg[5]_i_4_n_5 ;
   wire \ALUOp_reg[5]_i_5_n_5 ;
@@ -29630,15 +29384,17 @@ module IFIDReg
   wire ALUSrcO_reg;
   wire ALUSrc_reg_i_2_n_5;
   wire ALUSrc_reg_i_3_n_5;
-  wire [0:0]AR;
-  wire [0:0]AS;
   wire BranchO_reg;
   wire BranchO_reg_0;
   wire BranchO_reg_1;
   wire Branch_reg_i_10_n_5;
   wire Branch_reg_i_11_n_5;
+  wire Branch_reg_i_12_n_5;
+  wire Branch_reg_i_13_n_5;
   wire Branch_reg_i_14_n_5;
   wire Branch_reg_i_15_n_5;
+  wire Branch_reg_i_16_n_5;
+  wire Branch_reg_i_17_n_5;
   wire Branch_reg_i_4_n_5;
   wire Branch_reg_i_5_n_5;
   wire Branch_reg_i_6_n_5;
@@ -29650,13 +29406,14 @@ module IFIDReg
   wire [31:26]IFIDInstructionMemOutput;
   wire JALSignal_reg_i_4_n_5;
   wire JALSignal_reg_i_5_n_5;
+  wire JALSignal_reg_i_6_n_5;
   wire JALSignal_reg_i_7_n_5;
   wire JALSignal_reg_i_8_n_5;
   wire JALSignal_reg_i_9_n_5;
+  wire Jump_reg_i_10_n_5;
   wire Jump_reg_i_11_n_5;
   wire Jump_reg_i_4_n_5;
   wire Jump_reg_i_5_n_5;
-  wire Jump_reg_i_6_n_5;
   wire Jump_reg_i_7_n_5;
   wire Jump_reg_i_8_n_5;
   wire Jump_reg_i_9_n_5;
@@ -29669,28 +29426,25 @@ module IFIDReg
   wire MemRead_reg_i_5_n_5;
   wire MemRead_reg_i_6_n_5;
   wire MemRead_reg_i_7_n_5;
+  wire MemRead_reg_i_8_n_5;
   wire MemRead_reg_i_9_n_5;
-  wire MemWriteO_reg;
-  wire MemWriteO_reg_0;
-  wire MemWriteO_reg_1;
-  wire MemWrite_reg_i_4_n_5;
   wire MemWrite_reg_i_5_n_5;
-  wire MemWrite_reg_i_6_n_5;
   wire MemWrite_reg_i_7_n_5;
   wire MemtoRegO3_reg;
   wire MemtoReg_reg_i_2_n_5;
   wire MemtoReg_reg_i_3_n_5;
   wire OutputOFRSRTO_reg;
+  wire OutputOFRSRTO_reg_0;
   wire OutputOFRSRTO_reg_1;
   wire OutputOFRSRT_reg_i_10_n_5;
   wire OutputOFRSRT_reg_i_11_n_5;
+  wire OutputOFRSRT_reg_i_12_n_5;
   wire OutputOFRSRT_reg_i_4_n_5;
   wire OutputOFRSRT_reg_i_5_n_5;
   wire OutputOFRSRT_reg_i_6_n_5;
   wire OutputOFRSRT_reg_i_7_n_5;
   wire OutputOFRSRT_reg_i_8_n_5;
   wire OutputOFRSRT_reg_i_9_n_5;
-  wire [31:0]\PCResult_reg[2] ;
   wire [29:0]\PCValueO_reg[31] ;
   wire [25:0]\^Q ;
   wire RegDstO_reg;
@@ -29702,7 +29456,7 @@ module IFIDReg
   wire RegDst_reg_i_14_n_5;
   wire RegDst_reg_i_15_n_5;
   wire RegDst_reg_i_16_n_5;
-  wire RegDst_reg_i_17_n_5;
+  wire RegDst_reg_i_18_n_5;
   wire RegDst_reg_i_19_n_5;
   wire RegDst_reg_i_20_n_5;
   wire RegDst_reg_i_21_n_5;
@@ -29712,22 +29466,25 @@ module IFIDReg
   wire RegDst_reg_i_25_n_5;
   wire RegDst_reg_i_26_n_5;
   wire RegDst_reg_i_27_n_5;
+  wire RegDst_reg_i_28_n_5;
   wire RegDst_reg_i_29_n_5;
   wire RegDst_reg_i_30_n_5;
   wire RegDst_reg_i_4_n_5;
   wire RegDst_reg_i_5_n_5;
   wire RegDst_reg_i_6_n_5;
   wire RegDst_reg_i_7_n_5;
+  wire RegDst_reg_i_8_n_5;
   wire RegDst_reg_i_9_n_5;
   wire RegWriteO_reg;
   wire RegWriteO_reg_0;
   wire RegWriteO_reg_1;
   wire RegWrite_reg_i_10_n_5;
   wire RegWrite_reg_i_11_n_5;
-  wire RegWrite_reg_i_12_n_5;
   wire RegWrite_reg_i_13_n_5;
   wire RegWrite_reg_i_14_n_5;
   wire RegWrite_reg_i_15_n_5;
+  wire RegWrite_reg_i_16_n_5;
+  wire RegWrite_reg_i_17_n_5;
   wire RegWrite_reg_i_18_n_5;
   wire RegWrite_reg_i_19_n_5;
   wire RegWrite_reg_i_20_n_5;
@@ -29740,7 +29497,7 @@ module IFIDReg
   wire RegWrite_reg_i_6_n_5;
   wire RegWrite_reg_i_7_n_5;
   wire RegWrite_reg_i_8_n_5;
-  wire RegWrite_reg_i_9_n_5;
+  wire [31:0]UNCONN_IN;
   wire jalout_reg;
   wire jalout_reg_0;
   wire jalout_reg_1;
@@ -29751,116 +29508,106 @@ module IFIDReg
   wire jumpreg_reg_i_5_n_5;
   wire jumpregout_reg;
   wire jumpregout_reg_0;
-  wire [0:0]\storeout_reg[0] ;
-  wire [1:0]\storeout_reg[1] ;
-  wire [1:0]\storeout_reg[1]_0 ;
-  wire \storesignal_reg[0]_i_4_n_5 ;
-  wire \storesignal_reg[0]_i_5_n_5 ;
-  wire \storesignal_reg[0]_i_6_n_5 ;
-  wire \threeselect_reg[1]_i_4_n_5 ;
-  wire [0:0]\threeselectout_reg[0] ;
-  wire [1:0]\threeselectout_reg[1] ;
 
-  assign OutputOFRSRTO_reg_0 = OutputOFRSRT_reg_i_5_n_5;
-  assign Q[25] = IFIDInstructionMemOutput[30];
-  assign Q[24] = \^Q [24];
-  assign Q[23] = IFIDInstructionMemOutput[30];
-  assign Q[22] = IFIDInstructionMemOutput[30];
-  assign Q[21] = \^Q [21];
-  assign Q[20] = IFIDInstructionMemOutput[30];
-  assign Q[19:1] = \^Q [19:1];
-  LUT4 #(
-    .INIT(16'hFFFE)) 
+  assign Q[25] = \^Q [25];
+  assign Q[24] = IFIDInstructionMemOutput[31];
+  assign Q[23:20] = \^Q [23:20];
+  assign Q[19] = IFIDInstructionMemOutput[31];
+  assign Q[18:0] = \^Q [18:0];
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFEFEFE)) 
     \ALUOp_reg[0]_i_1 
        (.I0(\ALUOp_reg[0]_i_2_n_5 ),
         .I1(\ALUOp_reg[0]_i_3_n_5 ),
         .I2(\ALUOp_reg[0]_i_4_n_5 ),
-        .I3(\ALUOp_reg[0]_i_5_n_5 ),
+        .I3(RegDst_reg_i_8_n_5),
+        .I4(\^Q [9]),
+        .I5(\ALUOp_reg[0]_i_5_n_5 ),
         .O(\ALUOpO_reg[5] [0]));
-  (* SOFT_HLUTNM = "soft_lutpair241" *) 
+  (* SOFT_HLUTNM = "soft_lutpair245" *) 
   LUT4 #(
     .INIT(16'h0001)) 
     \ALUOp_reg[0]_i_10 
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(\^Q [4]),
-        .I2(IFIDInstructionMemOutput[26]),
-        .I3(IFIDInstructionMemOutput[28]),
+       (.I0(\^Q [4]),
+        .I1(IFIDInstructionMemOutput[26]),
+        .I2(IFIDInstructionMemOutput[28]),
+        .I3(IFIDInstructionMemOutput[30]),
         .O(\ALUOp_reg[0]_i_10_n_5 ));
-  LUT6 #(
-    .INIT(64'hFEFFFEFEFEFEFEFE)) 
+  LUT4 #(
+    .INIT(16'hFEEE)) 
     \ALUOp_reg[0]_i_2 
        (.I0(\ALUOp_reg[0]_i_6_n_5 ),
-        .I1(\threeselectout_reg[1] [0]),
-        .I2(\ALUOp_reg[0]_i_7_n_5 ),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(\^Q [16]),
-        .I5(RegDst_reg_i_21_n_5),
+        .I1(\ALUOp_reg[0]_i_7_n_5 ),
+        .I2(\^Q [16]),
+        .I3(RegDst_reg_i_21_n_5),
         .O(\ALUOp_reg[0]_i_2_n_5 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFAABAAAAA)) 
     \ALUOp_reg[0]_i_3 
        (.I0(\ALUOp_reg[0]_i_8_n_5 ),
-        .I1(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
         .I2(IFIDInstructionMemOutput[27]),
         .I3(IFIDInstructionMemOutput[26]),
         .I4(Branch_reg_i_10_n_5),
         .I5(\ALUOp_reg[0]_i_9_n_5 ),
         .O(\ALUOp_reg[0]_i_3_n_5 ));
-  LUT5 #(
-    .INIT(32'h40FF4040)) 
+  LUT6 #(
+    .INIT(64'hFFFF404040FF4040)) 
     \ALUOp_reg[0]_i_4 
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .I2(RegDst_reg_i_6_n_5),
         .I3(\^Q [3]),
         .I4(RegDst_reg_i_22_n_5),
+        .I5(\^Q [0]),
         .O(\ALUOp_reg[0]_i_4_n_5 ));
   LUT5 #(
-    .INIT(32'h0A003A00)) 
+    .INIT(32'h02003200)) 
     \ALUOp_reg[0]_i_5 
        (.I0(IFIDInstructionMemOutput[29]),
-        .I1(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
         .I2(IFIDInstructionMemOutput[28]),
         .I3(IFIDInstructionMemOutput[26]),
         .I4(IFIDInstructionMemOutput[27]),
         .O(\ALUOp_reg[0]_i_5_n_5 ));
   LUT6 #(
-    .INIT(64'h0000000200000000)) 
+    .INIT(64'h0000002000000000)) 
     \ALUOp_reg[0]_i_6 
        (.I0(RegWrite_reg_i_21_n_5),
         .I1(IFIDInstructionMemOutput[27]),
-        .I2(\^Q [5]),
+        .I2(JALSignal_reg_i_6_n_5),
         .I3(IFIDInstructionMemOutput[26]),
         .I4(\^Q [2]),
         .I5(\^Q [1]),
         .O(\ALUOp_reg[0]_i_6_n_5 ));
-  LUT5 #(
-    .INIT(32'h00080000)) 
+  LUT6 #(
+    .INIT(64'h8888000800000000)) 
     \ALUOp_reg[0]_i_7 
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .I2(\^Q [6]),
         .I3(\^Q [5]),
-        .I4(RegWrite_reg_i_24_n_5),
+        .I4(\^Q [0]),
+        .I5(RegWrite_reg_i_24_n_5),
         .O(\ALUOp_reg[0]_i_7_n_5 ));
   LUT6 #(
-    .INIT(64'h0000000000008F88)) 
+    .INIT(64'h00008F8800000000)) 
     \ALUOp_reg[0]_i_8 
        (.I0(\ALUOp_reg[0]_i_10_n_5 ),
         .I1(\^Q [1]),
         .I2(OutputOFRSRT_reg_i_4_n_5),
         .I3(RegWrite_reg_i_24_n_5),
         .I4(\^Q [2]),
-        .I5(\^Q [5]),
+        .I5(JALSignal_reg_i_6_n_5),
         .O(\ALUOp_reg[0]_i_8_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair225" *) 
+  (* SOFT_HLUTNM = "soft_lutpair229" *) 
   LUT4 #(
-    .INIT(16'h003A)) 
+    .INIT(16'h030A)) 
     \ALUOp_reg[0]_i_9 
        (.I0(IFIDInstructionMemOutput[29]),
         .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[31]),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(IFIDInstructionMemOutput[27]),
         .O(\ALUOp_reg[0]_i_9_n_5 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
@@ -29872,74 +29619,71 @@ module IFIDReg
         .I4(\ALUOp_reg[1]_i_5_n_5 ),
         .I5(\ALUOp_reg[1]_i_6_n_5 ),
         .O(\ALUOpO_reg[5] [1]));
-  LUT6 #(
-    .INIT(64'h88888888FFF8F8F8)) 
+  LUT4 #(
+    .INIT(16'h88F8)) 
     \ALUOp_reg[1]_i_2 
        (.I0(\ALUOp_reg[5]_i_9_n_5 ),
         .I1(\ALUOp_reg[2]_i_13_n_5 ),
         .I2(Branch_reg_i_9_n_5),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(MemtoReg_reg_i_2_n_5),
-        .I5(IFIDInstructionMemOutput[27]),
+        .I3(IFIDInstructionMemOutput[27]),
         .O(\ALUOp_reg[1]_i_2_n_5 ));
-  LUT5 #(
-    .INIT(32'hFFFFFF80)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFF0800)) 
     \ALUOp_reg[1]_i_3 
        (.I0(\^Q [2]),
         .I1(\^Q [5]),
-        .I2(\ALUOp_reg[2]_i_13_n_5 ),
-        .I3(\ALUOp_reg[1]_i_7_n_5 ),
-        .I4(\ALUOp_reg[1]_i_8_n_5 ),
+        .I2(\^Q [0]),
+        .I3(\ALUOp_reg[2]_i_13_n_5 ),
+        .I4(\ALUOp_reg[1]_i_7_n_5 ),
+        .I5(\ALUOp_reg[1]_i_8_n_5 ),
         .O(\ALUOp_reg[1]_i_3_n_5 ));
-  LUT4 #(
-    .INIT(16'h8000)) 
+  LUT6 #(
+    .INIT(64'h0C00000000008080)) 
     \ALUOp_reg[1]_i_4 
-       (.I0(\ALUOp_reg[2]_i_13_n_5 ),
-        .I1(\^Q [6]),
-        .I2(\^Q [2]),
-        .I3(\^Q [1]),
+       (.I0(\^Q [5]),
+        .I1(\ALUOp_reg[2]_i_13_n_5 ),
+        .I2(\^Q [0]),
+        .I3(\^Q [6]),
+        .I4(\^Q [2]),
+        .I5(\^Q [1]),
         .O(\ALUOp_reg[1]_i_4_n_5 ));
-  LUT5 #(
-    .INIT(32'h80000000)) 
+  LUT6 #(
+    .INIT(64'h0040000000000000)) 
     \ALUOp_reg[1]_i_5 
-       (.I0(RegDst_reg_i_17_n_5),
+       (.I0(\^Q [4]),
         .I1(\^Q [3]),
         .I2(RegDst_reg_i_5_n_5),
-        .I3(\^Q [5]),
-        .I4(MemtoReg_reg_i_2_n_5),
+        .I3(\^Q [0]),
+        .I4(\^Q [5]),
+        .I5(MemtoReg_reg_i_2_n_5),
         .O(\ALUOp_reg[1]_i_5_n_5 ));
-  LUT5 #(
-    .INIT(32'h0E000A00)) 
+  LUT4 #(
+    .INIT(16'h0200)) 
     \ALUOp_reg[1]_i_6 
        (.I0(IFIDInstructionMemOutput[29]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
+        .I1(IFIDInstructionMemOutput[28]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[26]),
-        .I4(IFIDInstructionMemOutput[31]),
         .O(\ALUOp_reg[1]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair232" *) 
+  (* SOFT_HLUTNM = "soft_lutpair236" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     \ALUOp_reg[1]_i_7 
-       (.I0(IFIDInstructionMemOutput[31]),
+       (.I0(IFIDInstructionMemOutput[30]),
         .I1(IFIDInstructionMemOutput[26]),
         .I2(IFIDInstructionMemOutput[27]),
         .I3(OutputOFRSRT_reg_i_4_n_5),
         .O(\ALUOp_reg[1]_i_7_n_5 ));
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT6 #(
+    .INIT(64'h8888888C00000000)) 
     \ALUOp_reg[1]_i_8 
        (.I0(Jump_reg_i_4_n_5),
         .I1(MemtoReg_reg_i_2_n_5),
-        .I2(\ALUOp_reg[1]_i_9_n_5 ),
+        .I2(\^Q [3]),
+        .I3(OutputOFRSRT_reg_i_12_n_5),
+        .I4(\^Q [5]),
+        .I5(\^Q [4]),
         .O(\ALUOp_reg[1]_i_8_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair252" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \ALUOp_reg[1]_i_9 
-       (.I0(\^Q [4]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .O(\ALUOp_reg[1]_i_9_n_5 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFFE)) 
     \ALUOp_reg[2]_i_1 
@@ -29950,16 +29694,17 @@ module IFIDReg
         .I4(\ALUOp_reg[2]_i_6_n_5 ),
         .I5(\ALUOp_reg[2]_i_7_n_5 ),
         .O(\ALUOpO_reg[5] [2]));
-  LUT5 #(
-    .INIT(32'h00080000)) 
+  LUT6 #(
+    .INIT(64'h0000800800008000)) 
     \ALUOp_reg[2]_i_10 
        (.I0(RegDst_reg_i_19_n_5),
         .I1(MemtoReg_reg_i_2_n_5),
         .I2(\^Q [1]),
-        .I3(\^Q [5]),
-        .I4(\ALUOp_reg[2]_i_15_n_5 ),
+        .I3(\^Q [0]),
+        .I4(\^Q [5]),
+        .I5(\ALUOp_reg[2]_i_15_n_5 ),
         .O(\ALUOp_reg[2]_i_10_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair247" *) 
+  (* SOFT_HLUTNM = "soft_lutpair251" *) 
   LUT4 #(
     .INIT(16'hD000)) 
     \ALUOp_reg[2]_i_11 
@@ -29968,24 +29713,33 @@ module IFIDReg
         .I2(\^Q [2]),
         .I3(\^Q [1]),
         .O(\ALUOp_reg[2]_i_11_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair223" *) 
+  (* SOFT_HLUTNM = "soft_lutpair227" *) 
   LUT4 #(
-    .INIT(16'h0304)) 
+    .INIT(16'h0034)) 
     \ALUOp_reg[2]_i_12 
        (.I0(\^Q [3]),
         .I1(\^Q [4]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(\^Q [5]),
+        .I2(\^Q [5]),
+        .I3(\^Q [0]),
         .O(\ALUOp_reg[2]_i_12_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair235" *) 
-  LUT4 #(
-    .INIT(16'h0100)) 
+  (* SOFT_HLUTNM = "soft_lutpair239" *) 
+  LUT3 #(
+    .INIT(8'h10)) 
     \ALUOp_reg[2]_i_13 
        (.I0(\^Q [3]),
         .I1(\^Q [4]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(MemtoReg_reg_i_2_n_5),
+        .I2(MemtoReg_reg_i_2_n_5),
         .O(\ALUOp_reg[2]_i_13_n_5 ));
+  LUT6 #(
+    .INIT(64'h1000000000000000)) 
+    \ALUOp_reg[2]_i_14 
+       (.I0(\^Q [8]),
+        .I1(\^Q [9]),
+        .I2(\^Q [10]),
+        .I3(IFIDInstructionMemOutput[26]),
+        .I4(IFIDInstructionMemOutput[30]),
+        .I5(IFIDInstructionMemOutput[27]),
+        .O(\ALUOp_reg[2]_i_14_n_5 ));
   LUT5 #(
     .INIT(32'hAAAAAAAB)) 
     \ALUOp_reg[2]_i_15 
@@ -29993,40 +29747,41 @@ module IFIDReg
         .I1(\^Q [16]),
         .I2(\^Q [18]),
         .I3(\^Q [17]),
-        .I4(\^Q [19]),
+        .I4(\^Q [20]),
         .O(\ALUOp_reg[2]_i_15_n_5 ));
   LUT5 #(
-    .INIT(32'h8888F888)) 
+    .INIT(32'hFFA8A8A8)) 
     \ALUOp_reg[2]_i_2 
        (.I0(RegWrite_reg_i_23_n_5),
-        .I1(\ALUOp_reg[2]_i_9_n_5 ),
-        .I2(RegDst_reg_i_10_n_5),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(IFIDInstructionMemOutput[31]),
+        .I1(\ALUOp_reg[2]_i_8_n_5 ),
+        .I2(\ALUOp_reg[2]_i_9_n_5 ),
+        .I3(RegDst_reg_i_10_n_5),
+        .I4(IFIDInstructionMemOutput[27]),
         .O(\ALUOp_reg[2]_i_2_n_5 ));
-  LUT5 #(
-    .INIT(32'h00000004)) 
+  LUT6 #(
+    .INIT(64'h0000000000000004)) 
     \ALUOp_reg[2]_i_3 
        (.I0(IFIDInstructionMemOutput[27]),
         .I1(IFIDInstructionMemOutput[26]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[29]),
-        .I4(OutputOFRSRT_reg_i_4_n_5),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(IFIDInstructionMemOutput[28]),
+        .I4(IFIDInstructionMemOutput[29]),
+        .I5(OutputOFRSRT_reg_i_4_n_5),
         .O(\ALUOp_reg[2]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair226" *) 
+  (* SOFT_HLUTNM = "soft_lutpair230" *) 
   LUT4 #(
-    .INIT(16'h0400)) 
+    .INIT(16'h1000)) 
     \ALUOp_reg[2]_i_4 
        (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[27]),
         .I3(IFIDInstructionMemOutput[29]),
         .O(\ALUOp_reg[2]_i_4_n_5 ));
   LUT5 #(
-    .INIT(32'hBFBBBBBB)) 
+    .INIT(32'hEFEEEEEE)) 
     \ALUOp_reg[2]_i_5 
        (.I0(\ALUOp_reg[2]_i_10_n_5 ),
-        .I1(MemWrite_reg_i_4_n_5),
+        .I1(RegWrite_reg_i_17_n_5),
         .I2(IFIDInstructionMemOutput[27]),
         .I3(IFIDInstructionMemOutput[26]),
         .I4(MemRead_reg_i_6_n_5),
@@ -30041,58 +29796,73 @@ module IFIDReg
         .I4(\^Q [2]),
         .I5(\^Q [1]),
         .O(\ALUOp_reg[2]_i_6_n_5 ));
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT6 #(
+    .INIT(64'hFF80808080808080)) 
     \ALUOp_reg[2]_i_7 
        (.I0(Branch_reg_i_10_n_5),
         .I1(Branch_reg_i_9_n_5),
         .I2(IFIDInstructionMemOutput[27]),
+        .I3(\ALUOp_reg[2]_i_13_n_5 ),
+        .I4(RegDst_reg_i_18_n_5),
+        .I5(\^Q [2]),
         .O(\ALUOp_reg[2]_i_7_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair235" *) 
-  LUT5 #(
-    .INIT(32'h00200000)) 
+  LUT6 #(
+    .INIT(64'h0004000000000000)) 
+    \ALUOp_reg[2]_i_8 
+       (.I0(\^Q [0]),
+        .I1(\^Q [5]),
+        .I2(\^Q [7]),
+        .I3(\^Q [6]),
+        .I4(\ALUOp_reg[2]_i_14_n_5 ),
+        .I5(RegWrite_reg_i_21_n_5),
+        .O(\ALUOp_reg[2]_i_8_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair239" *) 
+  LUT4 #(
+    .INIT(16'h0800)) 
     \ALUOp_reg[2]_i_9 
        (.I0(\^Q [4]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(\^Q [3]),
-        .I3(\^Q [5]),
-        .I4(MemtoReg_reg_i_2_n_5),
+        .I1(\^Q [3]),
+        .I2(\^Q [5]),
+        .I3(MemtoReg_reg_i_2_n_5),
         .O(\ALUOp_reg[2]_i_9_n_5 ));
-  LUT4 #(
-    .INIT(16'hEFEE)) 
+  LUT6 #(
+    .INIT(64'hFFAEFFFFFFAEFFAE)) 
     \ALUOp_reg[3]_i_1 
        (.I0(\ALUOp_reg[3]_i_2_n_5 ),
-        .I1(RegWrite_reg_i_13_n_5),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(MemRead_reg_i_6_n_5),
+        .I1(RegDst_reg_i_8_n_5),
+        .I2(\^Q [9]),
+        .I3(RegWrite_reg_i_13_n_5),
+        .I4(IFIDInstructionMemOutput[27]),
+        .I5(MemRead_reg_i_6_n_5),
         .O(\ALUOpO_reg[5] [3]));
-  LUT6 #(
-    .INIT(64'hFFFEFEFEFFFFFFFF)) 
+  LUT5 #(
+    .INIT(32'hFFFEFEFE)) 
     \ALUOp_reg[3]_i_2 
        (.I0(\ALUOp_reg[3]_i_3_n_5 ),
         .I1(\ALUOp_reg[3]_i_4_n_5 ),
         .I2(\ALUOp_reg[3]_i_5_n_5 ),
         .I3(IFIDInstructionMemOutput[27]),
         .I4(MemWrite_reg_i_7_n_5),
-        .I5(MemWrite_reg_i_4_n_5),
         .O(\ALUOp_reg[3]_i_2_n_5 ));
   LUT6 #(
-    .INIT(64'h0C00404000004040)) 
+    .INIT(64'h0C00808000008080)) 
     \ALUOp_reg[3]_i_3 
-       (.I0(\^Q [5]),
+       (.I0(JALSignal_reg_i_6_n_5),
         .I1(RegWrite_reg_i_19_n_5),
         .I2(\^Q [3]),
         .I3(\^Q [6]),
         .I4(\^Q [2]),
         .I5(\^Q [1]),
         .O(\ALUOp_reg[3]_i_3_n_5 ));
-  LUT4 #(
-    .INIT(16'h2000)) 
+  LUT6 #(
+    .INIT(64'h00F0000000808080)) 
     \ALUOp_reg[3]_i_4 
-       (.I0(RegWrite_reg_i_19_n_5),
-        .I1(\^Q [3]),
-        .I2(\^Q [2]),
-        .I3(\^Q [5]),
+       (.I0(\^Q [1]),
+        .I1(\^Q [0]),
+        .I2(RegWrite_reg_i_19_n_5),
+        .I3(\^Q [3]),
+        .I4(\^Q [2]),
+        .I5(\^Q [5]),
         .O(\ALUOp_reg[3]_i_4_n_5 ));
   LUT6 #(
     .INIT(64'h20F0202020202020)) 
@@ -30113,41 +29883,53 @@ module IFIDReg
         .I3(IFIDInstructionMemOutput[26]),
         .I4(\ALUOp_reg[4]_i_4_n_5 ),
         .O(\ALUOpO_reg[5] [4]));
-  LUT6 #(
-    .INIT(64'h0000000000022000)) 
+  LUT5 #(
+    .INIT(32'h00022000)) 
     \ALUOp_reg[4]_i_2 
        (.I0(MemtoReg_reg_i_2_n_5),
         .I1(\^Q [3]),
         .I2(\^Q [2]),
         .I3(\^Q [5]),
         .I4(\^Q [4]),
-        .I5(IFIDInstructionMemOutput[31]),
         .O(\ALUOp_reg[4]_i_2_n_5 ));
-  LUT5 #(
-    .INIT(32'hF0FF8080)) 
+  LUT6 #(
+    .INIT(64'hFF00FFFF02000200)) 
     \ALUOp_reg[4]_i_3 
        (.I0(Jump_reg_i_4_n_5),
-        .I1(RegDst_reg_i_17_n_5),
-        .I2(Branch_reg_i_10_n_5),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(Branch_reg_i_9_n_5),
+        .I1(\^Q [4]),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(Branch_reg_i_10_n_5),
+        .I4(IFIDInstructionMemOutput[27]),
+        .I5(Branch_reg_i_9_n_5),
         .O(\ALUOp_reg[4]_i_3_n_5 ));
-  LUT4 #(
-    .INIT(16'hFF02)) 
+  LUT5 #(
+    .INIT(32'hFFF2F2F2)) 
     \ALUOp_reg[4]_i_4 
        (.I0(RegDst_reg_i_21_n_5),
         .I1(IFIDInstructionMemOutput[29]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(jumpout_reg),
+        .I2(jumpout_reg),
+        .I3(\ALUOp_reg[4]_i_5_n_5 ),
+        .I4(MemtoReg_reg_i_2_n_5),
         .O(\ALUOp_reg[4]_i_4_n_5 ));
-  LUT5 #(
-    .INIT(32'hAAAABAAA)) 
+  LUT6 #(
+    .INIT(64'h0040000000000000)) 
+    \ALUOp_reg[4]_i_5 
+       (.I0(\^Q [4]),
+        .I1(\^Q [3]),
+        .I2(\^Q [5]),
+        .I3(\^Q [2]),
+        .I4(\^Q [0]),
+        .I5(\^Q [1]),
+        .O(\ALUOp_reg[4]_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'hEEEEEEEEEFEEEEEE)) 
     \ALUOp_reg[5]_i_1 
        (.I0(OutputOFRSRT_reg_i_5_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[29]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(IFIDInstructionMemOutput[26]),
+        .I1(RegDst_reg_i_8_n_5),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(IFIDInstructionMemOutput[29]),
+        .I4(IFIDInstructionMemOutput[27]),
+        .I5(IFIDInstructionMemOutput[26]),
         .O(\ALUOpO_reg[5] [5]));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFEEE)) 
@@ -30169,43 +29951,42 @@ module IFIDReg
         .I4(RegDst_reg_i_10_n_5),
         .I5(\^Q [2]),
         .O(\ALUOp_reg[5]_i_3_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair249" *) 
+  (* SOFT_HLUTNM = "soft_lutpair253" *) 
   LUT2 #(
     .INIT(4'h7)) 
     \ALUOp_reg[5]_i_4 
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .O(\ALUOp_reg[5]_i_4_n_5 ));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFEEFE)) 
+  LUT5 #(
+    .INIT(32'hFFFFEEFE)) 
     \ALUOp_reg[5]_i_5 
        (.I0(RegDst_reg_i_22_n_5),
         .I1(RegDst_reg_i_21_n_5),
         .I2(IFIDInstructionMemOutput[29]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(RegWrite_reg_i_12_n_5),
-        .I5(MemRead_reg_i_5_n_5),
+        .I3(IFIDInstructionMemOutput[30]),
+        .I4(MemRead_reg_i_5_n_5),
         .O(\ALUOp_reg[5]_i_5_n_5 ));
-  LUT5 #(
-    .INIT(32'hEF000000)) 
+  LUT6 #(
+    .INIT(64'h0000EEEF00000000)) 
     \ALUOp_reg[5]_i_6 
        (.I0(\ALUOp_reg[5]_i_8_n_5 ),
         .I1(\ALUOp_reg[5]_i_9_n_5 ),
-        .I2(\^Q [3]),
-        .I3(RegDst_reg_i_17_n_5),
-        .I4(RegDst_reg_i_10_n_5),
+        .I2(\^Q [0]),
+        .I3(\^Q [3]),
+        .I4(\^Q [4]),
+        .I5(RegDst_reg_i_10_n_5),
         .O(\ALUOp_reg[5]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair242" *) 
-  LUT5 #(
-    .INIT(32'h03040004)) 
+  (* SOFT_HLUTNM = "soft_lutpair246" *) 
+  LUT4 #(
+    .INIT(16'h3404)) 
     \ALUOp_reg[5]_i_7 
        (.I0(\^Q [5]),
         .I1(\^Q [4]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(\^Q [3]),
-        .I4(\^Q [1]),
+        .I2(\^Q [3]),
+        .I3(\^Q [1]),
         .O(\ALUOp_reg[5]_i_7_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair238" *) 
+  (* SOFT_HLUTNM = "soft_lutpair242" *) 
   LUT4 #(
     .INIT(16'h1D00)) 
     \ALUOp_reg[5]_i_8 
@@ -30214,12 +29995,13 @@ module IFIDReg
         .I2(\^Q [3]),
         .I3(\^Q [1]),
         .O(\ALUOp_reg[5]_i_8_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair240" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
+  (* SOFT_HLUTNM = "soft_lutpair244" *) 
+  LUT3 #(
+    .INIT(8'h01)) 
     \ALUOp_reg[5]_i_9 
        (.I0(\^Q [5]),
-        .I1(\^Q [2]),
+        .I1(\^Q [0]),
+        .I2(\^Q [2]),
         .O(\ALUOp_reg[5]_i_9_n_5 ));
   LUT5 #(
     .INIT(32'hFFFF0200)) 
@@ -30230,23 +30012,21 @@ module IFIDReg
         .I3(RegDst_reg_i_10_n_5),
         .I4(ALUSrc_reg_i_3_n_5),
         .O(ALUSrcO_reg));
-  LUT5 #(
-    .INIT(32'h00000032)) 
+  LUT6 #(
+    .INIT(64'h0000000000220032)) 
     ALUSrc_reg_i_2
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .I2(OutputOFRSRT_reg_i_4_n_5),
         .I3(\^Q [5]),
-        .I4(IFIDInstructionMemOutput[27]),
+        .I4(\^Q [0]),
+        .I5(IFIDInstructionMemOutput[27]),
         .O(ALUSrc_reg_i_2_n_5));
-  LUT5 #(
-    .INIT(32'h22EE222E)) 
+  LUT2 #(
+    .INIT(4'h2)) 
     ALUSrc_reg_i_3
        (.I0(IFIDInstructionMemOutput[29]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[28]),
-        .I4(IFIDInstructionMemOutput[26]),
+        .I1(IFIDInstructionMemOutput[30]),
         .O(ALUSrc_reg_i_3_n_5));
   LUT6 #(
     .INIT(64'h000000000000F444)) 
@@ -30255,7 +30035,7 @@ module IFIDReg
         .I1(Branch_reg_i_5_n_5),
         .I2(Branch_reg_i_6_n_5),
         .I3(IFIDInstructionMemOutput[28]),
-        .I4(IFIDInstructionMemOutput[31]),
+        .I4(IFIDInstructionMemOutput[30]),
         .I5(IFIDInstructionMemOutput[29]),
         .O(BranchO_reg_1));
   LUT5 #(
@@ -30264,31 +30044,66 @@ module IFIDReg
        (.I0(\^Q [16]),
         .I1(\^Q [18]),
         .I2(\^Q [17]),
-        .I3(\^Q [19]),
+        .I3(\^Q [20]),
         .I4(IFIDInstructionMemOutput[29]),
         .O(Branch_reg_i_10_n_5));
-  LUT3 #(
-    .INIT(8'h08)) 
+  LUT6 #(
+    .INIT(64'h00000000FF020202)) 
     Branch_reg_i_11
-       (.I0(Branch_reg_i_15_n_5),
-        .I1(RegDst_reg_i_10_n_5),
-        .I2(IFIDInstructionMemOutput[27]),
+       (.I0(MemRead_reg_i_8_n_5),
+        .I1(\^Q [3]),
+        .I2(\^Q [4]),
+        .I3(Branch_reg_i_15_n_5),
+        .I4(RegDst_reg_i_10_n_5),
+        .I5(IFIDInstructionMemOutput[27]),
         .O(Branch_reg_i_11_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair250" *) 
+  (* SOFT_HLUTNM = "soft_lutpair253" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    Branch_reg_i_12
+       (.I0(\^Q [0]),
+        .I1(\^Q [1]),
+        .O(Branch_reg_i_12_n_5));
+  LUT6 #(
+    .INIT(64'h2000000000000000)) 
+    Branch_reg_i_13
+       (.I0(\^Q [10]),
+        .I1(\^Q [8]),
+        .I2(IFIDInstructionMemOutput[27]),
+        .I3(IFIDInstructionMemOutput[30]),
+        .I4(Branch_reg_i_16_n_5),
+        .I5(Branch_reg_i_17_n_5),
+        .O(Branch_reg_i_13_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair254" *) 
   LUT2 #(
     .INIT(4'h8)) 
     Branch_reg_i_14
        (.I0(IFIDInstructionMemOutput[28]),
         .I1(IFIDInstructionMemOutput[29]),
         .O(Branch_reg_i_14_n_5));
-  LUT4 #(
-    .INIT(16'h0002)) 
+  LUT6 #(
+    .INIT(64'h0000000200020002)) 
     Branch_reg_i_15
        (.I0(\^Q [5]),
         .I1(\^Q [4]),
         .I2(\^Q [2]),
         .I3(\^Q [3]),
+        .I4(\^Q [1]),
+        .I5(\^Q [0]),
         .O(Branch_reg_i_15_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair255" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    Branch_reg_i_16
+       (.I0(\^Q [5]),
+        .I1(\^Q [2]),
+        .O(Branch_reg_i_16_n_5));
+  LUT2 #(
+    .INIT(4'h1)) 
+    Branch_reg_i_17
+       (.I0(\^Q [6]),
+        .I1(\^Q [7]),
+        .O(Branch_reg_i_17_n_5));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFEFEFE)) 
     Branch_reg_i_2
@@ -30299,7 +30114,7 @@ module IFIDReg
         .I4(Branch_reg_i_10_n_5),
         .I5(RegWrite_reg_i_11_n_5),
         .O(BranchO_reg));
-  (* SOFT_HLUTNM = "soft_lutpair236" *) 
+  (* SOFT_HLUTNM = "soft_lutpair240" *) 
   LUT5 #(
     .INIT(32'hFFFFEAAA)) 
     Branch_reg_i_3
@@ -30309,15 +30124,15 @@ module IFIDReg
         .I3(MemRead_reg_i_6_n_5),
         .I4(OutputOFRSRT_reg_i_9_n_5),
         .O(BranchO_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair228" *) 
+  (* SOFT_HLUTNM = "soft_lutpair232" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     Branch_reg_i_4
        (.I0(\^Q [18]),
         .I1(\^Q [17]),
-        .I2(\^Q [19]),
+        .I2(\^Q [20]),
         .O(Branch_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair236" *) 
+  (* SOFT_HLUTNM = "soft_lutpair240" *) 
   LUT2 #(
     .INIT(4'h2)) 
     Branch_reg_i_5
@@ -30330,41 +30145,44 @@ module IFIDReg
        (.I0(\^Q [16]),
         .I1(\^Q [18]),
         .I2(\^Q [17]),
-        .I3(\^Q [19]),
+        .I3(\^Q [20]),
         .I4(IFIDInstructionMemOutput[27]),
         .O(Branch_reg_i_6_n_5));
-  LUT3 #(
-    .INIT(8'h10)) 
+  LUT6 #(
+    .INIT(64'hD111111100000000)) 
     Branch_reg_i_8
-       (.I0(IFIDInstructionMemOutput[31]),
+       (.I0(IFIDInstructionMemOutput[30]),
         .I1(IFIDInstructionMemOutput[26]),
-        .I2(Branch_reg_i_14_n_5),
+        .I2(Branch_reg_i_12_n_5),
+        .I3(RegDst_reg_i_19_n_5),
+        .I4(Branch_reg_i_13_n_5),
+        .I5(Branch_reg_i_14_n_5),
         .O(Branch_reg_i_8_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair241" *) 
+  (* SOFT_HLUTNM = "soft_lutpair245" *) 
   LUT2 #(
     .INIT(4'h4)) 
     Branch_reg_i_9
-       (.I0(IFIDInstructionMemOutput[31]),
+       (.I0(IFIDInstructionMemOutput[30]),
         .I1(IFIDInstructionMemOutput[28]),
         .O(Branch_reg_i_9_n_5));
   GND GND_1
-       (.G(IFIDInstructionMemOutput[30]));
+       (.G(IFIDInstructionMemOutput[31]));
   LUT5 #(
-    .INIT(32'h00000020)) 
+    .INIT(32'h00000200)) 
     JALSignal_reg_i_1
        (.I0(IFIDInstructionMemOutput[26]),
-        .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[28]),
+        .I3(IFIDInstructionMemOutput[27]),
         .I4(IFIDInstructionMemOutput[29]),
         .O(jalout_reg_1));
   LUT6 #(
-    .INIT(64'hFFFFFFFFFEFFFEFE)) 
+    .INIT(64'hFFFFFFFFFFFEFEFE)) 
     JALSignal_reg_i_2
        (.I0(RegWrite_reg_i_5_n_5),
         .I1(JALSignal_reg_i_4_n_5),
         .I2(JALSignal_reg_i_5_n_5),
-        .I3(\^Q [5]),
+        .I3(JALSignal_reg_i_6_n_5),
         .I4(RegDst_reg_i_15_n_5),
         .I5(Jump_reg_i_8_n_5),
         .O(jalout_reg_0));
@@ -30378,32 +30196,38 @@ module IFIDReg
         .I4(Jump_reg_i_9_n_5),
         .I5(JALSignal_reg_i_9_n_5),
         .O(jalout_reg));
-  LUT6 #(
-    .INIT(64'h0000000000F00404)) 
+  LUT5 #(
+    .INIT(32'h0000F004)) 
     JALSignal_reg_i_4
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(RegDst_reg_i_23_n_5),
         .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(IFIDInstructionMemOutput[29]),
-        .I5(IFIDInstructionMemOutput[28]),
+        .I3(IFIDInstructionMemOutput[29]),
+        .I4(RegWrite_reg_i_16_n_5),
         .O(JALSignal_reg_i_4_n_5));
   LUT6 #(
-    .INIT(64'h02A2000000800000)) 
+    .INIT(64'h000002A200000080)) 
     JALSignal_reg_i_5
        (.I0(jumpreg_reg_i_4_n_5),
         .I1(\^Q [5]),
         .I2(\^Q [2]),
         .I3(\^Q [3]),
-        .I4(RegDst_reg_i_17_n_5),
+        .I4(\^Q [4]),
         .I5(\^Q [1]),
         .O(JALSignal_reg_i_5_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair250" *) 
+  LUT2 #(
+    .INIT(4'h1)) 
+    JALSignal_reg_i_6
+       (.I0(\^Q [0]),
+        .I1(\^Q [5]),
+        .O(JALSignal_reg_i_6_n_5));
   LUT5 #(
-    .INIT(32'h00000004)) 
+    .INIT(32'h00000002)) 
     JALSignal_reg_i_7
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[29]),
+       (.I0(IFIDInstructionMemOutput[27]),
+        .I1(IFIDInstructionMemOutput[29]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[28]),
         .I4(IFIDInstructionMemOutput[26]),
         .O(JALSignal_reg_i_7_n_5));
@@ -30412,15 +30236,15 @@ module IFIDReg
     JALSignal_reg_i_8
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[28]),
         .I4(IFIDInstructionMemOutput[29]),
         .O(JALSignal_reg_i_8_n_5));
   LUT6 #(
-    .INIT(64'h0000000000000200)) 
+    .INIT(64'h0000000000000800)) 
     JALSignal_reg_i_9
        (.I0(\^Q [3]),
-        .I1(\^Q [5]),
+        .I1(JALSignal_reg_i_6_n_5),
         .I2(IFIDInstructionMemOutput[27]),
         .I3(RegDst_reg_i_10_n_5),
         .I4(\^Q [1]),
@@ -30432,27 +30256,36 @@ module IFIDReg
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(Jump_reg_i_4_n_5),
         .I2(Jump_reg_i_5_n_5),
-        .I3(Jump_reg_i_6_n_5),
-        .I4(IFIDInstructionMemOutput[28]),
+        .I3(IFIDInstructionMemOutput[27]),
+        .I4(RegWrite_reg_i_16_n_5),
         .I5(IFIDInstructionMemOutput[29]),
         .O(jumpout_reg));
-  (* SOFT_HLUTNM = "soft_lutpair245" *) 
-  LUT3 #(
-    .INIT(8'h04)) 
+  LUT5 #(
+    .INIT(32'h00000010)) 
+    Jump_reg_i_10
+       (.I0(\^Q [3]),
+        .I1(\^Q [4]),
+        .I2(IFIDInstructionMemOutput[26]),
+        .I3(\^Q [0]),
+        .I4(\^Q [1]),
+        .O(Jump_reg_i_10_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair249" *) 
+  LUT4 #(
+    .INIT(16'h0010)) 
     Jump_reg_i_11
        (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[26]),
-        .I2(IFIDInstructionMemOutput[27]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[26]),
+        .I3(IFIDInstructionMemOutput[27]),
         .O(Jump_reg_i_11_n_5));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFF040404)) 
+  LUT5 #(
+    .INIT(32'hFFFFF222)) 
     Jump_reg_i_2
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(Jump_reg_i_7_n_5),
-        .I4(MemtoReg_reg_i_2_n_5),
-        .I5(Jump_reg_i_8_n_5),
+       (.I0(IFIDInstructionMemOutput[27]),
+        .I1(RegWrite_reg_i_16_n_5),
+        .I2(Jump_reg_i_7_n_5),
+        .I3(MemtoReg_reg_i_2_n_5),
+        .I4(Jump_reg_i_8_n_5),
         .O(jumpout_reg_0));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFEAAA)) 
@@ -30464,46 +30297,41 @@ module IFIDReg
         .I4(Branch_reg_i_11_n_5),
         .I5(Jump_reg_i_9_n_5),
         .O(jumpout_reg_1));
-  (* SOFT_HLUTNM = "soft_lutpair239" *) 
-  LUT3 #(
-    .INIT(8'h01)) 
+  (* SOFT_HLUTNM = "soft_lutpair243" *) 
+  LUT4 #(
+    .INIT(16'h0001)) 
     Jump_reg_i_4
        (.I0(\^Q [2]),
         .I1(\^Q [1]),
         .I2(\^Q [5]),
+        .I3(\^Q [0]),
         .O(Jump_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair223" *) 
-  LUT3 #(
-    .INIT(8'h10)) 
-    Jump_reg_i_5
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(\^Q [4]),
-        .I2(\^Q [3]),
-        .O(Jump_reg_i_5_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair221" *) 
+  (* SOFT_HLUTNM = "soft_lutpair227" *) 
   LUT2 #(
-    .INIT(4'h2)) 
-    Jump_reg_i_6
-       (.I0(IFIDInstructionMemOutput[27]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .O(Jump_reg_i_6_n_5));
+    .INIT(4'h4)) 
+    Jump_reg_i_5
+       (.I0(\^Q [4]),
+        .I1(\^Q [3]),
+        .O(Jump_reg_i_5_n_5));
   LUT6 #(
-    .INIT(64'hABFBAAAAAAEAAAAA)) 
+    .INIT(64'hAAAAABFBAAAAAAEA)) 
     Jump_reg_i_7
        (.I0(RegDst_reg_i_11_n_5),
         .I1(\^Q [5]),
         .I2(\^Q [2]),
         .I3(\^Q [3]),
-        .I4(RegDst_reg_i_17_n_5),
+        .I4(\^Q [4]),
         .I5(\^Q [1]),
         .O(Jump_reg_i_7_n_5));
-  LUT4 #(
-    .INIT(16'h0070)) 
+  LUT6 #(
+    .INIT(64'h888800008FFF0000)) 
     Jump_reg_i_8
-       (.I0(IFIDInstructionMemOutput[26]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(Branch_reg_i_14_n_5),
-        .I3(IFIDInstructionMemOutput[31]),
+       (.I0(Branch_reg_i_13_n_5),
+        .I1(Jump_reg_i_10_n_5),
+        .I2(IFIDInstructionMemOutput[26]),
+        .I3(IFIDInstructionMemOutput[27]),
+        .I4(Branch_reg_i_14_n_5),
+        .I5(IFIDInstructionMemOutput[30]),
         .O(Jump_reg_i_8_n_5));
   LUT6 #(
     .INIT(64'h0020FFFF00200020)) 
@@ -30511,29 +30339,30 @@ module IFIDReg
        (.I0(Branch_reg_i_6_n_5),
         .I1(IFIDInstructionMemOutput[29]),
         .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[31]),
+        .I3(IFIDInstructionMemOutput[30]),
         .I4(Branch_reg_i_4_n_5),
         .I5(Jump_reg_i_11_n_5),
         .O(Jump_reg_i_9_n_5));
   LUT5 #(
-    .INIT(32'h18001010)) 
+    .INIT(32'h08000000)) 
     MemRead_reg_i_1
        (.I0(IFIDInstructionMemOutput[29]),
         .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[26]),
         .I4(IFIDInstructionMemOutput[27]),
         .O(MemReadO_reg_1));
-  (* SOFT_HLUTNM = "soft_lutpair231" *) 
-  LUT4 #(
-    .INIT(16'h0F04)) 
+  (* SOFT_HLUTNM = "soft_lutpair235" *) 
+  LUT5 #(
+    .INIT(32'h000F0004)) 
     MemRead_reg_i_10
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(MemRead_reg_i_11_n_5),
         .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[29]),
+        .I3(IFIDInstructionMemOutput[30]),
+        .I4(IFIDInstructionMemOutput[29]),
         .O(MemRead_reg_i_10_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair238" *) 
+  (* SOFT_HLUTNM = "soft_lutpair242" *) 
   LUT5 #(
     .INIT(32'h00040000)) 
     MemRead_reg_i_11
@@ -30543,127 +30372,93 @@ module IFIDReg
         .I3(\^Q [5]),
         .I4(\^Q [4]),
         .O(MemRead_reg_i_11_n_5));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     MemRead_reg_i_2
        (.I0(MemRead_reg_i_4_n_5),
         .I1(MemRead_reg_i_5_n_5),
         .I2(MemRead_reg_i_6_n_5),
         .I3(RegDst_reg_i_12_n_5),
         .I4(RegWrite_reg_i_11_n_5),
-        .I5(RegWrite_reg_i_12_n_5),
         .O(MemReadO_reg));
-  (* SOFT_HLUTNM = "soft_lutpair253" *) 
+  (* SOFT_HLUTNM = "soft_lutpair257" *) 
   LUT2 #(
     .INIT(4'h2)) 
     MemRead_reg_i_3
        (.I0(MemRead_reg_i_7_n_5),
         .I1(IFIDInstructionMemOutput[27]),
         .O(MemReadO_reg_0));
-  LUT5 #(
-    .INIT(32'h00FF0010)) 
+  LUT6 #(
+    .INIT(64'h0000FFFF00000100)) 
     MemRead_reg_i_4
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(IFIDInstructionMemOutput[28]),
-        .I2(MemtoReg_reg_i_3_n_5),
-        .I3(IFIDInstructionMemOutput[29]),
-        .I4(RegDst_reg_i_21_n_5),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(MemtoReg_reg_i_3_n_5),
+        .I4(IFIDInstructionMemOutput[29]),
+        .I5(RegDst_reg_i_21_n_5),
         .O(MemRead_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair229" *) 
+  (* SOFT_HLUTNM = "soft_lutpair233" *) 
   LUT3 #(
-    .INIT(8'h06)) 
+    .INIT(8'h12)) 
     MemRead_reg_i_5
        (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[27]),
         .O(MemRead_reg_i_5_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair227" *) 
+  (* SOFT_HLUTNM = "soft_lutpair231" *) 
   LUT3 #(
     .INIT(8'h08)) 
     MemRead_reg_i_6
        (.I0(IFIDInstructionMemOutput[29]),
         .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I2(IFIDInstructionMemOutput[30]),
         .O(MemRead_reg_i_6_n_5));
   LUT5 #(
-    .INIT(32'h00FF0010)) 
+    .INIT(32'hFFFF1110)) 
     MemRead_reg_i_7
        (.I0(\^Q [4]),
         .I1(\^Q [3]),
-        .I2(MemRead_reg_i_9_n_5),
-        .I3(IFIDInstructionMemOutput[31]),
+        .I2(MemRead_reg_i_8_n_5),
+        .I3(MemRead_reg_i_9_n_5),
         .I4(MemRead_reg_i_10_n_5),
         .O(MemRead_reg_i_7_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair240" *) 
-  LUT3 #(
-    .INIT(8'h20)) 
+  LUT6 #(
+    .INIT(64'h0000000080000000)) 
+    MemRead_reg_i_8
+       (.I0(IFIDInstructionMemOutput[28]),
+        .I1(IFIDInstructionMemOutput[29]),
+        .I2(\ALUOp_reg[5]_i_4_n_5 ),
+        .I3(JALSignal_reg_i_6_n_5),
+        .I4(IFIDInstructionMemOutput[30]),
+        .I5(IFIDInstructionMemOutput[26]),
+        .O(MemRead_reg_i_8_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair244" *) 
+  LUT5 #(
+    .INIT(32'h00700000)) 
     MemRead_reg_i_9
-       (.I0(\^Q [5]),
-        .I1(\^Q [2]),
-        .I2(RegDst_reg_i_10_n_5),
+       (.I0(\^Q [0]),
+        .I1(\^Q [1]),
+        .I2(\^Q [5]),
+        .I3(\^Q [2]),
+        .I4(RegDst_reg_i_10_n_5),
         .O(MemRead_reg_i_9_n_5));
   LUT5 #(
-    .INIT(32'h0A020000)) 
-    MemWrite_reg_i_1
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[26]),
-        .I4(IFIDInstructionMemOutput[29]),
-        .O(MemWriteO_reg_1));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFD)) 
-    MemWrite_reg_i_2
-       (.I0(MemWrite_reg_i_4_n_5),
-        .I1(RegWrite_reg_i_11_n_5),
-        .I2(RegDst_reg_i_12_n_5),
-        .I3(RegWrite_reg_i_10_n_5),
-        .I4(MemWrite_reg_i_5_n_5),
-        .I5(MemWrite_reg_i_6_n_5),
-        .O(MemWriteO_reg));
-  (* SOFT_HLUTNM = "soft_lutpair221" *) 
-  LUT5 #(
-    .INIT(32'h08FF0800)) 
-    MemWrite_reg_i_3
-       (.I0(MemWrite_reg_i_7_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[29]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(MemRead_reg_i_7_n_5),
-        .O(MemWriteO_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair226" *) 
-  LUT3 #(
-    .INIT(8'hFD)) 
-    MemWrite_reg_i_4
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .O(MemWrite_reg_i_4_n_5));
-  LUT6 #(
-    .INIT(64'h0000001F00000010)) 
+    .INIT(32'h00070004)) 
     MemWrite_reg_i_5
        (.I0(Branch_reg_i_4_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[26]),
-        .I3(IFIDInstructionMemOutput[28]),
-        .I4(IFIDInstructionMemOutput[29]),
-        .I5(MemtoReg_reg_i_3_n_5),
-        .O(MemWrite_reg_i_5_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair227" *) 
-  LUT4 #(
-    .INIT(16'h0800)) 
-    MemWrite_reg_i_6
-       (.I0(IFIDInstructionMemOutput[31]),
         .I1(IFIDInstructionMemOutput[26]),
-        .I2(IFIDInstructionMemOutput[28]),
+        .I2(RegWrite_reg_i_16_n_5),
         .I3(IFIDInstructionMemOutput[29]),
-        .O(MemWrite_reg_i_6_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair230" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
+        .I4(MemtoReg_reg_i_3_n_5),
+        .O(MemWrite_reg_i_5_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair234" *) 
+  LUT3 #(
+    .INIT(8'h02)) 
     MemWrite_reg_i_7
        (.I0(IFIDInstructionMemOutput[26]),
-        .I1(IFIDInstructionMemOutput[28]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[28]),
         .O(MemWrite_reg_i_7_n_5));
   LUT5 #(
     .INIT(32'hFFFFBAAA)) 
@@ -30674,51 +30469,69 @@ module IFIDReg
         .I3(MemtoReg_reg_i_3_n_5),
         .I4(RegWrite_reg_i_6_n_5),
         .O(MemtoRegO3_reg));
-  (* SOFT_HLUTNM = "soft_lutpair222" *) 
-  LUT3 #(
-    .INIT(8'h01)) 
+  (* SOFT_HLUTNM = "soft_lutpair226" *) 
+  LUT4 #(
+    .INIT(16'h0001)) 
     MemtoReg_reg_i_2
        (.I0(IFIDInstructionMemOutput[26]),
         .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[29]),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(IFIDInstructionMemOutput[29]),
         .O(MemtoReg_reg_i_2_n_5));
-  LUT6 #(
-    .INIT(64'h0003000000020202)) 
+  LUT5 #(
+    .INIT(32'h03000222)) 
     MemtoReg_reg_i_3
        (.I0(\^Q [1]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(\^Q [4]),
-        .I3(\^Q [3]),
-        .I4(\^Q [2]),
-        .I5(\^Q [5]),
+        .I1(\^Q [4]),
+        .I2(\^Q [3]),
+        .I3(\^Q [2]),
+        .I4(\^Q [5]),
         .O(MemtoReg_reg_i_3_n_5));
-  LUT5 #(
-    .INIT(32'h00000C08)) 
+  LUT6 #(
+    .INIT(64'h00000000080C0808)) 
     OutputOFRSRT_reg_i_1
        (.I0(\^Q [1]),
         .I1(RegDst_reg_i_15_n_5),
         .I2(\^Q [5]),
-        .I3(OutputOFRSRT_reg_i_4_n_5),
-        .I4(\^Q [2]),
+        .I3(\^Q [0]),
+        .I4(OutputOFRSRT_reg_i_4_n_5),
+        .I5(\^Q [2]),
         .O(OutputOFRSRTO_reg_1));
-  LUT5 #(
-    .INIT(32'h00020000)) 
+  LUT6 #(
+    .INIT(64'h0002000000000000)) 
     OutputOFRSRT_reg_i_10
        (.I0(RegDst_reg_i_10_n_5),
         .I1(\^Q [4]),
         .I2(\^Q [3]),
         .I3(IFIDInstructionMemOutput[27]),
         .I4(\^Q [5]),
+        .I5(OutputOFRSRT_reg_i_12_n_5),
         .O(OutputOFRSRT_reg_i_10_n_5));
-  LUT5 #(
-    .INIT(32'h10000000)) 
+  LUT6 #(
+    .INIT(64'h0010000000000000)) 
     OutputOFRSRT_reg_i_11
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .I2(\^Q [5]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(IFIDInstructionMemOutput[26]),
+        .I3(\^Q [0]),
+        .I4(IFIDInstructionMemOutput[27]),
+        .I5(IFIDInstructionMemOutput[26]),
         .O(OutputOFRSRT_reg_i_11_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair248" *) 
+  LUT3 #(
+    .INIT(8'hF7)) 
+    OutputOFRSRT_reg_i_12
+       (.I0(\^Q [1]),
+        .I1(\^Q [0]),
+        .I2(\^Q [2]),
+        .O(OutputOFRSRT_reg_i_12_n_5));
+  LUT3 #(
+    .INIT(8'hF4)) 
+    OutputOFRSRT_reg_i_2
+       (.I0(\^Q [9]),
+        .I1(RegDst_reg_i_8_n_5),
+        .I2(OutputOFRSRT_reg_i_5_n_5),
+        .O(OutputOFRSRTO_reg_0));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFEA)) 
     OutputOFRSRT_reg_i_3
@@ -30732,18 +30545,20 @@ module IFIDReg
   LUT4 #(
     .INIT(16'hFFFE)) 
     OutputOFRSRT_reg_i_4
-       (.I0(\^Q [19]),
+       (.I0(\^Q [20]),
         .I1(\^Q [17]),
         .I2(\^Q [18]),
         .I3(\^Q [16]),
         .O(OutputOFRSRT_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair233" *) 
-  LUT3 #(
-    .INIT(8'hF2)) 
+  (* SOFT_HLUTNM = "soft_lutpair237" *) 
+  LUT5 #(
+    .INIT(32'hFFFF080A)) 
     OutputOFRSRT_reg_i_5
        (.I0(RegDst_reg_i_15_n_5),
-        .I1(\^Q [5]),
-        .I2(JALSignal_reg_i_4_n_5),
+        .I1(\^Q [1]),
+        .I2(\^Q [5]),
+        .I3(\^Q [0]),
+        .I4(JALSignal_reg_i_4_n_5),
         .O(OutputOFRSRT_reg_i_5_n_5));
   LUT6 #(
     .INIT(64'h70FFFFFF70707070)) 
@@ -30775,21 +30590,26 @@ module IFIDReg
         .I4(jumpreg_reg_i_5_n_5),
         .I5(MemRead_reg_i_6_n_5),
         .O(OutputOFRSRT_reg_i_8_n_5));
-  LUT5 #(
-    .INIT(32'h0ACE0A0E)) 
+  LUT2 #(
+    .INIT(4'h2)) 
     OutputOFRSRT_reg_i_9
        (.I0(MemRead_reg_i_10_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[28]),
-        .I4(IFIDInstructionMemOutput[26]),
+        .I1(IFIDInstructionMemOutput[27]),
         .O(OutputOFRSRT_reg_i_9_n_5));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ReadDataInstructionRead_reg[0] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(UNCONN_IN[0]),
+        .Q(\^Q [0]),
+        .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \ReadDataInstructionRead_reg[10] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [10]),
+        .D(UNCONN_IN[10]),
         .Q(\^Q [10]),
         .R(1'b0));
   FDRE #(
@@ -30797,7 +30617,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[11] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [11]),
+        .D(UNCONN_IN[11]),
         .Q(\^Q [11]),
         .R(1'b0));
   FDRE #(
@@ -30805,7 +30625,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[12] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [12]),
+        .D(UNCONN_IN[12]),
         .Q(\^Q [12]),
         .R(1'b0));
   FDRE #(
@@ -30813,7 +30633,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[13] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [13]),
+        .D(UNCONN_IN[13]),
         .Q(\^Q [13]),
         .R(1'b0));
   FDRE #(
@@ -30821,7 +30641,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[14] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [14]),
+        .D(UNCONN_IN[14]),
         .Q(\^Q [14]),
         .R(1'b0));
   FDRE #(
@@ -30829,7 +30649,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[15] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [15]),
+        .D(UNCONN_IN[15]),
         .Q(\^Q [15]),
         .R(1'b0));
   FDRE #(
@@ -30837,7 +30657,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[16] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [16]),
+        .D(UNCONN_IN[16]),
         .Q(\^Q [16]),
         .R(1'b0));
   FDRE #(
@@ -30845,7 +30665,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[17] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [17]),
+        .D(UNCONN_IN[17]),
         .Q(\^Q [17]),
         .R(1'b0));
   FDRE #(
@@ -30853,47 +30673,63 @@ module IFIDReg
     \ReadDataInstructionRead_reg[18] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [18]),
+        .D(UNCONN_IN[18]),
         .Q(\^Q [18]),
-        .R(1'b0));
-  FDRE #(
-    .INIT(1'b0)) 
-    \ReadDataInstructionRead_reg[19] 
-       (.C(Clk_IBUF_BUFG),
-        .CE(1'b1),
-        .D(\PCResult_reg[2] [19]),
-        .Q(\^Q [19]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \ReadDataInstructionRead_reg[1] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [1]),
+        .D(UNCONN_IN[1]),
         .Q(\^Q [1]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ReadDataInstructionRead_reg[20] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(UNCONN_IN[20]),
+        .Q(\^Q [20]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \ReadDataInstructionRead_reg[21] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [21]),
+        .D(UNCONN_IN[21]),
         .Q(\^Q [21]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \ReadDataInstructionRead_reg[24] 
+    \ReadDataInstructionRead_reg[22] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [24]),
-        .Q(\^Q [24]),
+        .D(UNCONN_IN[22]),
+        .Q(\^Q [22]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ReadDataInstructionRead_reg[23] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(UNCONN_IN[23]),
+        .Q(\^Q [23]),
+        .R(1'b0));
+  FDRE #(
+    .INIT(1'b0)) 
+    \ReadDataInstructionRead_reg[25] 
+       (.C(Clk_IBUF_BUFG),
+        .CE(1'b1),
+        .D(UNCONN_IN[25]),
+        .Q(\^Q [25]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \ReadDataInstructionRead_reg[26] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [26]),
+        .D(UNCONN_IN[26]),
         .Q(IFIDInstructionMemOutput[26]),
         .R(1'b0));
   FDRE #(
@@ -30901,7 +30737,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[27] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [27]),
+        .D(UNCONN_IN[27]),
         .Q(IFIDInstructionMemOutput[27]),
         .R(1'b0));
   FDRE #(
@@ -30909,7 +30745,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[28] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [28]),
+        .D(UNCONN_IN[28]),
         .Q(IFIDInstructionMemOutput[28]),
         .R(1'b0));
   FDRE #(
@@ -30917,7 +30753,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[29] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [29]),
+        .D(UNCONN_IN[29]),
         .Q(IFIDInstructionMemOutput[29]),
         .R(1'b0));
   FDRE #(
@@ -30925,23 +30761,23 @@ module IFIDReg
     \ReadDataInstructionRead_reg[2] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [2]),
+        .D(UNCONN_IN[2]),
         .Q(\^Q [2]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
-    \ReadDataInstructionRead_reg[31] 
+    \ReadDataInstructionRead_reg[30] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [31]),
-        .Q(IFIDInstructionMemOutput[31]),
+        .D(UNCONN_IN[30]),
+        .Q(IFIDInstructionMemOutput[30]),
         .R(1'b0));
   FDRE #(
     .INIT(1'b0)) 
     \ReadDataInstructionRead_reg[3] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [3]),
+        .D(UNCONN_IN[3]),
         .Q(\^Q [3]),
         .R(1'b0));
   FDRE #(
@@ -30949,7 +30785,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[4] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [4]),
+        .D(UNCONN_IN[4]),
         .Q(\^Q [4]),
         .R(1'b0));
   FDRE #(
@@ -30957,7 +30793,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[5] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [5]),
+        .D(UNCONN_IN[5]),
         .Q(\^Q [5]),
         .R(1'b0));
   FDRE #(
@@ -30965,7 +30801,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[6] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [6]),
+        .D(UNCONN_IN[6]),
         .Q(\^Q [6]),
         .R(1'b0));
   FDRE #(
@@ -30973,7 +30809,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[7] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [7]),
+        .D(UNCONN_IN[7]),
         .Q(\^Q [7]),
         .R(1'b0));
   FDRE #(
@@ -30981,7 +30817,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[8] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [8]),
+        .D(UNCONN_IN[8]),
         .Q(\^Q [8]),
         .R(1'b0));
   FDRE #(
@@ -30989,7 +30825,7 @@ module IFIDReg
     \ReadDataInstructionRead_reg[9] 
        (.C(Clk_IBUF_BUFG),
         .CE(1'b1),
-        .D(\PCResult_reg[2] [9]),
+        .D(UNCONN_IN[9]),
         .Q(\^Q [9]),
         .R(1'b0));
   FDRE #(
@@ -31232,39 +31068,45 @@ module IFIDReg
         .D(D[7]),
         .Q(\PCValueO_reg[31] [7]),
         .R(1'b0));
-  LUT2 #(
-    .INIT(4'hE)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFFFFFEAAA)) 
     RegDst_reg_i_1
        (.I0(RegDst_reg_i_4_n_5),
-        .I1(RegDst_reg_i_7_n_5),
+        .I1(RegDst_reg_i_5_n_5),
+        .I2(RegDst_reg_i_6_n_5),
+        .I3(IFIDInstructionMemOutput[30]),
+        .I4(RegDst_reg_i_7_n_5),
+        .I5(RegDst_reg_i_8_n_5),
         .O(RegDstO_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair231" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
+  (* SOFT_HLUTNM = "soft_lutpair235" *) 
+  LUT3 #(
+    .INIT(8'h01)) 
     RegDst_reg_i_10
-       (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[26]),
+       (.I0(IFIDInstructionMemOutput[30]),
+        .I1(IFIDInstructionMemOutput[28]),
+        .I2(IFIDInstructionMemOutput[26]),
         .O(RegDst_reg_i_10_n_5));
-  LUT5 #(
-    .INIT(32'hFFFF4700)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFF00000047)) 
     RegDst_reg_i_11
        (.I0(\^Q [3]),
         .I1(\^Q [2]),
         .I2(\^Q [5]),
-        .I3(RegDst_reg_i_17_n_5),
-        .I4(RegDst_reg_i_23_n_5),
+        .I3(\^Q [4]),
+        .I4(\^Q [0]),
+        .I5(RegDst_reg_i_23_n_5),
         .O(RegDst_reg_i_11_n_5));
   LUT6 #(
-    .INIT(64'hEAAAAAAA00000000)) 
+    .INIT(64'hAEAAAAAA00000000)) 
     RegDst_reg_i_12
        (.I0(RegDst_reg_i_24_n_5),
         .I1(RegDst_reg_i_25_n_5),
-        .I2(RegDst_reg_i_17_n_5),
+        .I2(\^Q [4]),
         .I3(RegDst_reg_i_26_n_5),
         .I4(RegDst_reg_i_27_n_5),
         .I5(IFIDInstructionMemOutput[28]),
         .O(RegDst_reg_i_12_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair248" *) 
+  (* SOFT_HLUTNM = "soft_lutpair252" *) 
   LUT3 #(
     .INIT(8'h2A)) 
     RegDst_reg_i_13
@@ -31272,46 +31114,47 @@ module IFIDReg
         .I1(\^Q [2]),
         .I2(\^Q [1]),
         .O(RegDst_reg_i_13_n_5));
-  LUT4 #(
-    .INIT(16'hEAAA)) 
+  LUT6 #(
+    .INIT(64'hAAAAFFAEAAAAAAAA)) 
     RegDst_reg_i_14
        (.I0(ALUSrc_reg_i_3_n_5),
-        .I1(RegDst_reg_i_16_n_5),
-        .I2(RegDst_reg_i_17_n_5),
-        .I3(RegDst_reg_i_10_n_5),
+        .I1(RegDst_reg_i_28_n_5),
+        .I2(\^Q [3]),
+        .I3(RegDst_reg_i_16_n_5),
+        .I4(\^Q [4]),
+        .I5(RegDst_reg_i_10_n_5),
         .O(RegDst_reg_i_14_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair234" *) 
-  LUT5 #(
-    .INIT(32'h00000004)) 
+  (* SOFT_HLUTNM = "soft_lutpair238" *) 
+  LUT4 #(
+    .INIT(16'h0004)) 
     RegDst_reg_i_15
        (.I0(IFIDInstructionMemOutput[27]),
         .I1(MemtoReg_reg_i_2_n_5),
         .I2(\^Q [3]),
         .I3(\^Q [4]),
-        .I4(IFIDInstructionMemOutput[31]),
         .O(RegDst_reg_i_15_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair244" *) 
-  LUT3 #(
-    .INIT(8'h2A)) 
+  (* SOFT_HLUTNM = "soft_lutpair248" *) 
+  LUT5 #(
+    .INIT(32'h0C440CCC)) 
     RegDst_reg_i_16
-       (.I0(\^Q [1]),
-        .I1(\^Q [3]),
-        .I2(\^Q [2]),
+       (.I0(\^Q [0]),
+        .I1(\^Q [1]),
+        .I2(\^Q [3]),
+        .I3(\^Q [2]),
+        .I4(\^Q [5]),
         .O(RegDst_reg_i_16_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair252" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
+    RegDst_reg_i_18
+       (.I0(\^Q [0]),
+        .I1(\^Q [5]),
+        .O(RegDst_reg_i_18_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair247" *) 
   LUT2 #(
     .INIT(4'h1)) 
-    RegDst_reg_i_17
-       (.I0(\^Q [4]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .O(RegDst_reg_i_17_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair243" *) 
-  LUT3 #(
-    .INIT(8'h01)) 
     RegDst_reg_i_19
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(\^Q [4]),
-        .I2(\^Q [3]),
+       (.I0(\^Q [4]),
+        .I1(\^Q [3]),
         .O(RegDst_reg_i_19_n_5));
   LUT6 #(
     .INIT(64'hFFFFFFFFFFFFFFEA)) 
@@ -31323,64 +31166,62 @@ module IFIDReg
         .I4(RegDst_reg_i_13_n_5),
         .I5(RegDst_reg_i_14_n_5),
         .O(RegDstO_reg));
-  LUT6 #(
-    .INIT(64'h0000000C00050000)) 
+  LUT5 #(
+    .INIT(32'h000C0A00)) 
     RegDst_reg_i_20
-       (.I0(\^Q [5]),
+       (.I0(JALSignal_reg_i_6_n_5),
         .I1(\^Q [1]),
         .I2(\^Q [2]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(\^Q [4]),
-        .I5(\^Q [3]),
+        .I3(\^Q [4]),
+        .I4(\^Q [3]),
         .O(RegDst_reg_i_20_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair228" *) 
+  (* SOFT_HLUTNM = "soft_lutpair232" *) 
   LUT4 #(
     .INIT(16'h0002)) 
     RegDst_reg_i_21
        (.I0(MemWrite_reg_i_7_n_5),
-        .I1(\^Q [19]),
+        .I1(\^Q [20]),
         .I2(\^Q [17]),
         .I3(\^Q [18]),
         .O(RegDst_reg_i_21_n_5));
-  LUT6 #(
-    .INIT(64'h0000000000020000)) 
+  LUT5 #(
+    .INIT(32'h00020000)) 
     RegDst_reg_i_22
        (.I0(RegDst_reg_i_10_n_5),
         .I1(\^Q [1]),
         .I2(\^Q [2]),
         .I3(\^Q [5]),
         .I4(\^Q [4]),
-        .I5(IFIDInstructionMemOutput[31]),
         .O(RegDst_reg_i_22_n_5));
-  LUT6 #(
-    .INIT(64'h0000000000080308)) 
+  LUT5 #(
+    .INIT(32'h00000838)) 
     RegDst_reg_i_23
        (.I0(\^Q [1]),
         .I1(\^Q [3]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(\^Q [4]),
-        .I4(\^Q [5]),
-        .I5(\^Q [2]),
+        .I2(\^Q [4]),
+        .I3(\^Q [5]),
+        .I4(\^Q [2]),
         .O(RegDst_reg_i_23_n_5));
   LUT5 #(
     .INIT(32'h00000001)) 
     RegDst_reg_i_24
-       (.I0(\^Q [19]),
-        .I1(IFIDInstructionMemOutput[31]),
+       (.I0(\^Q [20]),
+        .I1(IFIDInstructionMemOutput[30]),
         .I2(\^Q [16]),
         .I3(\^Q [17]),
         .I4(\^Q [18]),
         .O(RegDst_reg_i_24_n_5));
-  LUT5 #(
-    .INIT(32'h00000020)) 
+  LUT6 #(
+    .INIT(64'h0000000000000200)) 
     RegDst_reg_i_25
        (.I0(RegDst_reg_i_29_n_5),
-        .I1(\^Q [1]),
-        .I2(RegDst_reg_i_30_n_5),
-        .I3(\^Q [7]),
-        .I4(\^Q [8]),
+        .I1(\^Q [0]),
+        .I2(\^Q [1]),
+        .I3(RegDst_reg_i_30_n_5),
+        .I4(\^Q [7]),
+        .I5(\^Q [8]),
         .O(RegDst_reg_i_25_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair253" *) 
+  (* SOFT_HLUTNM = "soft_lutpair257" *) 
   LUT2 #(
     .INIT(4'h8)) 
     RegDst_reg_i_26
@@ -31393,36 +31234,48 @@ module IFIDReg
        (.I0(\^Q [10]),
         .I1(IFIDInstructionMemOutput[26]),
         .O(RegDst_reg_i_27_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair237" *) 
+  LUT3 #(
+    .INIT(8'h08)) 
+    RegDst_reg_i_28
+       (.I0(\^Q [5]),
+        .I1(\^Q [0]),
+        .I2(\^Q [1]),
+        .O(RegDst_reg_i_28_n_5));
   LUT2 #(
     .INIT(4'h1)) 
     RegDst_reg_i_29
        (.I0(\^Q [2]),
         .I1(\^Q [3]),
         .O(RegDst_reg_i_29_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair239" *) 
-  LUT4 #(
-    .INIT(16'h1000)) 
+  (* SOFT_HLUTNM = "soft_lutpair243" *) 
+  LUT5 #(
+    .INIT(32'h00100000)) 
     RegDst_reg_i_3
        (.I0(\^Q [1]),
         .I1(\^Q [2]),
         .I2(\^Q [5]),
-        .I3(RegDst_reg_i_15_n_5),
+        .I3(\^Q [0]),
+        .I4(RegDst_reg_i_15_n_5),
         .O(ALUSrc0));
-  (* SOFT_HLUTNM = "soft_lutpair247" *) 
+  (* SOFT_HLUTNM = "soft_lutpair251" *) 
   LUT2 #(
     .INIT(4'h2)) 
     RegDst_reg_i_30
        (.I0(\^Q [5]),
         .I1(\^Q [6]),
         .O(RegDst_reg_i_30_n_5));
-  LUT3 #(
-    .INIT(8'h80)) 
+  LUT6 #(
+    .INIT(64'h00880088008C0088)) 
     RegDst_reg_i_4
        (.I0(RegDst_reg_i_16_n_5),
         .I1(jumpreg_reg_i_4_n_5),
-        .I2(RegDst_reg_i_17_n_5),
+        .I2(\^Q [3]),
+        .I3(\^Q [4]),
+        .I4(RegDst_reg_i_18_n_5),
+        .I5(\^Q [1]),
         .O(RegDst_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair248" *) 
+  (* SOFT_HLUTNM = "soft_lutpair252" *) 
   LUT2 #(
     .INIT(4'h2)) 
     RegDst_reg_i_5
@@ -31430,79 +31283,76 @@ module IFIDReg
         .I1(\^Q [2]),
         .O(RegDst_reg_i_5_n_5));
   LUT6 #(
-    .INIT(64'h0100000000000000)) 
+    .INIT(64'h0400000000000000)) 
     RegDst_reg_i_6
        (.I0(IFIDInstructionMemOutput[26]),
-        .I1(\^Q [5]),
+        .I1(JALSignal_reg_i_6_n_5),
         .I2(IFIDInstructionMemOutput[27]),
         .I3(RegDst_reg_i_19_n_5),
         .I4(IFIDInstructionMemOutput[28]),
         .I5(IFIDInstructionMemOutput[29]),
         .O(RegDst_reg_i_6_n_5));
-  LUT6 #(
-    .INIT(64'hFFFF000000020000)) 
+  LUT5 #(
+    .INIT(32'hFF000200)) 
     RegDst_reg_i_7
        (.I0(RegWrite_reg_i_7_n_5),
         .I1(\^Q [3]),
         .I2(\^Q [4]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(jumpreg_reg_i_4_n_5),
-        .I5(RegDst_reg_i_20_n_5),
+        .I3(jumpreg_reg_i_4_n_5),
+        .I4(RegDst_reg_i_20_n_5),
         .O(RegDst_reg_i_7_n_5));
+  LUT2 #(
+    .INIT(4'h8)) 
+    RegDst_reg_i_8
+       (.I0(OutputOFRSRT_reg_i_7_n_5),
+        .I1(IFIDInstructionMemOutput[30]),
+        .O(RegDst_reg_i_8_n_5));
   LUT5 #(
-    .INIT(32'hFFFFFF06)) 
+    .INIT(32'hFFFFFF12)) 
     RegDst_reg_i_9
        (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .I2(IFIDInstructionMemOutput[27]),
         .I3(RegDst_reg_i_21_n_5),
         .I4(RegDst_reg_i_22_n_5),
         .O(RegDst_reg_i_9_n_5));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFEFEFE)) 
+  LUT5 #(
+    .INIT(32'hFFFEFEFE)) 
     RegWrite_reg_i_1
        (.I0(RegWrite_reg_i_4_n_5),
         .I1(RegWrite_reg_i_5_n_5),
         .I2(RegWrite_reg_i_6_n_5),
         .I3(RegWrite_reg_i_7_n_5),
         .I4(RegWrite_reg_i_8_n_5),
-        .I5(RegWrite_reg_i_9_n_5),
         .O(RegWriteO_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair224" *) 
+  (* SOFT_HLUTNM = "soft_lutpair228" *) 
   LUT4 #(
-    .INIT(16'h2330)) 
+    .INIT(16'h0B0C)) 
     RegWrite_reg_i_10
        (.I0(IFIDInstructionMemOutput[29]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[27]),
+        .I1(IFIDInstructionMemOutput[27]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[28]),
         .O(RegWrite_reg_i_10_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair230" *) 
-  LUT4 #(
-    .INIT(16'h0002)) 
+  (* SOFT_HLUTNM = "soft_lutpair234" *) 
+  LUT5 #(
+    .INIT(32'h00000002)) 
     RegWrite_reg_i_11
        (.I0(RegDst_reg_i_11_n_5),
         .I1(IFIDInstructionMemOutput[29]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[26]),
+        .I2(IFIDInstructionMemOutput[30]),
+        .I3(IFIDInstructionMemOutput[28]),
+        .I4(IFIDInstructionMemOutput[26]),
         .O(RegWrite_reg_i_11_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair220" *) 
-  LUT4 #(
-    .INIT(16'h2300)) 
-    RegWrite_reg_i_12
-       (.I0(IFIDInstructionMemOutput[26]),
-        .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .O(RegWrite_reg_i_12_n_5));
-  LUT5 #(
-    .INIT(32'h00000002)) 
+  LUT6 #(
+    .INIT(64'h0000000000000002)) 
     RegWrite_reg_i_13
        (.I0(RegWrite_reg_i_21_n_5),
         .I1(IFIDInstructionMemOutput[27]),
-        .I2(\^Q [5]),
-        .I3(IFIDInstructionMemOutput[26]),
-        .I4(\^Q [1]),
+        .I2(\^Q [0]),
+        .I3(\^Q [5]),
+        .I4(IFIDInstructionMemOutput[26]),
+        .I5(\^Q [1]),
         .O(RegWrite_reg_i_13_n_5));
   LUT6 #(
     .INIT(64'hFFFF88F800F000F0)) 
@@ -31514,70 +31364,89 @@ module IFIDReg
         .I4(MemtoReg_reg_i_3_n_5),
         .I5(MemtoReg_reg_i_2_n_5),
         .O(RegWrite_reg_i_14_n_5));
-  LUT4 #(
-    .INIT(16'h0400)) 
+  LUT6 #(
+    .INIT(64'h0000070000000000)) 
     RegWrite_reg_i_15
-       (.I0(IFIDInstructionMemOutput[27]),
-        .I1(\^Q [5]),
-        .I2(\^Q [2]),
-        .I3(RegWrite_reg_i_24_n_5),
+       (.I0(\^Q [0]),
+        .I1(\^Q [1]),
+        .I2(IFIDInstructionMemOutput[27]),
+        .I3(\^Q [5]),
+        .I4(\^Q [2]),
+        .I5(RegWrite_reg_i_24_n_5),
         .O(RegWrite_reg_i_15_n_5));
-  LUT5 #(
-    .INIT(32'h00100000)) 
+  (* SOFT_HLUTNM = "soft_lutpair254" *) 
+  LUT2 #(
+    .INIT(4'hE)) 
+    RegWrite_reg_i_16
+       (.I0(IFIDInstructionMemOutput[28]),
+        .I1(IFIDInstructionMemOutput[30]),
+        .O(RegWrite_reg_i_16_n_5));
+  LUT6 #(
+    .INIT(64'h0020000000000000)) 
+    RegWrite_reg_i_17
+       (.I0(RegDst_reg_i_5_n_5),
+        .I1(IFIDInstructionMemOutput[26]),
+        .I2(JALSignal_reg_i_6_n_5),
+        .I3(IFIDInstructionMemOutput[27]),
+        .I4(RegWrite_reg_i_21_n_5),
+        .I5(IFIDInstructionMemOutput[30]),
+        .O(RegWrite_reg_i_17_n_5));
+  LUT6 #(
+    .INIT(64'h0000010000000000)) 
     RegWrite_reg_i_18
        (.I0(\^Q [5]),
-        .I1(\^Q [2]),
-        .I2(\^Q [4]),
-        .I3(\^Q [3]),
-        .I4(jumpreg_reg_i_4_n_5),
+        .I1(\^Q [0]),
+        .I2(\^Q [2]),
+        .I3(\^Q [4]),
+        .I4(\^Q [3]),
+        .I5(jumpreg_reg_i_4_n_5),
         .O(RegWrite_reg_i_18_n_5));
-  LUT5 #(
-    .INIT(32'h00000001)) 
+  LUT6 #(
+    .INIT(64'h0000000000000001)) 
     RegWrite_reg_i_19
        (.I0(IFIDInstructionMemOutput[27]),
         .I1(IFIDInstructionMemOutput[26]),
         .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[29]),
-        .I4(\^Q [4]),
+        .I3(IFIDInstructionMemOutput[30]),
+        .I4(IFIDInstructionMemOutput[29]),
+        .I5(\^Q [4]),
         .O(RegWrite_reg_i_19_n_5));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
+  LUT5 #(
+    .INIT(32'hFFFFFFFE)) 
     RegWrite_reg_i_2
        (.I0(RegWrite_reg_i_10_n_5),
         .I1(RegDst_reg_i_12_n_5),
         .I2(RegWrite_reg_i_11_n_5),
-        .I3(RegWrite_reg_i_12_n_5),
-        .I4(RegWrite_reg_i_13_n_5),
-        .I5(RegWrite_reg_i_14_n_5),
+        .I3(RegWrite_reg_i_13_n_5),
+        .I4(RegWrite_reg_i_14_n_5),
         .O(RegWriteO_reg));
-  LUT5 #(
-    .INIT(32'h00080000)) 
+  LUT6 #(
+    .INIT(64'h0000000800000000)) 
     RegWrite_reg_i_20
        (.I0(RegWrite_reg_i_23_n_5),
         .I1(RegDst_reg_i_27_n_5),
         .I2(\^Q [8]),
         .I3(\^Q [7]),
-        .I4(RegDst_reg_i_30_n_5),
+        .I4(\^Q [0]),
+        .I5(RegDst_reg_i_30_n_5),
         .O(RegWrite_reg_i_20_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair243" *) 
-  LUT5 #(
-    .INIT(32'h00000008)) 
+  (* SOFT_HLUTNM = "soft_lutpair247" *) 
+  LUT4 #(
+    .INIT(16'h0008)) 
     RegWrite_reg_i_21
        (.I0(IFIDInstructionMemOutput[29]),
         .I1(IFIDInstructionMemOutput[28]),
         .I2(\^Q [3]),
         .I3(\^Q [4]),
-        .I4(IFIDInstructionMemOutput[31]),
         .O(RegWrite_reg_i_21_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair242" *) 
-  LUT3 #(
-    .INIT(8'h04)) 
+  (* SOFT_HLUTNM = "soft_lutpair246" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
     RegWrite_reg_i_22
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(\^Q [4]),
-        .I2(\^Q [5]),
+       (.I0(\^Q [4]),
+        .I1(\^Q [5]),
         .O(RegWrite_reg_i_22_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair237" *) 
+  (* SOFT_HLUTNM = "soft_lutpair241" *) 
   LUT2 #(
     .INIT(4'h1)) 
     RegWrite_reg_i_23
@@ -31589,18 +31458,18 @@ module IFIDReg
     RegWrite_reg_i_24
        (.I0(\^Q [3]),
         .I1(\^Q [4]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(IFIDInstructionMemOutput[26]),
-        .I4(IFIDInstructionMemOutput[28]),
+        .I2(IFIDInstructionMemOutput[26]),
+        .I3(IFIDInstructionMemOutput[28]),
+        .I4(IFIDInstructionMemOutput[30]),
         .O(RegWrite_reg_i_24_n_5));
   LUT5 #(
-    .INIT(32'hAAAAABAA)) 
+    .INIT(32'hFFFFAABA)) 
     RegWrite_reg_i_3
        (.I0(RegWrite_reg_i_15_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[29]),
-        .I4(IFIDInstructionMemOutput[27]),
+        .I1(RegWrite_reg_i_16_n_5),
+        .I2(IFIDInstructionMemOutput[29]),
+        .I3(IFIDInstructionMemOutput[27]),
+        .I4(RegWrite_reg_i_17_n_5),
         .O(RegWriteO_reg_1));
   LUT6 #(
     .INIT(64'hCFCEFDCCCCCCCCCC)) 
@@ -31612,13 +31481,13 @@ module IFIDReg
         .I4(\^Q [2]),
         .I5(RegWrite_reg_i_19_n_5),
         .O(RegWrite_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair229" *) 
+  (* SOFT_HLUTNM = "soft_lutpair233" *) 
   LUT4 #(
-    .INIT(16'h0400)) 
+    .INIT(16'h0200)) 
     RegWrite_reg_i_5
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
+       (.I0(IFIDInstructionMemOutput[27]),
+        .I1(IFIDInstructionMemOutput[28]),
+        .I2(IFIDInstructionMemOutput[30]),
         .I3(IFIDInstructionMemOutput[26]),
         .O(RegWrite_reg_i_5_n_5));
   LUT6 #(
@@ -31627,19 +31496,20 @@ module IFIDReg
        (.I0(IFIDInstructionMemOutput[27]),
         .I1(RegDst_reg_i_19_n_5),
         .I2(RegWrite_reg_i_20_n_5),
-        .I3(IFIDInstructionMemOutput[31]),
+        .I3(IFIDInstructionMemOutput[30]),
         .I4(IFIDInstructionMemOutput[28]),
         .I5(IFIDInstructionMemOutput[29]),
         .O(RegWrite_reg_i_6_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair246" *) 
-  LUT3 #(
-    .INIT(8'hF4)) 
+  (* SOFT_HLUTNM = "soft_lutpair250" *) 
+  LUT4 #(
+    .INIT(16'h0F04)) 
     RegWrite_reg_i_7
        (.I0(\^Q [5]),
         .I1(OutputOFRSRT_reg_i_4_n_5),
-        .I2(\^Q [2]),
+        .I2(\^Q [0]),
+        .I3(\^Q [2]),
         .O(RegWrite_reg_i_7_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair234" *) 
+  (* SOFT_HLUTNM = "soft_lutpair238" *) 
   LUT4 #(
     .INIT(16'h0004)) 
     RegWrite_reg_i_8
@@ -31649,23 +31519,13 @@ module IFIDReg
         .I3(\^Q [3]),
         .O(RegWrite_reg_i_8_n_5));
   LUT5 #(
-    .INIT(32'h00000A02)) 
-    RegWrite_reg_i_9
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[26]),
-        .I4(IFIDInstructionMemOutput[29]),
-        .O(RegWrite_reg_i_9_n_5));
-  LUT6 #(
-    .INIT(64'h0000020000000000)) 
+    .INIT(32'h00200000)) 
     jumpreg_reg_i_1
        (.I0(Jump_reg_i_4_n_5),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(\^Q [4]),
-        .I3(\^Q [3]),
-        .I4(IFIDInstructionMemOutput[27]),
-        .I5(MemtoReg_reg_i_2_n_5),
+        .I1(\^Q [4]),
+        .I2(\^Q [3]),
+        .I3(IFIDInstructionMemOutput[27]),
+        .I4(MemtoReg_reg_i_2_n_5),
         .O(ALUSrc1129_out));
   LUT6 #(
     .INIT(64'hFFFFFFEAFFEAFFEA)) 
@@ -31683,156 +31543,28 @@ module IFIDReg
        (.I0(Branch_reg_i_11_n_5),
         .I1(JALSignal_reg_i_8_n_5),
         .I2(OutputOFRSRT_reg_i_9_n_5),
-        .I3(Jump_reg_i_6_n_5),
+        .I3(IFIDInstructionMemOutput[27]),
         .I4(MemtoReg_reg_i_2_n_5),
         .I5(Jump_reg_i_9_n_5),
         .O(jumpregout_reg_0));
-  (* SOFT_HLUTNM = "soft_lutpair222" *) 
-  LUT4 #(
-    .INIT(16'h0001)) 
+  (* SOFT_HLUTNM = "soft_lutpair226" *) 
+  LUT5 #(
+    .INIT(32'h00000001)) 
     jumpreg_reg_i_4
        (.I0(IFIDInstructionMemOutput[29]),
-        .I1(IFIDInstructionMemOutput[28]),
-        .I2(IFIDInstructionMemOutput[26]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .O(jumpreg_reg_i_4_n_5));
-  (* SOFT_HLUTNM = "soft_lutpair245" *) 
-  LUT3 #(
-    .INIT(8'h04)) 
-    jumpreg_reg_i_5
-       (.I0(IFIDInstructionMemOutput[31]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[28]),
-        .O(jumpreg_reg_i_5_n_5));
-  LUT5 #(
-    .INIT(32'h00400000)) 
-    \storesignal_reg[0]_i_1 
-       (.I0(IFIDInstructionMemOutput[27]),
-        .I1(IFIDInstructionMemOutput[31]),
-        .I2(IFIDInstructionMemOutput[26]),
-        .I3(IFIDInstructionMemOutput[28]),
-        .I4(IFIDInstructionMemOutput[29]),
-        .O(\storeout_reg[1]_0 [0]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \storesignal_reg[0]_i_2 
-       (.I0(\storeout_reg[1]_0 [0]),
-        .I1(MemWrite_reg_i_5_n_5),
-        .I2(MemRead_reg_i_5_n_5),
-        .I3(MemRead_reg_i_6_n_5),
-        .I4(RegDst_reg_i_12_n_5),
-        .I5(RegWrite_reg_i_11_n_5),
-        .O(\storeout_reg[1] [0]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFAAEAAAAA)) 
-    \storesignal_reg[0]_i_3 
-       (.I0(\storesignal_reg[0]_i_4_n_5 ),
-        .I1(\storesignal_reg[0]_i_5_n_5 ),
-        .I2(\^Q [3]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(\storesignal_reg[0]_i_6_n_5 ),
-        .I5(Branch_reg_i_11_n_5),
-        .O(\storeout_reg[0] ));
-  LUT5 #(
-    .INIT(32'h0B050404)) 
-    \storesignal_reg[0]_i_4 
-       (.I0(IFIDInstructionMemOutput[27]),
-        .I1(IFIDInstructionMemOutput[29]),
+        .I1(IFIDInstructionMemOutput[30]),
         .I2(IFIDInstructionMemOutput[28]),
         .I3(IFIDInstructionMemOutput[26]),
-        .I4(IFIDInstructionMemOutput[31]),
-        .O(\storesignal_reg[0]_i_4_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair251" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \storesignal_reg[0]_i_5 
-       (.I0(\^Q [4]),
-        .I1(\^Q [5]),
-        .O(\storesignal_reg[0]_i_5_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair237" *) 
-  LUT4 #(
-    .INIT(16'h0001)) 
-    \storesignal_reg[0]_i_6 
-       (.I0(\^Q [2]),
-        .I1(\^Q [1]),
-        .I2(IFIDInstructionMemOutput[26]),
-        .I3(IFIDInstructionMemOutput[28]),
-        .O(\storesignal_reg[0]_i_6_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair225" *) 
-  LUT4 #(
-    .INIT(16'hEFFF)) 
-    \storesignal_reg[1]_i_1 
-       (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(IFIDInstructionMemOutput[29]),
-        .O(\storeout_reg[1]_0 [1]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFEFFFFFFFF)) 
-    \storesignal_reg[1]_i_2 
-       (.I0(MemWrite_reg_i_5_n_5),
-        .I1(MemRead_reg_i_5_n_5),
-        .I2(MemRead_reg_i_6_n_5),
-        .I3(RegDst_reg_i_12_n_5),
-        .I4(RegWrite_reg_i_11_n_5),
-        .I5(MemWrite_reg_i_4_n_5),
-        .O(\storeout_reg[1] [1]));
-  LUT5 #(
-    .INIT(32'h40FF4000)) 
-    \storesignal_reg[1]_i_3 
-       (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[26]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(MemRead_reg_i_7_n_5),
-        .O(AS));
-  (* SOFT_HLUTNM = "soft_lutpair220" *) 
-  LUT4 #(
-    .INIT(16'h0040)) 
-    \threeselect_reg[0]_i_1 
-       (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[26]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .O(\threeselectout_reg[1] [0]));
-  LUT5 #(
-    .INIT(32'hFFF4FFFF)) 
-    \threeselect_reg[1]_i_1 
-       (.I0(IFIDInstructionMemOutput[26]),
-        .I1(IFIDInstructionMemOutput[29]),
+        .I4(IFIDInstructionMemOutput[27]),
+        .O(jumpreg_reg_i_4_n_5));
+  (* SOFT_HLUTNM = "soft_lutpair249" *) 
+  LUT3 #(
+    .INIT(8'h02)) 
+    jumpreg_reg_i_5
+       (.I0(IFIDInstructionMemOutput[27]),
+        .I1(IFIDInstructionMemOutput[30]),
         .I2(IFIDInstructionMemOutput[28]),
-        .I3(IFIDInstructionMemOutput[27]),
-        .I4(IFIDInstructionMemOutput[31]),
-        .O(\threeselectout_reg[1] [1]));
-  LUT6 #(
-    .INIT(64'hFFFFFFFFFFFFFFFE)) 
-    \threeselect_reg[1]_i_2 
-       (.I0(RegWrite_reg_i_11_n_5),
-        .I1(RegDst_reg_i_12_n_5),
-        .I2(RegWrite_reg_i_10_n_5),
-        .I3(MemWrite_reg_i_5_n_5),
-        .I4(\threeselectout_reg[1] [0]),
-        .I5(\threeselect_reg[1]_i_4_n_5 ),
-        .O(\threeselectout_reg[0] ));
-  LUT6 #(
-    .INIT(64'h0C0C0C0CFC0C0E0E)) 
-    \threeselect_reg[1]_i_3 
-       (.I0(IFIDInstructionMemOutput[29]),
-        .I1(MemRead_reg_i_7_n_5),
-        .I2(IFIDInstructionMemOutput[27]),
-        .I3(IFIDInstructionMemOutput[31]),
-        .I4(IFIDInstructionMemOutput[26]),
-        .I5(IFIDInstructionMemOutput[28]),
-        .O(AR));
-  (* SOFT_HLUTNM = "soft_lutpair224" *) 
-  LUT4 #(
-    .INIT(16'h0010)) 
-    \threeselect_reg[1]_i_4 
-       (.I0(IFIDInstructionMemOutput[28]),
-        .I1(IFIDInstructionMemOutput[27]),
-        .I2(IFIDInstructionMemOutput[31]),
-        .I3(IFIDInstructionMemOutput[29]),
-        .O(\threeselect_reg[1]_i_4_n_5 ));
+        .O(jumpreg_reg_i_5_n_5));
 endmodule
 
 module InstructionMemory
@@ -31842,289 +31574,1387 @@ module InstructionMemory
   output [31:0]Instruction;
 
   wire [31:0]Address;
-  wire [31:1]\^Instruction ;
+  wire [31:0]Instruction;
+  wire \Instruction[0]_INST_0_i_1_n_5 ;
+  wire \Instruction[0]_INST_0_i_2_n_5 ;
+  wire \Instruction[0]_INST_0_i_3_n_5 ;
+  wire \Instruction[0]_INST_0_i_4_n_5 ;
+  wire \Instruction[0]_INST_0_i_5_n_5 ;
+  wire \Instruction[10]_INST_0_i_1_n_5 ;
+  wire \Instruction[10]_INST_0_i_2_n_5 ;
+  wire \Instruction[10]_INST_0_i_3_n_5 ;
+  wire \Instruction[10]_INST_0_i_4_n_5 ;
+  wire \Instruction[11]_INST_0_i_1_n_5 ;
+  wire \Instruction[11]_INST_0_i_2_n_5 ;
+  wire \Instruction[11]_INST_0_i_3_n_5 ;
+  wire \Instruction[11]_INST_0_i_4_n_5 ;
+  wire \Instruction[12]_INST_0_i_1_n_5 ;
+  wire \Instruction[12]_INST_0_i_2_n_5 ;
+  wire \Instruction[13]_INST_0_i_1_n_5 ;
+  wire \Instruction[13]_INST_0_i_2_n_5 ;
+  wire \Instruction[13]_INST_0_i_3_n_5 ;
+  wire \Instruction[13]_INST_0_i_4_n_5 ;
+  wire \Instruction[13]_INST_0_i_5_n_5 ;
+  wire \Instruction[14]_INST_0_i_1_n_5 ;
+  wire \Instruction[14]_INST_0_i_2_n_5 ;
+  wire \Instruction[15]_INST_0_i_1_n_5 ;
+  wire \Instruction[15]_INST_0_i_2_n_5 ;
+  wire \Instruction[15]_INST_0_i_3_n_5 ;
+  wire \Instruction[15]_INST_0_i_4_n_5 ;
+  wire \Instruction[15]_INST_0_i_5_n_5 ;
   wire \Instruction[16]_INST_0_i_1_n_5 ;
+  wire \Instruction[16]_INST_0_i_2_n_5 ;
+  wire \Instruction[16]_INST_0_i_3_n_5 ;
+  wire \Instruction[16]_INST_0_i_4_n_5 ;
+  wire \Instruction[16]_INST_0_i_5_n_5 ;
   wire \Instruction[17]_INST_0_i_1_n_5 ;
+  wire \Instruction[17]_INST_0_i_2_n_5 ;
   wire \Instruction[18]_INST_0_i_1_n_5 ;
-  wire \Instruction[19]_INST_0_i_1_n_5 ;
   wire \Instruction[1]_INST_0_i_1_n_5 ;
   wire \Instruction[1]_INST_0_i_2_n_5 ;
+  wire \Instruction[1]_INST_0_i_3_n_5 ;
+  wire \Instruction[1]_INST_0_i_4_n_5 ;
+  wire \Instruction[1]_INST_0_i_5_n_5 ;
+  wire \Instruction[20]_INST_0_i_1_n_5 ;
+  wire \Instruction[20]_INST_0_i_2_n_5 ;
+  wire \Instruction[20]_INST_0_i_3_n_5 ;
+  wire \Instruction[20]_INST_0_i_4_n_5 ;
+  wire \Instruction[20]_INST_0_i_5_n_5 ;
   wire \Instruction[21]_INST_0_i_1_n_5 ;
-  wire \Instruction[24]_INST_0_i_1_n_5 ;
+  wire \Instruction[21]_INST_0_i_2_n_5 ;
+  wire \Instruction[21]_INST_0_i_3_n_5 ;
+  wire \Instruction[21]_INST_0_i_4_n_5 ;
+  wire \Instruction[21]_INST_0_i_5_n_5 ;
+  wire \Instruction[22]_INST_0_i_1_n_5 ;
+  wire \Instruction[23]_INST_0_i_1_n_5 ;
+  wire \Instruction[25]_INST_0_i_1_n_5 ;
+  wire \Instruction[25]_INST_0_i_2_n_5 ;
+  wire \Instruction[25]_INST_0_i_3_n_5 ;
+  wire \Instruction[25]_INST_0_i_4_n_5 ;
+  wire \Instruction[25]_INST_0_i_5_n_5 ;
   wire \Instruction[26]_INST_0_i_1_n_5 ;
+  wire \Instruction[26]_INST_0_i_2_n_5 ;
+  wire \Instruction[26]_INST_0_i_3_n_5 ;
+  wire \Instruction[26]_INST_0_i_4_n_5 ;
+  wire \Instruction[26]_INST_0_i_5_n_5 ;
+  wire \Instruction[27]_INST_0_i_1_n_5 ;
+  wire \Instruction[27]_INST_0_i_2_n_5 ;
+  wire \Instruction[27]_INST_0_i_3_n_5 ;
+  wire \Instruction[27]_INST_0_i_4_n_5 ;
+  wire \Instruction[28]_INST_0_i_1_n_5 ;
+  wire \Instruction[28]_INST_0_i_2_n_5 ;
+  wire \Instruction[28]_INST_0_i_3_n_5 ;
+  wire \Instruction[28]_INST_0_i_4_n_5 ;
+  wire \Instruction[28]_INST_0_i_5_n_5 ;
   wire \Instruction[29]_INST_0_i_1_n_5 ;
+  wire \Instruction[29]_INST_0_i_2_n_5 ;
+  wire \Instruction[29]_INST_0_i_3_n_5 ;
+  wire \Instruction[29]_INST_0_i_4_n_5 ;
+  wire \Instruction[29]_INST_0_i_5_n_5 ;
   wire \Instruction[2]_INST_0_i_1_n_5 ;
-  wire \Instruction[31]_INST_0_i_1_n_5 ;
+  wire \Instruction[2]_INST_0_i_2_n_5 ;
+  wire \Instruction[2]_INST_0_i_3_n_5 ;
+  wire \Instruction[2]_INST_0_i_4_n_5 ;
+  wire \Instruction[2]_INST_0_i_5_n_5 ;
+  wire \Instruction[30]_INST_0_i_1_n_5 ;
+  wire \Instruction[30]_INST_0_i_2_n_5 ;
+  wire \Instruction[30]_INST_0_i_3_n_5 ;
+  wire \Instruction[3]_INST_0_i_1_n_5 ;
+  wire \Instruction[3]_INST_0_i_2_n_5 ;
+  wire \Instruction[3]_INST_0_i_3_n_5 ;
+  wire \Instruction[3]_INST_0_i_4_n_5 ;
+  wire \Instruction[3]_INST_0_i_5_n_5 ;
+  wire \Instruction[4]_INST_0_i_1_n_5 ;
+  wire \Instruction[4]_INST_0_i_2_n_5 ;
+  wire \Instruction[4]_INST_0_i_3_n_5 ;
+  wire \Instruction[4]_INST_0_i_4_n_5 ;
+  wire \Instruction[5]_INST_0_i_1_n_5 ;
+  wire \Instruction[5]_INST_0_i_2_n_5 ;
+  wire \Instruction[5]_INST_0_i_3_n_5 ;
+  wire \Instruction[5]_INST_0_i_4_n_5 ;
+  wire \Instruction[5]_INST_0_i_5_n_5 ;
   wire \Instruction[6]_INST_0_i_1_n_5 ;
+  wire \Instruction[6]_INST_0_i_2_n_5 ;
+  wire \Instruction[6]_INST_0_i_3_n_5 ;
+  wire \Instruction[6]_INST_0_i_4_n_5 ;
+  wire \Instruction[7]_INST_0_i_1_n_5 ;
+  wire \Instruction[7]_INST_0_i_2_n_5 ;
+  wire \Instruction[7]_INST_0_i_3_n_5 ;
+  wire \Instruction[7]_INST_0_i_4_n_5 ;
+  wire \Instruction[8]_INST_0_i_1_n_5 ;
+  wire \Instruction[8]_INST_0_i_2_n_5 ;
+  wire \Instruction[8]_INST_0_i_3_n_5 ;
+  wire \Instruction[9]_INST_0_i_1_n_5 ;
+  wire \Instruction[9]_INST_0_i_2_n_5 ;
 
-  assign Instruction[31] = \^Instruction [31];
-  assign Instruction[29:26] = \^Instruction [29:26];
-  assign Instruction[24] = \^Instruction [24];
-  assign Instruction[21] = \^Instruction [21];
-  assign Instruction[19:14] = \^Instruction [19:14];
-  assign Instruction[13] = \^Instruction [28];
-  assign Instruction[12] = \^Instruction [14];
-  assign Instruction[11:10] = \^Instruction [15:14];
-  assign Instruction[9] = \^Instruction [28];
-  assign Instruction[8] = \^Instruction [28];
-  assign Instruction[7] = \^Instruction [15];
-  assign Instruction[6] = \^Instruction [28];
-  assign Instruction[5] = \^Instruction [14];
-  assign Instruction[4] = \^Instruction [14];
-  assign Instruction[3:1] = \^Instruction [3:1];
-  (* SOFT_HLUTNM = "soft_lutpair2" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[16]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[16]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [16]));
   LUT6 #(
-    .INIT(64'hD9DFFEFFF7FDFFBF)) 
-    \Instruction[16]_INST_0_i_1 
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[0]_INST_0 
+       (.I0(\Instruction[0]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[0]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[0]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[0]));
+  MUXF7 \Instruction[0]_INST_0_i_1 
+       (.I0(\Instruction[0]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[0]_INST_0_i_5_n_5 ),
+        .O(\Instruction[0]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h033000C000840000)) 
+    \Instruction[0]_INST_0_i_2 
+       (.I0(Address[9]),
+        .I1(Address[5]),
+        .I2(Address[8]),
+        .I3(Address[6]),
+        .I4(Address[7]),
+        .I5(Address[10]),
+        .O(\Instruction[0]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000A82000020249)) 
+    \Instruction[0]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[8]),
+        .I2(Address[9]),
+        .I3(Address[10]),
+        .I4(Address[6]),
+        .I5(Address[7]),
+        .O(\Instruction[0]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h2088008060080041)) 
+    \Instruction[0]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[6]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[10]),
+        .O(\Instruction[0]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000010004204)) 
+    \Instruction[0]_INST_0_i_5 
        (.I0(Address[8]),
+        .I1(Address[7]),
+        .I2(Address[9]),
+        .I3(Address[6]),
+        .I4(Address[5]),
+        .I5(Address[10]),
+        .O(\Instruction[0]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000022E2EEE2)) 
+    \Instruction[10]_INST_0 
+       (.I0(\Instruction[10]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[10]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[26]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[10]));
+  MUXF7 \Instruction[10]_INST_0_i_1 
+       (.I0(\Instruction[10]_INST_0_i_3_n_5 ),
+        .I1(\Instruction[10]_INST_0_i_4_n_5 ),
+        .O(\Instruction[10]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h9088900000000000)) 
+    \Instruction[10]_INST_0_i_2 
+       (.I0(Address[7]),
         .I1(Address[6]),
+        .I2(Address[10]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[5]),
+        .O(\Instruction[10]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h40D5008040000000)) 
+    \Instruction[10]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[8]),
+        .I3(Address[6]),
+        .I4(Address[9]),
+        .I5(Address[10]),
+        .O(\Instruction[10]_INST_0_i_3_n_5 ));
+  LUT5 #(
+    .INIT(32'h14000000)) 
+    \Instruction[10]_INST_0_i_4 
+       (.I0(Address[6]),
+        .I1(Address[5]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .O(\Instruction[10]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h000000002E222222)) 
+    \Instruction[11]_INST_0 
+       (.I0(\Instruction[11]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(Address[4]),
+        .I3(Address[5]),
+        .I4(\Instruction[11]_INST_0_i_2_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[11]));
+  MUXF7 \Instruction[11]_INST_0_i_1 
+       (.I0(\Instruction[11]_INST_0_i_3_n_5 ),
+        .I1(\Instruction[11]_INST_0_i_4_n_5 ),
+        .O(\Instruction[11]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h66800060)) 
+    \Instruction[11]_INST_0_i_2 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[7]),
+        .O(\Instruction[11]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h3000000000800008)) 
+    \Instruction[11]_INST_0_i_3 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[8]),
+        .I3(Address[9]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[11]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0040008044208840)) 
+    \Instruction[11]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[11]_INST_0_i_4_n_5 ));
+  LUT5 #(
+    .INIT(32'h00002E22)) 
+    \Instruction[12]_INST_0 
+       (.I0(\Instruction[14]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[12]_INST_0_i_1_n_5 ),
+        .I3(\Instruction[12]_INST_0_i_2_n_5 ),
+        .I4(Address[2]),
+        .O(Instruction[12]));
+  LUT6 #(
+    .INIT(64'hFFFFFF0F07F7FFFF)) 
+    \Instruction[12]_INST_0_i_1 
+       (.I0(Address[10]),
+        .I1(Address[8]),
+        .I2(Address[9]),
+        .I3(Address[6]),
+        .I4(Address[5]),
+        .I5(Address[4]),
+        .O(\Instruction[12]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'h24)) 
+    \Instruction[12]_INST_0_i_2 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .O(\Instruction[12]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0101015151510151)) 
+    \Instruction[13]_INST_0 
+       (.I0(Address[2]),
+        .I1(\Instruction[13]_INST_0_i_1_n_5 ),
+        .I2(Address[3]),
+        .I3(\Instruction[13]_INST_0_i_2_n_5 ),
+        .I4(Address[4]),
+        .I5(\Instruction[13]_INST_0_i_3_n_5 ),
+        .O(Instruction[13]));
+  MUXF7 \Instruction[13]_INST_0_i_1 
+       (.I0(\Instruction[13]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[13]_INST_0_i_5_n_5 ),
+        .O(\Instruction[13]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'hDFFFDFFFFF9EFFFF)) 
+    \Instruction[13]_INST_0_i_2 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .I2(Address[5]),
+        .I3(Address[9]),
+        .I4(Address[10]),
+        .I5(Address[7]),
+        .O(\Instruction[13]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h55555555FF7DDFFF)) 
+    \Instruction[13]_INST_0_i_3 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[6]),
+        .I3(Address[8]),
+        .I4(Address[7]),
+        .I5(Address[9]),
+        .O(\Instruction[13]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'hFFFF47FFFFEFEFFF)) 
+    \Instruction[13]_INST_0_i_4 
+       (.I0(Address[7]),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[5]),
+        .I5(Address[6]),
+        .O(\Instruction[13]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'hEDEF4BDFFDFF6BFF)) 
+    \Instruction[13]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[8]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[9]),
+        .O(\Instruction[13]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h000000002E222222)) 
+    \Instruction[14]_INST_0 
+       (.I0(\Instruction[14]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(Address[4]),
+        .I3(Address[5]),
+        .I4(\Instruction[14]_INST_0_i_2_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[14]));
+  LUT6 #(
+    .INIT(64'h0260000000000000)) 
+    \Instruction[14]_INST_0_i_1 
+       (.I0(Address[7]),
+        .I1(Address[5]),
+        .I2(Address[4]),
+        .I3(Address[6]),
+        .I4(Address[9]),
+        .I5(Address[8]),
+        .O(\Instruction[14]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h08083000)) 
+    \Instruction[14]_INST_0_i_2 
+       (.I0(Address[9]),
+        .I1(Address[6]),
+        .I2(Address[8]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .O(\Instruction[14]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[15]_INST_0 
+       (.I0(\Instruction[15]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[15]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[15]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[15]));
+  MUXF7 \Instruction[15]_INST_0_i_1 
+       (.I0(\Instruction[15]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[15]_INST_0_i_5_n_5 ),
+        .O(\Instruction[15]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h0000248222094924)) 
+    \Instruction[15]_INST_0_i_2 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[9]),
+        .I3(Address[8]),
+        .I4(Address[10]),
+        .I5(Address[7]),
+        .O(\Instruction[15]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'hBA49AA04AE10BA48)) 
+    \Instruction[15]_INST_0_i_3 
+       (.I0(Address[9]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .I3(Address[10]),
+        .I4(Address[6]),
+        .I5(Address[5]),
+        .O(\Instruction[15]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h4604040661108220)) 
+    \Instruction[15]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[8]),
+        .I4(Address[7]),
+        .I5(Address[10]),
+        .O(\Instruction[15]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0419020412240902)) 
+    \Instruction[15]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[9]),
+        .I3(Address[7]),
+        .I4(Address[8]),
+        .I5(Address[10]),
+        .O(\Instruction[15]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[16]_INST_0 
+       (.I0(\Instruction[16]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[16]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[16]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[16]));
+  MUXF7 \Instruction[16]_INST_0_i_1 
+       (.I0(\Instruction[16]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[16]_INST_0_i_5_n_5 ),
+        .O(\Instruction[16]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h4000004000004000)) 
+    \Instruction[16]_INST_0_i_2 
+       (.I0(Address[9]),
+        .I1(Address[5]),
+        .I2(Address[8]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[16]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h8009000000008009)) 
+    \Instruction[16]_INST_0_i_3 
+       (.I0(Address[8]),
+        .I1(Address[5]),
+        .I2(Address[6]),
+        .I3(Address[7]),
+        .I4(Address[10]),
+        .I5(Address[9]),
+        .O(\Instruction[16]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h4640010008004640)) 
+    \Instruction[16]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[10]),
+        .I3(Address[8]),
+        .I4(Address[6]),
+        .I5(Address[7]),
+        .O(\Instruction[16]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h1000001000000004)) 
+    \Instruction[16]_INST_0_i_5 
+       (.I0(Address[9]),
+        .I1(Address[5]),
+        .I2(Address[6]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[8]),
+        .O(\Instruction[16]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000000E2E200)) 
+    \Instruction[17]_INST_0 
+       (.I0(\Instruction[17]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[17]_INST_0_i_2_n_5 ),
+        .I3(Address[10]),
+        .I4(Address[9]),
+        .I5(Address[2]),
+        .O(Instruction[17]));
+  LUT6 #(
+    .INIT(64'h8000000200400410)) 
+    \Instruction[17]_INST_0_i_1 
+       (.I0(Address[4]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .I3(Address[6]),
+        .I4(Address[5]),
+        .I5(Address[9]),
+        .O(\Instruction[17]_INST_0_i_1_n_5 ));
+  LUT6 #(
+    .INIT(64'h2800000000100420)) 
+    \Instruction[17]_INST_0_i_2 
+       (.I0(Address[4]),
+        .I1(Address[7]),
+        .I2(Address[5]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[6]),
+        .O(\Instruction[17]_INST_0_i_2_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
+  LUT3 #(
+    .INIT(8'h04)) 
+    \Instruction[18]_INST_0 
+       (.I0(Address[2]),
+        .I1(\Instruction[18]_INST_0_i_1_n_5 ),
+        .I2(Address[6]),
+        .O(Instruction[18]));
+  LUT6 #(
+    .INIT(64'h8000000000000000)) 
+    \Instruction[18]_INST_0_i_1 
+       (.I0(Address[8]),
+        .I1(Address[10]),
         .I2(Address[7]),
         .I3(Address[5]),
         .I4(Address[3]),
         .I5(Address[4]),
-        .O(\Instruction[16]_INST_0_i_1_n_5 ));
-  LUT6 #(
-    .INIT(64'h0000000000000E00)) 
-    \Instruction[17]_INST_0 
-       (.I0(Address[5]),
-        .I1(Address[7]),
-        .I2(Address[2]),
-        .I3(Address[8]),
-        .I4(Address[6]),
-        .I5(\Instruction[17]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [17]));
-  LUT2 #(
-    .INIT(4'h6)) 
-    \Instruction[17]_INST_0_i_1 
-       (.I0(Address[4]),
-        .I1(Address[3]),
-        .O(\Instruction[17]_INST_0_i_1_n_5 ));
-  LUT6 #(
-    .INIT(64'h8A82A28208002000)) 
-    \Instruction[18]_INST_0 
-       (.I0(\Instruction[18]_INST_0_i_1_n_5 ),
-        .I1(Address[3]),
-        .I2(Address[4]),
-        .I3(Address[6]),
-        .I4(Address[5]),
-        .I5(Address[7]),
-        .O(\^Instruction [18]));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h2)) 
-    \Instruction[18]_INST_0_i_1 
-       (.I0(Address[8]),
-        .I1(Address[2]),
         .O(\Instruction[18]_INST_0_i_1_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[19]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[19]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [19]));
   LUT6 #(
-    .INIT(64'hDAF6DB6DB6DB6DB6)) 
-    \Instruction[19]_INST_0_i_1 
-       (.I0(Address[3]),
-        .I1(Address[4]),
-        .I2(Address[5]),
-        .I3(Address[6]),
-        .I4(Address[7]),
-        .I5(Address[8]),
-        .O(\Instruction[19]_INST_0_i_1_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT3 #(
-    .INIT(8'h02)) 
+    .INIT(64'h00000000EEE222E2)) 
     \Instruction[1]_INST_0 
        (.I0(\Instruction[1]_INST_0_i_1_n_5 ),
-        .I1(\Instruction[1]_INST_0_i_2_n_5 ),
-        .I2(Address[2]),
-        .O(\^Instruction [1]));
+        .I1(Address[3]),
+        .I2(\Instruction[1]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[1]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[1]));
+  MUXF7 \Instruction[1]_INST_0_i_1 
+       (.I0(\Instruction[1]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[1]_INST_0_i_5_n_5 ),
+        .O(\Instruction[1]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
   LUT6 #(
-    .INIT(64'hAAAAEAAAAAAAAAAB)) 
-    \Instruction[1]_INST_0_i_1 
-       (.I0(Address[3]),
-        .I1(Address[4]),
-        .I2(Address[5]),
-        .I3(Address[6]),
-        .I4(Address[8]),
-        .I5(Address[7]),
-        .O(\Instruction[1]_INST_0_i_1_n_5 ));
-  LUT6 #(
-    .INIT(64'h8A82AA8A8AAAAAA2)) 
+    .INIT(64'h0022160102008020)) 
     \Instruction[1]_INST_0_i_2 
-       (.I0(Address[3]),
-        .I1(Address[4]),
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[9]),
+        .I3(Address[6]),
+        .I4(Address[10]),
+        .I5(Address[8]),
+        .O(\Instruction[1]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000200220001600)) 
+    \Instruction[1]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[10]),
+        .I5(Address[6]),
+        .O(\Instruction[1]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h3048400400803048)) 
+    \Instruction[1]_INST_0_i_4 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[8]),
+        .I3(Address[9]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[1]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h04B9220010240100)) 
+    \Instruction[1]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[9]),
+        .I3(Address[7]),
+        .I4(Address[8]),
+        .I5(Address[10]),
+        .O(\Instruction[1]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[20]_INST_0 
+       (.I0(\Instruction[20]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[20]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[20]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[20]));
+  MUXF7 \Instruction[20]_INST_0_i_1 
+       (.I0(\Instruction[20]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[20]_INST_0_i_5_n_5 ),
+        .O(\Instruction[20]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h20C012801A008048)) 
+    \Instruction[20]_INST_0_i_2 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[10]),
+        .I5(Address[6]),
+        .O(\Instruction[20]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'hFFFF410024929049)) 
+    \Instruction[20]_INST_0_i_3 
+       (.I0(Address[6]),
+        .I1(Address[7]),
+        .I2(Address[8]),
+        .I3(Address[5]),
+        .I4(Address[9]),
+        .I5(Address[10]),
+        .O(\Instruction[20]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h6525241049249209)) 
+    \Instruction[20]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[10]),
+        .O(\Instruction[20]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0942440802040902)) 
+    \Instruction[20]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[8]),
+        .I5(Address[7]),
+        .O(\Instruction[20]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[21]_INST_0 
+       (.I0(\Instruction[21]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[21]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[21]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[21]));
+  MUXF7 \Instruction[21]_INST_0_i_1 
+       (.I0(\Instruction[21]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[21]_INST_0_i_5_n_5 ),
+        .O(\Instruction[21]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h4042242000000000)) 
+    \Instruction[21]_INST_0_i_2 
+       (.I0(Address[6]),
+        .I1(Address[5]),
+        .I2(Address[9]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[8]),
+        .O(\Instruction[21]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000084841000)) 
+    \Instruction[21]_INST_0_i_3 
+       (.I0(Address[6]),
+        .I1(Address[8]),
         .I2(Address[5]),
+        .I3(Address[10]),
+        .I4(Address[9]),
+        .I5(Address[7]),
+        .O(\Instruction[21]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000041800440)) 
+    \Instruction[21]_INST_0_i_4 
+       (.I0(Address[8]),
+        .I1(Address[7]),
+        .I2(Address[10]),
+        .I3(Address[6]),
+        .I4(Address[5]),
+        .I5(Address[9]),
+        .O(\Instruction[21]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000826000000000)) 
+    \Instruction[21]_INST_0_i_5 
+       (.I0(Address[7]),
+        .I1(Address[9]),
+        .I2(Address[8]),
+        .I3(Address[6]),
+        .I4(Address[10]),
+        .I5(Address[5]),
+        .O(\Instruction[21]_INST_0_i_5_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT3 #(
+    .INIT(8'h04)) 
+    \Instruction[22]_INST_0 
+       (.I0(Address[5]),
+        .I1(\Instruction[22]_INST_0_i_1_n_5 ),
+        .I2(Address[8]),
+        .O(Instruction[22]));
+  LUT6 #(
+    .INIT(64'h0000000040000000)) 
+    \Instruction[22]_INST_0_i_1 
+       (.I0(Address[2]),
+        .I1(Address[10]),
+        .I2(Address[7]),
+        .I3(Address[3]),
+        .I4(Address[6]),
+        .I5(Address[4]),
+        .O(\Instruction[22]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT3 #(
+    .INIT(8'h82)) 
+    \Instruction[23]_INST_0 
+       (.I0(\Instruction[23]_INST_0_i_1_n_5 ),
+        .I1(Address[7]),
+        .I2(Address[4]),
+        .O(Instruction[23]));
+  LUT6 #(
+    .INIT(64'h0000000000004000)) 
+    \Instruction[23]_INST_0_i_1 
+       (.I0(Address[3]),
+        .I1(Address[6]),
+        .I2(Address[10]),
+        .I3(Address[8]),
+        .I4(Address[2]),
+        .I5(Address[5]),
+        .O(\Instruction[23]_INST_0_i_1_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[25]_INST_0 
+       (.I0(\Instruction[25]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[25]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[25]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[25]));
+  MUXF7 \Instruction[25]_INST_0_i_1 
+       (.I0(\Instruction[25]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[25]_INST_0_i_5_n_5 ),
+        .O(\Instruction[25]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h0004220024104124)) 
+    \Instruction[25]_INST_0_i_2 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[9]),
+        .I3(Address[8]),
+        .I4(Address[7]),
+        .I5(Address[10]),
+        .O(\Instruction[25]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h02000088080406A0)) 
+    \Instruction[25]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[10]),
         .I3(Address[6]),
         .I4(Address[8]),
         .I5(Address[7]),
-        .O(\Instruction[1]_INST_0_i_2_n_5 ));
+        .O(\Instruction[25]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0020500225184060)) 
+    \Instruction[25]_INST_0_i_4 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[8]),
+        .O(\Instruction[25]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h6010422102200002)) 
+    \Instruction[25]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[10]),
+        .I2(Address[6]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[7]),
+        .O(\Instruction[25]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000022E2EEE2)) 
+    \Instruction[26]_INST_0 
+       (.I0(\Instruction[26]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[26]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[26]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[26]));
+  MUXF7 \Instruction[26]_INST_0_i_1 
+       (.I0(\Instruction[26]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[26]_INST_0_i_5_n_5 ),
+        .O(\Instruction[26]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'h80000000)) 
+    \Instruction[26]_INST_0_i_2 
+       (.I0(Address[8]),
+        .I1(Address[10]),
+        .I2(Address[7]),
+        .I3(Address[6]),
+        .I4(Address[5]),
+        .O(\Instruction[26]_INST_0_i_2_n_5 ));
+  LUT2 #(
+    .INIT(4'h7)) 
+    \Instruction[26]_INST_0_i_3 
+       (.I0(Address[10]),
+        .I1(Address[9]),
+        .O(\Instruction[26]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000C8080808)) 
+    \Instruction[26]_INST_0_i_4 
+       (.I0(Address[10]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[7]),
+        .I4(Address[8]),
+        .I5(Address[5]),
+        .O(\Instruction[26]_INST_0_i_4_n_5 ));
+  LUT5 #(
+    .INIT(32'h00000880)) 
+    \Instruction[26]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[8]),
+        .I4(Address[7]),
+        .O(\Instruction[26]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000FFE200E2)) 
+    \Instruction[27]_INST_0 
+       (.I0(\Instruction[27]_INST_0_i_1_n_5 ),
+        .I1(Address[4]),
+        .I2(\Instruction[27]_INST_0_i_2_n_5 ),
+        .I3(Address[3]),
+        .I4(\Instruction[27]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[27]));
+  LUT6 #(
+    .INIT(64'h000000000000E200)) 
+    \Instruction[27]_INST_0_i_1 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[7]),
+        .I3(Address[9]),
+        .I4(Address[6]),
+        .I5(Address[8]),
+        .O(\Instruction[27]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT5 #(
+    .INIT(32'h04200000)) 
+    \Instruction[27]_INST_0_i_2 
+       (.I0(Address[6]),
+        .I1(Address[5]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .O(\Instruction[27]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000F4840000)) 
+    \Instruction[27]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[4]),
+        .I3(Address[10]),
+        .I4(\Instruction[27]_INST_0_i_4_n_5 ),
+        .I5(Address[8]),
+        .O(\Instruction[27]_INST_0_i_3_n_5 ));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[21]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[21]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [21]));
-  LUT6 #(
-    .INIT(64'hDB96D7BF6DEB6BF7)) 
-    \Instruction[21]_INST_0_i_1 
-       (.I0(Address[3]),
+    .INIT(4'h2)) 
+    \Instruction[27]_INST_0_i_4 
+       (.I0(Address[9]),
         .I1(Address[6]),
-        .I2(Address[8]),
-        .I3(Address[5]),
-        .I4(Address[7]),
-        .I5(Address[4]),
-        .O(\Instruction[21]_INST_0_i_1_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[24]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[24]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [24]));
+        .O(\Instruction[27]_INST_0_i_4_n_5 ));
   LUT6 #(
-    .INIT(64'hFB96D7BD6DEB6BF7)) 
-    \Instruction[24]_INST_0_i_1 
-       (.I0(Address[3]),
-        .I1(Address[6]),
-        .I2(Address[8]),
-        .I3(Address[5]),
-        .I4(Address[7]),
-        .I5(Address[4]),
-        .O(\Instruction[24]_INST_0_i_1_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[26]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[26]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [26]));
-  LUT6 #(
-    .INIT(64'hDDBBFEFD76FFDFBE)) 
-    \Instruction[26]_INST_0_i_1 
-       (.I0(Address[3]),
-        .I1(Address[4]),
-        .I2(Address[7]),
-        .I3(Address[5]),
-        .I4(Address[8]),
-        .I5(Address[6]),
-        .O(\Instruction[26]_INST_0_i_1_n_5 ));
-  LUT6 #(
-    .INIT(64'h1000000400001401)) 
-    \Instruction[27]_INST_0 
-       (.I0(\Instruction[6]_INST_0_i_1_n_5 ),
-        .I1(Address[6]),
-        .I2(Address[8]),
-        .I3(Address[5]),
-        .I4(Address[4]),
-        .I5(Address[3]),
-        .O(\^Instruction [27]));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
-  LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[29]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[29]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [29]));
-  LUT6 #(
-    .INIT(64'hEFBEBEFBF3EFEFB6)) 
-    \Instruction[29]_INST_0_i_1 
-       (.I0(Address[8]),
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[28]_INST_0 
+       (.I0(\Instruction[28]_INST_0_i_1_n_5 ),
         .I1(Address[3]),
-        .I2(Address[4]),
+        .I2(\Instruction[28]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[28]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[28]));
+  MUXF7 \Instruction[28]_INST_0_i_1 
+       (.I0(\Instruction[28]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[28]_INST_0_i_5_n_5 ),
+        .O(\Instruction[28]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'hC00000C000000020)) 
+    \Instruction[28]_INST_0_i_2 
+       (.I0(Address[9]),
+        .I1(Address[10]),
+        .I2(Address[5]),
         .I3(Address[7]),
-        .I4(Address[5]),
-        .I5(Address[6]),
-        .O(\Instruction[29]_INST_0_i_1_n_5 ));
-  LUT2 #(
-    .INIT(4'h1)) 
+        .I4(Address[6]),
+        .I5(Address[8]),
+        .O(\Instruction[28]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000FF1800000000)) 
+    \Instruction[28]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[6]),
+        .I3(Address[10]),
+        .I4(Address[8]),
+        .I5(Address[9]),
+        .O(\Instruction[28]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000FF180000)) 
+    \Instruction[28]_INST_0_i_4 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .I3(Address[9]),
+        .I4(Address[10]),
+        .I5(Address[5]),
+        .O(\Instruction[28]_INST_0_i_4_n_5 ));
+  LUT5 #(
+    .INIT(32'h04400000)) 
+    \Instruction[28]_INST_0_i_5 
+       (.I0(Address[8]),
+        .I1(Address[9]),
+        .I2(Address[5]),
+        .I3(Address[7]),
+        .I4(Address[6]),
+        .O(\Instruction[28]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[29]_INST_0 
+       (.I0(\Instruction[29]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[29]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[29]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[29]));
+  MUXF7 \Instruction[29]_INST_0_i_1 
+       (.I0(\Instruction[29]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[29]_INST_0_i_5_n_5 ),
+        .O(\Instruction[29]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'hA40000A40000A400)) 
+    \Instruction[29]_INST_0_i_2 
+       (.I0(Address[10]),
+        .I1(Address[9]),
+        .I2(Address[8]),
+        .I3(Address[5]),
+        .I4(Address[6]),
+        .I5(Address[7]),
+        .O(\Instruction[29]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'hF000F480F900F001)) 
+    \Instruction[29]_INST_0_i_3 
+       (.I0(Address[8]),
+        .I1(Address[7]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[6]),
+        .I5(Address[5]),
+        .O(\Instruction[29]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h04040000CD80EC49)) 
+    \Instruction[29]_INST_0_i_4 
+       (.I0(Address[6]),
+        .I1(Address[9]),
+        .I2(Address[8]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[5]),
+        .O(\Instruction[29]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0100040022008900)) 
+    \Instruction[29]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[8]),
+        .I5(Address[7]),
+        .O(\Instruction[29]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h0101015151510151)) 
     \Instruction[2]_INST_0 
        (.I0(Address[2]),
         .I1(\Instruction[2]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [2]));
+        .I2(Address[3]),
+        .I3(\Instruction[2]_INST_0_i_2_n_5 ),
+        .I4(Address[4]),
+        .I5(\Instruction[2]_INST_0_i_3_n_5 ),
+        .O(Instruction[2]));
+  MUXF7 \Instruction[2]_INST_0_i_1 
+       (.I0(\Instruction[2]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[2]_INST_0_i_5_n_5 ),
+        .O(\Instruction[2]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
   LUT6 #(
-    .INIT(64'hFBFEFFFFFFFFEBDE)) 
-    \Instruction[2]_INST_0_i_1 
-       (.I0(Address[7]),
-        .I1(Address[4]),
-        .I2(Address[6]),
-        .I3(Address[5]),
-        .I4(Address[8]),
-        .I5(Address[3]),
-        .O(\Instruction[2]_INST_0_i_1_n_5 ));
-  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+    .INIT(64'hFFDFFFBEFFFFF7DF)) 
+    \Instruction[2]_INST_0_i_2 
+       (.I0(Address[5]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .I3(Address[10]),
+        .I4(Address[9]),
+        .I5(Address[6]),
+        .O(\Instruction[2]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'hFBFFFFFBBFFFFFFF)) 
+    \Instruction[2]_INST_0_i_3 
+       (.I0(Address[9]),
+        .I1(Address[5]),
+        .I2(Address[10]),
+        .I3(Address[8]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[2]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'hFFDFFFFFFF7D57F7)) 
+    \Instruction[2]_INST_0_i_4 
+       (.I0(Address[6]),
+        .I1(Address[9]),
+        .I2(Address[8]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[5]),
+        .O(\Instruction[2]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'hFFEDBFDBFFFEFF6D)) 
+    \Instruction[2]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[6]),
+        .I2(Address[7]),
+        .I3(Address[10]),
+        .I4(Address[9]),
+        .I5(Address[8]),
+        .O(\Instruction[2]_INST_0_i_5_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair7" *) 
   LUT2 #(
-    .INIT(4'h1)) 
-    \Instruction[31]_INST_0 
-       (.I0(Address[2]),
-        .I1(\Instruction[31]_INST_0_i_1_n_5 ),
-        .O(\^Instruction [31]));
+    .INIT(4'h2)) 
+    \Instruction[30]_INST_0 
+       (.I0(\Instruction[30]_INST_0_i_1_n_5 ),
+        .I1(Address[2]),
+        .O(Instruction[30]));
   LUT6 #(
-    .INIT(64'h53DB666FB7EDDBFF)) 
-    \Instruction[31]_INST_0_i_1 
-       (.I0(Address[3]),
-        .I1(Address[4]),
-        .I2(Address[5]),
+    .INIT(64'h4400004444003000)) 
+    \Instruction[30]_INST_0_i_1 
+       (.I0(\Instruction[30]_INST_0_i_2_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[30]_INST_0_i_3_n_5 ),
+        .I3(Address[10]),
+        .I4(Address[4]),
+        .I5(Address[5]),
+        .O(\Instruction[30]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT4 #(
+    .INIT(16'hFFEF)) 
+    \Instruction[30]_INST_0_i_2 
+       (.I0(Address[8]),
+        .I1(Address[7]),
+        .I2(Address[9]),
+        .I3(Address[6]),
+        .O(\Instruction[30]_INST_0_i_2_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair3" *) 
+  LUT4 #(
+    .INIT(16'hBAAE)) 
+    \Instruction[30]_INST_0_i_3 
+       (.I0(Address[9]),
+        .I1(Address[7]),
+        .I2(Address[8]),
+        .I3(Address[6]),
+        .O(\Instruction[30]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000EEE222E2)) 
+    \Instruction[3]_INST_0 
+       (.I0(\Instruction[3]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[3]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[3]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[3]));
+  MUXF7 \Instruction[3]_INST_0_i_1 
+       (.I0(\Instruction[3]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[3]_INST_0_i_5_n_5 ),
+        .O(\Instruction[3]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h2020840000000084)) 
+    \Instruction[3]_INST_0_i_2 
+       (.I0(Address[9]),
+        .I1(Address[8]),
+        .I2(Address[6]),
+        .I3(Address[10]),
+        .I4(Address[7]),
+        .I5(Address[5]),
+        .O(\Instruction[3]_INST_0_i_2_n_5 ));
+  LUT6 #(
+    .INIT(64'h0808000003000808)) 
+    \Instruction[3]_INST_0_i_3 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[6]),
+        .I3(Address[9]),
+        .I4(Address[8]),
+        .I5(Address[7]),
+        .O(\Instruction[3]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000098000000000)) 
+    \Instruction[3]_INST_0_i_4 
+       (.I0(Address[6]),
+        .I1(Address[9]),
+        .I2(Address[7]),
+        .I3(Address[5]),
+        .I4(Address[10]),
+        .I5(Address[8]),
+        .O(\Instruction[3]_INST_0_i_4_n_5 ));
+  LUT5 #(
+    .INIT(32'h86000000)) 
+    \Instruction[3]_INST_0_i_5 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[6]),
+        .I3(Address[9]),
+        .I4(Address[8]),
+        .O(\Instruction[3]_INST_0_i_5_n_5 ));
+  LUT6 #(
+    .INIT(64'h00000000FFE000E0)) 
+    \Instruction[4]_INST_0 
+       (.I0(Address[10]),
+        .I1(Address[9]),
+        .I2(\Instruction[4]_INST_0_i_1_n_5 ),
+        .I3(Address[3]),
+        .I4(\Instruction[4]_INST_0_i_2_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[4]));
+  LUT6 #(
+    .INIT(64'h9208000000824824)) 
+    \Instruction[4]_INST_0_i_1 
+       (.I0(Address[4]),
+        .I1(Address[5]),
+        .I2(Address[6]),
         .I3(Address[7]),
+        .I4(Address[8]),
+        .I5(Address[9]),
+        .O(\Instruction[4]_INST_0_i_1_n_5 ));
+  MUXF7 \Instruction[4]_INST_0_i_2 
+       (.I0(\Instruction[4]_INST_0_i_3_n_5 ),
+        .I1(\Instruction[4]_INST_0_i_4_n_5 ),
+        .O(\Instruction[4]_INST_0_i_2_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h2290002000000090)) 
+    \Instruction[4]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .I4(Address[7]),
+        .I5(Address[6]),
+        .O(\Instruction[4]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0040400404000040)) 
+    \Instruction[4]_INST_0_i_4 
+       (.I0(Address[9]),
+        .I1(Address[10]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[6]),
+        .I5(Address[5]),
+        .O(\Instruction[4]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h0101015151510151)) 
+    \Instruction[5]_INST_0 
+       (.I0(Address[2]),
+        .I1(\Instruction[5]_INST_0_i_1_n_5 ),
+        .I2(Address[3]),
+        .I3(\Instruction[5]_INST_0_i_2_n_5 ),
+        .I4(Address[4]),
+        .I5(\Instruction[5]_INST_0_i_3_n_5 ),
+        .O(Instruction[5]));
+  MUXF7 \Instruction[5]_INST_0_i_1 
+       (.I0(\Instruction[5]_INST_0_i_4_n_5 ),
+        .I1(\Instruction[5]_INST_0_i_5_n_5 ),
+        .O(\Instruction[5]_INST_0_i_1_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h7F7FD7DE77FEFFF7)) 
+    \Instruction[5]_INST_0_i_2 
+       (.I0(Address[5]),
+        .I1(Address[7]),
+        .I2(Address[10]),
+        .I3(Address[9]),
         .I4(Address[6]),
         .I5(Address[8]),
-        .O(\Instruction[31]_INST_0_i_1_n_5 ));
+        .O(\Instruction[5]_INST_0_i_2_n_5 ));
   LUT6 #(
-    .INIT(64'h1000000000001001)) 
-    \Instruction[3]_INST_0 
-       (.I0(Address[8]),
-        .I1(\Instruction[6]_INST_0_i_1_n_5 ),
-        .I2(Address[4]),
-        .I3(Address[3]),
+    .INIT(64'hF5B65F7FFFFFF5F7)) 
+    \Instruction[5]_INST_0_i_3 
+       (.I0(Address[9]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .I3(Address[10]),
         .I4(Address[5]),
         .I5(Address[6]),
-        .O(\^Instruction [3]));
+        .O(\Instruction[5]_INST_0_i_3_n_5 ));
   LUT6 #(
-    .INIT(64'h0000000000000040)) 
-    \Instruction[4]_INST_0 
-       (.I0(Address[6]),
-        .I1(Address[3]),
-        .I2(Address[4]),
-        .I3(Address[5]),
-        .I4(\Instruction[6]_INST_0_i_1_n_5 ),
-        .I5(Address[8]),
-        .O(\^Instruction [14]));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \Instruction[6]_INST_0 
+    .INIT(64'hFFAABFFFFFFF79DF)) 
+    \Instruction[5]_INST_0_i_4 
        (.I0(Address[5]),
-        .I1(Address[6]),
-        .I2(Address[4]),
-        .I3(\Instruction[6]_INST_0_i_1_n_5 ),
-        .I4(Address[8]),
-        .I5(Address[3]),
-        .O(\^Instruction [28]));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \Instruction[6]_INST_0_i_1 
-       (.I0(Address[7]),
-        .I1(Address[2]),
-        .O(\Instruction[6]_INST_0_i_1_n_5 ));
-  LUT6 #(
-    .INIT(64'h0000000000000001)) 
-    \Instruction[7]_INST_0 
-       (.I0(Address[5]),
-        .I1(Address[6]),
+        .I1(Address[7]),
         .I2(Address[8]),
-        .I3(\Instruction[17]_INST_0_i_1_n_5 ),
-        .I4(Address[7]),
+        .I3(Address[6]),
+        .I4(Address[10]),
+        .I5(Address[9]),
+        .O(\Instruction[5]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'hFFFFFFFFEBFFFFEB)) 
+    \Instruction[5]_INST_0_i_5 
+       (.I0(Address[6]),
+        .I1(Address[5]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[9]),
+        .I5(Address[10]),
+        .O(\Instruction[5]_INST_0_i_5_n_5 ));
+  LUT5 #(
+    .INIT(32'h0000F404)) 
+    \Instruction[6]_INST_0 
+       (.I0(\Instruction[6]_INST_0_i_1_n_5 ),
+        .I1(Address[8]),
+        .I2(Address[3]),
+        .I3(\Instruction[6]_INST_0_i_2_n_5 ),
+        .I4(Address[2]),
+        .O(Instruction[6]));
+  LUT6 #(
+    .INIT(64'hBE57FFB6F7FFF7FF)) 
+    \Instruction[6]_INST_0_i_1 
+       (.I0(Address[4]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[5]),
+        .I4(Address[10]),
+        .I5(Address[7]),
+        .O(\Instruction[6]_INST_0_i_1_n_5 ));
+  MUXF7 \Instruction[6]_INST_0_i_2 
+       (.I0(\Instruction[6]_INST_0_i_3_n_5 ),
+        .I1(\Instruction[6]_INST_0_i_4_n_5 ),
+        .O(\Instruction[6]_INST_0_i_2_n_5 ),
+        .S(Address[4]));
+  LUT6 #(
+    .INIT(64'h2200008080080080)) 
+    \Instruction[6]_INST_0_i_3 
+       (.I0(Address[5]),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[7]),
+        .I4(Address[6]),
+        .I5(Address[9]),
+        .O(\Instruction[6]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000000001400)) 
+    \Instruction[6]_INST_0_i_4 
+       (.I0(Address[10]),
+        .I1(Address[5]),
+        .I2(Address[7]),
+        .I3(Address[8]),
+        .I4(Address[6]),
+        .I5(Address[9]),
+        .O(\Instruction[6]_INST_0_i_4_n_5 ));
+  LUT5 #(
+    .INIT(32'h0000F404)) 
+    \Instruction[7]_INST_0 
+       (.I0(\Instruction[7]_INST_0_i_1_n_5 ),
+        .I1(Address[8]),
+        .I2(Address[3]),
+        .I3(\Instruction[7]_INST_0_i_2_n_5 ),
+        .I4(Address[2]),
+        .O(Instruction[7]));
+  LUT6 #(
+    .INIT(64'hBEF7FFB6F7FFF7FF)) 
+    \Instruction[7]_INST_0_i_1 
+       (.I0(Address[4]),
+        .I1(Address[9]),
+        .I2(Address[6]),
+        .I3(Address[5]),
+        .I4(Address[10]),
+        .I5(Address[7]),
+        .O(\Instruction[7]_INST_0_i_1_n_5 ));
+  LUT6 #(
+    .INIT(64'h0040FFFF00400000)) 
+    \Instruction[7]_INST_0_i_2 
+       (.I0(Address[10]),
+        .I1(\Instruction[7]_INST_0_i_3_n_5 ),
+        .I2(\Instruction[7]_INST_0_i_4_n_5 ),
+        .I3(Address[9]),
+        .I4(Address[4]),
+        .I5(\Instruction[10]_INST_0_i_2_n_5 ),
+        .O(\Instruction[7]_INST_0_i_2_n_5 ));
+  LUT2 #(
+    .INIT(4'h6)) 
+    \Instruction[7]_INST_0_i_3 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .O(\Instruction[7]_INST_0_i_3_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair6" *) 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \Instruction[7]_INST_0_i_4 
+       (.I0(Address[7]),
+        .I1(Address[5]),
+        .O(\Instruction[7]_INST_0_i_4_n_5 ));
+  LUT6 #(
+    .INIT(64'h000000002E222222)) 
+    \Instruction[8]_INST_0 
+       (.I0(\Instruction[9]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[8]_INST_0_i_1_n_5 ),
+        .I3(\Instruction[8]_INST_0_i_2_n_5 ),
+        .I4(\Instruction[8]_INST_0_i_3_n_5 ),
         .I5(Address[2]),
-        .O(\^Instruction [15]));
+        .O(Instruction[8]));
+  (* SOFT_HLUTNM = "soft_lutpair8" *) 
+  LUT2 #(
+    .INIT(4'hB)) 
+    \Instruction[8]_INST_0_i_1 
+       (.I0(Address[4]),
+        .I1(Address[5]),
+        .O(\Instruction[8]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT3 #(
+    .INIT(8'hB8)) 
+    \Instruction[8]_INST_0_i_2 
+       (.I0(Address[10]),
+        .I1(Address[8]),
+        .I2(Address[9]),
+        .O(\Instruction[8]_INST_0_i_2_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'hA4)) 
+    \Instruction[8]_INST_0_i_3 
+       (.I0(Address[6]),
+        .I1(Address[8]),
+        .I2(Address[7]),
+        .O(\Instruction[8]_INST_0_i_3_n_5 ));
+  LUT6 #(
+    .INIT(64'h0000000022E2EEE2)) 
+    \Instruction[9]_INST_0 
+       (.I0(\Instruction[9]_INST_0_i_1_n_5 ),
+        .I1(Address[3]),
+        .I2(\Instruction[10]_INST_0_i_2_n_5 ),
+        .I3(Address[4]),
+        .I4(\Instruction[26]_INST_0_i_3_n_5 ),
+        .I5(Address[2]),
+        .O(Instruction[9]));
+  (* SOFT_HLUTNM = "soft_lutpair5" *) 
+  LUT4 #(
+    .INIT(16'h8880)) 
+    \Instruction[9]_INST_0_i_1 
+       (.I0(\Instruction[9]_INST_0_i_2_n_5 ),
+        .I1(Address[8]),
+        .I2(Address[10]),
+        .I3(Address[9]),
+        .O(\Instruction[9]_INST_0_i_1_n_5 ));
+  (* SOFT_HLUTNM = "soft_lutpair2" *) 
+  LUT5 #(
+    .INIT(32'h02044800)) 
+    \Instruction[9]_INST_0_i_2 
+       (.I0(Address[4]),
+        .I1(Address[7]),
+        .I2(Address[6]),
+        .I3(Address[9]),
+        .I4(Address[5]),
+        .O(\Instruction[9]_INST_0_i_2_n_5 ));
 endmodule
 
 module MEMWBReg
@@ -33725,11 +34555,12 @@ module Mux32Bit2To1_1
         .I1(\ReadData2O_reg[31] [1]),
         .I2(ALUSrcO),
         .O(B[1]));
-  LUT2 #(
-    .INIT(4'h2)) 
+  LUT3 #(
+    .INIT(8'hAC)) 
     alu_i_64
-       (.I0(\ReadData2O_reg[31] [0]),
-        .I1(ALUSrcO),
+       (.I0(\Instructionout_reg[15] [0]),
+        .I1(\ReadData2O_reg[31] [0]),
+        .I2(ALUSrcO),
         .O(B[0]));
 endmodule
 
@@ -33749,7 +34580,7 @@ module Mux32Bit2To1_2
   wire [31:0]\ReadDataMemO3_reg[31] ;
   wire [31:0]inA;
 
-  (* SOFT_HLUTNM = "soft_lutpair269" *) 
+  (* SOFT_HLUTNM = "soft_lutpair273" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_1
@@ -33757,7 +34588,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [31]),
         .I2(MemtoRegO3),
         .O(inA[31]));
-  (* SOFT_HLUTNM = "soft_lutpair265" *) 
+  (* SOFT_HLUTNM = "soft_lutpair269" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_10
@@ -33765,7 +34596,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [22]),
         .I2(MemtoRegO3),
         .O(inA[22]));
-  (* SOFT_HLUTNM = "soft_lutpair264" *) 
+  (* SOFT_HLUTNM = "soft_lutpair268" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_11
@@ -33773,7 +34604,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [21]),
         .I2(MemtoRegO3),
         .O(inA[21]));
-  (* SOFT_HLUTNM = "soft_lutpair264" *) 
+  (* SOFT_HLUTNM = "soft_lutpair268" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_12
@@ -33781,7 +34612,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [20]),
         .I2(MemtoRegO3),
         .O(inA[20]));
-  (* SOFT_HLUTNM = "soft_lutpair263" *) 
+  (* SOFT_HLUTNM = "soft_lutpair267" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_13
@@ -33789,7 +34620,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [19]),
         .I2(MemtoRegO3),
         .O(inA[19]));
-  (* SOFT_HLUTNM = "soft_lutpair263" *) 
+  (* SOFT_HLUTNM = "soft_lutpair267" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_14
@@ -33797,7 +34628,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [18]),
         .I2(MemtoRegO3),
         .O(inA[18]));
-  (* SOFT_HLUTNM = "soft_lutpair262" *) 
+  (* SOFT_HLUTNM = "soft_lutpair266" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_15
@@ -33805,7 +34636,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [17]),
         .I2(MemtoRegO3),
         .O(inA[17]));
-  (* SOFT_HLUTNM = "soft_lutpair262" *) 
+  (* SOFT_HLUTNM = "soft_lutpair266" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_16
@@ -33813,7 +34644,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [16]),
         .I2(MemtoRegO3),
         .O(inA[16]));
-  (* SOFT_HLUTNM = "soft_lutpair261" *) 
+  (* SOFT_HLUTNM = "soft_lutpair265" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_17
@@ -33821,7 +34652,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [15]),
         .I2(MemtoRegO3),
         .O(inA[15]));
-  (* SOFT_HLUTNM = "soft_lutpair261" *) 
+  (* SOFT_HLUTNM = "soft_lutpair265" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_18
@@ -33829,7 +34660,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [14]),
         .I2(MemtoRegO3),
         .O(inA[14]));
-  (* SOFT_HLUTNM = "soft_lutpair260" *) 
+  (* SOFT_HLUTNM = "soft_lutpair264" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_19
@@ -33837,7 +34668,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [13]),
         .I2(MemtoRegO3),
         .O(inA[13]));
-  (* SOFT_HLUTNM = "soft_lutpair269" *) 
+  (* SOFT_HLUTNM = "soft_lutpair273" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_2
@@ -33845,7 +34676,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [30]),
         .I2(MemtoRegO3),
         .O(inA[30]));
-  (* SOFT_HLUTNM = "soft_lutpair260" *) 
+  (* SOFT_HLUTNM = "soft_lutpair264" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_20
@@ -33853,7 +34684,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [12]),
         .I2(MemtoRegO3),
         .O(inA[12]));
-  (* SOFT_HLUTNM = "soft_lutpair259" *) 
+  (* SOFT_HLUTNM = "soft_lutpair263" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_21
@@ -33861,7 +34692,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [11]),
         .I2(MemtoRegO3),
         .O(inA[11]));
-  (* SOFT_HLUTNM = "soft_lutpair259" *) 
+  (* SOFT_HLUTNM = "soft_lutpair263" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_22
@@ -33869,7 +34700,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [10]),
         .I2(MemtoRegO3),
         .O(inA[10]));
-  (* SOFT_HLUTNM = "soft_lutpair258" *) 
+  (* SOFT_HLUTNM = "soft_lutpair262" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_23
@@ -33877,7 +34708,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [9]),
         .I2(MemtoRegO3),
         .O(inA[9]));
-  (* SOFT_HLUTNM = "soft_lutpair258" *) 
+  (* SOFT_HLUTNM = "soft_lutpair262" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_24
@@ -33885,7 +34716,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [8]),
         .I2(MemtoRegO3),
         .O(inA[8]));
-  (* SOFT_HLUTNM = "soft_lutpair257" *) 
+  (* SOFT_HLUTNM = "soft_lutpair261" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_25
@@ -33893,7 +34724,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [7]),
         .I2(MemtoRegO3),
         .O(inA[7]));
-  (* SOFT_HLUTNM = "soft_lutpair257" *) 
+  (* SOFT_HLUTNM = "soft_lutpair261" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_26
@@ -33901,7 +34732,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [6]),
         .I2(MemtoRegO3),
         .O(inA[6]));
-  (* SOFT_HLUTNM = "soft_lutpair256" *) 
+  (* SOFT_HLUTNM = "soft_lutpair260" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_27
@@ -33909,7 +34740,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [5]),
         .I2(MemtoRegO3),
         .O(inA[5]));
-  (* SOFT_HLUTNM = "soft_lutpair256" *) 
+  (* SOFT_HLUTNM = "soft_lutpair260" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_28
@@ -33917,7 +34748,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [4]),
         .I2(MemtoRegO3),
         .O(inA[4]));
-  (* SOFT_HLUTNM = "soft_lutpair255" *) 
+  (* SOFT_HLUTNM = "soft_lutpair259" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_29
@@ -33925,7 +34756,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [3]),
         .I2(MemtoRegO3),
         .O(inA[3]));
-  (* SOFT_HLUTNM = "soft_lutpair268" *) 
+  (* SOFT_HLUTNM = "soft_lutpair272" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_3
@@ -33933,7 +34764,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [29]),
         .I2(MemtoRegO3),
         .O(inA[29]));
-  (* SOFT_HLUTNM = "soft_lutpair255" *) 
+  (* SOFT_HLUTNM = "soft_lutpair259" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_30
@@ -33941,7 +34772,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [2]),
         .I2(MemtoRegO3),
         .O(inA[2]));
-  (* SOFT_HLUTNM = "soft_lutpair254" *) 
+  (* SOFT_HLUTNM = "soft_lutpair258" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_31
@@ -33949,7 +34780,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [1]),
         .I2(MemtoRegO3),
         .O(inA[1]));
-  (* SOFT_HLUTNM = "soft_lutpair254" *) 
+  (* SOFT_HLUTNM = "soft_lutpair258" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_32
@@ -33957,7 +34788,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [0]),
         .I2(MemtoRegO3),
         .O(inA[0]));
-  (* SOFT_HLUTNM = "soft_lutpair268" *) 
+  (* SOFT_HLUTNM = "soft_lutpair272" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_4
@@ -33965,7 +34796,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [28]),
         .I2(MemtoRegO3),
         .O(inA[28]));
-  (* SOFT_HLUTNM = "soft_lutpair267" *) 
+  (* SOFT_HLUTNM = "soft_lutpair271" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_5
@@ -33973,7 +34804,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [27]),
         .I2(MemtoRegO3),
         .O(inA[27]));
-  (* SOFT_HLUTNM = "soft_lutpair267" *) 
+  (* SOFT_HLUTNM = "soft_lutpair271" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_6
@@ -33981,7 +34812,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [26]),
         .I2(MemtoRegO3),
         .O(inA[26]));
-  (* SOFT_HLUTNM = "soft_lutpair266" *) 
+  (* SOFT_HLUTNM = "soft_lutpair270" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_7
@@ -33989,7 +34820,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [25]),
         .I2(MemtoRegO3),
         .O(inA[25]));
-  (* SOFT_HLUTNM = "soft_lutpair266" *) 
+  (* SOFT_HLUTNM = "soft_lutpair270" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_8
@@ -33997,7 +34828,7 @@ module Mux32Bit2To1_2
         .I1(\ReadDataMemO3_reg[31] [24]),
         .I2(MemtoRegO3),
         .O(inA[24]));
-  (* SOFT_HLUTNM = "soft_lutpair265" *) 
+  (* SOFT_HLUTNM = "soft_lutpair269" *) 
   LUT3 #(
     .INIT(8'hAC)) 
     m8_i_9
@@ -34020,7 +34851,7 @@ module Mux32Bit2To1__9
   wire RegDstO;
   wire [4:0]inA__0;
 
-  (* SOFT_HLUTNM = "soft_lutpair189" *) 
+  (* SOFT_HLUTNM = "soft_lutpair193" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \MuxO2[0]_i_1 
@@ -34028,7 +34859,7 @@ module Mux32Bit2To1__9
         .I1(RegDstO),
         .I2(\Instructionout_reg[20] [5]),
         .O(inA__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair189" *) 
+  (* SOFT_HLUTNM = "soft_lutpair193" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \MuxO2[1]_i_1 
@@ -34036,7 +34867,7 @@ module Mux32Bit2To1__9
         .I1(RegDstO),
         .I2(\Instructionout_reg[20] [6]),
         .O(inA__0[1]));
-  (* SOFT_HLUTNM = "soft_lutpair190" *) 
+  (* SOFT_HLUTNM = "soft_lutpair194" *) 
   LUT3 #(
     .INIT(8'hB8)) 
     \MuxO2[2]_i_1 
@@ -34044,19 +34875,19 @@ module Mux32Bit2To1__9
         .I1(RegDstO),
         .I2(\Instructionout_reg[20] [7]),
         .O(inA__0[2]));
-  (* SOFT_HLUTNM = "soft_lutpair190" *) 
-  LUT3 #(
-    .INIT(8'hB8)) 
+  (* SOFT_HLUTNM = "soft_lutpair194" *) 
+  LUT2 #(
+    .INIT(4'h8)) 
     \MuxO2[3]_i_1 
        (.I0(\Instructionout_reg[20] [3]),
         .I1(RegDstO),
-        .I2(\Instructionout_reg[20] [8]),
         .O(inA__0[3]));
-  LUT2 #(
-    .INIT(4'h8)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     \MuxO2[4]_i_1 
        (.I0(\Instructionout_reg[20] [4]),
         .I1(RegDstO),
+        .I2(\Instructionout_reg[20] [9]),
         .O(inA__0[4]));
 endmodule
 
@@ -34471,11 +35302,13 @@ module RegisterFile
   wire [1:0]NLW_registerFile_reg_r2_0_31_30_31_DOD_UNCONNECTED;
   wire [1:0]NLW_registerFile_reg_r2_0_31_6_11_DOD_UNCONNECTED;
 
-  LUT2 #(
-    .INIT(4'h1)) 
+  LUT4 #(
+    .INIT(16'h0001)) 
     \ReadData1[31]_i_1 
-       (.I0(ReadRegister1[3]),
+       (.I0(ReadRegister1[1]),
         .I1(ReadRegister1[0]),
+        .I2(ReadRegister1[4]),
+        .I3(ReadRegister1[2]),
         .O(\ReadData1[31]_i_1_n_5 ));
   FDRE #(
     .INIT(1'b0),
@@ -34768,9 +35601,9 @@ module RegisterFile
   LUT4 #(
     .INIT(16'h0001)) 
     \ReadData2[31]_i_1 
-       (.I0(ReadRegister2[3]),
-        .I1(ReadRegister2[1]),
-        .I2(ReadRegister2[0]),
+       (.I0(ReadRegister2[1]),
+        .I1(ReadRegister2[0]),
+        .I2(ReadRegister2[4]),
         .I3(ReadRegister2[2]),
         .O(\ReadData2[31]_i_1_n_5 ));
   FDRE #(
@@ -35327,429 +36160,127 @@ module StoreMux
   input [31:0]D;
   input [0:0]E;
 
-  wire [31:0]D;
-  wire [0:0]E;
-  wire [15:0]Q;
+  wire [31:0]\^D ;
+  wire [15:0]\^Q ;
   wire [15:0]p_0_in1_in;
-  wire [31:16]storemuxout;
   wire [1:0]\storeout_reg[1] ;
 
+  assign Q[15:8] = \^D [15:8];
+  assign Q[7:0] = \^Q [7:0];
+  assign \^D [31:8] = D[31:8];
+  assign \^Q [7:0] = D[7:0];
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_16_16_i_1
-       (.I0(storemuxout[16]),
+       (.I0(\^D [16]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[0]),
+        .I2(\^Q [0]),
         .O(p_0_in1_in[0]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_17_17_i_1
-       (.I0(storemuxout[17]),
+       (.I0(\^D [17]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[1]),
+        .I2(\^Q [1]),
         .O(p_0_in1_in[1]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_18_18_i_1
-       (.I0(storemuxout[18]),
+       (.I0(\^D [18]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[2]),
+        .I2(\^Q [2]),
         .O(p_0_in1_in[2]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_19_19_i_1
-       (.I0(storemuxout[19]),
+       (.I0(\^D [19]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[3]),
+        .I2(\^Q [3]),
         .O(p_0_in1_in[3]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_20_20_i_1
-       (.I0(storemuxout[20]),
+       (.I0(\^D [20]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[4]),
+        .I2(\^Q [4]),
         .O(p_0_in1_in[4]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_21_21_i_1
-       (.I0(storemuxout[21]),
+       (.I0(\^D [21]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[5]),
+        .I2(\^Q [5]),
         .O(p_0_in1_in[5]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_22_22_i_1
-       (.I0(storemuxout[22]),
+       (.I0(\^D [22]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[6]),
+        .I2(\^Q [6]),
         .O(p_0_in1_in[6]));
   LUT3 #(
     .INIT(8'hB8)) 
     memory_reg_0_255_23_23_i_1
-       (.I0(storemuxout[23]),
+       (.I0(\^D [23]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[7]),
+        .I2(\^Q [7]),
         .O(p_0_in1_in[7]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_24_24_i_1
-       (.I0(storemuxout[24]),
+       (.I0(\^D [24]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[8]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[0]),
+        .I2(\^Q [0]),
         .O(p_0_in1_in[8]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_25_25_i_1
-       (.I0(storemuxout[25]),
+       (.I0(\^D [25]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[9]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[1]),
+        .I2(\^Q [1]),
         .O(p_0_in1_in[9]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_26_26_i_1
-       (.I0(storemuxout[26]),
+       (.I0(\^D [26]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[10]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[2]),
+        .I2(\^Q [2]),
         .O(p_0_in1_in[10]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_27_27_i_1
-       (.I0(storemuxout[27]),
+       (.I0(\^D [27]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[11]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[3]),
+        .I2(\^Q [3]),
         .O(p_0_in1_in[11]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_28_28_i_1
-       (.I0(storemuxout[28]),
+       (.I0(\^D [28]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[12]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[4]),
+        .I2(\^Q [4]),
         .O(p_0_in1_in[12]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_29_29_i_1
-       (.I0(storemuxout[29]),
+       (.I0(\^D [29]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[13]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[5]),
+        .I2(\^Q [5]),
         .O(p_0_in1_in[13]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_30_30_i_1
-       (.I0(storemuxout[30]),
+       (.I0(\^D [30]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[14]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[6]),
+        .I2(\^Q [6]),
         .O(p_0_in1_in[14]));
-  LUT5 #(
-    .INIT(32'hB8BBB888)) 
+  LUT3 #(
+    .INIT(8'hB8)) 
     memory_reg_0_255_31_31_i_1
-       (.I0(storemuxout[31]),
+       (.I0(\^D [31]),
         .I1(\storeout_reg[1] [1]),
-        .I2(Q[15]),
-        .I3(\storeout_reg[1] [0]),
-        .I4(Q[7]),
+        .I2(\^Q [7]),
         .O(p_0_in1_in[15]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[0] 
-       (.CLR(1'b0),
-        .D(D[0]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[0]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[10] 
-       (.CLR(1'b0),
-        .D(D[10]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[10]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[11] 
-       (.CLR(1'b0),
-        .D(D[11]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[11]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[12] 
-       (.CLR(1'b0),
-        .D(D[12]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[12]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[13] 
-       (.CLR(1'b0),
-        .D(D[13]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[13]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[14] 
-       (.CLR(1'b0),
-        .D(D[14]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[14]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[15] 
-       (.CLR(1'b0),
-        .D(D[15]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[15]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[16] 
-       (.CLR(1'b0),
-        .D(D[16]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[16]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[17] 
-       (.CLR(1'b0),
-        .D(D[17]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[17]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[18] 
-       (.CLR(1'b0),
-        .D(D[18]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[18]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[19] 
-       (.CLR(1'b0),
-        .D(D[19]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[19]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[1] 
-       (.CLR(1'b0),
-        .D(D[1]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[1]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[20] 
-       (.CLR(1'b0),
-        .D(D[20]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[20]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[21] 
-       (.CLR(1'b0),
-        .D(D[21]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[21]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[22] 
-       (.CLR(1'b0),
-        .D(D[22]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[22]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[23] 
-       (.CLR(1'b0),
-        .D(D[23]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[23]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[24] 
-       (.CLR(1'b0),
-        .D(D[24]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[24]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[25] 
-       (.CLR(1'b0),
-        .D(D[25]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[25]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[26] 
-       (.CLR(1'b0),
-        .D(D[26]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[26]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[27] 
-       (.CLR(1'b0),
-        .D(D[27]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[27]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[28] 
-       (.CLR(1'b0),
-        .D(D[28]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[28]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[29] 
-       (.CLR(1'b0),
-        .D(D[29]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[29]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[2] 
-       (.CLR(1'b0),
-        .D(D[2]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[2]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[30] 
-       (.CLR(1'b0),
-        .D(D[30]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[30]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[31] 
-       (.CLR(1'b0),
-        .D(D[31]),
-        .G(E),
-        .GE(1'b1),
-        .Q(storemuxout[31]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[3] 
-       (.CLR(1'b0),
-        .D(D[3]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[3]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[4] 
-       (.CLR(1'b0),
-        .D(D[4]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[4]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[5] 
-       (.CLR(1'b0),
-        .D(D[5]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[5]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[6] 
-       (.CLR(1'b0),
-        .D(D[6]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[6]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[7] 
-       (.CLR(1'b0),
-        .D(D[7]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[7]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[8] 
-       (.CLR(1'b0),
-        .D(D[8]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[8]));
-  (* XILINX_LEGACY_PRIM = "LD" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \out_reg[9] 
-       (.CLR(1'b0),
-        .D(D[9]),
-        .G(E),
-        .GE(1'b1),
-        .Q(Q[9]));
 endmodule
 
 module controller
@@ -35861,15 +36392,13 @@ module controller
   wire ALUSrc;
   wire ALUSrc0;
   wire ALUSrc1129_out;
-  wire [0:0]AR;
-  wire [0:0]AS;
   wire Branch;
   wire [5:0]D;
   wire [0:0]E;
   wire JALSignal;
   wire MemRead;
-  wire MemWrite;
   wire MemtoReg;
+  wire ONE;
   wire OutputOFRSRT;
   wire [5:0]Q;
   wire \ReadDataInstructionRead_reg[1] ;
@@ -35877,29 +36406,21 @@ module controller
   wire \ReadDataInstructionRead_reg[26]_0 ;
   wire \ReadDataInstructionRead_reg[26]_1 ;
   wire \ReadDataInstructionRead_reg[26]_2 ;
-  wire [1:0]\ReadDataInstructionRead_reg[26]_3 ;
   wire \ReadDataInstructionRead_reg[27] ;
   wire \ReadDataInstructionRead_reg[27]_0 ;
   wire \ReadDataInstructionRead_reg[27]_1 ;
   wire \ReadDataInstructionRead_reg[28] ;
   wire \ReadDataInstructionRead_reg[28]_0 ;
-  wire [1:0]\ReadDataInstructionRead_reg[28]_1 ;
   wire \ReadDataInstructionRead_reg[29] ;
   wire \ReadDataInstructionRead_reg[29]_0 ;
   wire \ReadDataInstructionRead_reg[29]_1 ;
-  wire [0:0]\ReadDataInstructionRead_reg[29]_2 ;
   wire \ReadDataInstructionRead_reg[30] ;
   wire \ReadDataInstructionRead_reg[31] ;
-  wire \ReadDataInstructionRead_reg[31]_0 ;
-  wire \ReadDataInstructionRead_reg[31]_1 ;
-  wire \ReadDataInstructionRead_reg[31]_2 ;
   wire \ReadDataInstructionRead_reg[31]_3 ;
   wire \ReadDataInstructionRead_reg[31]_4 ;
   wire \ReadDataInstructionRead_reg[31]_5 ;
   wire \ReadDataInstructionRead_reg[31]_6 ;
-  wire [1:0]\ReadDataInstructionRead_reg[31]_7 ;
   wire \ReadDataInstructionRead_reg[3] ;
-  wire [0:0]\ReadDataInstructionRead_reg[3]_0 ;
   wire \ReadDataInstructionRead_reg[4] ;
   wire \ReadDataInstructionRead_reg[5] ;
   wire \ReadDataInstructionRead_reg[9] ;
@@ -35908,9 +36429,9 @@ module controller
   wire RegWrite;
   wire jumpcontrol;
   wire jumpreg;
-  wire [1:0]\storeout_reg[1] ;
-  wire [1:0]\threeselectout_reg[1] ;
 
+  assign \storeout_reg[1] [1] = ONE;
+  assign \threeselectout_reg[1] [1] = ONE;
   (* XILINX_LEGACY_PRIM = "LD" *) 
   LDCE #(
     .INIT(1'b0)) 
@@ -36010,15 +36531,6 @@ module controller
         .G(\ReadDataInstructionRead_reg[26] ),
         .GE(1'b1),
         .Q(MemRead));
-  (* XILINX_LEGACY_PRIM = "LDC" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    MemWrite_reg
-       (.CLR(\ReadDataInstructionRead_reg[31]_2 ),
-        .D(\ReadDataInstructionRead_reg[31]_0 ),
-        .G(\ReadDataInstructionRead_reg[31]_1 ),
-        .GE(1'b1),
-        .Q(MemWrite));
   (* XILINX_LEGACY_PRIM = "LDP" *) 
   LDPE #(
     .INIT(1'b1)) 
@@ -36055,6 +36567,8 @@ module controller
         .GE(1'b1),
         .PRE(\ReadDataInstructionRead_reg[31] ),
         .Q(RegWrite));
+  VCC VCC_2
+       (.P(ONE));
   (* XILINX_LEGACY_PRIM = "LDC" *) 
   LDCE #(
     .INIT(1'b0)) 
@@ -36064,45 +36578,9 @@ module controller
         .G(\ReadDataInstructionRead_reg[29]_1 ),
         .GE(1'b1),
         .Q(jumpreg));
-  (* XILINX_LEGACY_PRIM = "LDC" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \storesignal_reg[0] 
-       (.CLR(\ReadDataInstructionRead_reg[3]_0 ),
-        .D(\ReadDataInstructionRead_reg[28]_1 [0]),
-        .G(\ReadDataInstructionRead_reg[31]_7 [0]),
-        .GE(1'b1),
-        .Q(\storeout_reg[1] [0]));
-  (* XILINX_LEGACY_PRIM = "LDP" *) 
-  LDPE #(
-    .INIT(1'b1)) 
-    \storesignal_reg[1] 
-       (.D(\ReadDataInstructionRead_reg[28]_1 [1]),
-        .G(\ReadDataInstructionRead_reg[31]_7 [1]),
-        .GE(1'b1),
-        .PRE(AS),
-        .Q(\storeout_reg[1] [1]));
-  (* XILINX_LEGACY_PRIM = "LDC" *) 
-  LDCE #(
-    .INIT(1'b0)) 
-    \threeselect_reg[0] 
-       (.CLR(AR),
-        .D(\ReadDataInstructionRead_reg[26]_3 [0]),
-        .G(\ReadDataInstructionRead_reg[29]_2 ),
-        .GE(1'b1),
-        .Q(\threeselectout_reg[1] [0]));
-  (* XILINX_LEGACY_PRIM = "LDP" *) 
-  LDPE #(
-    .INIT(1'b1)) 
-    \threeselect_reg[1] 
-       (.D(\ReadDataInstructionRead_reg[26]_3 [1]),
-        .G(\ReadDataInstructionRead_reg[29]_2 ),
-        .GE(1'b1),
-        .PRE(AR),
-        .Q(\threeselectout_reg[1] [1]));
 endmodule
 
-(* ECO_CHECKSUM = "47d712d2" *) 
+(* ECO_CHECKSUM = "555c25ac" *) 
 (* NotValidForBitStream *)
 module datapath
    (Clk,
@@ -36147,8 +36625,6 @@ module datapath
   wire [4:0]MEMWBWROutput;
   wire MemRead;
   wire MemReadO;
-  wire MemWrite;
-  wire MemWriteO;
   wire MemtoReg;
   wire MemtoRegO3;
   wire [4:0]MuxO2;
@@ -36183,7 +36659,6 @@ module datapath
   wire dataMem_n_19;
   wire dataMem_n_20;
   wire dataMem_n_29;
-  wire dataMem_n_30;
   wire dataMem_n_5;
   wire dataMem_n_6;
   wire dataMem_n_7;
@@ -36310,7 +36785,6 @@ module datapath
   wire [31:0]firstfinalout;
   wire [25:0]idexInstructionMemOutput;
   wire idexReg_n_136;
-  wire idexReg_n_137;
   wire idexReg_n_39;
   wire idexReg_n_40;
   wire idexReg_n_41;
@@ -36324,6 +36798,7 @@ module datapath
   wire ifidReg_n_27;
   wire ifidReg_n_28;
   wire ifidReg_n_29;
+  wire ifidReg_n_30;
   wire ifidReg_n_61;
   wire ifidReg_n_62;
   wire ifidReg_n_63;
@@ -36331,14 +36806,6 @@ module datapath
   wire ifidReg_n_65;
   wire ifidReg_n_66;
   wire ifidReg_n_67;
-  wire ifidReg_n_68;
-  wire ifidReg_n_69;
-  wire ifidReg_n_70;
-  wire ifidReg_n_71;
-  wire ifidReg_n_72;
-  wire ifidReg_n_73;
-  wire ifidReg_n_74;
-  wire ifidReg_n_75;
   wire ifidReg_n_76;
   wire ifidReg_n_77;
   wire ifidReg_n_78;
@@ -36351,18 +36818,13 @@ module datapath
   wire ifidReg_n_85;
   wire ifidReg_n_86;
   wire ifidReg_n_87;
-  wire ifidReg_n_88;
-  wire ifidReg_n_89;
-  wire ifidReg_n_90;
   wire ifidReg_n_91;
   wire ifidReg_n_92;
   wire ifidReg_n_93;
-  wire ifidReg_n_94;
   wire ifidReg_n_95;
   wire ifidReg_n_96;
   wire ifidReg_n_97;
   wire ifidReg_n_98;
-  wire ifidReg_n_99;
   wire [4:0]inA__0;
   wire jumpcontrol;
   wire jumpout;
@@ -36370,10 +36832,6 @@ module datapath
   wire jumpregout;
   wire [31:0]memwbPCAddResultP4;
   wire movn;
-  wire n_3_547_BUFG;
-  wire n_3_547_BUFG_inst_n_4;
-  wire n_4_548_BUFG;
-  wire n_4_548_BUFG_inst_n_5;
   wire [31:0]oldwrite;
   wire [7:0]p_0_in;
   wire [31:8]p_0_in1_in;
@@ -36385,14 +36843,53 @@ module datapath
   wire [1:0]threeselectmemwb;
   wire [1:0]threeselectout;
   wire [31:0]NLW_InstrMem_Address_UNCONNECTED;
-  wire [30:0]NLW_InstrMem_Instruction_UNCONNECTED;
-  wire [25:0]\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED ;
-  wire [25:0]NLW_idexReg_Q_UNCONNECTED;
-  wire [25:0]\NLW_idexReg_addout_reg[27]_UNCONNECTED ;
-  wire [30:0]\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED ;
-  wire [0:0]NLW_ifidReg_Q_UNCONNECTED;
-  wire [9:9]\NLW_m4_Instructionout_reg[20]_UNCONNECTED ;
-  wire [0:0]\NLW_m6_Instructionout_reg[15]_UNCONNECTED ;
+  wire [31:19]NLW_InstrMem_Instruction_UNCONNECTED;
+  wire NLW_contr_MemWrite_UNCONNECTED;
+  wire \NLW_contr_ReadDataInstructionRead_reg[31]_0_UNCONNECTED ;
+  wire \NLW_contr_ReadDataInstructionRead_reg[31]_1_UNCONNECTED ;
+  wire \NLW_contr_ReadDataInstructionRead_reg[31]_2_UNCONNECTED ;
+  wire [0:0]NLW_contr_AR_UNCONNECTED;
+  wire [0:0]NLW_contr_AS_UNCONNECTED;
+  wire [1:0]\NLW_contr_ReadDataInstructionRead_reg[26]_3_UNCONNECTED ;
+  wire [1:0]\NLW_contr_ReadDataInstructionRead_reg[28]_1_UNCONNECTED ;
+  wire [0:0]\NLW_contr_ReadDataInstructionRead_reg[29]_2_UNCONNECTED ;
+  wire [1:0]\NLW_contr_ReadDataInstructionRead_reg[31]_7_UNCONNECTED ;
+  wire [0:0]\NLW_contr_ReadDataInstructionRead_reg[3]_0_UNCONNECTED ;
+  wire [0:0]\NLW_contr_storeout_reg[1]_UNCONNECTED ;
+  wire [0:0]\NLW_contr_threeselectout_reg[1]_UNCONNECTED ;
+  wire \NLW_dataMem_ReadDataMemO3_reg[16]_UNCONNECTED ;
+  wire [0:0]\NLW_dataMem_threeselectout_reg[1]_UNCONNECTED ;
+  wire \NLW_exmemReg_ALUResultO2_reg[1]_0_UNCONNECTED ;
+  wire NLW_exmemReg_MemWriteO_UNCONNECTED;
+  wire NLW_exmemReg_n_3_547_BUFG_inst_n_4_UNCONNECTED;
+  wire NLW_exmemReg_n_4_548_BUFG_inst_n_5_UNCONNECTED;
+  wire [24:19]\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED ;
+  wire [0:0]\NLW_exmemReg_ReadDataMemO3_reg[15]_UNCONNECTED ;
+  wire [0:0]\NLW_exmemReg_ReadDataMemO3_reg[8]_UNCONNECTED ;
+  wire [0:0]\NLW_exmemReg_storeout_reg[1]_1_UNCONNECTED ;
+  wire [0:0]\NLW_exmemReg_threeselectout_reg[1]_0_UNCONNECTED ;
+  wire NLW_idexReg_MemWrite_UNCONNECTED;
+  wire NLW_idexReg_MemWriteO_UNCONNECTED;
+  wire [24:19]NLW_idexReg_Q_UNCONNECTED;
+  wire [0:0]\NLW_idexReg_ReadDataInstructionRead_reg[26]_UNCONNECTED ;
+  wire [0:0]\NLW_idexReg_ReadDataInstructionRead_reg[28]_UNCONNECTED ;
+  wire [24:19]\NLW_idexReg_addout_reg[27]_UNCONNECTED ;
+  wire [0:0]\NLW_idexReg_storeout_reg[1]_0_UNCONNECTED ;
+  wire [0:0]\NLW_idexReg_threeselectout_reg[1]_0_UNCONNECTED ;
+  wire NLW_ifidReg_MemWriteO_reg_UNCONNECTED;
+  wire NLW_ifidReg_MemWriteO_reg_0_UNCONNECTED;
+  wire NLW_ifidReg_MemWriteO_reg_1_UNCONNECTED;
+  wire [0:0]NLW_ifidReg_AR_UNCONNECTED;
+  wire [0:0]NLW_ifidReg_AS_UNCONNECTED;
+  wire [31:19]NLW_ifidReg_UNCONN_IN_UNCONNECTED;
+  wire [0:0]\NLW_ifidReg_storeout_reg[0]_UNCONNECTED ;
+  wire [1:0]\NLW_ifidReg_storeout_reg[1]_UNCONNECTED ;
+  wire [1:0]\NLW_ifidReg_storeout_reg[1]_0_UNCONNECTED ;
+  wire [0:0]\NLW_ifidReg_threeselectout_reg[0]_UNCONNECTED ;
+  wire [1:0]\NLW_ifidReg_threeselectout_reg[1]_UNCONNECTED ;
+  wire [8:8]\NLW_m4_Instructionout_reg[20]_UNCONNECTED ;
+  wire [0:0]NLW_stMux_E_UNCONNECTED;
+  wire [0:0]\NLW_stMux_storeout_reg[1]_UNCONNECTED ;
 
   BUFG Clk_IBUF_BUFG_inst
        (.I(Clk_IBUF),
@@ -36401,8 +36898,8 @@ module datapath
        (.I(Clk),
         .O(Clk_IBUF));
   InstructionMemory InstrMem
-       (.Address({NLW_InstrMem_Address_UNCONNECTED[31:9],debug_PCResult_OBUF[8:2],NLW_InstrMem_Address_UNCONNECTED[1:0]}),
-        .Instruction({InstructionMemOutput[31],NLW_InstrMem_Instruction_UNCONNECTED[30],InstructionMemOutput[29:26],NLW_InstrMem_Instruction_UNCONNECTED[25],InstructionMemOutput[24],NLW_InstrMem_Instruction_UNCONNECTED[23:22],InstructionMemOutput[21],NLW_InstrMem_Instruction_UNCONNECTED[20],InstructionMemOutput[19:1],NLW_InstrMem_Instruction_UNCONNECTED[0]}));
+       (.Address({NLW_InstrMem_Address_UNCONNECTED[31:11],debug_PCResult_OBUF[10:2],NLW_InstrMem_Address_UNCONNECTED[1:0]}),
+        .Instruction({NLW_InstrMem_Instruction_UNCONNECTED[31],InstructionMemOutput[30:25],NLW_InstrMem_Instruction_UNCONNECTED[24],InstructionMemOutput[23:20],NLW_InstrMem_Instruction_UNCONNECTED[19],InstructionMemOutput[18:0]}));
   ProgramCounter PC
        (.Clk(Clk_IBUF_BUFG),
         .PCAddResult(firstfinalout),
@@ -36438,14 +36935,14 @@ module datapath
        (.ALUSrc(ALUSrc),
         .ALUSrc0(ALUSrc0),
         .ALUSrc1129_out(ALUSrc1129_out),
-        .AR(ifidReg_n_88),
-        .AS(ifidReg_n_89),
+        .AR(NLW_contr_AR_UNCONNECTED[0]),
+        .AS(NLW_contr_AS_UNCONNECTED[0]),
         .Branch(Branch),
         .D({ifidReg_n_61,ifidReg_n_62,ifidReg_n_63,ifidReg_n_64,ifidReg_n_65,ifidReg_n_66}),
         .E(ifidReg_n_83),
         .JALSignal(JALSignal),
         .MemRead(MemRead),
-        .MemWrite(MemWrite),
+        .MemWrite(NLW_contr_MemWrite_UNCONNECTED),
         .MemtoReg(MemtoReg),
         .OutputOFRSRT(OutputOFRSRT),
         .Q(ALUOp),
@@ -36454,29 +36951,29 @@ module datapath
         .\ReadDataInstructionRead_reg[26]_0 (ifidReg_n_87),
         .\ReadDataInstructionRead_reg[26]_1 (ifidReg_n_67),
         .\ReadDataInstructionRead_reg[26]_2 (ifidReg_n_98),
-        .\ReadDataInstructionRead_reg[26]_3 ({ifidReg_n_71,ifidReg_n_72}),
+        .\ReadDataInstructionRead_reg[26]_3 (\NLW_contr_ReadDataInstructionRead_reg[26]_3_UNCONNECTED [1:0]),
         .\ReadDataInstructionRead_reg[27] (ifidReg_n_91),
         .\ReadDataInstructionRead_reg[27]_0 (ifidReg_n_102),
         .\ReadDataInstructionRead_reg[27]_1 (ifidReg_n_84),
         .\ReadDataInstructionRead_reg[28] (ifidReg_n_79),
         .\ReadDataInstructionRead_reg[28]_0 (ifidReg_n_106),
-        .\ReadDataInstructionRead_reg[28]_1 ({ifidReg_n_74,ifidReg_n_75}),
+        .\ReadDataInstructionRead_reg[28]_1 (\NLW_contr_ReadDataInstructionRead_reg[28]_1_UNCONNECTED [1:0]),
         .\ReadDataInstructionRead_reg[29] (ifidReg_n_80),
         .\ReadDataInstructionRead_reg[29]_0 (ifidReg_n_96),
         .\ReadDataInstructionRead_reg[29]_1 (ifidReg_n_78),
-        .\ReadDataInstructionRead_reg[29]_2 (ifidReg_n_73),
+        .\ReadDataInstructionRead_reg[29]_2 (\NLW_contr_ReadDataInstructionRead_reg[29]_2_UNCONNECTED [0]),
         .\ReadDataInstructionRead_reg[30] (ifidReg_n_101),
         .\ReadDataInstructionRead_reg[31] (ifidReg_n_100),
-        .\ReadDataInstructionRead_reg[31]_0 (ifidReg_n_94),
-        .\ReadDataInstructionRead_reg[31]_1 (ifidReg_n_68),
-        .\ReadDataInstructionRead_reg[31]_2 (ifidReg_n_90),
+        .\ReadDataInstructionRead_reg[31]_0 (\NLW_contr_ReadDataInstructionRead_reg[31]_0_UNCONNECTED ),
+        .\ReadDataInstructionRead_reg[31]_1 (\NLW_contr_ReadDataInstructionRead_reg[31]_1_UNCONNECTED ),
+        .\ReadDataInstructionRead_reg[31]_2 (\NLW_contr_ReadDataInstructionRead_reg[31]_2_UNCONNECTED ),
         .\ReadDataInstructionRead_reg[31]_3 (ifidReg_n_82),
         .\ReadDataInstructionRead_reg[31]_4 (ifidReg_n_77),
         .\ReadDataInstructionRead_reg[31]_5 (ifidReg_n_93),
         .\ReadDataInstructionRead_reg[31]_6 (ifidReg_n_86),
-        .\ReadDataInstructionRead_reg[31]_7 ({ifidReg_n_69,ifidReg_n_70}),
+        .\ReadDataInstructionRead_reg[31]_7 (\NLW_contr_ReadDataInstructionRead_reg[31]_7_UNCONNECTED [1:0]),
         .\ReadDataInstructionRead_reg[3] (ifidReg_n_85),
-        .\ReadDataInstructionRead_reg[3]_0 (ifidReg_n_99),
+        .\ReadDataInstructionRead_reg[3]_0 (\NLW_contr_ReadDataInstructionRead_reg[3]_0_UNCONNECTED [0]),
         .\ReadDataInstructionRead_reg[4] (ifidReg_n_97),
         .\ReadDataInstructionRead_reg[5] (ifidReg_n_95),
         .\ReadDataInstructionRead_reg[9] (ifidReg_n_92),
@@ -36485,8 +36982,8 @@ module datapath
         .RegWrite(RegWrite),
         .jumpcontrol(jumpcontrol),
         .jumpreg(jumpreg),
-        .\storeout_reg[1] (storesignal),
-        .\threeselectout_reg[1] (threeselectcontrol));
+        .\storeout_reg[1] ({storesignal[1],\NLW_contr_storeout_reg[1]_UNCONNECTED [0]}),
+        .\threeselectout_reg[1] ({threeselectcontrol[1],\NLW_contr_threeselectout_reg[1]_UNCONNECTED [0]}));
   DataMemory dataMem
        (.A({exmemReg_n_163,exmemReg_n_164,exmemReg_n_165,exmemReg_n_166,exmemReg_n_167,exmemReg_n_168,exmemReg_n_169,exmemReg_n_170}),
         .\ALUResultO2_reg[10] (exmemReg_n_40),
@@ -36511,7 +37008,7 @@ module datapath
         .AS({exmemReg_n_90,exmemReg_n_91}),
         .Clk_IBUF_BUFG(Clk_IBUF_BUFG),
         .D({exmemReg_n_94,exmemReg_n_95,exmemReg_n_96,exmemReg_n_97,exmemReg_n_98,exmemReg_n_99,exmemReg_n_100,exmemReg_n_101,exmemReg_n_102,exmemReg_n_103,exmemReg_n_104,exmemReg_n_105,exmemReg_n_106,exmemReg_n_107,exmemReg_n_108,exmemReg_n_109,exmemReg_n_110,exmemReg_n_111,exmemReg_n_112,exmemReg_n_113,exmemReg_n_114,exmemReg_n_115,exmemReg_n_116,exmemReg_n_117}),
-        .E(n_4_548_BUFG),
+        .E(1'b1),
         .MemReadO2_reg(exmemReg_n_162),
         .MemReadO2_reg_0(exmemReg_n_161),
         .Q(storemuxout[7:0]),
@@ -36522,7 +37019,7 @@ module datapath
         .\ReadDataMemO3_reg[13] (dataMem_n_10),
         .\ReadDataMemO3_reg[14] (dataMem_n_11),
         .\ReadDataMemO3_reg[15] (dataMem_n_12),
-        .\ReadDataMemO3_reg[16] (dataMem_n_30),
+        .\ReadDataMemO3_reg[16] (\NLW_dataMem_ReadDataMemO3_reg[16]_UNCONNECTED ),
         .\ReadDataMemO3_reg[1] (dataMem_n_14),
         .\ReadDataMemO3_reg[2] (dataMem_n_15),
         .\ReadDataMemO3_reg[31] (DataMemoryOutput),
@@ -36536,7 +37033,7 @@ module datapath
         .\ReadDataMemO3_reg[9] (dataMem_n_6),
         .p_0_in(p_0_in),
         .p_0_in1_in(p_0_in1_in),
-        .\threeselectout_reg[1] (threeselectmemwb));
+        .\threeselectout_reg[1] ({threeselectmemwb[1],\NLW_dataMem_threeselectout_reg[1]_UNCONNECTED [0]}));
   (* mark_debug = " true" *) 
   OBUF \debug_PCResult_OBUF[0]_inst 
        (.I(debug_PCResult_OBUF[0]),
@@ -37069,17 +37566,17 @@ module datapath
         .\ALUResultO2_reg[11]_7 (dataMem_n_12),
         .\ALUResultO2_reg[11]_8 (dataMem_n_13),
         .\ALUResultO2_reg[11]_9 (dataMem_n_14),
-        .\ALUResultO2_reg[1]_0 (dataMem_n_30),
+        .\ALUResultO2_reg[1]_0 (\NLW_exmemReg_ALUResultO2_reg[1]_0_UNCONNECTED ),
         .\ALUResultO3_reg[31] ({exmemReg_n_41,exmemReg_n_42,exmemReg_n_43,exmemReg_n_44,exmemReg_n_45,exmemReg_n_46,exmemReg_n_47,exmemReg_n_48,exmemReg_n_49,exmemReg_n_50,exmemReg_n_51,exmemReg_n_52,exmemReg_n_53,exmemReg_n_54,exmemReg_n_55,exmemReg_n_56,exmemReg_n_57,exmemReg_n_58,exmemReg_n_59,exmemReg_n_60,p_1_in,exmemReg_n_71,exmemReg_n_72}),
         .AR(exmemReg_n_118),
         .AS({exmemReg_n_90,exmemReg_n_91}),
         .BranchO(BranchO),
         .Clk_IBUF_BUFG(Clk_IBUF_BUFG),
         .D({addout,exmemPCAddResultP4,adderaddresultout}),
-        .\Instructionout_reg[25] ({\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [25],idexInstructionMemOutput[24],\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [23:22],idexInstructionMemOutput[21],\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [20],idexInstructionMemOutput[19:1],\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [0]}),
+        .\Instructionout_reg[25] ({idexInstructionMemOutput[25],\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [24],idexInstructionMemOutput[23:20],\NLW_exmemReg_Instructionout_reg[25]_UNCONNECTED [19],idexInstructionMemOutput[18:0]}),
         .JALSignal(JALSignal),
         .MemReadO(MemReadO),
-        .MemWriteO(MemWriteO),
+        .MemWriteO(NLW_exmemReg_MemWriteO_UNCONNECTED),
         .MemtoReg(MemtoReg),
         .MemtoRegO3_reg(exmemReg_n_38),
         .PCAddResult(firstfinalout),
@@ -37099,7 +37596,7 @@ module datapath
         .\ReadDataMemO3_reg[14]_5 (exmemReg_n_86),
         .\ReadDataMemO3_reg[14]_6 (exmemReg_n_87),
         .\ReadDataMemO3_reg[14]_7 ({exmemReg_n_171,exmemReg_n_172,exmemReg_n_173,exmemReg_n_174,exmemReg_n_175,exmemReg_n_176,exmemReg_n_177,exmemReg_n_178}),
-        .\ReadDataMemO3_reg[15] (storesignalexmem),
+        .\ReadDataMemO3_reg[15] ({storesignalexmem[1],\NLW_exmemReg_ReadDataMemO3_reg[15]_UNCONNECTED [0]}),
         .\ReadDataMemO3_reg[15]_0 ({exmemReg_n_119,exmemReg_n_120,exmemReg_n_121,exmemReg_n_122,exmemReg_n_123,exmemReg_n_124,exmemReg_n_125,exmemReg_n_126,exmemReg_n_127,exmemReg_n_128,exmemReg_n_129,exmemReg_n_130,exmemReg_n_131,exmemReg_n_132,exmemReg_n_133,exmemReg_n_134,exmemReg_n_135,exmemReg_n_136,exmemReg_n_137,exmemReg_n_138,exmemReg_n_139,exmemReg_n_140,exmemReg_n_141,exmemReg_n_142,ReadDataO2}),
         .\ReadDataMemO3_reg[15]_1 (exmemReg_n_161),
         .\ReadDataMemO3_reg[31] ({exmemReg_n_94,exmemReg_n_95,exmemReg_n_96,exmemReg_n_97,exmemReg_n_98,exmemReg_n_99,exmemReg_n_100,exmemReg_n_101,exmemReg_n_102,exmemReg_n_103,exmemReg_n_104,exmemReg_n_105,exmemReg_n_106,exmemReg_n_107,exmemReg_n_108,exmemReg_n_109,exmemReg_n_110,exmemReg_n_111,exmemReg_n_112,exmemReg_n_113,exmemReg_n_114,exmemReg_n_115,exmemReg_n_116,exmemReg_n_117}),
@@ -37112,7 +37609,7 @@ module datapath
         .\ReadDataMemO3_reg[6]_4 (exmemReg_n_81),
         .\ReadDataMemO3_reg[6]_5 (exmemReg_n_82),
         .\ReadDataMemO3_reg[6]_6 (exmemReg_n_83),
-        .\ReadDataMemO3_reg[8] (threeselectmemwb),
+        .\ReadDataMemO3_reg[8] ({threeselectmemwb[1],\NLW_exmemReg_ReadDataMemO3_reg[8]_UNCONNECTED [0]}),
         .RegWriteO2(RegWriteO2),
         .RegWriteO_reg(idexReg_n_41),
         .Zero(Zero),
@@ -37121,13 +37618,13 @@ module datapath
         .jalout_reg(exmemReg_n_39),
         .jumpout(jumpout),
         .jumpregout(jumpregout),
-        .n_3_547_BUFG_inst_n_4(n_3_547_BUFG_inst_n_4),
-        .n_4_548_BUFG_inst_n_5(n_4_548_BUFG_inst_n_5),
+        .n_3_547_BUFG_inst_n_4(NLW_exmemReg_n_3_547_BUFG_inst_n_4_UNCONNECTED),
+        .n_4_548_BUFG_inst_n_5(NLW_exmemReg_n_4_548_BUFG_inst_n_5_UNCONNECTED),
         .p_0_in(p_0_in),
         .p_0_in1_in(p_0_in1_in[15:8]),
         .\storeout_reg[1]_0 (storemuxout),
-        .\storeout_reg[1]_1 ({idexReg_n_136,idexReg_n_137}),
-        .\threeselectout_reg[1]_0 (threeselectout));
+        .\storeout_reg[1]_1 ({idexReg_n_136,\NLW_exmemReg_storeout_reg[1]_1_UNCONNECTED [0]}),
+        .\threeselectout_reg[1]_0 ({threeselectout[1],\NLW_exmemReg_threeselectout_reg[1]_0_UNCONNECTED [0]}));
   hitolowregister hi2loReg
        (.Clk(Clk_IBUF_BUFG),
         .HiInToALU(HII),
@@ -37143,16 +37640,16 @@ module datapath
         .D(ReadData1),
         .MemRead(MemRead),
         .MemReadO(MemReadO),
-        .MemWrite(MemWrite),
-        .MemWriteO(MemWriteO),
+        .MemWrite(NLW_idexReg_MemWrite_UNCONNECTED),
+        .MemWriteO(NLW_idexReg_MemWriteO_UNCONNECTED),
         .OutputOFRSRT(OutputOFRSRT),
         .OutputOFRSRTO(OutputOFRSRTO),
         .PCAddResult(PCAddResultP4[1:0]),
-        .Q({NLW_idexReg_Q_UNCONNECTED[25],IFIDInstructionMemOutput[24],NLW_idexReg_Q_UNCONNECTED[23:22],IFIDInstructionMemOutput[21],NLW_idexReg_Q_UNCONNECTED[20],IFIDInstructionMemOutput[19:16],Instruction1511,IFIDInstructionMemOutput[10:6],ifidReg_n_25,ifidReg_n_26,ifidReg_n_27,ifidReg_n_28,ifidReg_n_29,NLW_idexReg_Q_UNCONNECTED[0]}),
+        .Q({IFIDInstructionMemOutput[25],NLW_idexReg_Q_UNCONNECTED[24],IFIDInstructionMemOutput[23:20],NLW_idexReg_Q_UNCONNECTED[19],IFIDInstructionMemOutput[18:16],Instruction1511,IFIDInstructionMemOutput[10:6],ifidReg_n_25,ifidReg_n_26,ifidReg_n_27,ifidReg_n_28,ifidReg_n_29,ifidReg_n_30}),
         .\R12_reg[31] (ReadData1O),
         .\ReadData2_reg[31] (ReadData2),
-        .\ReadDataInstructionRead_reg[26] (threeselectcontrol),
-        .\ReadDataInstructionRead_reg[28] (storesignal),
+        .\ReadDataInstructionRead_reg[26] ({threeselectcontrol[1],\NLW_idexReg_ReadDataInstructionRead_reg[26]_UNCONNECTED [0]}),
+        .\ReadDataInstructionRead_reg[28] ({storesignal[1],\NLW_idexReg_ReadDataInstructionRead_reg[28]_UNCONNECTED [0]}),
         .\ReadDataInstructionRead_reg[29] (ALUOp),
         .\ReadDataO2_reg[31] (ReadData2O),
         .\ReadDataPCValue_reg[31] (ReadDataPCValue),
@@ -37164,22 +37661,22 @@ module datapath
         .\adderaddresultout_reg[0] (idexReg_n_40),
         .\adderaddresultout_reg[1] (idexReg_n_39),
         .\adderaddresultout_reg[31] (AdderAddResult),
-        .\addout_reg[27] ({\NLW_idexReg_addout_reg[27]_UNCONNECTED [25],idexInstructionMemOutput[24],\NLW_idexReg_addout_reg[27]_UNCONNECTED [23:22],idexInstructionMemOutput[21],\NLW_idexReg_addout_reg[27]_UNCONNECTED [20],idexInstructionMemOutput[19:1],\NLW_idexReg_addout_reg[27]_UNCONNECTED [0]}),
+        .\addout_reg[27] ({idexInstructionMemOutput[25],\NLW_idexReg_addout_reg[27]_UNCONNECTED [24],idexInstructionMemOutput[23:20],\NLW_idexReg_addout_reg[27]_UNCONNECTED [19],idexInstructionMemOutput[18:0]}),
         .\addout_reg[31] (IDEXPCAddResultP4),
         .jumpcontrol(jumpcontrol),
         .jumpout(jumpout),
         .jumpreg(jumpreg),
         .jumpregout(jumpregout),
         .movn(movn),
-        .\storeout_reg[1]_0 ({idexReg_n_136,idexReg_n_137}),
-        .\threeselectout_reg[1]_0 (threeselectout));
+        .\storeout_reg[1]_0 ({idexReg_n_136,\NLW_idexReg_storeout_reg[1]_0_UNCONNECTED [0]}),
+        .\threeselectout_reg[1]_0 ({threeselectout[1],\NLW_idexReg_threeselectout_reg[1]_0_UNCONNECTED [0]}));
   IFIDReg ifidReg
        (.\ALUOpO_reg[5] ({ifidReg_n_61,ifidReg_n_62,ifidReg_n_63,ifidReg_n_64,ifidReg_n_65,ifidReg_n_66}),
         .ALUSrc0(ALUSrc0),
         .ALUSrc1129_out(ALUSrc1129_out),
         .ALUSrcO_reg(ifidReg_n_97),
-        .AR(ifidReg_n_88),
-        .AS(ifidReg_n_89),
+        .AR(NLW_ifidReg_AR_UNCONNECTED[0]),
+        .AS(NLW_ifidReg_AS_UNCONNECTED[0]),
         .BranchO_reg(ifidReg_n_82),
         .BranchO_reg_0(ifidReg_n_87),
         .BranchO_reg_1(ifidReg_n_106),
@@ -37189,21 +37686,21 @@ module datapath
         .MemReadO_reg(ifidReg_n_81),
         .MemReadO_reg_0(ifidReg_n_91),
         .MemReadO_reg_1(ifidReg_n_96),
-        .MemWriteO_reg(ifidReg_n_68),
-        .MemWriteO_reg_0(ifidReg_n_90),
-        .MemWriteO_reg_1(ifidReg_n_94),
+        .MemWriteO_reg(NLW_ifidReg_MemWriteO_reg_UNCONNECTED),
+        .MemWriteO_reg_0(NLW_ifidReg_MemWriteO_reg_0_UNCONNECTED),
+        .MemWriteO_reg_1(NLW_ifidReg_MemWriteO_reg_1_UNCONNECTED),
         .MemtoRegO3_reg(ifidReg_n_102),
         .OutputOFRSRTO_reg(ifidReg_n_76),
         .OutputOFRSRTO_reg_0(ifidReg_n_92),
         .OutputOFRSRTO_reg_1(ifidReg_n_103),
-        .\PCResult_reg[2] ({InstructionMemOutput[31],\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED [30],InstructionMemOutput[29:26],\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED [25],InstructionMemOutput[24],\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED [23:22],InstructionMemOutput[21],\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED [20],InstructionMemOutput[19:1],\NLW_ifidReg_PCResult_reg[2]_UNCONNECTED [0]}),
         .\PCValueO_reg[31] (ReadDataPCValue),
-        .Q({IFIDInstructionMemOutput[25:16],Instruction1511,IFIDInstructionMemOutput[10:6],ifidReg_n_25,ifidReg_n_26,ifidReg_n_27,ifidReg_n_28,ifidReg_n_29,NLW_ifidReg_Q_UNCONNECTED[0]}),
+        .Q({IFIDInstructionMemOutput[25:16],Instruction1511,IFIDInstructionMemOutput[10:6],ifidReg_n_25,ifidReg_n_26,ifidReg_n_27,ifidReg_n_28,ifidReg_n_29,ifidReg_n_30}),
         .RegDstO_reg(ifidReg_n_79),
         .RegDstO_reg_0(ifidReg_n_101),
         .RegWriteO_reg(ifidReg_n_80),
         .RegWriteO_reg_0(ifidReg_n_95),
         .RegWriteO_reg_1(ifidReg_n_100),
+        .UNCONN_IN({NLW_ifidReg_UNCONN_IN_UNCONNECTED[31],InstructionMemOutput[30:25],NLW_ifidReg_UNCONN_IN_UNCONNECTED[24],InstructionMemOutput[23:20],NLW_ifidReg_UNCONN_IN_UNCONNECTED[19],InstructionMemOutput[18:0]}),
         .jalout_reg(ifidReg_n_86),
         .jalout_reg_0(ifidReg_n_93),
         .jalout_reg_1(ifidReg_n_98),
@@ -37212,13 +37709,13 @@ module datapath
         .jumpout_reg_1(ifidReg_n_84),
         .jumpregout_reg(ifidReg_n_78),
         .jumpregout_reg_0(ifidReg_n_85),
-        .\storeout_reg[0] (ifidReg_n_99),
-        .\storeout_reg[1] ({ifidReg_n_69,ifidReg_n_70}),
-        .\storeout_reg[1]_0 ({ifidReg_n_74,ifidReg_n_75}),
-        .\threeselectout_reg[0] (ifidReg_n_73),
-        .\threeselectout_reg[1] ({ifidReg_n_71,ifidReg_n_72}));
+        .\storeout_reg[0] (\NLW_ifidReg_storeout_reg[0]_UNCONNECTED [0]),
+        .\storeout_reg[1] (\NLW_ifidReg_storeout_reg[1]_UNCONNECTED [1:0]),
+        .\storeout_reg[1]_0 (\NLW_ifidReg_storeout_reg[1]_0_UNCONNECTED [1:0]),
+        .\threeselectout_reg[0] (\NLW_ifidReg_threeselectout_reg[0]_UNCONNECTED [0]),
+        .\threeselectout_reg[1] (\NLW_ifidReg_threeselectout_reg[1]_UNCONNECTED [1:0]));
   Mux32Bit2To1__9 m4
-       (.\Instructionout_reg[20] ({\NLW_m4_Instructionout_reg[20]_UNCONNECTED [9],idexInstructionMemOutput[19:11]}),
+       (.\Instructionout_reg[20] ({idexInstructionMemOutput[20],\NLW_m4_Instructionout_reg[20]_UNCONNECTED [8],idexInstructionMemOutput[18:11]}),
         .RegDstO(RegDstO),
         .inA__0(inA__0));
   Mux32Bit2To1_0 m5
@@ -37229,7 +37726,7 @@ module datapath
   Mux32Bit2To1_1 m6
        (.ALUSrcO(ALUSrcO),
         .B(ALUBOT),
-        .\Instructionout_reg[15] ({idexInstructionMemOutput[15:1],\NLW_m6_Instructionout_reg[15]_UNCONNECTED [0]}),
+        .\Instructionout_reg[15] (idexInstructionMemOutput[15:0]),
         .\ReadData2O_reg[31] (ReadData2O));
   Mux32Bit2To1_2 m7
        (.MemtoRegO3(MemtoRegO3),
@@ -37257,18 +37754,12 @@ module datapath
         .RegWriteO2(RegWriteO2),
         .\addout_reg[31] ({addout,exmemPCAddResultP4,adderaddresultout}),
         .sel(JALSignalmemwb));
-  BUFG n_3_547_BUFG_inst
-       (.I(n_3_547_BUFG_inst_n_4),
-        .O(n_3_547_BUFG));
-  BUFG n_4_548_BUFG_inst
-       (.I(n_4_548_BUFG_inst_n_5),
-        .O(n_4_548_BUFG));
   StoreMux stMux
        (.D({exmemReg_n_119,exmemReg_n_120,exmemReg_n_121,exmemReg_n_122,exmemReg_n_123,exmemReg_n_124,exmemReg_n_125,exmemReg_n_126,exmemReg_n_127,exmemReg_n_128,exmemReg_n_129,exmemReg_n_130,exmemReg_n_131,exmemReg_n_132,exmemReg_n_133,exmemReg_n_134,exmemReg_n_135,exmemReg_n_136,exmemReg_n_137,exmemReg_n_138,exmemReg_n_139,exmemReg_n_140,exmemReg_n_141,exmemReg_n_142,ReadDataO2}),
-        .E(n_3_547_BUFG),
+        .E(NLW_stMux_E_UNCONNECTED[0]),
         .Q(storemuxout),
         .p_0_in1_in(p_0_in1_in[31:16]),
-        .\storeout_reg[1] (storesignalexmem));
+        .\storeout_reg[1] ({storesignalexmem[1],\NLW_stMux_storeout_reg[1]_UNCONNECTED [0]}));
 endmodule
 
 module hitolowregister

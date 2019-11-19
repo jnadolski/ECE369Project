@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Nov 18 16:35:57 2019
+| Date         : Tue Nov 19 11:32:38 2019
 | Host         : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file datapath_control_sets_placed.rpt
 | Design       : datapath
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    65 |
-| Unused register locations in slices containing registers |   226 |
+| Number of unique control sets                            |    44 |
+| Unused register locations in slices containing registers |   206 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |           34 |
-|      4 |            3 |
+|      2 |           31 |
+|      4 |            2 |
 |     10 |            1 |
 |     12 |            1 |
-|    16+ |           26 |
+|    16+ |            9 |
 +--------+--------------+
 
 
@@ -48,9 +48,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            1572 |          242 |
+| No           | No                    | No                     |            1514 |          251 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             250 |           51 |
+| No           | Yes                   | No                     |             240 |           43 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -60,74 +60,53 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------------+----------------------------------+-------------------------------+------------------+----------------+
-|            Clock Signal           |           Enable Signal          |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
-+-----------------------------------+----------------------------------+-------------------------------+------------------+----------------+
-|  alu/Zero_reg_i_2_n_5             |                                  | alu/Zero_reg_i_3_n_5          |                1 |              2 |
-|  dataMem/ReadData_reg[12]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[11]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[13]/G0      |                                  |                               |                1 |              2 |
-|  ifidReg/BranchO_reg              |                                  | ifidReg/BranchO_reg_0         |                1 |              2 |
-|  ifidReg/OutputOFRSRT_reg_i_5_n_5 |                                  | ifidReg/OutputOFRSRTO_reg     |                1 |              2 |
-|  ifidReg/MemReadO_reg             |                                  | ifidReg/MemReadO_reg_0        |                1 |              2 |
-|  ifidReg/MemWriteO_reg            |                                  | ifidReg/MemWriteO_reg_0       |                1 |              2 |
-|  ifidReg/jalout_reg_0             |                                  | ifidReg/jalout_reg            |                1 |              2 |
-|  dataMem/ReadData_reg[10]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[20]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[16]/G0      |                                  |                               |                1 |              2 |
-|  ifidReg/jumpregout_reg           |                                  | ifidReg/jumpregout_reg_0      |                1 |              2 |
-|  ifidReg/jumpout_reg_0            |                                  | ifidReg/jumpout_reg_1         |                1 |              2 |
-|  ifidReg/storeout_reg[1][0]       |                                  | ifidReg/storeout_reg[0][0]    |                1 |              2 |
-|  dataMem/ReadData_reg[15]/G0      |                                  |                               |                1 |              2 |
-|  ifidReg/storeout_reg[1][1]       |                                  | ifidReg/AS[0]                 |                1 |              2 |
-|  dataMem/ReadData_reg[18]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[19]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[17]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[22]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[21]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[23]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[25]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[26]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[29]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[31]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[27]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[30]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[28]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[8]/G0       |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[9]/G0       |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[24]/G0      |                                  |                               |                1 |              2 |
-|  dataMem/ReadData_reg[14]/G0      |                                  |                               |                1 |              2 |
-|  ifidReg/RegDstO_reg              |                                  | ifidReg/ALUSrc0               |                1 |              4 |
-|  ifidReg/RegWriteO_reg            |                                  | ifidReg/RegWriteO_reg_1       |                1 |              4 |
-|  ifidReg/threeselectout_reg[0][0] |                                  | ifidReg/AR[0]                 |                1 |              4 |
-|  Clk_IBUF_BUFG                    |                                  | idexReg/jumpout               |                1 |             10 |
-|  ifidReg/E[0]                     |                                  |                               |                2 |             12 |
-|  n_4_548_BUFG                     |                                  | exmemReg/AR[0]                |                6 |             16 |
-|  alu/n_0_169_BUFG                 |                                  |                               |               25 |             64 |
-|  alu/n_2_36_BUFG                  |                                  |                               |               14 |             64 |
-|  alu/n_1_35_BUFG                  |                                  |                               |               13 |             64 |
-|  Clk_IBUF_BUFG                    |                                  | Rst_IBUF                      |               15 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_3  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_6  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_4 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_5 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]   |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_0  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_2 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_6 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_4  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_5  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]    |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_1  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[6]_2  |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_3 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_1 |                               |                8 |             64 |
-|  Clk_IBUF_BUFG                    | exmemReg/ReadDataMemO3_reg[14]_0 |                               |                8 |             64 |
-| ~Clk_IBUF_BUFG                    |                                  | RegFile/ReadData1[31]_i_1_n_5 |               10 |             64 |
-| ~Clk_IBUF_BUFG                    |                                  | RegFile/ReadData2[31]_i_1_n_5 |                6 |             64 |
-|  n_3_547_BUFG                     |                                  |                               |               17 |             64 |
-|  Clk_IBUF_BUFG                    | memewbReg/RegWrite               |                               |               12 |            192 |
-|  Clk_IBUF_BUFG                    |                                  |                               |              149 |           1264 |
-+-----------------------------------+----------------------------------+-------------------------------+------------------+----------------+
++------------------------------+--------------------+-------------------------------+------------------+----------------+
+|         Clock Signal         |    Enable Signal   |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++------------------------------+--------------------+-------------------------------+------------------+----------------+
+|  dataMem/ReadData_reg[22]/G0 |                    |                               |                1 |              2 |
+|  alu/Zero_reg_i_2_n_5        |                    | alu/Zero_reg_i_3_n_5          |                1 |              2 |
+|  dataMem/ReadData_reg[25]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[27]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[28]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[17]/G0 |                    |                               |                1 |              2 |
+|  ifidReg/OutputOFRSRTO_reg_0 |                    | ifidReg/OutputOFRSRTO_reg     |                1 |              2 |
+|  ifidReg/MemReadO_reg        |                    | ifidReg/MemReadO_reg_0        |                1 |              2 |
+|  ifidReg/BranchO_reg         |                    | ifidReg/BranchO_reg_0         |                1 |              2 |
+|  dataMem/ReadData_reg[26]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[24]/G0 |                    |                               |                1 |              2 |
+|  ifidReg/jumpregout_reg      |                    | ifidReg/jumpregout_reg_0      |                1 |              2 |
+|  ifidReg/jumpout_reg_0       |                    | ifidReg/jumpout_reg_1         |                1 |              2 |
+|  ifidReg/jalout_reg_0        |                    | ifidReg/jalout_reg            |                1 |              2 |
+|  dataMem/ReadData_reg[29]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[8]/G0  |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[31]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[11]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[9]/G0  |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[30]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[12]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[14]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[23]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[15]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[10]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[13]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[16]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[18]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[19]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[21]/G0 |                    |                               |                1 |              2 |
+|  dataMem/ReadData_reg[20]/G0 |                    |                               |                1 |              2 |
+|  ifidReg/RegDstO_reg         |                    | ifidReg/ALUSrc0               |                1 |              4 |
+|  ifidReg/RegWriteO_reg       |                    | ifidReg/RegWriteO_reg_1       |                1 |              4 |
+|  Clk_IBUF_BUFG               |                    | idexReg/jumpout               |                1 |             10 |
+|  ifidReg/E[0]                |                    |                               |                4 |             12 |
+|                              |                    | exmemReg/AR[0]                |                6 |             16 |
+|  alu/n_0_169_BUFG            |                    |                               |               26 |             64 |
+|  alu/n_1_35_BUFG             |                    |                               |               11 |             64 |
+|  alu/n_2_36_BUFG             |                    |                               |               13 |             64 |
+|  Clk_IBUF_BUFG               |                    | Rst_IBUF                      |               15 |             64 |
+| ~Clk_IBUF_BUFG               |                    | RegFile/ReadData1[31]_i_1_n_5 |                6 |             64 |
+| ~Clk_IBUF_BUFG               |                    | RegFile/ReadData2[31]_i_1_n_5 |                6 |             64 |
+|  Clk_IBUF_BUFG               | memewbReg/RegWrite |                               |               12 |            192 |
+|  Clk_IBUF_BUFG               |                    |                               |              303 |           2294 |
++------------------------------+--------------------+-------------------------------+------------------+----------------+
 
 
