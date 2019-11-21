@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-// Date        : Tue Nov 19 11:34:08 2019
+// Date        : Wed Nov 20 15:44:37 2019
 // Host        : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode funcsim -nolib -force -file
 //               C:/Users/jen/ece369finalproject/ece369finalproject.sim/sim_1/impl/func/xsim/datapath_tb_func_impl.v
