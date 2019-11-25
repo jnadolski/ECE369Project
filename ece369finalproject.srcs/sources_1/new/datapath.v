@@ -42,6 +42,11 @@ wire [31:0] concatadd;
 wire [31:0]firstfinalout;
 wire [31:0] WRITEDATALASTMUX, EXMEMReadData, EXMEMMux;
 wire [31:0] AdderAddResultO;
+
+wire [1:0] ForwardA, ForwardB; 
+wire [31:0] AMuxOutput, BMuxOutput; 
+wire [31:0] zeroD; 
+
 Mux32Bit2To1 m1(FirstMuxOutput, PCAddResultP4, AdderAddResultO, OutFromAnd);
 // Mux32Bit2To1(out, inA, inB, sel);
 
@@ -136,6 +141,13 @@ Mux32Bit2To1 m7(oldwrite, MEMWBDataMemoryOutput, MEMWBALUResult ,MEMWBMemtoReg);
 //Mux32Bit2To1(out, inA, inB, sel);
 Mux32Bit2To1 m8(debug_WriteData,oldwrite,memwbPCAddResultP4,JALSignalmemwb);
 
-//ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput[20:16], EXMEMMux, MEMWBWROutput, EXMEMRegWrite, MEMWBRegWrite, ForwardA, ForwardB);
+//forwarding unit 
+ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput[20:16], EXMEMMux, MEMWBWROutput, EXMEMRegWrite, MEMWBRegWrite, ForwardA, ForwardB);
+
+//mux 3 to 1 for forward-a signal 
+Mux32Bit4to1 Amux3to1(AMuxOutput, ReadData1O, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
+//mux 3 to 1 for forward-b signal 
+Mux32Bit4to1 Bmux3to1(BMuxOutput, ReadData2O, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
+
 
 endmodule
