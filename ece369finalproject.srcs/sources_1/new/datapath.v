@@ -136,4 +136,6 @@ Mux32Bit2To1 m7(oldwrite, MEMWBDataMemoryOutput, MEMWBALUResult ,MEMWBMemtoReg);
 //Mux32Bit2To1(out, inA, inB, sel);
 Mux32Bit2To1 m8(debug_WriteData,oldwrite,memwbPCAddResultP4,JALSignalmemwb);
 
+//ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput[20:16], EXMEMMux, MEMWBWROutput, EXMEMRegWrite, MEMWBRegWrite, ForwardA, ForwardB);
+
 endmodule
