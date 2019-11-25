@@ -103,7 +103,7 @@ Mux32Bit2To1 m5(ALUTOP, ReadData1O,ReadData2O, OutputOFRSRTO);
 Mux32Bit2To1 m6(ALUBOT, ReadData2O,SignExtendedOffsetO, ALUSrcO);
 //Mux32Bit2To1(out, inA, inB, sel);
 
-ALU32Bit alu(ALUOpO, ALUTOP, ALUBOT, ALUMAINRESULT, Zero,debug_hi,debug_lo,HII,LOI,movn);
+ALU32Bit alu(ALUOpO, AMuxOutput, BMuxOutput, ALUMAINRESULT, Zero,debug_hi,debug_lo,HII,LOI,movn);
 //ALU32Bit(ALUControl, A, B, ALUResult, Zero,HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU);
 
 Mux1Bit MOV(RegWriteMUX,RegWriteO, 1'b0, movn);
@@ -145,9 +145,9 @@ Mux32Bit2To1 m8(debug_WriteData,oldwrite,memwbPCAddResultP4,JALSignalmemwb);
 ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput[20:16], EXMEMMux, MEMWBWROutput, EXMEMRegWrite, MEMWBRegWrite, ForwardA, ForwardB);
 
 //mux 3 to 1 for forward-a signal 
-Mux32Bit4to1 Amux3to1(AMuxOutput, ReadData1O, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
+Mux32Bit4to1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
 //mux 3 to 1 for forward-b signal 
-Mux32Bit4to1 Bmux3to1(BMuxOutput, ReadData2O, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
+Mux32Bit4to1 Bmux3to1(BMuxOutput, ALUBOT, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
 
 
 endmodule
