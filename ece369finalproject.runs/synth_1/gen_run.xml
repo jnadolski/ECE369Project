@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1574289547">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1574893933">
   <File Type="PA-TCL" Name="datapath.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="datapath_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="datapath_reports.tcl"/>
@@ -33,6 +33,13 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/EXMEMRegister.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ForwardingUnit.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -145,7 +152,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/ForwardingUnit.v">
+    <File Path="$PSRCDIR/sources_1/new/Mux4To1.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

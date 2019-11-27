@@ -33,6 +33,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/BranchAndGate.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/DataMemory.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/EXMEMRegister.v
+  C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/ForwardingUnit.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/IDEXRegister.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/IFIDRegister.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/InstructionMemory.v
