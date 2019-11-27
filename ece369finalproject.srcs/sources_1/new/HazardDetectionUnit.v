@@ -22,7 +22,26 @@
 
 module HazardDetectionUnit(Branch,);
     input branch;
+    output flushcontrol;
     
+    always @(*) begin
+        if(branch ==1)begin
+        flushcontrol ==1'b1;
+        end
+            
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    end
     
     
 
