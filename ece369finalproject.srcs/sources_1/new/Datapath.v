@@ -148,6 +148,6 @@ ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput
 Mux32Bit4to1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
 //mux 3 to 1 for forward-b signal 
 Mux32Bit4to1 Bmux3to1(BMuxOutput, ALUBOT, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
-
+//changed
 
 endmodule
