@@ -20,7 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module HazardDetectionUnit(
+module HazardDetectionUnit(Branch,);
+    input branch;
+    
+    
+    
 
-    );
 endmodule
