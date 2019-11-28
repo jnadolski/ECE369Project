@@ -20,16 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-//module HazardDetectionUnit(Branch,);
-//    input branch;
-//    output flushcontrol;
+module HazardDetectionUnit(branch, flushcontrol);
+    input branch;
+    output reg flushcontrol;
     
-//    always @(*) begin
-//        if(branch ==1)begin
-//        flushcontrol ==1'b1;
-//        end
+    always @(branch) begin
+        if(branch == 1)begin
+            flushcontrol <= 1'b1;
+        end
             
-//    end
+    end
     
     
 
