@@ -5,7 +5,7 @@
 module EXMEMReg(BranchO, BranchO2, MemWriteO, MemWriteO2, MemReadO, MemReadO2, MemtoRegO, MemtoRegO2, RegWriteO, RegWriteO2,Clk,AddResult, 
 AddResultO2, Zero, ZeroO2, ALUResult, ALUResultO2,Mux, MuxO2,ReadDataO, ReadDataO2, threeselectin, threeselectout,jumpin,jumpout, 
 sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderaddresultin,adderaddresultout
-,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12);
+,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12,flushcontrol);
 //EXMEMReg a16(BranchO, EXMEMBranch, MemWriteO, EXMEMMemWrite, MemReadO, EXMEMMemRead, MemtoRegO, EXMEMMemtoReg, RegWriteMUX, EXMEMRegWrite,Clk,IDEXPCAddResultP4, 
 //EXMEMAddResult, Zero, EXMEMZero, ALUMAINRESULT, EXMEMALUResult,IDEXBOTMUXOUT, EXMEMMux,ReadData2O, EXMEMReadData,threeselectexmem,threeselectmemwb,jumpselectidex,jumpselectexmem, SIGNEXTENDOUTPUT, IDEXPCAddResultP4, exmemPCAddResultP4,concatadd,
 //storesignalidex,storesignalexmem,JALSignalidex, JALSignalexmem);
@@ -14,6 +14,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
 	input Clk, Zero,jumpregin;
 	input [31:0]sein;
 	input [31:0] R1;
+	input flushcontrol; 
 	output reg [31:0] R12;
 	output reg [31:0] exmemPCAddResultP4;
 	input [31:0] instructionmemin;
@@ -37,6 +38,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
         
         
 	    always @(posedge Clk) begin
+	    if(flushcontrol ==1'b0)begin
 	    R12 <= R1; 
 	    adderaddresultout<=adderaddresultin;
 	      jumpout<=jumpin;
@@ -57,7 +59,29 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
         ReadDataO2 <= ReadDataO;
         ALUResultO2 <= ALUResult;
         AddResultO2 <= AddResult;
-   
+        end
+        else if (flushcontrol ==1'b1)begin
+         R12 <= 0; 
+            adderaddresultout<=0;
+              jumpout<=0;
+              instructionmemout<=0;
+         addout<= {pcaddin[31:28],sein[27:0]};
+         exmemPCAddResultP4 <= 0;
+         storeout<=0;
+        threeselectout<=0;
+        BranchO2 <= 0;
+        MemWriteO2 <= 0;
+        MemReadO2<=0;
+        jalout<=0;
+        MemtoRegO2<=0;
+        RegWriteO2 <= 0;
+        ZeroO2 <= 0;
+        jumpregout<=0;
+        MuxO2<=0;
+        ReadDataO2 <= 0;
+        ALUResultO2 <= 0;
+        AddResultO2 <= 0;
+        end
     end
  
 
