@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sun Dec  1 18:55:46 2019
+| Date         : Sun Dec  1 20:04:11 2019
 | Host         : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file datapath_timing_summary_routed.rpt -pb datapath_timing_summary_routed.pb -rpx datapath_timing_summary_routed.rpx -warn_on_violation
 | Design       : datapath
@@ -52,7 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 962 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
+ There are 970 register/latch pins with no clock driven by root clock pin: Clk (HIGH)
 
  There are 13 register/latch pins with no clock driven by root clock pin: contr/func_reg[0]/Q (HIGH)
 
@@ -128,15 +128,15 @@ Table of Contents
 
  There are 32 register/latch pins with no clock driven by root clock pin: exmemReg/ALUResultO2_reg[9]/Q (HIGH)
 
- There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/MuxO2_reg[0]/Q (HIGH)
-
- There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/MuxO2_reg[1]/Q (HIGH)
-
- There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/MuxO2_reg[2]/Q (HIGH)
-
- There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/MuxO2_reg[4]/Q (HIGH)
-
  There are 32 register/latch pins with no clock driven by root clock pin: exmemReg/RegWriteO2_reg/Q (HIGH)
+
+ There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/instructionmemout_reg[11]/Q (HIGH)
+
+ There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/instructionmemout_reg[12]/Q (HIGH)
+
+ There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/instructionmemout_reg[13]/Q (HIGH)
+
+ There are 49 register/latch pins with no clock driven by root clock pin: exmemReg/instructionmemout_reg[15]/Q (HIGH)
 
  There are 96 register/latch pins with no clock driven by root clock pin: idexReg/ALUOpO_reg[0]/Q (HIGH)
 
@@ -370,13 +370,13 @@ Table of Contents
 
  There are 49 register/latch pins with no clock driven by root clock pin: memewbReg/RegWriteO3_reg/Q (HIGH)
 
- There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/finalmuxout_reg[0]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/memwbInstr_reg[11]/Q (HIGH)
 
- There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/finalmuxout_reg[1]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/memwbInstr_reg[12]/Q (HIGH)
 
- There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/finalmuxout_reg[2]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/memwbInstr_reg[13]/Q (HIGH)
 
- There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/finalmuxout_reg[4]/Q (HIGH)
+ There are 32 register/latch pins with no clock driven by root clock pin: memewbReg/memwbInstr_reg[15]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -391,7 +391,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 5074 pins that are not constrained for maximum delay. (HIGH)
+ There are 5086 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

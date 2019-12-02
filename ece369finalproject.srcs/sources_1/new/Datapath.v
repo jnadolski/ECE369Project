@@ -151,7 +151,7 @@ Mux32Bit3To1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD
 //mux 3 to 1 for forward-b signal 
 Mux32Bit3To1 Bmux3to1(BMuxOutput, ALUBOT, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
 //changed
-HazardDetectionUnit hazard(OutFromAnd, jumpselectexmem, PCWrite, IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[15:11], IFIDWrite, EXMEMMux, MEMWBRegWrite,MEMWBWROutput, MemReadO, flushcontrol, stallcontrol, hilocontrol, controllercontrol); 
-//HazardDetectionUnit     (Branch,     Jump,            PCWrite, RS,                              RD,                              notneeded, exmemregister, WriteBackRegWrite, WriteDataRegister, idexmemread,  flushcontrol, stallcontrol, hilocontrol, controllercontrol);
+HazardDetectionUnit hazard(OutFromAnd, jumpselectexmem, PCWrite, IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[20:16],  outfirstbot, MEMWBWROutput, MEMWBRegWrite, MemReadO, flushcontrol, stallcontrol, hilocontrol, controllercontrol); 
+//HazardDetectionUnit     (Branch,     Jump,            PCWrite, RS,                              RD,                               EXMEMMux, memwbRD, WriteBackRegWrite,  idexmemread,  flushcontrol, stallcontrol, hilocontrol, controllercontrol);
 
 endmodule

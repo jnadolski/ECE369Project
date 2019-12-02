@@ -37,7 +37,7 @@ module ProgramCounter(PCResult, PCAddResult, Reset, Clk, PCWrite);
             PCResult<=32'h00000000;
        end
        else if (PCWrite == 1)begin 
-            PCResult <= PCResult; 
+            //PCResult <= PCResult; 
        end
        else if (Reset == 0) begin
             PCResult <= PCAddResult;

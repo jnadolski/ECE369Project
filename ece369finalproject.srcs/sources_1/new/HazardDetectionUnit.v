@@ -1,9 +1,9 @@
-module HazardDetectionUnit(Branch,Jump, PCWrite, RS, RD, IFIDWrite, exmemregister, WriteBackRegWrite, WriteDataRegister, idexmemread,  flushcontrol, stallcontrol, hilocontrol, controllercontrol);
+module HazardDetectionUnit(Branch,Jump, PCWrite, RS, RD,  exmemRD, memwbRD, WriteBackRegWrite, idexmemread,  flushcontrol, stallcontrol, hilocontrol, controllercontrol);
 
     input Branch, Jump, WriteBackRegWrite, idexmemread;
-    output reg flushcontrol, stallcontrol, hilocontrol, PCWrite, IFIDWrite, controllercontrol;
-    input [4:0] RS, RD, exmemregister, WriteDataRegister;
-    always @(Branch, Jump, WriteBackRegWrite, idexmemread, RS, RD, exmemregister, WriteDataRegister) begin
+    output reg flushcontrol, stallcontrol, hilocontrol, PCWrite, controllercontrol;
+    input [4:0] RS, RD, exmemRD, memwbRD;
+    always @(Branch, Jump, WriteBackRegWrite, idexmemread, RS, RD, exmemRD, memwbRD) begin
         if(Branch == 1)begin
             flushcontrol <=1'b1;
             controllercontrol <=1'b1;
@@ -17,12 +17,12 @@ module HazardDetectionUnit(Branch,Jump, PCWrite, RS, RD, IFIDWrite, exmemregiste
             stallcontrol <=1'b0;     //doesn't stall for jumps 
         end
         
-        else if(idexmemread == 1'b1 && (RS == WriteDataRegister || RD == WriteDataRegister) && (WriteDataRegister !=5'b00000))begin
+        else if(idexmemread == 1'b1 && (RS == exmemRD || RD == exmemRD) && (exmemRD !=5'b00000))begin
             stallcontrol <= 1'b1;    //stalls 
             controllercontrol <=1'b1;
             PCWrite <=1'b1;         //PC won't count the next addr 
         end
-        else if (WriteBackRegWrite ==1'b1 && (RS == exmemregister && RD == exmemregister) && exmemregister != 5'b00000) begin
+        else if (WriteBackRegWrite ==1'b1 && (RS == memwbRD || RD == memwbRD) && (memwbRD != 5'b00000)) begin
             stallcontrol <= 1'b1;    //stalls 
             controllercontrol <=1'b1;
             PCWrite <=1'b1;         //PC won't count the next addr 

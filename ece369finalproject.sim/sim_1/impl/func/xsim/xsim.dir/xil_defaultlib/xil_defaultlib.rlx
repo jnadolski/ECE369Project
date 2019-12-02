@@ -2,5 +2,5 @@
 2018.2
 Jun 14 2018
 20:41:02
-C:/Users/jen/ece369finalproject/ece369finalproject.sim/sim_1/impl/func/xsim/datapath_tb_func_impl.v,1575251839,verilog,,C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sim_1/new/Datapath_tb.v,,ALU32Bit;DataMemory;EXMEMReg;HazardDetectionUnit;IDEXReg;IFIDReg;InstructionMemory;MEMWBReg;Mux32Bit2To1;Mux32Bit2To1_0;Mux32Bit2To1_1;Mux32Bit2To1_2;Mux32Bit2To1__9;Mux32Bit3To1;Mux32Bit3To1__1;PCAdder;ProgramCounter;RegisterFile;StoreMux;controller;datapath;glbl;hitolowregister,,,,,,,,
+C:/Users/jen/ece369finalproject/ece369finalproject.sim/sim_1/impl/func/xsim/datapath_tb_func_impl.v,1575256012,verilog,,C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sim_1/new/Datapath_tb.v,,ALU32Bit;DataMemory;EXMEMReg;HazardDetectionUnit;IDEXReg;IFIDReg;InstructionMemory;MEMWBReg;Mux32Bit2To1;Mux32Bit2To1_0;Mux32Bit2To1_1;Mux32Bit2To1_2;Mux32Bit2To1__9;Mux32Bit3To1;Mux32Bit3To1__1;PCAdder;ProgramCounter;RegisterFile;StoreMux;controller;datapath;glbl;hitolowregister,,,,,,,,
 C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sim_1/new/Datapath_tb.v,1574119279,verilog,,,,datapath_tb,,,,,,,,

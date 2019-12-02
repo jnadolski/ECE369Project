@@ -16,8 +16,8 @@ module IFIDReg(PCValue, InstructionRead,Clk, ReadDataPCValue, ReadDataInstructio
             ReadDataInstructionRead <= 0; 
         end 
         else if(stallcontrol == 1) begin
-            ReadDataPCValue <= ReadDataPCValue; 
-            ReadDataInstructionRead <= ReadDataInstructionRead; 
+            //ReadDataPCValue <= ReadDataPCValue; 
+            //ReadDataInstructionRead <= ReadDataInstructionRead; 
         end
         else begin 
             ReadDataPCValue <= PCValue;
