@@ -3,7 +3,7 @@ module HazardDetectionUnit(Branch,Jump, PCWrite, RS, RD, IFIDWrite, exmemregiste
     input Branch, Jump, WriteBackRegWrite, idexmemread;
     output reg flushcontrol, stallcontrol, hilocontrol, PCWrite, IFIDWrite, controllercontrol;
     input [4:0] RS, RD, exmemregister, WriteDataRegister;
-    always @(*) begin
+    always @(Branch, Jump, WriteBackRegWrite, idexmemread, RS, RD, exmemregister, WriteDataRegister) begin
         if(Branch == 1)begin
             flushcontrol <=1'b1;
             controllercontrol <=1'b1;

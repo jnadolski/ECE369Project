@@ -24,20 +24,24 @@
 // location, 0x00000000H).
 ////////////////////////////////////////////////////////////////////////////////
 
-module ProgramCounter(PCResult, PCAddResult, Reset, Clk);
+module ProgramCounter(PCResult, PCAddResult, Reset, Clk, PCWrite);
 
 	input [31:0] PCAddResult;
-	input Reset, Clk;
+	input Reset, Clk, PCWrite;
 
 	output reg [31:0] PCResult;
 
    always @ (posedge Clk) begin
-   if (Reset == 1) begin
-        PCResult<=32'h00000000;
-   end
-   else if (Reset == 0) begin
-    PCResult <= PCAddResult;
-   end
+       
+       if (Reset == 1) begin
+            PCResult<=32'h00000000;
+       end
+       else if (PCWrite == 1)begin 
+            PCResult <= PCResult; 
+       end
+       else if (Reset == 0) begin
+            PCResult <= PCAddResult;
+       end
     
 end
 

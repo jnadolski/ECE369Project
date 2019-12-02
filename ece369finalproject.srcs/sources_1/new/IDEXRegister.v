@@ -6,11 +6,11 @@ module IDEXReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Bra
 ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO, Clk,ReadData1, ReadData2,
 ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RTO, ReadDataPCValue, PCValueO,Instruction2016, Instruction1511
 ,InstructionO2016, InstructionO1511,threeselectin, threeselectout,jumpin,jumpout, Instructionin, Instructionout,storein, storeout, jalin,jalout
-,jumpregin, jumpregout,flushcontrol);
+,jumpregin, jumpregout, flushcontrol); 
     input [1:0] threeselectin;
     input jalin;
     input jumpregin;
-    input flushcontrol;
+    input flushcontrol; 
     output reg jumpregout;
     output reg jalout;
     output reg [1:0] threeselectout;
@@ -35,11 +35,12 @@ ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RT
 	
 	
 	    always @(posedge Clk) begin 
-	    if (flushcontrol ==1'b0)begin
-	    Instructionout<= Instructionin;   
-	    storeout<=storein;
-	    jumpout<=jumpin;
-	       threeselectout<= threeselectin;
+	    
+	       if (flushcontrol ==1'b0)begin
+              Instructionout<= Instructionin;   
+              storeout<=storein;
+              jumpout<=jumpin;
+              threeselectout<= threeselectin;
               ALUSrcO <= ALUSrc;
               RegDstO<= RegDst;
               RegWriteO <= RegWrite;
@@ -59,32 +60,32 @@ ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RT
               RTO<=RT;
               PCValueO <= ReadDataPCValue;
               jalout<=jalin;
-              end
-              else if (flushcontrol ==1'b1)begin
-                Instructionout<= 0;   
-                storeout<=0;
-                jumpout<=0;
-                threeselectout<= 0;
-                ALUSrcO <= 0;
-                RegDstO<= 0;
-                RegWriteO <= 0;
-                MemReadO <= 0;
-                MemWriteO <= 0;
-                MemtoRegO<= 0;
-                jumpregout<=0;
-                BranchO <= 0;
-                OutputOFRSRTO <= 0;
-                InstructionO2016<=0;
-                InstructionO1511<=0;
-                ALUOpO <= 0;
-                ReadData1O <= 0;
-                ReadData2O<= 0;
-                SignExtendedOffsetO <= 0;
-                RDO<=0;
-                RTO<=0;
-                PCValueO <= 0;
-                jalout<=0;
-              end
+          end
+          else if (flushcontrol ==1'b1)begin
+            Instructionout<= 0;   
+            storeout<=0;
+            jumpout<=0;
+            threeselectout<= 0;
+            ALUSrcO <= 0;
+            RegDstO<= 0;
+            RegWriteO <= 0;
+            MemReadO <= 0;
+            MemWriteO <= 0;
+            MemtoRegO<= 0;
+            jumpregout<=0;
+            BranchO <= 0;
+            OutputOFRSRTO <= 0;
+            InstructionO2016<=0;
+            InstructionO1511<=0;
+            ALUOpO <= 0;
+            ReadData1O <= 0;
+            ReadData2O<= 0;
+            SignExtendedOffsetO <= 0;
+            RDO<=0;
+            RTO<=0;
+            PCValueO <= 0;
+            jalout<=0;
+          end
               
     end
  

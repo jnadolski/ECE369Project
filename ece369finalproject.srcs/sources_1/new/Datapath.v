@@ -47,12 +47,14 @@ wire [1:0] ForwardA, ForwardB;
 wire [31:0] AMuxOutput, BMuxOutput; 
 wire [31:0] zeroD; 
 
+wire flushcontrol, stallcontrol, hilocontrol, controllercontrol, PCWrite, IFIDWrite; 
+
 Mux32Bit2To1 m1(FirstMuxOutput, PCAddResultP4, AdderAddResultO, OutFromAnd);
 // Mux32Bit2To1(out, inA, inB, sel);
 
 Mux32Bit2To1 m2(firstfinalout, FirstMuxOutput, addout, jumpselectexmem);
 
-ProgramCounter PC(debug_PCResult, firstfinalout, Rst, Clk);
+ProgramCounter PC(debug_PCResult, firstfinalout, Rst, Clk, PCWrite);
 //ProgramCounter(PCResult, PCAddResult, Reset, Clk);
 
 PCAdder PCAdd(debug_PCResult, PCAddResultP4);
@@ -61,7 +63,7 @@ PCAdder PCAdd(debug_PCResult, PCAddResultP4);
 InstructionMemory InstrMem(debug_PCResult, InstructionMemOutput);
 //InstructionMemory(Address, Instruction); 
 
-IFIDReg ifidReg(PCAddResultP4, InstructionMemOutput,Clk, IFIDPCAddResultP4,IFIDInstructionMemOutput);
+IFIDReg ifidReg(PCAddResultP4, InstructionMemOutput,Clk, IFIDPCAddResultP4,IFIDInstructionMemOutput, flushcontrol, stallcontrol);
 // IFIDReg(PCValue, InstructionRead,Clk, ReadDataPCValue, ReadDataInstructionRead);
 
 RegisterFile RegFile(IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[20:16], MEMWBWROutput[4:0],debug_WriteData, MEMWBRegWrite, Clk, ReadData1, ReadData2);
@@ -70,14 +72,14 @@ RegisterFile RegFile(IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[2
 SignExtension SignExt(IFIDInstructionMemOutput[15:0], SignExtensionOutput);
 //SignExtension(in, out);
 
-controller contr(IFIDInstructionMemOutput, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselectcontrol, jumpcontrol,storesignal,JALSignal,jumpreg);
+controller contr(IFIDInstructionMemOutput, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselectcontrol, jumpcontrol,storesignal,JALSignal,jumpreg, controllercontrol);
 // controller(Instruction, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp);
 
 IDEXReg idexReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Branch, OutputOFRSRT,
 ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO,Clk,ReadData1, ReadData2,
 ReadData1O, ReadData2O, SignExtensionOutput, SignExtendedOffsetO, RD, RDO, RT, RTO, IFIDPCAddResultP4, IDEXPCAddResultP4, IFIDInstructionMemOutput[20:16],
  IFIDInstructionMemOutput[15:11], IDEX2016, IDEX1511,threeselectcontrol, threeselectexmem,jumpcontrol,jumpselectidex, IFIDInstructionMemOutput, idexInstructionMemOutput,storesignal,storesignalidex
- ,JALSignal, JALSignalidex,jumpreg, idexjumpreg);
+ ,JALSignal, JALSignalidex,jumpreg, idexjumpreg, flushcontrol);
 //IDEXReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Branch, OutputOFRSRT,
  //ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO, Clk,ReadData1, ReadData2,
  //ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RTO, ReadDataPCValue, PCValueO,Instruction2016, Instruction1511
@@ -108,7 +110,7 @@ ALU32Bit alu(ALUOpO, AMuxOutput, BMuxOutput, ALUMAINRESULT, Zero,debug_hi,debug_
 
 Mux1Bit MOV(RegWriteMUX,RegWriteO, 1'b0, movn);
 
-hitolowregister hi2loReg(debug_hi, debug_lo, HII,LOI, Clk);
+hitolowregister hi2loReg(debug_hi, debug_lo, HII,LOI, Clk, hilocontrol);
 // hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk);
 wire exmemjumpreg;
 wire[31:0]exmeminstructionmemoutput;
@@ -116,7 +118,7 @@ wire [31:0] ReadData1O2;
 EXMEMReg exmemReg(BranchO, EXMEMBranch, MemWriteO, EXMEMMemWrite, MemReadO, EXMEMMemRead, MemtoRegO, EXMEMMemtoReg, RegWriteMUX, EXMEMRegWrite,Clk,IDEXPCAddResultP4, 
 EXMEMAddResult, Zero, EXMEMZero, ALUMAINRESULT, EXMEMALUResult,IDEXBOTMUXOUT, EXMEMMux,ReadData2O, EXMEMReadData,threeselectexmem,threeselectmemwb,jumpselectidex,jumpselectexmem, SIGNEXTENDOUTPUT, IDEXPCAddResultP4, exmemPCAddResultP4,concatadd,
 storesignalidex,storesignalexmem,JALSignalidex, JALSignalexmem,AdderAddResult, AdderAddResultO,
-idexjumpreg,exmemjumpreg,idexInstructionMemOutput, exmeminstructionmemoutput, ReadData1O, ReadData1O2);
+idexjumpreg,exmemjumpreg,idexInstructionMemOutput, exmeminstructionmemoutput, ReadData1O, ReadData1O2, flushcontrol);
 //module EXMEMReg(BranchO, BranchO2, MemWriteO, MemWriteO2, MemReadO, MemReadO2, MemtoRegO, MemtoRegO2, RegWriteO, RegWriteO2,Clk,AddResult, 
 //AddResultO2, Zero, ZeroO2, ALUResult, ALUResultO2,Mux, MuxO2,ReadDataO, ReadDataO2,
 // threeselectin, threeselectout,jumpin,jumpout, sein, pcaddin, addout,jalin,jalout);
@@ -145,9 +147,11 @@ Mux32Bit2To1 m8(debug_WriteData,oldwrite,memwbPCAddResultP4,JALSignalmemwb);
 ForwardingUnit Forward(idexInstructionMemOutput[25:21], idexInstructionMemOutput[20:16], EXMEMMux, MEMWBWROutput, EXMEMRegWrite, MEMWBRegWrite, ForwardA, ForwardB);
 
 //mux 3 to 1 for forward-a signal 
-Mux32Bit4to1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
+Mux32Bit3To1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD, ForwardA); 
 //mux 3 to 1 for forward-b signal 
-Mux32Bit4to1 Bmux3to1(BMuxOutput, ALUBOT, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
+Mux32Bit3To1 Bmux3to1(BMuxOutput, ALUBOT, EXMEMALUResult, debug_WriteData, zeroD, ForwardB); 
 //changed
+HazardDetectionUnit hazard(OutFromAnd, jumpselectexmem, PCWrite, IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[15:11], IFIDWrite, EXMEMMux, MEMWBRegWrite,MEMWBWROutput, MemReadO, flushcontrol, stallcontrol, hilocontrol, controllercontrol); 
+//HazardDetectionUnit     (Branch,     Jump,            PCWrite, RS,                              RD,                              notneeded, exmemregister, WriteBackRegWrite, WriteDataRegister, idexmemread,  flushcontrol, stallcontrol, hilocontrol, controllercontrol);
 
 endmodule

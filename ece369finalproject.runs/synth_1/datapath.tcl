@@ -17,6 +17,10 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/jen/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5776-LAPTOP-47BB27SU/incrSyn
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,12 +38,14 @@ read_verilog -library xil_defaultlib {
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/DataMemory.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/EXMEMRegister.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/ForwardingUnit.v
+  C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/HazardDetectionUnit.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/IDEXRegister.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/IFIDRegister.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/InstructionMemory.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/MEMWBReg.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/Mux1Bit.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/Mux32Bit2To1.v
+  C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/Mux4To1.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/PCAdder.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/ProgramCounter.v
   C:/Users/jen/ece369finalproject/ece369finalproject.srcs/sources_1/new/RegisterFile.v

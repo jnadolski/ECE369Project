@@ -5,7 +5,7 @@
 module EXMEMReg(BranchO, BranchO2, MemWriteO, MemWriteO2, MemReadO, MemReadO2, MemtoRegO, MemtoRegO2, RegWriteO, RegWriteO2,Clk,AddResult, 
 AddResultO2, Zero, ZeroO2, ALUResult, ALUResultO2,Mux, MuxO2,ReadDataO, ReadDataO2, threeselectin, threeselectout,jumpin,jumpout, 
 sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderaddresultin,adderaddresultout
-,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12,flushcontrol);
+,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12, flushcontrol);  
 //EXMEMReg a16(BranchO, EXMEMBranch, MemWriteO, EXMEMMemWrite, MemReadO, EXMEMMemRead, MemtoRegO, EXMEMMemtoReg, RegWriteMUX, EXMEMRegWrite,Clk,IDEXPCAddResultP4, 
 //EXMEMAddResult, Zero, EXMEMZero, ALUMAINRESULT, EXMEMALUResult,IDEXBOTMUXOUT, EXMEMMux,ReadData2O, EXMEMReadData,threeselectexmem,threeselectmemwb,jumpselectidex,jumpselectexmem, SIGNEXTENDOUTPUT, IDEXPCAddResultP4, exmemPCAddResultP4,concatadd,
 //storesignalidex,storesignalexmem,JALSignalidex, JALSignalexmem);
@@ -38,6 +38,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
         
         
 	    always @(posedge Clk) begin
+	    
 	    if(flushcontrol ==1'b0)begin
 	    R12 <= R1; 
 	    adderaddresultout<=adderaddresultin;

@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Dec  1 18:55:00 2019
+| Host         : LAPTOP-47BB27SU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file datapath_control_sets_placed.rpt
+| Design       : datapath
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    40 |
+| Unused register locations in slices containing registers |   172 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           26 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             398 |          106 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             502 |           90 |
+| Yes          | No                    | No                     |             256 |           38 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              96 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+------------------------------------+--------------------------------+------------------+----------------+
+|           Clock Signal          |            Enable Signal           |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+------------------------------------+--------------------------------+------------------+----------------+
+|  dataMem/ReadData_reg[10]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[12]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[13]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[11]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[15]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[14]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[18]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[21]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[16]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[17]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[20]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[19]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[23]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[25]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[22]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[27]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[24]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[26]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[28]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[31]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[9]/G0     |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[30]/G0    |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[8]/G0     |                                    |                                |                1 |              2 |
+|  dataMem/ReadData_reg[29]/G0    |                                    |                                |                1 |              2 |
+|  contr/ALUSrc_reg_i_2_n_5       |                                    | contr/ALUSrc_reg_i_3_n_5       |                1 |              2 |
+|  contr/OutputOFRSRT_reg_i_2_n_5 |                                    | contr/OutputOFRSRT_reg_i_3_n_5 |                1 |              2 |
+|  contr/RegDst_reg_i_2_n_5       |                                    | exmemReg/storeout_reg[1]_0     |                2 |             10 |
+|  contr/ALUOp_reg[5]_i_2_n_5     |                                    |                                |                2 |             12 |
+| ~exmemReg/storeout_reg[1]_0     |                                    |                                |                5 |             22 |
+|  Clk_IBUF_BUFG                  | exmemReg/ReadDataPCValue_reg[0][0] | hazard/flushcontrol            |               10 |             32 |
+|  alu/n_0_169_BUFG               |                                    |                                |               30 |             64 |
+|  alu/n_1_35_BUFG                |                                    |                                |               11 |             64 |
+|  alu/n_2_36_BUFG                |                                    |                                |               18 |             64 |
+|  Clk_IBUF_BUFG                  | PC/PCResult[31]_i_1_n_5            | Rst_IBUF                       |                9 |             64 |
+| ~Clk_IBUF_BUFG                  |                                    | RegFile/ReadData2[31]_i_1_n_5  |                7 |             64 |
+| ~Clk_IBUF_BUFG                  |                                    | RegFile/ReadData1[31]_i_1_n_5  |                5 |             64 |
+|  Clk_IBUF_BUFG                  | memewbReg/RegWriteO3               |                                |               12 |            192 |
+|  Clk_IBUF_BUFG                  | hi2loReg/p_0_in                    |                                |               38 |            256 |
+|  Clk_IBUF_BUFG                  |                                    | hazard/flushcontrol            |               74 |            360 |
+|  Clk_IBUF_BUFG                  |                                    |                                |              112 |            892 |
++---------------------------------+------------------------------------+--------------------------------+------------------+----------------+
+
+
