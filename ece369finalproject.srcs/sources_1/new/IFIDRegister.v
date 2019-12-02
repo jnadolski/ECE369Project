@@ -11,13 +11,13 @@ module IFIDReg(PCValue, InstructionRead,Clk, ReadDataPCValue, ReadDataInstructio
 	
 	    always @(posedge Clk) begin
         
-        if(flushcontrol == 1)begin
+        if(flushcontrol == 1'b1)begin
             ReadDataPCValue <= 0; 
             ReadDataInstructionRead <= 0; 
         end 
-        else if(stallcontrol == 1) begin
-            //ReadDataPCValue <= ReadDataPCValue; 
-            //ReadDataInstructionRead <= ReadDataInstructionRead; 
+        else if(stallcontrol == 1'b1) begin
+            ReadDataPCValue <= ReadDataPCValue; 
+            ReadDataInstructionRead <= ReadDataInstructionRead; 
         end
         else begin 
             ReadDataPCValue <= PCValue;

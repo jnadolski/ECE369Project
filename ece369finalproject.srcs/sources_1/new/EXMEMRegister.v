@@ -66,7 +66,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
             adderaddresultout<=0;
               jumpout<=0;
               instructionmemout<=0;
-         addout<= {pcaddin[31:28],sein[27:0]};
+         addout<= 0;
          exmemPCAddResultP4 <= 0;
          storeout<=0;
         threeselectout<=0;

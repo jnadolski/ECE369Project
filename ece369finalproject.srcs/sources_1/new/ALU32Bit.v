@@ -214,7 +214,7 @@ ALUResult <= A^B;
 Zero<=0;
 end
 if(ALUControl==6'b011111)begin//ori
-ALUResult <= A|B;
+ALUResult <= A|{16'h0000,B[15:0]};
 Zero<=0;
 end
 if(ALUControl==6'b100000)begin//xor
@@ -340,6 +340,8 @@ ALUResult <= LoInToALU;
 Zero<=0;
 end
 if (ALUControl == 6'b111111)begin
+ALUResult<=0;
+
 end
 end
 

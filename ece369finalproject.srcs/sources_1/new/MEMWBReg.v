@@ -20,16 +20,15 @@ module MEMWBReg(ALUResultO2, MemtoRegO2, RegWriteO2, ReadDataMem, ALUResultO3, M
 	output reg MemtoRegO3, RegWriteO3;
 	output reg [31:0] ReadDataMemO3, ALUResultO3;
 	    always @(posedge Clk) begin
-	       jumpout<=jumpin;
-	       threeselectout<=threeselectin;
-	       jalout<=jalin;
-           MemtoRegO3<= MemtoRegO2;
-           RegWriteO3 <= RegWriteO2;
-           ReadDataMemO3 <= ReadDataMem;
-           pcaddout<=pcaddin;
-           ALUResultO3 <= ALUResultO2;
-           finalmuxout<=muxout;
-      
+	    jumpout<=jumpin;
+	          threeselectout<=threeselectin;
+	          jalout<=jalin;
+      MemtoRegO3<= MemtoRegO2;
+      RegWriteO3 <= RegWriteO2;
+      ReadDataMemO3 <= ReadDataMem;
+      pcaddout<=pcaddin;
+      ALUResultO3 <= ALUResultO2;
+      finalmuxout<=muxout;
    
     end
  
