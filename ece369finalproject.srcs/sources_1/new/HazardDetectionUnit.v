@@ -17,12 +17,12 @@ module HazardDetectionUnit(Branch,Jump, PCWrite, RS, RD,  exmemRD, memwbRD, Writ
             stallcontrol <=1'b0;     //doesn't stall for jumps 
         end
         
-        else if(idexmemread == 1'b1 && (RS == exmemRD || RD == exmemRD) && (exmemRD !=5'b00000))begin
+        else if(idexmemread == 1'b1 && (exmemRD !=5'b00000) && (RS == exmemRD || RD == exmemRD) )begin
             stallcontrol <= 1'b1;    //stalls 
             controllercontrol <=1'b1;
             PCWrite <=1'b1;         //PC won't count the next addr 
         end
-        else if (WriteBackRegWrite ==1'b1 && (RS == memwbRD || RD == memwbRD) && (memwbRD != 5'b00000)) begin
+        else if (WriteBackRegWrite ==1'b1 && (memwbRD != 5'b00000) && (RS == memwbRD || RD == memwbRD)) begin
             stallcontrol <= 1'b1;    //stalls 
             controllercontrol <=1'b1;
             PCWrite <=1'b1;         //PC won't count the next addr 

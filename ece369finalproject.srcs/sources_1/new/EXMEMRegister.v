@@ -5,7 +5,7 @@
 module EXMEMReg(BranchO, BranchO2, MemWriteO, MemWriteO2, MemReadO, MemReadO2, MemtoRegO, MemtoRegO2, RegWriteO, RegWriteO2,Clk,AddResult, 
 AddResultO2, Zero, ZeroO2, ALUResult, ALUResultO2,Mux, MuxO2,ReadDataO, ReadDataO2, threeselectin, threeselectout,jumpin,jumpout, 
 sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderaddresultin,adderaddresultout
-,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12, flushcontrol);  
+,jumpregin, jumpregout,instructionmemin, instructionmemout, R1, R12, flushcontrol, AIN, AOUT);  
 //EXMEMReg a16(BranchO, EXMEMBranch, MemWriteO, EXMEMMemWrite, MemReadO, EXMEMMemRead, MemtoRegO, EXMEMMemtoReg, RegWriteMUX, EXMEMRegWrite,Clk,IDEXPCAddResultP4, 
 //EXMEMAddResult, Zero, EXMEMZero, ALUMAINRESULT, EXMEMALUResult,IDEXBOTMUXOUT, EXMEMMux,ReadData2O, EXMEMReadData,threeselectexmem,threeselectmemwb,jumpselectidex,jumpselectexmem, SIGNEXTENDOUTPUT, IDEXPCAddResultP4, exmemPCAddResultP4,concatadd,
 //storesignalidex,storesignalexmem,JALSignalidex, JALSignalexmem);
@@ -13,6 +13,8 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
 	input  BranchO, MemWriteO, MemReadO, MemtoRegO, RegWriteO;
 	input Clk, Zero,jumpregin;
 	input [31:0]sein;
+	input [31:0] AIN;
+	output reg [31:0] AOUT;
 	input [31:0] R1;
 	input flushcontrol; 
 	output reg [31:0] R12;
@@ -52,6 +54,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
         MemWriteO2 <= MemWriteO;
         MemReadO2<=MemReadO;
         jalout<=jalin;
+        AOUT <= AIN;
         MemtoRegO2<=MemtoRegO;
         RegWriteO2 <= RegWriteO;
         ZeroO2 <= Zero;
@@ -70,6 +73,7 @@ sein, pcaddin,exmemPCAddResultP4, addout,storein,storeout, jalin,jalout,adderadd
          exmemPCAddResultP4 <= 0;
          storeout<=0;
         threeselectout<=0;
+        AOUT<=0;
         BranchO2 <= 0;
         MemWriteO2 <= 0;
         MemReadO2<=0;

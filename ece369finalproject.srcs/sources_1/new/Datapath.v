@@ -120,16 +120,17 @@ hitolowregister hi2loReg( debug_hi, debug_lo,HII,LOI, Clk, hilocontrol, idexmt, 
 // hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk);
 wire exmemjumpreg;
 wire[31:0]exmeminstructionmemoutput;
+wire [31:0] OUTPUTTHING;
 wire [31:0] ReadData1O2; 
 EXMEMReg exmemReg(BranchO, EXMEMBranch, MemWriteO, EXMEMMemWrite, MemReadO, EXMEMMemRead, MemtoRegO, EXMEMMemtoReg, RegWriteMUX, EXMEMRegWrite,Clk,IDEXPCAddResultP4, 
 EXMEMAddResult, Zero, EXMEMZero, ALUMAINRESULT, EXMEMALUResult,IDEXBOTMUXOUT, EXMEMMux,BMuxOutput, EXMEMReadData,threeselectexmem,threeselectmemwb,jumpselectidex,jumpselectexmem, SIGNEXTENDOUTPUT, IDEXPCAddResultP4, exmemPCAddResultP4,concatadd,
 storesignalidex,storesignalexmem,JALSignalidex, JALSignalexmem,AdderAddResult, AdderAddResultO,
-idexjumpreg,exmemjumpreg,idexInstructionMemOutput, exmeminstructionmemoutput, ReadData1O, ReadData1O2, flushcontrol);
+idexjumpreg,exmemjumpreg,idexInstructionMemOutput, exmeminstructionmemoutput, ReadData1O, ReadData1O2, flushcontrol, AMuxOutput, OUTPUTTHING);
 //module EXMEMReg(BranchO, BranchO2, MemWriteO, MemWriteO2, MemReadO, MemReadO2, MemtoRegO, MemtoRegO2, RegWriteO, RegWriteO2,Clk,AddResult, 
 //AddResultO2, Zero, ZeroO2, ALUResult, ALUResultO2,Mux, MuxO2,ReadDataO, ReadDataO2,
 // threeselectin, threeselectout,jumpin,jumpout, sein, pcaddin, addout,jalin,jalout);
 
-Mux32Bit2To1 m99(addout, concatadd, ReadData1O2, exmemjumpreg);
+Mux32Bit2To1 m99(addout, concatadd, OUTPUTTHING, exmemjumpreg);
 //Mux32Bit2To1 m99(addout, concatadd,{25'b0000000000000000000000000, exmeminstructionmemoutput[25:21], 2'b00}, exmemjumpreg);
 
 StoreMux stMux(storemuxout, EXMEMReadData, storesignalexmem);
