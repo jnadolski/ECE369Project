@@ -29,11 +29,11 @@ output reg [31:0] HiInToALU, LoInToALU;
 reg [31:0] rFile [0:1];   
 
 always @ (posedge Clk) begin
-    if(hilocontrol == 1) begin 
-        LoInToALU = LoInToALU;
-        HiInToALU = HiInToALU;
-        rFile[1] = rFile[1];
-        rFile[0] = rFile[0];
+    if(hilocontrol == 1'b1) begin 
+//        LoInToALU = LoInToALU;
+//        HiInToALU = HiInToALU;
+//        rFile[1] = rFile[1];
+//        rFile[0] = rFile[0];
     end
     else begin
         LoInToALU = rFile[1];

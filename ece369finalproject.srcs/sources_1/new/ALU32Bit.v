@@ -42,8 +42,10 @@ reg [63:0] Temp;
 output reg Zero;	    // Zero=1 if ALUResult == 0
 integer x;
 
-always@(ALUControl,A,B)begin
+always@*begin
 x<=0;
+HiOutFromALU<=0;
+LoOutFromALU<=0;
 if(ALUControl==6'b000000)begin//Add 
 ALUResult <= $signed(A) + $signed(B);
 Zero<=0;
@@ -323,7 +325,7 @@ ALUResult<=0;
 end
 Zero<=0;
 end
-if(ALUControl==6'b110001)begin//mthi
+if((ALUControl==6'b110001))begin//mthi
 HiOutFromALU <= A;
 Zero<=0;
 end
@@ -341,7 +343,6 @@ Zero<=0;
 end
 if (ALUControl == 6'b111111)begin
 ALUResult<=0;
-
 end
 end
 
