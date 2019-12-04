@@ -42,6 +42,7 @@ wire [31:0] concatadd;
 wire [31:0]firstfinalout;
 wire [31:0] WRITEDATALASTMUX, EXMEMReadData, EXMEMMux;
 wire [31:0] AdderAddResultO;
+wire mt, mf, idexmt, idexmf;  
 
 wire [1:0] ForwardA, ForwardB; 
 wire [31:0] AMuxOutput, BMuxOutput; 
@@ -72,14 +73,14 @@ RegisterFile RegFile(IFIDInstructionMemOutput[25:21], IFIDInstructionMemOutput[2
 SignExtension SignExt(IFIDInstructionMemOutput[15:0], SignExtensionOutput);
 //SignExtension(in, out);
 
-controller contr(IFIDInstructionMemOutput, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselectcontrol, jumpcontrol,storesignal,JALSignal,jumpreg, controllercontrol);
+controller contr(IFIDInstructionMemOutput, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselectcontrol, jumpcontrol,storesignal,JALSignal,jumpreg, controllercontrol, mt, mf);
 // controller(Instruction, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp);
 
 IDEXReg idexReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Branch, OutputOFRSRT,
 ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO,Clk,ReadData1, ReadData2,
 ReadData1O, ReadData2O, SignExtensionOutput, SignExtendedOffsetO, RD, RDO, RT, RTO, IFIDPCAddResultP4, IDEXPCAddResultP4, IFIDInstructionMemOutput[20:16],
  IFIDInstructionMemOutput[15:11], IDEX2016, IDEX1511,threeselectcontrol, threeselectexmem,jumpcontrol,jumpselectidex, IFIDInstructionMemOutput, idexInstructionMemOutput,storesignal,storesignalidex
- ,JALSignal, JALSignalidex,jumpreg, idexjumpreg, flushcontrol);
+ ,JALSignal, JALSignalidex,jumpreg, idexjumpreg, flushcontrol, mt, mf, idexmt, idexmf);
 //IDEXReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Branch, OutputOFRSRT,
  //ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO, Clk,ReadData1, ReadData2,
  //ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RTO, ReadDataPCValue, PCValueO,Instruction2016, Instruction1511
@@ -110,12 +111,12 @@ Mux32Bit3To1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD
 //mux 3 to 1 for forward-b signal 
 Mux32Bit3To1 Bmux3to1(BMuxOutput, ReadData2O, EXMEMALUResult, debug_WriteData, zeroD, ForwardB);
 
-ALU32Bit alu(ALUOpO, AMuxOutput, ALUBOT, ALUMAINRESULT, Zero,debug_hi,debug_lo,HII,LOI,movn);
+ALU32Bit alu(ALUOpO, AMuxOutput, ALUBOT, ALUMAINRESULT, Zero,debug_hi, debug_lo,HII,LOI,movn);
 //ALU32Bit(ALUControl, A, B, ALUResult, Zero,HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU);
 
 Mux1Bit MOV(RegWriteMUX,RegWriteO, 1'b0, movn);
 
-hitolowregister hi2loReg(debug_hi, debug_lo, HII,LOI, Clk, hilocontrol);
+hitolowregister hi2loReg( debug_hi, debug_lo,HII,LOI, Clk, hilocontrol, idexmt, idexmf);
 // hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk);
 wire exmemjumpreg;
 wire[31:0]exmeminstructionmemoutput;

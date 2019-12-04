@@ -44,8 +44,6 @@ integer x;
 
 always@*begin
 x<=0;
-HiOutFromALU<=7'd98;
-LoOutFromALU<=7'd98;
 if(ALUControl==6'b000000)begin//Add 
 ALUResult <= $signed(A) + $signed(B);
 Zero<=0;
@@ -96,7 +94,8 @@ LoOutFromALU = Temp [31:0];
 Zero<=0;
 end
 if(ALUControl==6'b001001)begin//msub
-Temp = {HiInToALU, LoInToALU} - ($signed(A)*$signed(B));
+Temp1 = {HiInToALU, LoInToALU}- $signed(A)*$signed(B); 
+Temp = Temp1;
 ALUResult <= 0; 
 HiOutFromALU = Temp[63:32];
 LoOutFromALU = Temp [31:0];
@@ -329,7 +328,7 @@ if((ALUControl==6'b110001))begin//mthi
 HiOutFromALU <= A;
 Zero<=0;
 end
-if(ALUControl==6'b110010)begin//mtlo
+ if(ALUControl==6'b110010)begin//mtlo
 LoOutFromALU<= A;
 Zero<=0;
 end

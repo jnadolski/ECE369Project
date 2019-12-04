@@ -6,11 +6,13 @@ module IDEXReg(ALUSrc, RegDst, RegWrite, ALUOp, MemRead, MemWrite, MemtoReg, Bra
 ALUSrcO, RegDstO, RegWriteO, ALUOpO, MemReadO, MemWriteO,MemtoRegO,BranchO, OutputOFRSRTO, Clk,ReadData1, ReadData2,
 ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RTO, ReadDataPCValue, PCValueO,Instruction2016, Instruction1511
 ,InstructionO2016, InstructionO1511,threeselectin, threeselectout,jumpin,jumpout, Instructionin, Instructionout,storein, storeout, jalin,jalout
-,jumpregin, jumpregout, flushcontrol); 
+,jumpregin, jumpregout, flushcontrol, mt, mf, idexmt, idexmf); 
     input [1:0] threeselectin;
     input jalin;
     input jumpregin;
     input flushcontrol; 
+    input mt, mf; 
+    output reg idexmt, idexmf; 
     output reg jumpregout;
     output reg jalout;
     output reg [1:0] threeselectout;
@@ -60,6 +62,8 @@ ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RT
               RTO<=RT;
               PCValueO <= ReadDataPCValue;
               jalout<=jalin;
+              idexmt <= mt; 
+              idexmf <= mf; 
           end
           else if (flushcontrol ==1'b1)begin
             Instructionout<= 0;   
@@ -85,6 +89,8 @@ ReadData1O, ReadData2O, SignExtendedOffset, SignExtendedOffsetO, RD, RDO, RT, RT
             RTO<=0;
             PCValueO <= 0;
             jalout<=0;
+            idexmt <= 0; 
+            idexmf <= 0; 
           end
               
     end

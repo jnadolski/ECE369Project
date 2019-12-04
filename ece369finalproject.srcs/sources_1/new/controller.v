@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 //jumps 4.4 zybooks
-module controller(Instruction, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselect, Jump,storesignal,JALSignal,jumpreg, controllercontrol);
+module controller(Instruction, RegDst, RegWrite, ALUSrc,MemRead,MemWrite,OutputOFRSRT,MemtoReg,Branch,ALUOp,threeselect, Jump,storesignal,JALSignal,jumpreg, controllercontrol, mt, mf);
 input [31:0] Instruction;
 input controllercontrol; 
 //regdst 0 for immidiates;//CHECK MULT REGDST //ADDIUMEMREAD
@@ -16,7 +16,7 @@ output reg OutputOFRSRT;
 output reg [5:0] ALUOp;
 output reg jumpreg;
 output reg [1:0] threeselect;
-output reg Jump;
+output reg Jump, mt, mf;
 output reg MemRead,MemWrite,MemtoReg,Branch;
 always @*  begin
     if(controllercontrol == 1)begin
@@ -35,7 +35,7 @@ always @*  begin
         MemWrite<=0; 
         MemtoReg <= 0;
         Branch <= 0;
-        
+
     end
 
     else begin
@@ -46,6 +46,10 @@ always @*  begin
         t<=Instruction[6];
         sebseh<=Instruction[10:6];
         r<=Instruction[21];
+        
+                
+                mf <= 0; 
+                mt <= 0; 
         
         //(opcode,func)
         
@@ -170,6 +174,7 @@ always @*  begin
         storesignal<=2'b10;
         JALSignal<=0;
         jumpreg<=0;
+        mt <= 1; 
          
         end  
         else if(opcode == 6'b000000 && func == 6'b011001) begin//multu
@@ -187,6 +192,7 @@ always @*  begin
         storesignal<=2'b10;
          JALSignal<=0;
          jumpreg<=0;
+         mt <= 1; 
         end  
         else if(opcode == 6'b011100 && func == 6'b000000) begin//madd
         //rd<=((rt>>rs)|(rt<<(6-rs)));
@@ -204,6 +210,8 @@ always @*  begin
          storesignal<=2'b10;
          JALSignal<=0;
          jumpreg<=0;
+         mt <= 1; 
+         mf <= 1; 
         end  
         
         else if(opcode == 6'b011100 && func == 6'b000100) begin//msub
@@ -222,6 +230,8 @@ always @*  begin
          storesignal<=2'b10;
          JALSignal<=0;
          jumpreg<=0;
+         mt <= 1; 
+         mf <= 1; 
         end  
         
         ///////////////////////////////////////////////
@@ -940,6 +950,7 @@ always @*  begin
          storesignal<=2'b10;
          JALSignal<=0;
          jumpreg<=0;
+         mt <= 1; 
         end  
         else if(opcode == 6'b000000 && func == 6'b010011) begin//mtlo
            //rd<=((rt>>rs)|(rt<<(6-rs));
@@ -957,6 +968,7 @@ always @*  begin
            storesignal<=2'b10;
            JALSignal<=0;
            jumpreg<=0;
+           mt <= 1;
         end
         else if(opcode == 6'b000000 && func == 6'b010000) begin//mfhi
              //rd<=((rt>>rs)|(rt<<(6-rs)));
@@ -974,6 +986,7 @@ always @*  begin
              storesignal<=2'b10;
              JALSignal<=0;
              jumpreg<=0;
+             mf <= 1; 
          end  
         else if(opcode == 6'b000000 && func == 6'b010010) begin//mflo
                //rd<=((rt>>rs)|(rt<<(6-rs)));
@@ -991,6 +1004,7 @@ always @*  begin
                storesignal<=2'b10;
                JALSignal<=0;
                jumpreg<=0;
+               mf <= 1; 
            end  
           else if(opcode == 6'b000000 && func == 6'b000000&& rt ==4'b0000) begin//nop
                  //rd<=((rt>>rs)|(rt<<(6-rs)));
