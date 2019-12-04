@@ -1,5 +1,6 @@
 `timescale 1ns / 1ps
 //Joseph Emnett 50% Jennifer Nadolski 50%
+
 module datapath(Clk,Rst, debug_hi, debug_lo, debug_PCResult, debug_WriteData);
 input Clk,Rst;
 wire [5:0] ALUOp, ALUOpO;
