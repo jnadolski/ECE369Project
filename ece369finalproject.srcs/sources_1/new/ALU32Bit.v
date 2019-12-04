@@ -44,8 +44,8 @@ integer x;
 
 always@*begin
 x<=0;
-HiOutFromALU<=0;
-LoOutFromALU<=0;
+HiOutFromALU<=7'd98;
+LoOutFromALU<=7'd98;
 if(ALUControl==6'b000000)begin//Add 
 ALUResult <= $signed(A) + $signed(B);
 Zero<=0;

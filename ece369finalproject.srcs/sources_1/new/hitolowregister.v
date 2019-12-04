@@ -36,10 +36,15 @@ always @ (posedge Clk) begin
 //        rFile[0] = rFile[0];
     end
     else begin
-        LoInToALU = rFile[1];
+    if (HiOutFromALU!=7'd98)begin
         HiInToALU = rFile[0];
-        rFile[1] = LoOutFromALU;
         rFile[0] = HiOutFromALU;
+     end
+    if (LoOutFromALU!=7'd98)begin
+         LoInToALU = rFile[1];
+         rFile[1] = LoOutFromALU;
+    end
+            
     end
     
 
