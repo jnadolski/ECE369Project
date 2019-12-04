@@ -112,12 +112,14 @@ Mux32Bit3To1 Amux3to1(AMuxOutput, ALUTOP, EXMEMALUResult, debug_WriteData, zeroD
 //mux 3 to 1 for forward-b signal 
 Mux32Bit3To1 Bmux3to1(BMuxOutput, ReadData2O, EXMEMALUResult, debug_WriteData, zeroD, ForwardB);
 
-ALU32Bit alu(ALUOpO, AMuxOutput, ALUBOT, ALUMAINRESULT, Zero,debug_hi, debug_lo,HII,LOI,movn);
+wire [31:0] hiO, loO; 
+
+ALU32Bit alu(ALUOpO, AMuxOutput, ALUBOT, ALUMAINRESULT, Zero, hiO, loO, HII,LOI,movn);
 //ALU32Bit(ALUControl, A, B, ALUResult, Zero,HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU);
 
 Mux1Bit MOV(RegWriteMUX,RegWriteO, 1'b0, movn);
 
-hitolowregister hi2loReg( debug_hi, debug_lo,HII,LOI, Clk, hilocontrol, idexmt, idexmf);
+hitolowregister hi2loReg( hiO, loO,HII,LOI, Clk, hilocontrol, idexmt, idexmf,debug_hi, debug_lo);
 // hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk);
 wire exmemjumpreg;
 wire[31:0]exmeminstructionmemoutput;

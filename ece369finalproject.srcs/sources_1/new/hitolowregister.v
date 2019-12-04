@@ -20,13 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk, hilocontrol, mt, mf);
+module hitolowregister(HiOutFromALU, LoOutFromALU, HiInToALU, LoInToALU, Clk, hilocontrol, mt, mf, reg1, reg2);
 
 
 input [31:0] HiOutFromALU, LoOutFromALU;
 input Clk, hilocontrol, mt, mf;
 output reg [31:0] HiInToALU, LoInToALU;
-reg [31:0] rFile [0:1];   
+//reg [31:0] rFile [0:1];  
+output reg [31:0] reg1, reg2;  
 always @ (posedge Clk) begin
     if(hilocontrol != 1'b1)begin
 //        rFile[0] = HiOutFromALU;
@@ -35,8 +36,10 @@ always @ (posedge Clk) begin
 //         rFile[1] = LoOutFromALU;
 //         LoInToALU = rFile[1];
            if(mt == 1'b1)begin 
-            rFile[0] <= HiOutFromALU;
-            rFile[1] <= LoOutFromALU;
+//            rFile[0] <= HiOutFromALU;
+//            rFile[1] <= LoOutFromALU;
+            reg1 <= HiOutFromALU; 
+            reg2 <= LoOutFromALU; 
            end 
 
            
@@ -47,8 +50,10 @@ always @ (negedge Clk) begin
     if(hilocontrol != 1'b1)begin
 
            if(mf == 1'b1) begin 
-            LoInToALU <= rFile[1];
-            HiInToALU <= rFile[0];
+//            LoInToALU <= rFile[1];
+//            HiInToALU <= rFile[0];
+                LoInToALU <= reg2; 
+                HiInToALU <= reg1; 
             end
        
           

@@ -54,7 +54,7 @@ module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData,storecont
 //       for(i = 0; i <= 1023; i = i + 1)begin 
 //            memory[i] <= 32'h00000000;
 //        end
-           memory[0] = 32'd100;
+            memory[0] = 32'd100;
             memory[1] = 32'd200;
             memory[2] = 32'd300;
             memory[3] = 32'd400;
