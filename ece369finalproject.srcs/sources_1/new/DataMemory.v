@@ -19,10 +19,10 @@
 // FUNCTIONALITY:-
 // Design the above memory similar to the 'RegisterFile' model in the previous 
 // assignment.  Create a 1K memory, for which we need 10 bits.  In order to 
-// implement byte addressing, we will use bits Address[11:2] to index the 
+// implement byte addressing, we will use bits Address[14:2] to index the 
 // memory location. The 'WriteData' value is written into the address 
-// corresponding to Address[11:2] in the positive clock edge if 'MemWrite' 
-// signal is 1. 'ReadData' is the value of memory location Address[11:2] if 
+// corresponding to Address[14:2] in the positive clock edge if 'MemWrite' 
+// signal is 1. 'ReadData' is the value of memory location Address[14:2] if 
 // 'MemRead' is 1, otherwise, it is 0x00000000. The reading of memory is not 
 // clocked.
 //
@@ -47,56 +47,73 @@ module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData,storecont
     output reg[31:0] ReadData; // Contents of memory location at Address
 
      integer i;
-     reg [31:0] memory [0:1023];
+     reg [31:0] memory [0:10000];
     
     initial begin
         
-//       for(i = 0; i <= 1023; i = i + 1)begin 
+//       for(i = 0; i <= 4096; i = i + 1)begin 
 //            memory[i] <= 32'h00000000;
 //        end
-            memory[0] = 32'd100;
-            memory[1] = 32'd200;
-            memory[2] = 32'd300;
-            memory[3] = 32'd400;
-            memory[4] = 32'd500;
-            memory[5] = 32'd600;
-            memory[6] = 32'd700;
-            memory[7] = 32'd800;
-            memory[8] = 32'd900;
-            memory[9] = 32'd1000;
-            memory[10] = 32'd1100;
-            memory[11] = 32'd1200;
-              
-    end
+        //$readmemh("Data_Memory.txt", memory);
+        memory[0] <= 32'h4;
+        memory[1] <= 32'h4;
+        memory[2] <= 32'h2;
+        memory[3] <= 32'h2;
+        memory[4] <= 32'h0;
+        memory[5] <= 32'h0;
+        memory[6] <= 32'h1;
+        memory[7] <= 32'h2;
+        memory[8] <= 32'h0;
+        memory[9] <= 32'h0;
+        memory[10] <= 32'h3;
+        memory[11] <= 32'h4;
+        memory[12] <= 32'h0;
+        memory[13] <= 32'h0;
+        memory[14] <= 32'h0;
+        memory[15] <= 32'h0;
+        memory[16] <= 32'h0;
+        memory[17] <= 32'h0;
+        memory[18] <= 32'h0;
+        memory[19] <= 32'h0;
+        memory[20] <= 32'h1;
+        memory[21] <= 32'h2;
+        memory[22] <= 32'h3;
+        memory[23] <= 32'h4;
+
+
+
+ 
+
+ end
 	always @(posedge Clk) begin
         if (MemWrite == 1'b1) begin
             //store byte 
            if(storecontrolsignal == 2'b00)begin 
                if(Address[1:0]==2'b00)begin
-                    memory[Address[11:2]] <= {memory[Address[11:2]][31:8],WriteData[7:0]};
+                    memory[Address[14:2]] <= {memory[Address[14:2]][31:8],WriteData[7:0]};
                end
                else if(Address[1:0]==2'b01)begin
-                    memory[Address[11:2]] <= {memory[Address[11:2]][31:16],WriteData[7:0],memory[Address[11:2]][7:0]};
+                    memory[Address[14:2]] <= {memory[Address[14:2]][31:16],WriteData[7:0],memory[Address[14:2]][7:0]};
                end
                else if(Address[1:0]==2'b10)begin
-                    memory[Address[11:2]] <= {memory[Address[11:2]][31:24],WriteData[7:0],memory[Address[11:2]][15:0]};
+                    memory[Address[14:2]] <= {memory[Address[14:2]][31:24],WriteData[7:0],memory[Address[14:2]][15:0]};
                end
                else if(Address[1:0]==2'b11)begin
-                    memory[Address[11:2]] <= {WriteData[7:0], memory[Address[11:2]][23:0]};
+                    memory[Address[14:2]] <= {WriteData[7:0], memory[Address[14:2]][23:0]};
                end
           end
           //store half word 
           else if(storecontrolsignal == 2'b01)begin 
               if(Address[1:0]==2'b11 || Address[1:0] == 2'b10)begin
-                    memory[Address[11:2]] <= {WriteData[15:0],memory[Address[11:2]][15:0]};
+                    memory[Address[14:2]] <= {WriteData[15:0],memory[Address[14:2]][15:0]};
               end
               else if(Address[1:0]==2'b00 || Address[1:0] == 2'b01)begin
-                    memory[Address[11:2]] <= {memory[Address[11:2]][31:16],WriteData[15:0]};
+                    memory[Address[14:2]] <= {memory[Address[14:2]][31:16],WriteData[15:0]};
               end
           end
           //store word        
          else if(storecontrolsignal == 2'b10)begin
-                memory[Address[11:2]] <= WriteData;
+                memory[Address[14:2]] <= WriteData;
           end
       end
   end    
@@ -105,26 +122,26 @@ module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData,storecont
         if (MemRead == 1'b1) begin
             //full word
             if (loadcontrolsignal==2'b10)begin
-                ReadData <= memory[Address[11:2]];
+                ReadData <= memory[Address[14:2]];
             end
             //half word
             else if(loadcontrolsignal == 2'b01)begin
                 //least significant bytes 
                 if(Address[1:0]==2'b00||Address[1:0]==2'b01)begin
-                    if(memory[Address[11:2]][15]==1'b1) begin 
-                        ReadData <= {16'hffff, memory[Address[11:2]][15:0]};
+                    if(memory[Address[14:2]][15]==1'b1) begin 
+                        ReadData <= {16'hffff, memory[Address[14:2]][15:0]};
                     end
                     else begin
-                        ReadData <= {16'h0000, memory[Address[11:2]][15:0]};
+                        ReadData <= {16'h0000, memory[Address[14:2]][15:0]};
                     end
                 end
                 //most significant bytes
                 else if(Address[1:0]==2'b10||Address[1:0]==2'b11)begin
-                    if(memory[Address[11:2]][31]==1'b1) begin 
-                        ReadData <= {16'hffff, memory[Address[11:2]][31:16]};
+                    if(memory[Address[14:2]][31]==1'b1) begin 
+                        ReadData <= {16'hffff, memory[Address[14:2]][31:16]};
                     end
                     else begin
-                        ReadData <= {16'h0000, memory[Address[11:2]][31:16]};
+                        ReadData <= {16'h0000, memory[Address[14:2]][31:16]};
                     end
                 end
             end
@@ -132,38 +149,38 @@ module DataMemory(Address, WriteData, Clk, MemWrite, MemRead, ReadData,storecont
             else if(loadcontrolsignal == 2'b00)begin
                 //least significant byte
                 if(Address[1:0]==2'b00)begin
-                    if(memory[Address[11:2]][7]==1'b1) begin 
-                        ReadData <= {24'hffffff, memory[Address[11:2]][7:0]};
+                    if(memory[Address[14:2]][7]==1'b1) begin 
+                        ReadData <= {24'hffffff, memory[Address[14:2]][7:0]};
                     end
                     else begin
-                        ReadData <= {24'h000000, memory[Address[11:2]][7:0]};
+                        ReadData <= {24'h000000, memory[Address[14:2]][7:0]};
                     end
                 end
                 //second LSB
                 else if(Address[1:0]==2'b01)begin
-                    if(memory[Address[11:2]][15]==1'b1) begin 
-                        ReadData <= {24'hffffff, memory[Address[11:2]][15:8]};
+                    if(memory[Address[14:2]][15]==1'b1) begin 
+                        ReadData <= {24'hffffff, memory[Address[14:2]][15:8]};
                     end
                     else begin
-                        ReadData <= {24'h000000, memory[Address[11:2]][15:8]};
+                        ReadData <= {24'h000000, memory[Address[14:2]][15:8]};
                     end         
                 end
                 //third LSB
                 else if(Address[1:0]==2'b10)begin
-                    if(memory[Address[11:2]][23]==1'b1) begin 
-                        ReadData <= {24'hffffff, memory[Address[11:2]][23:16]};
+                    if(memory[Address[14:2]][23]==1'b1) begin 
+                        ReadData <= {24'hffffff, memory[Address[14:2]][23:16]};
                     end
                     else begin
-                        ReadData <= {24'h000000, memory[Address[11:2]][23:16]};
+                        ReadData <= {24'h000000, memory[Address[14:2]][23:16]};
                     end      
                 end
                 //most significant byte 
                 else if(Address[1:0]==2'b11)begin
-                    if(memory[Address[11:2]][31]==1'b1) begin 
-                        ReadData <= {24'hffffff, memory[Address[11:2]][31:24]};
+                    if(memory[Address[14:2]][31]==1'b1) begin 
+                        ReadData <= {24'hffffff, memory[Address[14:2]][31:24]};
                     end
                     else begin
-                        ReadData <= {24'h000000, memory[Address[11:2]][31:24]};
+                        ReadData <= {24'h000000, memory[Address[14:2]][31:24]};
                     end         
                 end
             end

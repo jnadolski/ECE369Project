@@ -30,14 +30,16 @@ output reg [1:0] ForwardA, ForwardB;
 always@(idex_rs, idex_rt, exmem_rd, memwb_rd, exmem_regWrite, memwb_regWrite, OutputofRSRT)
 //always@(*)
 begin 
-    if (memwb_regWrite == 1'b1 && memwb_rd!=5'b00000 && OutputofRSRT ==1'b1 && (memwb_rd == idex_rt) ) begin
-    ForwardA<=2'b10;
-    ForwardB<=2'b00;
-    end
-    else if (exmem_regWrite == 1'b1  && exmem_rd!=5'b00000&& OutputofRSRT ==1'b1 && (exmem_rd == idex_rt)) begin
+
+     if (exmem_regWrite == 1'b1  && exmem_rd!=5'b00000&& OutputofRSRT ==1'b1 && (exmem_rd == idex_rt)) begin
        ForwardA<=2'b01;
        ForwardB<=2'b00;  
     end
+   else if (memwb_regWrite == 1'b1 && memwb_rd!=5'b00000 && OutputofRSRT ==1'b1 && (memwb_rd == idex_rt) ) begin
+    ForwardA<=2'b10;
+    ForwardB<=2'b00;
+    end
+
    // forward mem to ex in case of i-type then store 
     else begin
     if(exmem_regWrite == 1&& exmem_rd != 0 && exmem_rd == idex_rt )begin
